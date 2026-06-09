@@ -1,5 +1,2350 @@
 {
-  "generatedAt": "2026-06-09T12:07:38.198Z",
-  "count": 0,
-  "items": []
+  "generatedAt": "2026-06-09T12:19:14.243Z",
+  "count": 293,
+  "items": [
+    {
+      "id": "audio-equipment--am-ly-kem-tron-cong-suat-160w-ahuja-tza-1500dp",
+      "name": "am-ly-kem-tron-cong-suat-160w-ahuja-tza-1500dp",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMLYKEMTRO",
+      "image": "/images/products/audio-equipment/am-ly-kem-tron-cong-suat-160w-ahuja-tza-1500dp.jpg"
+    },
+    {
+      "id": "audio-equipment--am-ly-kem-tron-cong-suat-160w-tza-1500dp",
+      "name": "am-ly-kem-tron-cong-suat-160w-tza-1500dp",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMLYKEMTRO",
+      "image": "/images/products/audio-equipment/am-ly-kem-tron-cong-suat-160w-tza-1500dp.jpg"
+    },
+    {
+      "id": "audio-equipment--am-ly-kem-tron-cong-suat-250w-ssa-250dp",
+      "name": "am-ly-kem-tron-cong-suat-250w-ssa-250dp",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMLYKEMTRO",
+      "image": "/images/products/audio-equipment/am-ly-kem-tron-cong-suat-250w-ssa-250dp.jpg"
+    },
+    {
+      "id": "audio-equipment--am-ly-kem-tron-cong-suat-500w-ahuja-ssa-5000dp",
+      "name": "am-ly-kem-tron-cong-suat-500w-ahuja-ssa-5000dp",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMLYKEMTRO",
+      "image": "/images/products/audio-equipment/am-ly-kem-tron-cong-suat-500w-ahuja-ssa-5000dp.jpg"
+    },
+    {
+      "id": "audio-equipment--ampli-cong-suat-1100w-bost-audio-ah1100",
+      "name": "ampli-cong-suat-1100w-bost-audio-ah1100",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMPLICONGS",
+      "image": "/images/products/audio-equipment/ampli-cong-suat-1100w-bost-audio-ah1100.jpg"
+    },
+    {
+      "id": "audio-equipment--ampli-cong-suat-1100w-bost-audio-vd1100",
+      "name": "ampli-cong-suat-1100w-bost-audio-vd1100",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMPLICONGS",
+      "image": "/images/products/audio-equipment/ampli-cong-suat-1100w-bost-audio-vd1100.jpg"
+    },
+    {
+      "id": "audio-equipment--ampli-cong-suat-650w-bost-audio-ah650",
+      "name": "ampli-cong-suat-650w-bost-audio-ah650",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMPLICONGS",
+      "image": "/images/products/audio-equipment/ampli-cong-suat-650w-bost-audio-ah650.jpg"
+    },
+    {
+      "id": "audio-equipment--amplifier-cong-suat-1100w-x-2-kenh-cho-loa-line-array-ahuja-xda-1100",
+      "name": "amplifier-cong-suat-1100w-x-2-kenh-cho-loa-line-array-ahuja-xda-1100",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMPLIFIERC",
+      "image": "/images/products/audio-equipment/amplifier-cong-suat-1100w-x-2-kenh-cho-loa-line-array-ahuja-xda-1100.jpg"
+    },
+    {
+      "id": "audio-equipment--amplifier-cong-suat-650w-x-2-kenh-cho-loa-kiem-am-ahuja-xda-650",
+      "name": "amplifier-cong-suat-650w-x-2-kenh-cho-loa-kiem-am-ahuja-xda-650",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMPLIFIERC",
+      "image": "/images/products/audio-equipment/amplifier-cong-suat-650w-x-2-kenh-cho-loa-kiem-am-ahuja-xda-650.jpg"
+    },
+    {
+      "id": "audio-equipment--amplifier-cong-suat-cho-loa-line-array-loa-sobwwoofer-apg-da8-dante",
+      "name": "amplifier-cong-suat-cho-loa-line-array-loa-sobwwoofer-apg-da8-dante",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMPLIFIERC",
+      "image": "/images/products/audio-equipment/amplifier-cong-suat-cho-loa-line-array-loa-sobwwoofer-apg-da8-dante.png"
+    },
+    {
+      "id": "audio-equipment--amplifier-cong-suat-cho-loa-monitor-apg-da1-4",
+      "name": "amplifier-cong-suat-cho-loa-monitor-apg-da1-4",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-AMPLIFIERC",
+      "image": "/images/products/audio-equipment/amplifier-cong-suat-cho-loa-monitor-apg-da1-4.png"
+    },
+    {
+      "id": "audio-equipment--ban-dieu-khien-den-magic-taiwan-c-1224x",
+      "name": "ban-dieu-khien-den-magic-taiwan-c-1224x",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BANDIEUKHI",
+      "image": "/images/products/audio-equipment/ban-dieu-khien-den-magic-taiwan-c-1224x.jpg"
+    },
+    {
+      "id": "audio-equipment--ban-tron-am-thanh-soundcraft-efx8",
+      "name": "ban-tron-am-thanh-soundcraft-efx8",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BANTRONAMT",
+      "image": "/images/products/audio-equipment/ban-tron-am-thanh-soundcraft-efx8.jpg"
+    },
+    {
+      "id": "audio-equipment--bang-dieu-khien-anh-sang-dmx-kingkong-256a",
+      "name": "bang-dieu-khien-anh-sang-dmx-kingkong-256a",
+      "category": "audio-equipment",
+      "brand": "KingKong",
+      "sku": "AIO-BANGDIEUKH",
+      "image": "/images/products/audio-equipment/bang-dieu-khien-anh-sang-dmx-kingkong-256a.jpg"
+    },
+    {
+      "id": "audio-equipment--bang-dieu-khien-den-dung-tren-san-khau-bigtoper-dmx-ed-256a",
+      "name": "bang-dieu-khien-den-dung-tren-san-khau-bigtoper-dmx-ed-256a",
+      "category": "audio-equipment",
+      "brand": "Bigtoper",
+      "sku": "AIO-BANGDIEUKH",
+      "image": "/images/products/audio-equipment/bang-dieu-khien-den-dung-tren-san-khau-bigtoper-dmx-ed-256a.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-chia-tin-hieu-dmx-bigtoper-dmx8",
+      "name": "bo-chia-tin-hieu-dmx-bigtoper-dmx8",
+      "category": "audio-equipment",
+      "brand": "Bigtoper",
+      "sku": "AIO-BOCHIATINH",
+      "image": "/images/products/audio-equipment/bo-chia-tin-hieu-dmx-bigtoper-dmx8.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-chia-tin-hieu-dmx-haotai-dmx8",
+      "name": "bo-chia-tin-hieu-dmx-haotai-dmx8",
+      "category": "audio-equipment",
+      "brand": "Haotai",
+      "sku": "AIO-BOCHIATINH",
+      "image": "/images/products/audio-equipment/bo-chia-tin-hieu-dmx-haotai-dmx8.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-chong-phan-hoi-am-hai-1210",
+      "name": "bo-chong-phan-hoi-am-hai-1210",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOCHONGPHA",
+      "image": "/images/products/audio-equipment/bo-chong-phan-hoi-am-hai-1210.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-dieu-khien-trung-tam-hai-351m",
+      "name": "bo-dieu-khien-trung-tam-hai-351m",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BODIEUKHIE",
+      "image": "/images/products/audio-equipment/bo-dieu-khien-trung-tam-hai-351m.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-dieu-khien-trung-tam-hai-audio-hai-26m",
+      "name": "bo-dieu-khien-trung-tam-hai-audio-hai-26m",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BODIEUKHIE",
+      "image": "/images/products/audio-equipment/bo-dieu-khien-trung-tam-hai-audio-hai-26m.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-dieu-khien-trung-tam-theo-doi-video-co-day-ahuja-cma-7400",
+      "name": "bo-dieu-khien-trung-tam-theo-doi-video-co-day-ahuja-cma-7400",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BODIEUKHIE",
+      "image": "/images/products/audio-equipment/bo-dieu-khien-trung-tam-theo-doi-video-co-day-ahuja-cma-7400.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-dieu-khien-trung-tam-theo-doi-video-co-day-hai-360m",
+      "name": "bo-dieu-khien-trung-tam-theo-doi-video-co-day-hai-360m",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BODIEUKHIE",
+      "image": "/images/products/audio-equipment/bo-dieu-khien-trung-tam-theo-doi-video-co-day-hai-360m.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-dieu-khien-trung-tam-theo-doi-video-co-day-hai-audio-hai-460m",
+      "name": "bo-dieu-khien-trung-tam-theo-doi-video-co-day-hai-audio-hai-460m",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BODIEUKHIE",
+      "image": "/images/products/audio-equipment/bo-dieu-khien-trung-tam-theo-doi-video-co-day-hai-audio-hai-460m.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-khuech-dai-cong-suat-kem-tron-120w-ahuja-ssb-120dp",
+      "name": "bo-khuech-dai-cong-suat-kem-tron-120w-ahuja-ssb-120dp",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOKHUECHDA",
+      "image": "/images/products/audio-equipment/bo-khuech-dai-cong-suat-kem-tron-120w-ahuja-ssb-120dp.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-khuech-dai-cong-suat-kem-tron-160w-ahuja-ssa-160dp",
+      "name": "bo-khuech-dai-cong-suat-kem-tron-160w-ahuja-ssa-160dp",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOKHUECHDA",
+      "image": "/images/products/audio-equipment/bo-khuech-dai-cong-suat-kem-tron-160w-ahuja-ssa-160dp.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-khuech-dai-cong-suat-kem-tron-2-zone-400w-ahuja-tza-4000dpm",
+      "name": "bo-khuech-dai-cong-suat-kem-tron-2-zone-400w-ahuja-tza-4000dpm",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOKHUECHDA",
+      "image": "/images/products/audio-equipment/bo-khuech-dai-cong-suat-kem-tron-2-zone-400w-ahuja-tza-4000dpm.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-khuech-dai-cong-suat-kem-tron-200w-2-zone-ahuja-tza-2000dp",
+      "name": "bo-khuech-dai-cong-suat-kem-tron-200w-2-zone-ahuja-tza-2000dp",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOKHUECHDA",
+      "image": "/images/products/audio-equipment/bo-khuech-dai-cong-suat-kem-tron-200w-2-zone-ahuja-tza-2000dp.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-micro-dai-bieu-khong-day-hai-d818",
+      "name": "bo-micro-dai-bieu-khong-day-hai-d818",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOMICRODAI",
+      "image": "/images/products/audio-equipment/bo-micro-dai-bieu-khong-day-hai-d818.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-micro-khong-day-bost-audio-k990a",
+      "name": "bo-micro-khong-day-bost-audio-k990a",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOMICROKHO",
+      "image": "/images/products/audio-equipment/bo-micro-khong-day-bost-audio-k990a.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-microphone-khong-day-haiaudio-hai-d812",
+      "name": "bo-microphone-khong-day-haiaudio-hai-d812",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOMICROPHO",
+      "image": "/images/products/audio-equipment/bo-microphone-khong-day-haiaudio-hai-d812.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-nguon-meanwell-rsp-3000-48-3000w-48v-62-5a",
+      "name": "bo-nguon-meanwell-rsp-3000-48-3000w-48v-62-5a",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-300048",
+      "image": "/images/products/audio-equipment/bo-nguon-meanwell-rsp-3000-48-3000w-48v-62-5a.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-quan-ly-nguon-tu-dong-bost-audio-pc-830-bo-quan-ly-nguon-tu-dong",
+      "name": "bo-quan-ly-nguon-tu-dong-bost-audio-pc-830-bo-quan-ly-nguon-tu-dong",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOQUANLYNG",
+      "image": "/images/products/audio-equipment/bo-quan-ly-nguon-tu-dong-bost-audio-pc-830-bo-quan-ly-nguon-tu-dong.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-sac-pin-hai-audio-hai-u20",
+      "name": "bo-sac-pin-hai-audio-hai-u20",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOSACPINHA",
+      "image": "/images/products/audio-equipment/bo-sac-pin-hai-audio-hai-u20.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-xu-ly-am-thanh-ky-thuat-so-ahuja-xca-260",
+      "name": "bo-xu-ly-am-thanh-ky-thuat-so-ahuja-xca-260",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOXULYAMTH",
+      "image": "/images/products/audio-equipment/bo-xu-ly-am-thanh-ky-thuat-so-ahuja-xca-260.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-xu-ly-am-thanh-ky-thuat-so-apg-dms48f-d",
+      "name": "bo-xu-ly-am-thanh-ky-thuat-so-apg-dms48f-d",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOXULYAMTH",
+      "image": "/images/products/audio-equipment/bo-xu-ly-am-thanh-ky-thuat-so-apg-dms48f-d.jpg"
+    },
+    {
+      "id": "audio-equipment--bo-xu-ly-am-thanh-ky-thuat-so-bost-audio-xca26",
+      "name": "bo-xu-ly-am-thanh-ky-thuat-so-bost-audio-xca26",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOXULYAMTH",
+      "image": "/images/products/audio-equipment/bo-xu-ly-am-thanh-ky-thuat-so-bost-audio-xca26.jpg"
+    },
+    {
+      "id": "audio-equipment--camera-hoi-nghi-truc-tuyen-amc-e200u3",
+      "name": "camera-hoi-nghi-truc-tuyen-amc-e200u3",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-CAMERAHOIN",
+      "image": "/images/products/audio-equipment/camera-hoi-nghi-truc-tuyen-amc-e200u3.png"
+    },
+    {
+      "id": "audio-equipment--cap-tin-hieu-chuyen-dung-cho-he-thong-micro-hoi-thao-ahuja-cmc-4510",
+      "name": "cap-tin-hieu-chuyen-dung-cho-he-thong-micro-hoi-thao-ahuja-cmc-4510",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-CAPTINHIEU",
+      "image": "/images/products/audio-equipment/cap-tin-hieu-chuyen-dung-cho-he-thong-micro-hoi-thao-ahuja-cmc-4510.jpg"
+    },
+    {
+      "id": "audio-equipment--dau-jack-xlr-neutrick-nc3fx-cai",
+      "name": "dau-jack-xlr-neutrick-nc3fx-cai",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DAUJACKXLR",
+      "image": "/images/products/audio-equipment/dau-jack-xlr-neutrick-nc3fx-cai.jpg"
+    },
+    {
+      "id": "audio-equipment--dau-jack-xlr-neutrick-nc3mx-duc",
+      "name": "dau-jack-xlr-neutrick-nc3mx-duc",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DAUJACKXLR",
+      "image": "/images/products/audio-equipment/dau-jack-xlr-neutrick-nc3mx-duc.jpg"
+    },
+    {
+      "id": "audio-equipment--dau-jack-xlr-neutrick-nl4fx",
+      "name": "dau-jack-xlr-neutrick-nl4fx",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DAUJACKXLR",
+      "image": "/images/products/audio-equipment/dau-jack-xlr-neutrick-nl4fx.jpg"
+    },
+    {
+      "id": "audio-equipment--day-micro-hai-audio-my206",
+      "name": "day-micro-hai-audio-my206",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DAYMICROHA",
+      "image": "/images/products/audio-equipment/day-micro-hai-audio-my206.jpg"
+    },
+    {
+      "id": "audio-equipment--day-tin-hieu-cho-loa-chuyen-dung-klozt-ly225s",
+      "name": "day-tin-hieu-cho-loa-chuyen-dung-klozt-ly225s",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DAYTINHIEU",
+      "image": "/images/products/audio-equipment/day-tin-hieu-cho-loa-chuyen-dung-klozt-ly225s.jpg"
+    },
+    {
+      "id": "audio-equipment--den-450-smart-haotai",
+      "name": "den-450-smart-haotai",
+      "category": "audio-equipment",
+      "brand": "Haotai",
+      "sku": "AIO-DEN450SMAR",
+      "image": "/images/products/audio-equipment/den-450-smart-haotai.jpg"
+    },
+    {
+      "id": "audio-equipment--den-chu-keylight-led-200w-spark-spl-led200",
+      "name": "den-chu-keylight-led-200w-spark-spl-led200",
+      "category": "audio-equipment",
+      "brand": "Spark",
+      "sku": "AIO-DENCHUKEYL",
+      "image": "/images/products/audio-equipment/den-chu-keylight-led-200w-spark-spl-led200.jpg"
+    },
+    {
+      "id": "audio-equipment--den-cob-4x100w-haotai-tv-e009",
+      "name": "den-cob-4x100w-haotai-tv-e009",
+      "category": "audio-equipment",
+      "brand": "Haotai",
+      "sku": "AIO-DENCOB4X10",
+      "image": "/images/products/audio-equipment/den-cob-4x100w-haotai-tv-e009.jpg"
+    },
+    {
+      "id": "audio-equipment--den-cob-par64-cong-suat-4x50w-bigtoper-tv-e009",
+      "name": "den-cob-par64-cong-suat-4x50w-bigtoper-tv-e009",
+      "category": "audio-equipment",
+      "brand": "Bigtoper",
+      "sku": "AIO-DENCOBPAR6",
+      "image": "/images/products/audio-equipment/den-cob-par64-cong-suat-4x50w-bigtoper-tv-e009.jpg"
+    },
+    {
+      "id": "audio-equipment--den-lanh-filllight-4x55w-spark-spl-5400",
+      "name": "den-lanh-filllight-4x55w-spark-spl-5400",
+      "category": "audio-equipment",
+      "brand": "Spark",
+      "sku": "AIO-DENLANHFIL",
+      "image": "/images/products/audio-equipment/den-lanh-filllight-4x55w-spark-spl-5400.jpg"
+    },
+    {
+      "id": "audio-equipment--den-led-fresnel-light-chieu-ven-100w-spark-spl-led100",
+      "name": "den-led-fresnel-light-chieu-ven-100w-spark-spl-led100",
+      "category": "audio-equipment",
+      "brand": "Spark",
+      "sku": "AIO-DENLEDFRES",
+      "image": "/images/products/audio-equipment/den-led-fresnel-light-chieu-ven-100w-spark-spl-led100.jpg"
+    },
+    {
+      "id": "audio-equipment--den-par-led-nhuom-mau-san-khau-bigtoper-tv-e14",
+      "name": "den-par-led-nhuom-mau-san-khau-bigtoper-tv-e14",
+      "category": "audio-equipment",
+      "brand": "Bigtoper",
+      "sku": "AIO-DENPARLEDN",
+      "image": "/images/products/audio-equipment/den-par-led-nhuom-mau-san-khau-bigtoper-tv-e14.jpg"
+    },
+    {
+      "id": "audio-equipment--he-thong-lien-lac-2-chieu-ahuja-ccs-2300",
+      "name": "he-thong-lien-lac-2-chieu-ahuja-ccs-2300",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-HETHONGLIE",
+      "image": "/images/products/audio-equipment/he-thong-lien-lac-2-chieu-ahuja-ccs-2300.jpg"
+    },
+    {
+      "id": "audio-equipment--he-thong-loa-column-lien-cong-suat-bost-audio-ht306-htb215e",
+      "name": "he-thong-loa-column-lien-cong-suat-bost-audio-ht306-htb215e",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-HETHONGLOA",
+      "image": "/images/products/audio-equipment/he-thong-loa-column-lien-cong-suat-bost-audio-ht306-htb215e.jpg"
+    },
+    {
+      "id": "audio-equipment--headphones-tai-nghe-kiem-am-audio-technica-ath-m50x",
+      "name": "headphones-tai-nghe-kiem-am-audio-technica-ath-m50x",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-HEADPHONES",
+      "image": "/images/products/audio-equipment/headphones-tai-nghe-kiem-am-audio-technica-ath-m50x.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-2-duong-tieng-bost-audio-t215bii",
+      "name": "loa-2-duong-tieng-bost-audio-t215bii",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOA2DUONGT",
+      "image": "/images/products/audio-equipment/loa-2-duong-tieng-bost-audio-t215bii.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-am-tran-bosch-lbc3099-41",
+      "name": "loa-am-tran-bosch-lbc3099-41",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOAAMTRANB",
+      "image": "/images/products/audio-equipment/loa-am-tran-bosch-lbc3099-41.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-kiem-am-monitor-san-khau-ahuja-vx-112",
+      "name": "loa-kiem-am-monitor-san-khau-ahuja-vx-112",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOAKIEMAMM",
+      "image": "/images/products/audio-equipment/loa-kiem-am-monitor-san-khau-ahuja-vx-112.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-line-array-treo-tran-ahuja-alx-110",
+      "name": "loa-line-array-treo-tran-ahuja-alx-110",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOALINEARR",
+      "image": "/images/products/audio-equipment/loa-line-array-treo-tran-ahuja-alx-110.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-monitor-kiem-am-san-khau-apg-dx12",
+      "name": "loa-monitor-kiem-am-san-khau-apg-dx12",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOAMONITOR",
+      "image": "/images/products/audio-equipment/loa-monitor-kiem-am-san-khau-apg-dx12.png"
+    },
+    {
+      "id": "audio-equipment--loa-monitor-phong-thu-rcf-ayra-pro-55",
+      "name": "loa-monitor-phong-thu-rcf-ayra-pro-55",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOAMONITOR",
+      "image": "/images/products/audio-equipment/loa-monitor-phong-thu-rcf-ayra-pro-55.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-nen-nghe-nhac-hai-duong-tieng-toa-cs-760w-as",
+      "name": "loa-nen-nghe-nhac-hai-duong-tieng-toa-cs-760w-as",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOANENNGHE",
+      "image": "/images/products/audio-equipment/loa-nen-nghe-nhac-hai-duong-tieng-toa-cs-760w-as.png"
+    },
+    {
+      "id": "audio-equipment--loa-sieu-tram-apg-uc118i",
+      "name": "loa-sieu-tram-apg-uc118i",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOASIEUTRA",
+      "image": "/images/products/audio-equipment/loa-sieu-tram-apg-uc118i.png"
+    },
+    {
+      "id": "audio-equipment--loa-sieu-tram-bost-audio-s18",
+      "name": "loa-sieu-tram-bost-audio-s18",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOASIEUTRA",
+      "image": "/images/products/audio-equipment/loa-sieu-tram-bost-audio-s18.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-sieu-tram-cong-suat-3000w-bost-audio-ba22ac",
+      "name": "loa-sieu-tram-cong-suat-3000w-bost-audio-ba22ac",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOASIEUTRA",
+      "image": "/images/products/audio-equipment/loa-sieu-tram-cong-suat-3000w-bost-audio-ba22ac.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-sieu-tram-dang-linearray-ahuja-alx-118",
+      "name": "loa-sieu-tram-dang-linearray-ahuja-alx-118",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOASIEUTRA",
+      "image": "/images/products/audio-equipment/loa-sieu-tram-dang-linearray-ahuja-alx-118.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-thong-bao-treo-tuong-30w-ahura-asx-312b-312bt",
+      "name": "loa-thong-bao-treo-tuong-30w-ahura-asx-312b-312bt",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOATHONGBA",
+      "image": "/images/products/audio-equipment/loa-thong-bao-treo-tuong-30w-ahura-asx-312b-312bt.png"
+    },
+    {
+      "id": "audio-equipment--loa-toan-dai-bost-audio-fc112m",
+      "name": "loa-toan-dai-bost-audio-fc112m",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOATOANDAI",
+      "image": "/images/products/audio-equipment/loa-toan-dai-bost-audio-fc112m.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-treo-array-toan-dai-goc-mo-105-apg-uc206w",
+      "name": "loa-treo-array-toan-dai-goc-mo-105-apg-uc206w",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOATREOARR",
+      "image": "/images/products/audio-equipment/loa-treo-array-toan-dai-goc-mo-105-apg-uc206w.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-treo-array-toan-dai-goc-mo-70-apg-uc206n",
+      "name": "loa-treo-array-toan-dai-goc-mo-70-apg-uc206n",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOATREOARR",
+      "image": "/images/products/audio-equipment/loa-treo-array-toan-dai-goc-mo-70-apg-uc206n.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-treo-line-array-cong-suat-250w-bost-audio-ba206",
+      "name": "loa-treo-line-array-cong-suat-250w-bost-audio-ba206",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOATREOLIN",
+      "image": "/images/products/audio-equipment/loa-treo-line-array-cong-suat-250w-bost-audio-ba206.jpg"
+    },
+    {
+      "id": "audio-equipment--loa-treo-tuong-32w-ahuja-ps-500tm",
+      "name": "loa-treo-tuong-32w-ahuja-ps-500tm",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOATREOTUO",
+      "image": "/images/products/audio-equipment/loa-treo-tuong-32w-ahuja-ps-500tm.jpg"
+    },
+    {
+      "id": "audio-equipment--may-chu-toa-loai-de-ban-micro-can-dai-co-dinh-ahuja-cmc-7100",
+      "name": "may-chu-toa-loai-de-ban-micro-can-dai-co-dinh-ahuja-cmc-7100",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYCHUTOAL",
+      "image": "/images/products/audio-equipment/may-chu-toa-loai-de-ban-micro-can-dai-co-dinh-ahuja-cmc-7100.jpg"
+    },
+    {
+      "id": "audio-equipment--may-chu-toa-loai-de-ban-micro-can-dai-co-dinh-hai-3668c",
+      "name": "may-chu-toa-loai-de-ban-micro-can-dai-co-dinh-hai-3668c",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYCHUTOAL",
+      "image": "/images/products/audio-equipment/may-chu-toa-loai-de-ban-micro-can-dai-co-dinh-hai-3668c.jpg"
+    },
+    {
+      "id": "audio-equipment--may-dai-bieu-loai-de-ban-micro-can-dai-co-dinh-ahuja-cmc-7200",
+      "name": "may-dai-bieu-loai-de-ban-micro-can-dai-co-dinh-ahuja-cmc-7200",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYDAIBIEU",
+      "image": "/images/products/audio-equipment/may-dai-bieu-loai-de-ban-micro-can-dai-co-dinh-ahuja-cmc-7200.jpg"
+    },
+    {
+      "id": "audio-equipment--may-dai-bieu-loai-de-ban-micro-can-dai-co-dinh-hai-3668d",
+      "name": "may-dai-bieu-loai-de-ban-micro-can-dai-co-dinh-hai-3668d",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYDAIBIEU",
+      "image": "/images/products/audio-equipment/may-dai-bieu-loai-de-ban-micro-can-dai-co-dinh-hai-3668d.jpg"
+    },
+    {
+      "id": "audio-equipment--micro-chu-tich-hai-audio-hai-206c",
+      "name": "micro-chu-tich-hai-audio-hai-206c",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICROCHUTI",
+      "image": "/images/products/audio-equipment/micro-chu-tich-hai-audio-hai-206c.jpg"
+    },
+    {
+      "id": "audio-equipment--micro-chu-tich-hai3511c",
+      "name": "micro-chu-tich-hai3511c",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICROCHUTI",
+      "image": "/images/products/audio-equipment/micro-chu-tich-hai3511c.jpg"
+    },
+    {
+      "id": "audio-equipment--micro-chu-toa-kts-chuyen-dung-cho-hoi-nghi-truc-tuyen-hai-4628c",
+      "name": "micro-chu-toa-kts-chuyen-dung-cho-hoi-nghi-truc-tuyen-hai-4628c",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICROCHUTO",
+      "image": "/images/products/audio-equipment/micro-chu-toa-kts-chuyen-dung-cho-hoi-nghi-truc-tuyen-hai-4628c.jpg"
+    },
+    {
+      "id": "audio-equipment--micro-dai-bieu-hai-3511d",
+      "name": "micro-dai-bieu-hai-3511d",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICRODAIBI",
+      "image": "/images/products/audio-equipment/micro-dai-bieu-hai-3511d.jpg"
+    },
+    {
+      "id": "audio-equipment--micro-dai-bieu-hai-audio-hai-206d",
+      "name": "micro-dai-bieu-hai-audio-hai-206d",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICRODAIBI",
+      "image": "/images/products/audio-equipment/micro-dai-bieu-hai-audio-hai-206d.jpg"
+    },
+    {
+      "id": "audio-equipment--micro-dai-bieu-kts-chuyen-dung-cho-hoi-nghi-truc-tuyen-hai-4628d",
+      "name": "micro-dai-bieu-kts-chuyen-dung-cho-hoi-nghi-truc-tuyen-hai-4628d",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICRODAIBI",
+      "image": "/images/products/audio-equipment/micro-dai-bieu-kts-chuyen-dung-cho-hoi-nghi-truc-tuyen-hai-4628d.jpg"
+    },
+    {
+      "id": "audio-equipment--micro-khong-day-bost-k990",
+      "name": "micro-khong-day-bost-k990",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICROKHONG",
+      "image": "/images/products/audio-equipment/micro-khong-day-bost-k990.jpg"
+    },
+    {
+      "id": "audio-equipment--micro-mui-rua-ahuja-phantom-abm-301m",
+      "name": "micro-mui-rua-ahuja-phantom-abm-301m",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICROMUIRU",
+      "image": "/images/products/audio-equipment/micro-mui-rua-ahuja-phantom-abm-301m.jpg"
+    },
+    {
+      "id": "audio-equipment--microphones-co-ngong-shure-mx418d-c-x",
+      "name": "microphones-co-ngong-shure-mx418d-c-x",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICROPHONE",
+      "image": "/images/products/audio-equipment/microphones-co-ngong-shure-mx418d-c-x.jpg"
+    },
+    {
+      "id": "audio-equipment--microphones-thu-am-audio-technica-at4040sp",
+      "name": "microphones-thu-am-audio-technica-at4040sp",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MICROPHONE",
+      "image": "/images/products/audio-equipment/microphones-thu-am-audio-technica-at4040sp.jpg"
+    },
+    {
+      "id": "audio-equipment--mixer-behringer-europower-pmp1680s",
+      "name": "mixer-behringer-europower-pmp1680s",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MIXERBEHRI",
+      "image": "/images/products/audio-equipment/mixer-behringer-europower-pmp1680s.jpg"
+    },
+    {
+      "id": "audio-equipment--tai-nghe-jabra-evolve-10",
+      "name": "tai-nghe-jabra-evolve-10",
+      "category": "audio-equipment",
+      "brand": "Jabra",
+      "sku": "AIO-TAINGHEJAB",
+      "image": "/images/products/audio-equipment/tai-nghe-jabra-evolve-10.jpg"
+    },
+    {
+      "id": "audio-equipment--tu-am-thanh-chuyen-dung-12u-co-ngan-dung-mixer",
+      "name": "tu-am-thanh-chuyen-dung-12u-co-ngan-dung-mixer",
+      "category": "audio-equipment",
+      "brand": "AIO",
+      "sku": "AIO-TUAMTHANHC",
+      "image": "/images/products/audio-equipment/tu-am-thanh-chuyen-dung-12u-co-ngan-dung-mixer.jpg"
+    },
+    {
+      "id": "education-equipment--man-hinh-tuong-tac-98-inch-meekbase-mb-98led-a",
+      "name": "man-hinh-tuong-tac-98-inch-meekbase-mb-98led-a",
+      "category": "education-equipment",
+      "brand": "MeekBase",
+      "sku": "AIO-MANHINHTUO",
+      "image": "/images/products/education-equipment/man-hinh-tuong-tac-98-inch-meekbase-mb-98led-a.jpg"
+    },
+    {
+      "id": "hospital-equipment--ban-goi-co-micro-doi-medi-dns-int100",
+      "name": "ban-goi-co-micro-doi-medi-dns-int100",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-BANGOICOMI",
+      "image": "/images/products/hospital-equipment/ban-goi-co-micro-doi-medi-dns-int100.png"
+    },
+    {
+      "id": "hospital-equipment--bang-hien-thi-so-led-7-doan-hh-400-cd",
+      "name": "bang-hien-thi-so-led-7-doan-hh-400-cd",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BANGHIENTH",
+      "image": "/images/products/hospital-equipment/bang-hien-thi-so-led-7-doan-hh-400-cd.jpg"
+    },
+    {
+      "id": "hospital-equipment--bang-led-hien-thi-medi-dns-600sg",
+      "name": "bang-led-hien-thi-medi-dns-600sg",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-BANGLEDHIE",
+      "image": "/images/products/hospital-equipment/bang-led-hien-thi-medi-dns-600sg.png"
+    },
+    {
+      "id": "hospital-equipment--bang-led-hien-thi-so-thu-tu-hh-dns-led-mt",
+      "name": "bang-led-hien-thi-so-thu-tu-hh-dns-led-mt",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BANGLEDHIE",
+      "image": "/images/products/hospital-equipment/bang-led-hien-thi-so-thu-tu-hh-dns-led-mt.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-cap-nguon-aiphone-is-pu-ul",
+      "name": "bo-cap-nguon-aiphone-is-pu-ul",
+      "category": "hospital-equipment",
+      "brand": "Aiphone",
+      "sku": "AIO-BOCAPNGUON",
+      "image": "/images/products/hospital-equipment/bo-cap-nguon-aiphone-is-pu-ul.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-cap-nguon-aiphone-ps-2420ul",
+      "name": "bo-cap-nguon-aiphone-ps-2420ul",
+      "category": "hospital-equipment",
+      "brand": "Aiphone",
+      "sku": "AIO-BOCAPNGUON",
+      "image": "/images/products/hospital-equipment/bo-cap-nguon-aiphone-ps-2420ul.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-cap-nguon-sonelco-p3295",
+      "name": "bo-cap-nguon-sonelco-p3295",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-BOCAPNGUON",
+      "image": "/images/products/hospital-equipment/bo-cap-nguon-sonelco-p3295.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-chia-tin-hieu-va-cap-nguon-cho-thiet-bi-dieu-khien-quay-hh-dns-ct102",
+      "name": "bo-chia-tin-hieu-va-cap-nguon-cho-thiet-bi-dieu-khien-quay-hh-dns-ct102",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOCHIATINH",
+      "image": "/images/products/hospital-equipment/bo-chia-tin-hieu-va-cap-nguon-cho-thiet-bi-dieu-khien-quay-hh-dns-ct102.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-dieu-khien-hien-thi-man-hinh-tivi-hh-boxtv",
+      "name": "bo-dieu-khien-hien-thi-man-hinh-tivi-hh-boxtv",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BODIEUKHIE",
+      "image": "/images/products/hospital-equipment/bo-dieu-khien-hien-thi-man-hinh-tivi-hh-boxtv.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-dieu-khien-trung-tam-sonelco-iph8101",
+      "name": "bo-dieu-khien-trung-tam-sonelco-iph8101",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-BODIEUKHIE",
+      "image": "/images/products/hospital-equipment/bo-dieu-khien-trung-tam-sonelco-iph8101.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-ket-noi-dieu-khien-phong-benh-nhan-medi-tb-965",
+      "name": "bo-ket-noi-dieu-khien-phong-benh-nhan-medi-tb-965",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-BOKETNOIDI",
+      "image": "/images/products/hospital-equipment/bo-ket-noi-dieu-khien-phong-benh-nhan-medi-tb-965.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-nguon-ps-2420-s-ul-bf",
+      "name": "bo-nguon-ps-2420-s-ul-bf",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BONGUONPS2",
+      "image": "/images/products/hospital-equipment/bo-nguon-ps-2420-s-ul-bf.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-quan-ly-phong-giao-dien-ip-voi-nut-hien-dien-reset-bitcare-rt-3-htm",
+      "name": "bo-quan-ly-phong-giao-dien-ip-voi-nut-hien-dien-reset-bitcare-rt-3-htm",
+      "category": "hospital-equipment",
+      "brand": "Bitcare",
+      "sku": "AIO-BOQUANLYPH",
+      "image": "/images/products/hospital-equipment/bo-quan-ly-phong-giao-dien-ip-voi-nut-hien-dien-reset-bitcare-rt-3-htm.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-quan-ly-phong-medi-tb-065-tb-065a",
+      "name": "bo-quan-ly-phong-medi-tb-065-tb-065a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-BOQUANLYPH",
+      "image": "/images/products/hospital-equipment/bo-quan-ly-phong-medi-tb-065-tb-065a.jpg"
+    },
+    {
+      "id": "hospital-equipment--bo-xu-ly-trung-tam-medi-dn-2030ma",
+      "name": "bo-xu-ly-trung-tam-medi-dn-2030ma",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-BOXULYTRUN",
+      "image": "/images/products/hospital-equipment/bo-xu-ly-trung-tam-medi-dn-2030ma.jpg"
+    },
+    {
+      "id": "hospital-equipment--chot-giat-keo-dai-trong-wc-sonelco-pch6040",
+      "name": "chot-giat-keo-dai-trong-wc-sonelco-pch6040",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-CHOTGIATKE",
+      "image": "/images/products/hospital-equipment/chot-giat-keo-dai-trong-wc-sonelco-pch6040.jpg"
+    },
+    {
+      "id": "hospital-equipment--chot-giat-khan-cap-medi-em-920a",
+      "name": "chot-giat-khan-cap-medi-em-920a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-CHOTGIATKH",
+      "image": "/images/products/hospital-equipment/chot-giat-khan-cap-medi-em-920a.jpg"
+    },
+    {
+      "id": "hospital-equipment--chot-giat-khan-cap-nha-tam-ipch8040",
+      "name": "chot-giat-khan-cap-nha-tam-ipch8040",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-CHOTGIATKH",
+      "image": "/images/products/hospital-equipment/chot-giat-khan-cap-nha-tam-ipch8040.jpg"
+    },
+    {
+      "id": "hospital-equipment--chot-giat-khan-cap-nir-7hw",
+      "name": "chot-giat-khan-cap-nir-7hw",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-CHOTGIATKH",
+      "image": "/images/products/hospital-equipment/chot-giat-khan-cap-nir-7hw.jpg"
+    },
+    {
+      "id": "hospital-equipment--chot-giat-nha-ve-sinh-nbr-7as",
+      "name": "chot-giat-nha-ve-sinh-nbr-7as",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-CHOTGIATNH",
+      "image": "/images/products/hospital-equipment/chot-giat-nha-ve-sinh-nbr-7as.jpg"
+    },
+    {
+      "id": "hospital-equipment--client-cap-ket-noi-trung-tam-lay-so-thu-tu-xep-hang-kham-hh-205l",
+      "name": "client-cap-ket-noi-trung-tam-lay-so-thu-tu-xep-hang-kham-hh-205l",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-CLIENTCAPK",
+      "image": "/images/products/hospital-equipment/client-cap-ket-noi-trung-tam-lay-so-thu-tu-xep-hang-kham-hh-205l.jpg"
+    },
+    {
+      "id": "hospital-equipment--client-cap-ket-noi-trung-tam-lay-so-thu-tu-xep-hang-kham-hh-dns-clinet",
+      "name": "client-cap-ket-noi-trung-tam-lay-so-thu-tu-xep-hang-kham-hh-dns-clinet",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-CLIENTCAPK",
+      "image": "/images/products/hospital-equipment/client-cap-ket-noi-trung-tam-lay-so-thu-tu-xep-hang-kham-hh-dns-clinet.jpg"
+    },
+    {
+      "id": "hospital-equipment--dai-phat-thanh-sonelco-le10",
+      "name": "dai-phat-thanh-sonelco-le10",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-DAIPHATTHA",
+      "image": "/images/products/hospital-equipment/dai-phat-thanh-sonelco-le10.jpg"
+    },
+    {
+      "id": "hospital-equipment--day-goi-dau-giuong-voi-cong-tac-khoa-nhr-8a-l",
+      "name": "day-goi-dau-giuong-voi-cong-tac-khoa-nhr-8a-l",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DAYGOIDAUG",
+      "image": "/images/products/hospital-equipment/day-goi-dau-giuong-voi-cong-tac-khoa-nhr-8a-l.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-bao-cua-phong-nhr-4a",
+      "name": "den-bao-cua-phong-nhr-4a",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DENBAOCUAP",
+      "image": "/images/products/hospital-equipment/den-bao-cua-phong-nhr-4a.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-bao-hanh-lang-aiphone-nir-34",
+      "name": "den-bao-hanh-lang-aiphone-nir-34",
+      "category": "hospital-equipment",
+      "brand": "Aiphone",
+      "sku": "AIO-DENBAOHANH",
+      "image": "/images/products/hospital-equipment/den-bao-hanh-lang-aiphone-nir-34.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-bao-hanh-lang-medi-cl-416x",
+      "name": "den-bao-hanh-lang-medi-cl-416x",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-DENBAOHANH",
+      "image": "/images/products/hospital-equipment/den-bao-hanh-lang-medi-cl-416x.png"
+    },
+    {
+      "id": "hospital-equipment--den-bao-hanh-lang-nir-4bz",
+      "name": "den-bao-hanh-lang-nir-4bz",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DENBAOHANH",
+      "image": "/images/products/hospital-equipment/den-bao-hanh-lang-nir-4bz.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-bao-hieu-cho-y-ta-duoc-gan-truoc-moi-cua-phong-co-4-mau-den-bitcare-rl-4",
+      "name": "den-bao-hieu-cho-y-ta-duoc-gan-truoc-moi-cua-phong-co-4-mau-den-bitcare-rl-4",
+      "category": "hospital-equipment",
+      "brand": "Bitcare",
+      "sku": "AIO-DENBAOHIEU",
+      "image": "/images/products/hospital-equipment/den-bao-hieu-cho-y-ta-duoc-gan-truoc-moi-cua-phong-co-4-mau-den-bitcare-rl-4.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-bao-hoat-dong-bang-dien-medi-cl-912a",
+      "name": "den-bao-hoat-dong-bang-dien-medi-cl-912a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-DENBAOHOAT",
+      "image": "/images/products/hospital-equipment/den-bao-hoat-dong-bang-dien-medi-cl-912a.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-bao-ket-hop-quan-ly-phong-sonelco-ph6011",
+      "name": "den-bao-ket-hop-quan-ly-phong-sonelco-ph6011",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-DENBAOKETH",
+      "image": "/images/products/hospital-equipment/den-bao-ket-hop-quan-ly-phong-sonelco-ph6011.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-bao-tin-hieu-nir-4s",
+      "name": "den-bao-tin-hieu-nir-4s",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DENBAOTINH",
+      "image": "/images/products/hospital-equipment/den-bao-tin-hieu-nir-4s.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-hanh-lang-doi-nhr-3ts",
+      "name": "den-hanh-lang-doi-nhr-3ts",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DENHANHLAN",
+      "image": "/images/products/hospital-equipment/den-hanh-lang-doi-nhr-3ts.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-hanh-lang-medi-cl-412a",
+      "name": "den-hanh-lang-medi-cl-412a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-DENHANHLAN",
+      "image": "/images/products/hospital-equipment/den-hanh-lang-medi-cl-412a.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-hanh-lang-medi-cl-415x",
+      "name": "den-hanh-lang-medi-cl-415x",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-DENHANHLAN",
+      "image": "/images/products/hospital-equipment/den-hanh-lang-medi-cl-415x.jpg"
+    },
+    {
+      "id": "hospital-equipment--den-hanh-lang-voi-nut-dat-lai-nir-42",
+      "name": "den-hanh-lang-voi-nut-dat-lai-nir-42",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-DENHANHLAN",
+      "image": "/images/products/hospital-equipment/den-hanh-lang-voi-nut-dat-lai-nir-42.jpg"
+    },
+    {
+      "id": "hospital-equipment--dieu-khien-phong-mo-dun-dien-tu-den-led-do-sonelco-ph6014",
+      "name": "dieu-khien-phong-mo-dun-dien-tu-den-led-do-sonelco-ph6014",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-DIEUKHIENP",
+      "image": "/images/products/hospital-equipment/dieu-khien-phong-mo-dun-dien-tu-den-led-do-sonelco-ph6014.jpg"
+    },
+    {
+      "id": "hospital-equipment--giac-noi-gan-tuong-nir-hp",
+      "name": "giac-noi-gan-tuong-nir-hp",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-GIACNOIGAN",
+      "image": "/images/products/hospital-equipment/giac-noi-gan-tuong-nir-hp.jpg"
+    },
+    {
+      "id": "hospital-equipment--giac-noi-gan-tuong-nir-hpf",
+      "name": "giac-noi-gan-tuong-nir-hpf",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-GIACNOIGAN",
+      "image": "/images/products/hospital-equipment/giac-noi-gan-tuong-nir-hpf.jpg"
+    },
+    {
+      "id": "hospital-equipment--giao-dien-tich-hop-dien-thoai-dect-sonelco-ph6003",
+      "name": "giao-dien-tich-hop-dien-thoai-dect-sonelco-ph6003",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-GIAODIENTI",
+      "image": "/images/products/hospital-equipment/giao-dien-tich-hop-dien-thoai-dect-sonelco-ph6003.jpg"
+    },
+    {
+      "id": "hospital-equipment--jack-cam-nhr-dpa",
+      "name": "jack-cam-nhr-dpa",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-JACKCAMNHR",
+      "image": "/images/products/hospital-equipment/jack-cam-nhr-dpa.jpg"
+    },
+    {
+      "id": "hospital-equipment--khoi-dieu-khien-trung-tam-90-kenh-medi-dn-9030ma",
+      "name": "khoi-dieu-khien-trung-tam-90-kenh-medi-dn-9030ma",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-KHOIDIEUKH",
+      "image": "/images/products/hospital-equipment/khoi-dieu-khien-trung-tam-90-kenh-medi-dn-9030ma.jpg"
+    },
+    {
+      "id": "hospital-equipment--kios-lay-so-tu-dong-hh-172-ps",
+      "name": "kios-lay-so-tu-dong-hh-172-ps",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-KIOSLAYSOT",
+      "image": "/images/products/hospital-equipment/kios-lay-so-tu-dong-hh-172-ps.jpg"
+    },
+    {
+      "id": "hospital-equipment--kios-lay-so-tu-dong-hh-22kpt-pqf",
+      "name": "kios-lay-so-tu-dong-hh-22kpt-pqf",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-KIOSLAYSOT",
+      "image": "/images/products/hospital-equipment/kios-lay-so-tu-dong-hh-22kpt-pqf.jpg"
+    },
+    {
+      "id": "hospital-equipment--kios-lay-so-tu-dong-hh-dns-kios-203",
+      "name": "kios-lay-so-tu-dong-hh-dns-kios-203",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-KIOSLAYSOT",
+      "image": "/images/products/hospital-equipment/kios-lay-so-tu-dong-hh-dns-kios-203.jpg"
+    },
+    {
+      "id": "hospital-equipment--loa-mo-rong-cuoc-goi-ier-2",
+      "name": "loa-mo-rong-cuoc-goi-ier-2",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-LOAMORONGC",
+      "image": "/images/products/hospital-equipment/loa-mo-rong-cuoc-goi-ier-2.jpg"
+    },
+    {
+      "id": "hospital-equipment--loa-sonelco-ipch8022",
+      "name": "loa-sonelco-ipch8022",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-LOASONELCO",
+      "image": "/images/products/hospital-equipment/loa-sonelco-ipch8022.jpg"
+    },
+    {
+      "id": "hospital-equipment--loa-sonelco-pc7110",
+      "name": "loa-sonelco-pc7110",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-LOASONELCO",
+      "image": "/images/products/hospital-equipment/loa-sonelco-pc7110.jpg"
+    },
+    {
+      "id": "hospital-equipment--loa-tran-aiphone-ni-lb",
+      "name": "loa-tran-aiphone-ni-lb",
+      "category": "hospital-equipment",
+      "brand": "Aiphone",
+      "sku": "AIO-LOATRANAIP",
+      "image": "/images/products/hospital-equipment/loa-tran-aiphone-ni-lb.jpg"
+    },
+    {
+      "id": "hospital-equipment--man-hinh-hien-thi-qrcod-hh-1025qr",
+      "name": "man-hinh-hien-thi-qrcod-hh-1025qr",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MANHINHHIE",
+      "image": "/images/products/hospital-equipment/man-hinh-hien-thi-qrcod-hh-1025qr.jpg"
+    },
+    {
+      "id": "hospital-equipment--man-hinh-tram-truc-y-ta-sonelco-iph8000",
+      "name": "man-hinh-tram-truc-y-ta-sonelco-iph8000",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MANHINHTRA",
+      "image": "/images/products/hospital-equipment/man-hinh-tram-truc-y-ta-sonelco-iph8000.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-chuong-goi-y-ta-medi-dn-2020ms-30-90-150-210-phong",
+      "name": "may-chu-chuong-goi-y-ta-medi-dn-2020ms-30-90-150-210-phong",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-3090150210",
+      "image": "/images/products/hospital-equipment/may-chu-chuong-goi-y-ta-medi-dn-2020ms-30-90-150-210-phong.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-chuong-goi-y-ta-medi-dn-2600an-he-analog",
+      "name": "may-chu-chuong-goi-y-ta-medi-dn-2600an-he-analog",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-MAYCHUCHUO",
+      "image": "/images/products/hospital-equipment/may-chu-chuong-goi-y-ta-medi-dn-2600an-he-analog.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-dang-cay-dung-sonelco-iph8105",
+      "name": "may-chu-dang-cay-dung-sonelco-iph8105",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MAYCHUDANG",
+      "image": "/images/products/hospital-equipment/may-chu-dang-cay-dung-sonelco-iph8105.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-nhx-50m",
+      "name": "may-chu-nhx-50m",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYCHUNHX5",
+      "image": "/images/products/hospital-equipment/may-chu-nhx-50m.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-nhx-80x",
+      "name": "may-chu-nhx-80x",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYCHUNHX8",
+      "image": "/images/products/hospital-equipment/may-chu-nhx-80x.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-nim-60b-hang-aiphone-nhat-ban",
+      "name": "may-chu-nim-60b-hang-aiphone-nhat-ban",
+      "category": "hospital-equipment",
+      "brand": "Aiphone",
+      "sku": "AIO-MAYCHUNIM6",
+      "image": "/images/products/hospital-equipment/may-chu-nim-60b-hang-aiphone-nhat-ban.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-nim-80b-hang-aiphone-nhat-ban",
+      "name": "may-chu-nim-80b-hang-aiphone-nhat-ban",
+      "category": "hospital-equipment",
+      "brand": "Aiphone",
+      "sku": "AIO-MAYCHUNIM8",
+      "image": "/images/products/hospital-equipment/may-chu-nim-80b-hang-aiphone-nhat-ban.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-quan-ly-he-thong-goi-y-ta-medi-dn-2090ms",
+      "name": "may-chu-quan-ly-he-thong-goi-y-ta-medi-dn-2090ms",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-MAYCHUQUAN",
+      "image": "/images/products/hospital-equipment/may-chu-quan-ly-he-thong-goi-y-ta-medi-dn-2090ms.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-quan-ly-he-thong-goi-y-ta-medi-dn-9020ms",
+      "name": "may-chu-quan-ly-he-thong-goi-y-ta-medi-dn-9020ms",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-MAYCHUQUAN",
+      "image": "/images/products/hospital-equipment/may-chu-quan-ly-he-thong-goi-y-ta-medi-dn-9020ms.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-tram-truc-y-ta-sonelco-ph6000",
+      "name": "may-chu-tram-truc-y-ta-sonelco-ph6000",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MAYCHUTRAM",
+      "image": "/images/products/hospital-equipment/may-chu-tram-truc-y-ta-sonelco-ph6000.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-chu-tram-truc-y-ta-sonelco-ph6004",
+      "name": "may-chu-tram-truc-y-ta-sonelco-ph6004",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MAYCHUTRAM",
+      "image": "/images/products/hospital-equipment/may-chu-tram-truc-y-ta-sonelco-ph6004.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-con-doi-aiphone-nh-a",
+      "name": "may-con-doi-aiphone-nh-a",
+      "category": "hospital-equipment",
+      "brand": "Aiphone",
+      "sku": "AIO-MAYCONDOIA",
+      "image": "/images/products/hospital-equipment/may-con-doi-aiphone-nh-a.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-con-nh-1sa-a",
+      "name": "may-con-nh-1sa-a",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYCONNH1S",
+      "image": "/images/products/hospital-equipment/may-con-nh-1sa-a.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-con-ni-ja",
+      "name": "may-con-ni-ja",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYCONNIJA",
+      "image": "/images/products/hospital-equipment/may-con-ni-ja.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-con-ni-rc",
+      "name": "may-con-ni-rc",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYCONNIRC",
+      "image": "/images/products/hospital-equipment/may-con-ni-rc.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-doc-ma-vach-doc-can-cuoc-cong-dan-doc-ma-qr-as9320i",
+      "name": "may-doc-ma-vach-doc-can-cuoc-cong-dan-doc-ma-qr-as9320i",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MAYDOCMAVA",
+      "image": "/images/products/hospital-equipment/may-doc-ma-vach-doc-can-cuoc-cong-dan-doc-ma-qr-as9320i.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-phat-mat-day-chuyen-vo-tuyen-sonelco-s35",
+      "name": "may-phat-mat-day-chuyen-vo-tuyen-sonelco-s35",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MAYPHATMAT",
+      "image": "/images/products/hospital-equipment/may-phat-mat-day-chuyen-vo-tuyen-sonelco-s35.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-phat-vo-tuyen-deo-tay-sonelco-s37",
+      "name": "may-phat-vo-tuyen-deo-tay-sonelco-s37",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MAYPHATVOT",
+      "image": "/images/products/hospital-equipment/may-phat-vo-tuyen-deo-tay-sonelco-s37.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-tram-phu-khong-day-medi-ka-1010a",
+      "name": "may-tram-phu-khong-day-medi-ka-1010a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-MAYTRAMPHU",
+      "image": "/images/products/hospital-equipment/may-tram-phu-khong-day-medi-ka-1010a.jpg"
+    },
+    {
+      "id": "hospital-equipment--may-tram-phu-sonelco-ph6001",
+      "name": "may-tram-phu-sonelco-ph6001",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MAYTRAMPHU",
+      "image": "/images/products/hospital-equipment/may-tram-phu-sonelco-ph6001.jpg"
+    },
+    {
+      "id": "hospital-equipment--microphone-gan-tran-aiphone-ni-sb",
+      "name": "microphone-gan-tran-aiphone-ni-sb",
+      "category": "hospital-equipment",
+      "brand": "Aiphone",
+      "sku": "AIO-MICROPHONE",
+      "image": "/images/products/hospital-equipment/microphone-gan-tran-aiphone-ni-sb.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-bao-cuoc-goi-6-phong-tam-sonelco-pch6006",
+      "name": "mo-dun-bao-cuoc-goi-6-phong-tam-sonelco-pch6006",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNBAOCU",
+      "image": "/images/products/hospital-equipment/mo-dun-bao-cuoc-goi-6-phong-tam-sonelco-pch6006.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-co-cac-phim-goi-va-hien-dien-huy-sonelco-ipch8025",
+      "name": "mo-dun-co-cac-phim-goi-va-hien-dien-huy-sonelco-ipch8025",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNCOCAC",
+      "image": "/images/products/hospital-equipment/mo-dun-co-cac-phim-goi-va-hien-dien-huy-sonelco-ipch8025.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-co-giac-cam-cho-thiet-bi-cam-tay-tren-giuong-ipch8030",
+      "name": "mo-dun-co-giac-cam-cho-thiet-bi-cam-tay-tren-giuong-ipch8030",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MODUNCOGIA",
+      "image": "/images/products/hospital-equipment/mo-dun-co-giac-cam-cho-thiet-bi-cam-tay-tren-giuong-ipch8030.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-co-khoa-ma-mau-xanh-bao-dong-pch6052",
+      "name": "mo-dun-co-khoa-ma-mau-xanh-bao-dong-pch6052",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MODUNCOKHO",
+      "image": "/images/products/hospital-equipment/mo-dun-co-khoa-ma-mau-xanh-bao-dong-pch6052.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-co-micro-lien-lac-noi-bo-va-phim-hien-dien-phu-tro-sonelco-ipch8082",
+      "name": "mo-dun-co-micro-lien-lac-noi-bo-va-phim-hien-dien-phu-tro-sonelco-ipch8082",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNCOMIC",
+      "image": "/images/products/hospital-equipment/mo-dun-co-micro-lien-lac-noi-bo-va-phim-hien-dien-phu-tro-sonelco-ipch8082.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-co-micro-lien-lac-va-cac-nut-goi-va-hien-dien-sonelco-ipch8083",
+      "name": "mo-dun-co-micro-lien-lac-va-cac-nut-goi-va-hien-dien-sonelco-ipch8083",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNCOMIC",
+      "image": "/images/products/hospital-equipment/mo-dun-co-micro-lien-lac-va-cac-nut-goi-va-hien-dien-sonelco-ipch8083.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-co-micro-va-dieu-khien-lien-lac-noi-bo-sonelco-ipch8081",
+      "name": "mo-dun-co-micro-va-dieu-khien-lien-lac-noi-bo-sonelco-ipch8081",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNCOMIC",
+      "image": "/images/products/hospital-equipment/mo-dun-co-micro-va-dieu-khien-lien-lac-noi-bo-sonelco-ipch8081.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-co-nut-goi-ipch8053",
+      "name": "mo-dun-co-nut-goi-ipch8053",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MODUNCONUT",
+      "image": "/images/products/hospital-equipment/mo-dun-co-nut-goi-ipch8053.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-co-phim-hien-dien-huy-sonelco-ipch8050",
+      "name": "mo-dun-co-phim-hien-dien-huy-sonelco-ipch8050",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNCOPHI",
+      "image": "/images/products/hospital-equipment/mo-dun-co-phim-hien-dien-huy-sonelco-ipch8050.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-co-phim-hien-dien-phu-tro-sonelco-ipch8051",
+      "name": "mo-dun-co-phim-hien-dien-phu-tro-sonelco-ipch8051",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNCOPHI",
+      "image": "/images/products/hospital-equipment/mo-dun-co-phim-hien-dien-phu-tro-sonelco-ipch8051.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-goi-hien-dien-huy-bao-dong-va-hien-dien-phu-tro-sonelco-ipch8029",
+      "name": "mo-dun-goi-hien-dien-huy-bao-dong-va-hien-dien-phu-tro-sonelco-ipch8029",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNGOIHI",
+      "image": "/images/products/hospital-equipment/mo-dun-goi-hien-dien-huy-bao-dong-va-hien-dien-phu-tro-sonelco-ipch8029.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-goi-va-huy-voi-dau-noi-nut-giuong-va-2-den-sonelco-ipch8036",
+      "name": "mo-dun-goi-va-huy-voi-dau-noi-nut-giuong-va-2-den-sonelco-ipch8036",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNGOIVA",
+      "image": "/images/products/hospital-equipment/mo-dun-goi-va-huy-voi-dau-noi-nut-giuong-va-2-den-sonelco-ipch8036.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-hien-dien-huy-bo-rfid-sonelco-ipch8060",
+      "name": "mo-dun-hien-dien-huy-bo-rfid-sonelco-ipch8060",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNHIEND",
+      "image": "/images/products/hospital-equipment/mo-dun-hien-dien-huy-bo-rfid-sonelco-ipch8060.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-nut-goi-hien-dien-va-phim-phu-tro-sonelco-ipch8027",
+      "name": "mo-dun-nut-goi-hien-dien-va-phim-phu-tro-sonelco-ipch8027",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNNUTGO",
+      "image": "/images/products/hospital-equipment/mo-dun-nut-goi-hien-dien-va-phim-phu-tro-sonelco-ipch8027.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-nut-goi-va-nut-hien-dien-sonelco-ipch8026",
+      "name": "mo-dun-nut-goi-va-nut-hien-dien-sonelco-ipch8026",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNNUTGO",
+      "image": "/images/products/hospital-equipment/mo-dun-nut-goi-va-nut-hien-dien-sonelco-ipch8026.jpg"
+    },
+    {
+      "id": "hospital-equipment--mo-dun-phim-gon-hien-dien-huy-va-bao-thuc-sonelco-ipch8028",
+      "name": "mo-dun-phim-gon-hien-dien-huy-va-bao-thuc-sonelco-ipch8028",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODUNPHIMG",
+      "image": "/images/products/hospital-equipment/mo-dun-phim-gon-hien-dien-huy-va-bao-thuc-sonelco-ipch8028.jpg"
+    },
+    {
+      "id": "hospital-equipment--module-goi-hien-dien-lcd-sonelco-pch6025",
+      "name": "module-goi-hien-dien-lcd-sonelco-pch6025",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODULEGOIH",
+      "image": "/images/products/hospital-equipment/module-goi-hien-dien-lcd-sonelco-pch6025.jpg"
+    },
+    {
+      "id": "hospital-equipment--module-goi-huy-hien-dien-sonelco-pch6020",
+      "name": "module-goi-huy-hien-dien-sonelco-pch6020",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODULEGOIH",
+      "image": "/images/products/hospital-equipment/module-goi-huy-hien-dien-sonelco-pch6020.jpg"
+    },
+    {
+      "id": "hospital-equipment--module-huy-hien-dien-sonelco-pch6050",
+      "name": "module-huy-hien-dien-sonelco-pch6050",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODULEHUYH",
+      "image": "/images/products/hospital-equipment/module-huy-hien-dien-sonelco-pch6050.jpg"
+    },
+    {
+      "id": "hospital-equipment--module-ket-noi-cho-thiet-bi-cam-tay-tren-giuong-ipch8032",
+      "name": "module-ket-noi-cho-thiet-bi-cam-tay-tren-giuong-ipch8032",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MODULEKETN",
+      "image": "/images/products/hospital-equipment/module-ket-noi-cho-thiet-bi-cam-tay-tren-giuong-ipch8032.jpg"
+    },
+    {
+      "id": "hospital-equipment--module-mic-loa-sonelco-pch6022",
+      "name": "module-mic-loa-sonelco-pch6022",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODULEMICL",
+      "image": "/images/products/hospital-equipment/module-mic-loa-sonelco-pch6022.jpg"
+    },
+    {
+      "id": "hospital-equipment--module-tin-hieu-3-den-sonelco-ipch8013",
+      "name": "module-tin-hieu-3-den-sonelco-ipch8013",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-MODULETINH",
+      "image": "/images/products/hospital-equipment/module-tin-hieu-3-den-sonelco-ipch8013.jpg"
+    },
+    {
+      "id": "hospital-equipment--nguon-15-v-dc-sonelco-p3295",
+      "name": "nguon-15-v-dc-sonelco-p3295",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-NGUON15VDC",
+      "image": "/images/products/hospital-equipment/nguon-15-v-dc-sonelco-p3295.jpg"
+    },
+    {
+      "id": "hospital-equipment--nguon-48v-dp-48-cho-may-chu-nim",
+      "name": "nguon-48v-dp-48-cho-may-chu-nim",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-NGUON48VDP",
+      "image": "/images/products/hospital-equipment/nguon-48v-dp-48-cho-may-chu-nim.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-bam-chuong-goi-keo-dai-medi-cc-200sp",
+      "name": "nut-bam-chuong-goi-keo-dai-medi-cc-200sp",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-NUTBAMCHUO",
+      "image": "/images/products/hospital-equipment/nut-bam-chuong-goi-keo-dai-medi-cc-200sp.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-bam-goi-y-ta-nhr-8c",
+      "name": "nut-bam-goi-y-ta-nhr-8c",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-NUTBAMGOIY",
+      "image": "/images/products/hospital-equipment/nut-bam-goi-y-ta-nhr-8c.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-bam-goi-y-ta-nir-8",
+      "name": "nut-bam-goi-y-ta-nir-8",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-NUTBAMGOIY",
+      "image": "/images/products/hospital-equipment/nut-bam-goi-y-ta-nir-8.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-bam-keo-dai-medi-cc-900sp",
+      "name": "nut-bam-keo-dai-medi-cc-900sp",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-NUTBAMKEOD",
+      "image": "/images/products/hospital-equipment/nut-bam-keo-dai-medi-cc-900sp.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-chuong-goi-khong-day-drs-1501k",
+      "name": "nut-chuong-goi-khong-day-drs-1501k",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-NUTCHUONGG",
+      "image": "/images/products/hospital-equipment/nut-chuong-goi-khong-day-drs-1501k.png"
+    },
+    {
+      "id": "hospital-equipment--nut-chuong-goi-y-ta-nir-6",
+      "name": "nut-chuong-goi-y-ta-nir-6",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-NUTCHUONGG",
+      "image": "/images/products/hospital-equipment/nut-chuong-goi-y-ta-nir-6.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-dat-lai-cuoc-goi-nir-2",
+      "name": "nut-dat-lai-cuoc-goi-nir-2",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-NUTDATLAIC",
+      "image": "/images/products/hospital-equipment/nut-dat-lai-cuoc-goi-nir-2.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-goi-dau-giuong-medi-dn-2010sa-digital",
+      "name": "nut-goi-dau-giuong-medi-dn-2010sa-digital",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-NUTGOIDAUG",
+      "image": "/images/products/hospital-equipment/nut-goi-dau-giuong-medi-dn-2010sa-digital.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-goi-gan-dau-giuong-benh-medi-dn-2010s-analog",
+      "name": "nut-goi-gan-dau-giuong-benh-medi-dn-2010s-analog",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-NUTGOIGAND",
+      "image": "/images/products/hospital-equipment/nut-goi-gan-dau-giuong-benh-medi-dn-2010s-analog.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-goi-keo-dai-jack-6-3-sonelco-ph6031",
+      "name": "nut-goi-keo-dai-jack-6-3-sonelco-ph6031",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-NUTGOIKEOD",
+      "image": "/images/products/hospital-equipment/nut-goi-keo-dai-jack-6-3-sonelco-ph6031.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-goi-khan-cap-gan-trong-phong-tam-co-day-giat-keo-dai-medi-em-601a",
+      "name": "nut-goi-khan-cap-gan-trong-phong-tam-co-day-giat-keo-dai-medi-em-601a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-NUTGOIKHAN",
+      "image": "/images/products/hospital-equipment/nut-goi-khan-cap-gan-trong-phong-tam-co-day-giat-keo-dai-medi-em-601a.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-goi-khan-cap-medi-em-410a-em-420a",
+      "name": "nut-goi-khan-cap-medi-em-410a-em-420a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-NUTGOIKHAN",
+      "image": "/images/products/hospital-equipment/nut-goi-khan-cap-medi-em-410a-em-420a.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-goi-nir-7w",
+      "name": "nut-goi-nir-7w",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-NUTGOINIR7",
+      "image": "/images/products/hospital-equipment/nut-goi-nir-7w.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-goi-va-o-cam-jack-6-3-sonelco-pch6030",
+      "name": "nut-goi-va-o-cam-jack-6-3-sonelco-pch6030",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-NUTGOIVAOC",
+      "image": "/images/products/hospital-equipment/nut-goi-va-o-cam-jack-6-3-sonelco-pch6030.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-goi-y-ta-phong-mo-bitcare-pb-cb1",
+      "name": "nut-goi-y-ta-phong-mo-bitcare-pb-cb1",
+      "category": "hospital-equipment",
+      "brand": "Bitcare",
+      "sku": "AIO-NUTGOIYTAP",
+      "image": "/images/products/hospital-equipment/nut-goi-y-ta-phong-mo-bitcare-pb-cb1.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-hien-dien-medi-re-6210a",
+      "name": "nut-hien-dien-medi-re-6210a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-NUTHIENDIE",
+      "image": "/images/products/hospital-equipment/nut-hien-dien-medi-re-6210a.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-hien-dien-y-ta-dung-cho-he-thong-lien-lac-noi-bo-medi-re-9200a",
+      "name": "nut-hien-dien-y-ta-dung-cho-he-thong-lien-lac-noi-bo-medi-re-9200a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-NUTHIENDIE",
+      "image": "/images/products/hospital-equipment/nut-hien-dien-y-ta-dung-cho-he-thong-lien-lac-noi-bo-medi-re-9200a.jpg"
+    },
+    {
+      "id": "hospital-equipment--nut-reset-cuoc-goi-medi-re-6200a",
+      "name": "nut-reset-cuoc-goi-medi-re-6200a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-NUTRESETCU",
+      "image": "/images/products/hospital-equipment/nut-reset-cuoc-goi-medi-re-6200a.jpg"
+    },
+    {
+      "id": "hospital-equipment--phan-mem-he-thong-hh-801",
+      "name": "phan-mem-he-thong-hh-801",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-PHANMEMHET",
+      "image": "/images/products/hospital-equipment/phan-mem-he-thong-hh-801.jpg"
+    },
+    {
+      "id": "hospital-equipment--phan-mem-he-thong-hh-dns-soft",
+      "name": "phan-mem-he-thong-hh-dns-soft",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-PHANMEMHET",
+      "image": "/images/products/hospital-equipment/phan-mem-he-thong-hh-dns-soft.jpg"
+    },
+    {
+      "id": "hospital-equipment--phan-mem-quan-ly-he-thong-pc-medi-sms-pr-a",
+      "name": "phan-mem-quan-ly-he-thong-pc-medi-sms-pr-a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-PHANMEMQUA",
+      "image": "/images/products/hospital-equipment/phan-mem-quan-ly-he-thong-pc-medi-sms-pr-a.jpg"
+    },
+    {
+      "id": "hospital-equipment--phan-mem-quan-ly-he-thong-sonelco-ph6002",
+      "name": "phan-mem-quan-ly-he-thong-sonelco-ph6002",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-PHANMEMQUA",
+      "image": "/images/products/hospital-equipment/phan-mem-quan-ly-he-thong-sonelco-ph6002.jpg"
+    },
+    {
+      "id": "hospital-equipment--phim-mo-rong-nhx-30g",
+      "name": "phim-mo-rong-nhx-30g",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-PHIMMORONG",
+      "image": "/images/products/hospital-equipment/phim-mo-rong-nhx-30g.jpg"
+    },
+    {
+      "id": "hospital-equipment--power-supply-200-ma-16v-dc-sonelco-p3203",
+      "name": "power-supply-200-ma-16v-dc-sonelco-p3203",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-POWERSUPPL",
+      "image": "/images/products/hospital-equipment/power-supply-200-ma-16v-dc-sonelco-p3203.jpg"
+    },
+    {
+      "id": "hospital-equipment--tai-nghe-dau-giuong-co-nut-nhan-goi-va-dieu-khien-2-den-sonelco-ph6033",
+      "name": "tai-nghe-dau-giuong-co-nut-nhan-goi-va-dieu-khien-2-den-sonelco-ph6033",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-TAINGHEDAU",
+      "image": "/images/products/hospital-equipment/tai-nghe-dau-giuong-co-nut-nhan-goi-va-dieu-khien-2-den-sonelco-ph6033.jpg"
+    },
+    {
+      "id": "hospital-equipment--the-rfid-sonelco-iph8061",
+      "name": "the-rfid-sonelco-iph8061",
+      "category": "hospital-equipment",
+      "brand": "Sonelco",
+      "sku": "AIO-THERFIDSON",
+      "image": "/images/products/hospital-equipment/the-rfid-sonelco-iph8061.jpg"
+    },
+    {
+      "id": "hospital-equipment--thiet-bi-chuyen-mach-enterprise-switches-allied-telesis-at-x230-28gp-e51",
+      "name": "thiet-bi-chuyen-mach-enterprise-switches-allied-telesis-at-x230-28gp-e51",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-THIETBICHU",
+      "image": "/images/products/hospital-equipment/thiet-bi-chuyen-mach-enterprise-switches-allied-telesis-at-x230-28gp-e51.jpg"
+    },
+    {
+      "id": "hospital-equipment--thiet-bi-chuyen-mach-enterprise-switches-x230-allied-telesis-at-x230-28gp-e51",
+      "name": "thiet-bi-chuyen-mach-enterprise-switches-x230-allied-telesis-at-x230-28gp-e51",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-THIETBICHU",
+      "image": "/images/products/hospital-equipment/thiet-bi-chuyen-mach-enterprise-switches-x230-allied-telesis-at-x230-28gp-e51.jpg"
+    },
+    {
+      "id": "hospital-equipment--thiet-bi-dieu-khien-quay-phong-hh-205q",
+      "name": "thiet-bi-dieu-khien-quay-phong-hh-205q",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-THIETBIDIE",
+      "image": "/images/products/hospital-equipment/thiet-bi-dieu-khien-quay-phong-hh-205q.jpg"
+    },
+    {
+      "id": "hospital-equipment--thiet-bi-dieu-khien-quay-phong-hh-dns-box",
+      "name": "thiet-bi-dieu-khien-quay-phong-hh-dns-box",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-THIETBIDIE",
+      "image": "/images/products/hospital-equipment/thiet-bi-dieu-khien-quay-phong-hh-dns-box.jpg"
+    },
+    {
+      "id": "hospital-equipment--thiet-bi-dieu-khien-trung-tam-hh-205cu",
+      "name": "thiet-bi-dieu-khien-trung-tam-hh-205cu",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-THIETBIDIE",
+      "image": "/images/products/hospital-equipment/thiet-bi-dieu-khien-trung-tam-hh-205cu.jpg"
+    },
+    {
+      "id": "hospital-equipment--thiet-bi-ket-noi-dieu-khien-hien-thi-man-hinh-lcd-bang-hien-thi-so-led-7-doan-hh",
+      "name": "thiet-bi-ket-noi-dieu-khien-hien-thi-man-hinh-lcd-bang-hien-thi-so-led-7-doan-hh",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-THIETBIKET",
+      "image": "/images/products/hospital-equipment/thiet-bi-ket-noi-dieu-khien-hien-thi-man-hinh-lcd-bang-hien-thi-so-led-7-doan-hh.png"
+    },
+    {
+      "id": "hospital-equipment--thiet-bi-ket-noi-dieu-khien-hien-thi-man-hinh-lcd-hh-lcdpanel",
+      "name": "thiet-bi-ket-noi-dieu-khien-hien-thi-man-hinh-lcd-hh-lcdpanel",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-THIETBIKET",
+      "image": "/images/products/hospital-equipment/thiet-bi-ket-noi-dieu-khien-hien-thi-man-hinh-lcd-hh-lcdpanel.jpg"
+    },
+    {
+      "id": "hospital-equipment--thiet-bi-lien-lac-noi-bo-medi-dn-9010sa",
+      "name": "thiet-bi-lien-lac-noi-bo-medi-dn-9010sa",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-THIETBILIE",
+      "image": "/images/products/hospital-equipment/thiet-bi-lien-lac-noi-bo-medi-dn-9010sa.jpg"
+    },
+    {
+      "id": "hospital-equipment--thiet-bi-lien-lac-noi-bo-tram-dieu-duong-may-chu-co-man-hinh-cam-ung-10-inch-bit",
+      "name": "thiet-bi-lien-lac-noi-bo-tram-dieu-duong-may-chu-co-man-hinh-cam-ung-10-inch-bit",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-THIETBILIE",
+      "image": "/images/products/hospital-equipment/thiet-bi-lien-lac-noi-bo-tram-dieu-duong-may-chu-co-man-hinh-cam-ung-10-inch-bit.png"
+    },
+    {
+      "id": "hospital-equipment--tram-am-thanh-nhr-sp",
+      "name": "tram-am-thanh-nhr-sp",
+      "category": "hospital-equipment",
+      "brand": "AIO",
+      "sku": "AIO-TRAMAMTHAN",
+      "image": "/images/products/hospital-equipment/tram-am-thanh-nhr-sp.jpg"
+    },
+    {
+      "id": "hospital-equipment--tram-khong-day-cho-phong-bac-sy-medi-ka-1020a",
+      "name": "tram-khong-day-cho-phong-bac-sy-medi-ka-1020a",
+      "category": "hospital-equipment",
+      "brand": "Medi",
+      "sku": "AIO-TRAMKHONGD",
+      "image": "/images/products/hospital-equipment/tram-khong-day-cho-phong-bac-sy-medi-ka-1020a.jpg"
+    },
+    {
+      "id": "hospital-equipment--tu-dung-thiet-bi-9u-vietjack",
+      "name": "tu-dung-thiet-bi-9u-vietjack",
+      "category": "hospital-equipment",
+      "brand": "Vietjack",
+      "sku": "AIO-TUDUNGTHIE",
+      "image": "/images/products/hospital-equipment/tu-dung-thiet-bi-9u-vietjack.jpg"
+    },
+    {
+      "id": "indoor-led-module--man-hinh-led-co-dinh-trong-nha-leyard-p2-0-gxy2-pro",
+      "name": "man-hinh-led-co-dinh-trong-nha-leyard-p2-0-gxy2-pro",
+      "category": "indoor-led-module",
+      "brand": "Leyard",
+      "sku": "AIO-MANHINHLED",
+      "image": "/images/products/indoor-led-module/man-hinh-led-co-dinh-trong-nha-leyard-p2-0-gxy2-pro.jpg"
+    },
+    {
+      "id": "indoor-led-module--mo-dun-hien-thi-led-du-mau-trong-nha-p2-orient-320-160mm",
+      "name": "mo-dun-hien-thi-led-du-mau-trong-nha-p2-orient-320-160mm",
+      "category": "indoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNHIENT",
+      "image": "/images/products/indoor-led-module/mo-dun-hien-thi-led-du-mau-trong-nha-p2-orient-320-160mm.jpg"
+    },
+    {
+      "id": "indoor-led-module--mo-dun-hien-thi-led-du-mau-trong-nha-p4-orient-320-160mm",
+      "name": "mo-dun-hien-thi-led-du-mau-trong-nha-p4-orient-320-160mm",
+      "category": "indoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNHIENT",
+      "image": "/images/products/indoor-led-module/mo-dun-hien-thi-led-du-mau-trong-nha-p4-orient-320-160mm.jpg"
+    },
+    {
+      "id": "indoor-led-module--mo-dun-man-hinh-led-du-mau-trong-nha-p2-256-128mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p2-256-128mm",
+      "category": "indoor-led-module",
+      "brand": "AIO",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/indoor-led-module/mo-dun-man-hinh-led-du-mau-trong-nha-p2-256-128mm.png"
+    },
+    {
+      "id": "indoor-led-module--mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-160-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-160-160mm",
+      "category": "indoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/indoor-led-module/mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-160-160mm.jpg"
+    },
+    {
+      "id": "indoor-led-module--mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-320-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-320-160mm",
+      "category": "indoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/indoor-led-module/mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-320-160mm.jpg"
+    },
+    {
+      "id": "indoor-led-module--mo-dun-man-hinh-led-du-mau-trong-nha-p3-orient-192-192mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p3-orient-192-192mm",
+      "category": "indoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/indoor-led-module/mo-dun-man-hinh-led-du-mau-trong-nha-p3-orient-192-192mm.jpg"
+    },
+    {
+      "id": "indoor-led-module--mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-128mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-128mm",
+      "category": "indoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/indoor-led-module/mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-128mm.jpg"
+    },
+    {
+      "id": "indoor-led-module--mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-256mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-256mm",
+      "category": "indoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/indoor-led-module/mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-256mm.jpg"
+    },
+    {
+      "id": "indoor-led-module--mo-dun-man-hinh-led-du-mau-trong-nha-p5-orient-320-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p5-orient-320-160mm",
+      "category": "indoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/indoor-led-module/mo-dun-man-hinh-led-du-mau-trong-nha-p5-orient-320-160mm.jpg"
+    },
+    {
+      "id": "led-cabinet--hop-cho-thue-man-hinh-led-ngoai-troi-p4-bang-nhom-duc",
+      "name": "hop-cho-thue-man-hinh-led-ngoai-troi-p4-bang-nhom-duc",
+      "category": "led-cabinet",
+      "brand": "AIO",
+      "sku": "AIO-HOPCHOTHUE",
+      "image": "/images/products/led-cabinet/hop-cho-thue-man-hinh-led-ngoai-troi-p4-bang-nhom-duc.jpg"
+    },
+    {
+      "id": "led-cabinet--hop-cho-thue-man-hinh-led-ngoai-troi-p5-bang-nhom-duc",
+      "name": "hop-cho-thue-man-hinh-led-ngoai-troi-p5-bang-nhom-duc",
+      "category": "led-cabinet",
+      "brand": "AIO",
+      "sku": "AIO-HOPCHOTHUE",
+      "image": "/images/products/led-cabinet/hop-cho-thue-man-hinh-led-ngoai-troi-p5-bang-nhom-duc.jpg"
+    },
+    {
+      "id": "led-cabinet--hop-man-hinh-led-cho-thue-bang-nhom-duc-ngoai-troi-p2-976",
+      "name": "hop-man-hinh-led-cho-thue-bang-nhom-duc-ngoai-troi-p2-976",
+      "category": "led-cabinet",
+      "brand": "AIO",
+      "sku": "AIO-HOPMANHINH",
+      "image": "/images/products/led-cabinet/hop-man-hinh-led-cho-thue-bang-nhom-duc-ngoai-troi-p2-976.jpg"
+    },
+    {
+      "id": "led-cabinet--hop-man-hinh-led-cho-thue-bang-nhom-duc-p3-ngoai-troi",
+      "name": "hop-man-hinh-led-cho-thue-bang-nhom-duc-p3-ngoai-troi",
+      "category": "led-cabinet",
+      "brand": "AIO",
+      "sku": "AIO-HOPMANHINH",
+      "image": "/images/products/led-cabinet/hop-man-hinh-led-cho-thue-bang-nhom-duc-p3-ngoai-troi.jpg"
+    },
+    {
+      "id": "led-cabinet--p3-91-man-hinh-led-ngoai-troi-tu-cho-thue-bang-nhom-duc",
+      "name": "p3-91-man-hinh-led-ngoai-troi-tu-cho-thue-bang-nhom-duc",
+      "category": "led-cabinet",
+      "brand": "AIO",
+      "sku": "AIO-P391MANHIN",
+      "image": "/images/products/led-cabinet/p3-91-man-hinh-led-ngoai-troi-tu-cho-thue-bang-nhom-duc.jpg"
+    },
+    {
+      "id": "led-module--bo-dieu-khien-man-hinh-kystar-kls4c",
+      "name": "bo-dieu-khien-man-hinh-kystar-kls4c",
+      "category": "led-module",
+      "brand": "Kystar",
+      "sku": "AIO-BODIEUKHIE",
+      "image": "/images/products/led-module/bo-dieu-khien-man-hinh-kystar-kls4c.jpg"
+    },
+    {
+      "id": "outdoor-led-module--mo-dun-hien-thi-led-du-mau-cua-ngoai-troi-p10-orient-320-160mm",
+      "name": "mo-dun-hien-thi-led-du-mau-cua-ngoai-troi-p10-orient-320-160mm",
+      "category": "outdoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNHIENT",
+      "image": "/images/products/outdoor-led-module/mo-dun-hien-thi-led-du-mau-cua-ngoai-troi-p10-orient-320-160mm.jpg"
+    },
+    {
+      "id": "outdoor-led-module--mo-dun-man-hinh-led-du-mau-ngoai-troi-p3-orient-192-192mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p3-orient-192-192mm",
+      "category": "outdoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/outdoor-led-module/mo-dun-man-hinh-led-du-mau-ngoai-troi-p3-orient-192-192mm.jpg"
+    },
+    {
+      "id": "outdoor-led-module--mo-dun-man-hinh-led-du-mau-ngoai-troi-p5-orient-160-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p5-orient-160-160mm",
+      "category": "outdoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/outdoor-led-module/mo-dun-man-hinh-led-du-mau-ngoai-troi-p5-orient-160-160mm.jpg"
+    },
+    {
+      "id": "outdoor-led-module--mo-dun-man-hinh-led-du-mau-ngoai-troi-p6-orient-192-192mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p6-orient-192-192mm",
+      "category": "outdoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/outdoor-led-module/mo-dun-man-hinh-led-du-mau-ngoai-troi-p6-orient-192-192mm.jpg"
+    },
+    {
+      "id": "outdoor-led-module--mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-256-128mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-256-128mm",
+      "category": "outdoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/outdoor-led-module/mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-256-128mm.jpg"
+    },
+    {
+      "id": "outdoor-led-module--mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-320-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-320-160mm",
+      "category": "outdoor-led-module",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/outdoor-led-module/mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-320-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--ban-dieu-khien-camera-ptz-hai-audio-hai-kbd3000",
+      "name": "ban-dieu-khien-camera-ptz-hai-audio-hai-kbd3000",
+      "category": "technology-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BANDIEUKHI",
+      "image": "/images/products/technology-equipment/ban-dieu-khien-camera-ptz-hai-audio-hai-kbd3000.jpg"
+    },
+    {
+      "id": "technology-equipment--bo-chuyen-doi-tin-hieu-tu-digital-sang-analog-magic-taiwan-da-24",
+      "name": "bo-chuyen-doi-tin-hieu-tu-digital-sang-analog-magic-taiwan-da-24",
+      "category": "technology-equipment",
+      "brand": "AIO",
+      "sku": "AIO-BOCHUYENDO",
+      "image": "/images/products/technology-equipment/bo-chuyen-doi-tin-hieu-tu-digital-sang-analog-magic-taiwan-da-24.jpg"
+    },
+    {
+      "id": "technology-equipment--bo-thiet-bi-hoi-nghi-jabra-meet-anywhere-2-1",
+      "name": "bo-thiet-bi-hoi-nghi-jabra-meet-anywhere-2-1",
+      "category": "technology-equipment",
+      "brand": "Jabra",
+      "sku": "AIO-BOTHIETBIH",
+      "image": "/images/products/technology-equipment/bo-thiet-bi-hoi-nghi-jabra-meet-anywhere-2-1.jpg"
+    },
+    {
+      "id": "technology-equipment--bo-thiet-bi-hoi-nghi-jabra-meet-anywhere-2-2",
+      "name": "bo-thiet-bi-hoi-nghi-jabra-meet-anywhere-2-2",
+      "category": "technology-equipment",
+      "brand": "Jabra",
+      "sku": "AIO-BOTHIETBIH",
+      "image": "/images/products/technology-equipment/bo-thiet-bi-hoi-nghi-jabra-meet-anywhere-2-2.jpg"
+    },
+    {
+      "id": "technology-equipment--bo-thiet-bi-hoi-nghi-jabra-meet-anywhere-2-3",
+      "name": "bo-thiet-bi-hoi-nghi-jabra-meet-anywhere-2-3",
+      "category": "technology-equipment",
+      "brand": "Jabra",
+      "sku": "AIO-BOTHIETBIH",
+      "image": "/images/products/technology-equipment/bo-thiet-bi-hoi-nghi-jabra-meet-anywhere-2-3.png"
+    },
+    {
+      "id": "technology-equipment--bo-tron-hinh-anh-camera-roland-v-60hd",
+      "name": "bo-tron-hinh-anh-camera-roland-v-60hd",
+      "category": "technology-equipment",
+      "brand": "Roland",
+      "sku": "AIO-BOTRONHINH",
+      "image": "/images/products/technology-equipment/bo-tron-hinh-anh-camera-roland-v-60hd.jpg"
+    },
+    {
+      "id": "technology-equipment--bo-xu-ly-hinh-anh-kystar-ls2",
+      "name": "bo-xu-ly-hinh-anh-kystar-ls2",
+      "category": "technology-equipment",
+      "brand": "Kystar",
+      "sku": "AIO-BOXULYHINH",
+      "image": "/images/products/technology-equipment/bo-xu-ly-hinh-anh-kystar-ls2.jpg"
+    },
+    {
+      "id": "technology-equipment--camera-hoi-nghi-truc-tuyen-hai-uhd686",
+      "name": "camera-hoi-nghi-truc-tuyen-hai-uhd686",
+      "category": "technology-equipment",
+      "brand": "AIO",
+      "sku": "AIO-CAMERAHOIN",
+      "image": "/images/products/technology-equipment/camera-hoi-nghi-truc-tuyen-hai-uhd686.jpg"
+    },
+    {
+      "id": "technology-equipment--hop-cho-thue-man-hinh-led-ngoai-troi-p4-bang-nhom-duc",
+      "name": "hop-cho-thue-man-hinh-led-ngoai-troi-p4-bang-nhom-duc",
+      "category": "technology-equipment",
+      "brand": "AIO",
+      "sku": "AIO-HOPCHOTHUE",
+      "image": "/images/products/technology-equipment/hop-cho-thue-man-hinh-led-ngoai-troi-p4-bang-nhom-duc.jpg"
+    },
+    {
+      "id": "technology-equipment--hop-cho-thue-man-hinh-led-ngoai-troi-p5-bang-nhom-duc",
+      "name": "hop-cho-thue-man-hinh-led-ngoai-troi-p5-bang-nhom-duc",
+      "category": "technology-equipment",
+      "brand": "AIO",
+      "sku": "AIO-HOPCHOTHUE",
+      "image": "/images/products/technology-equipment/hop-cho-thue-man-hinh-led-ngoai-troi-p5-bang-nhom-duc.jpg"
+    },
+    {
+      "id": "technology-equipment--hop-man-hinh-led-cho-thue-bang-nhom-duc-ngoai-troi-p2-976",
+      "name": "hop-man-hinh-led-cho-thue-bang-nhom-duc-ngoai-troi-p2-976",
+      "category": "technology-equipment",
+      "brand": "AIO",
+      "sku": "AIO-HOPMANHINH",
+      "image": "/images/products/technology-equipment/hop-man-hinh-led-cho-thue-bang-nhom-duc-ngoai-troi-p2-976.jpg"
+    },
+    {
+      "id": "technology-equipment--hop-man-hinh-led-cho-thue-bang-nhom-duc-p3-ngoai-troi",
+      "name": "hop-man-hinh-led-cho-thue-bang-nhom-duc-p3-ngoai-troi",
+      "category": "technology-equipment",
+      "brand": "AIO",
+      "sku": "AIO-HOPMANHINH",
+      "image": "/images/products/technology-equipment/hop-man-hinh-led-cho-thue-bang-nhom-duc-p3-ngoai-troi.jpg"
+    },
+    {
+      "id": "technology-equipment--man-chieu-keo-tay-kich-thuoc-100-inch-hdmovie-hp70",
+      "name": "man-chieu-keo-tay-kich-thuoc-100-inch-hdmovie-hp70",
+      "category": "technology-equipment",
+      "brand": "HDmovie",
+      "sku": "AIO-MANCHIEUKE",
+      "image": "/images/products/technology-equipment/man-chieu-keo-tay-kich-thuoc-100-inch-hdmovie-hp70.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-quang-cao-chan-dung-49-inch-starview-zx-349-ns",
+      "name": "man-hinh-quang-cao-chan-dung-49-inch-starview-zx-349-ns",
+      "category": "technology-equipment",
+      "brand": "Starview",
+      "sku": "AIO-MANHINHQUA",
+      "image": "/images/products/technology-equipment/man-hinh-quang-cao-chan-dung-49-inch-starview-zx-349-ns.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-quang-cao-chan-dung-55-inch-starview-zx-355-ns",
+      "name": "man-hinh-quang-cao-chan-dung-55-inch-starview-zx-355-ns",
+      "category": "technology-equipment",
+      "brand": "Starview",
+      "sku": "AIO-MANHINHQUA",
+      "image": "/images/products/technology-equipment/man-hinh-quang-cao-chan-dung-55-inch-starview-zx-355-ns.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-tuong-tac-led-meekbase-65-inch-mb65dled-a",
+      "name": "man-hinh-tuong-tac-led-meekbase-65-inch-mb65dled-a",
+      "category": "technology-equipment",
+      "brand": "MeekBase",
+      "sku": "AIO-MANHINHTUO",
+      "image": "/images/products/technology-equipment/man-hinh-tuong-tac-led-meekbase-65-inch-mb65dled-a.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-tuong-tac-led-meekbase-75-inch-mb75dled-a",
+      "name": "man-hinh-tuong-tac-led-meekbase-75-inch-mb75dled-a",
+      "category": "technology-equipment",
+      "brand": "MeekBase",
+      "sku": "AIO-MANHINHTUO",
+      "image": "/images/products/technology-equipment/man-hinh-tuong-tac-led-meekbase-75-inch-mb75dled-a.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-tuong-tac-led-meekbase-86-inch-mb86dled-a",
+      "name": "man-hinh-tuong-tac-led-meekbase-86-inch-mb86dled-a",
+      "category": "technology-equipment",
+      "brand": "MeekBase",
+      "sku": "AIO-MANHINHTUO",
+      "image": "/images/products/technology-equipment/man-hinh-tuong-tac-led-meekbase-86-inch-mb86dled-a.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-tuong-tac-led-orient-55-inch",
+      "name": "man-hinh-tuong-tac-led-orient-55-inch",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MANHINHTUO",
+      "image": "/images/products/technology-equipment/man-hinh-tuong-tac-led-orient-55-inch.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-tuong-tac-led-orient-65-inch",
+      "name": "man-hinh-tuong-tac-led-orient-65-inch",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MANHINHTUO",
+      "image": "/images/products/technology-equipment/man-hinh-tuong-tac-led-orient-65-inch.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-tuong-tac-led-orient-75-inch",
+      "name": "man-hinh-tuong-tac-led-orient-75-inch",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MANHINHTUO",
+      "image": "/images/products/technology-equipment/man-hinh-tuong-tac-led-orient-75-inch.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-tuong-tac-led-orient-86-inch",
+      "name": "man-hinh-tuong-tac-led-orient-86-inch",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MANHINHTUO",
+      "image": "/images/products/technology-equipment/man-hinh-tuong-tac-led-orient-86-inch.jpg"
+    },
+    {
+      "id": "technology-equipment--man-hinh-tuong-tac-led-orient-98-inch",
+      "name": "man-hinh-tuong-tac-led-orient-98-inch",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MANHINHTUO",
+      "image": "/images/products/technology-equipment/man-hinh-tuong-tac-led-orient-98-inch.jpg"
+    },
+    {
+      "id": "technology-equipment--may-chieu-epson-eb-l210w",
+      "name": "may-chieu-epson-eb-l210w",
+      "category": "technology-equipment",
+      "brand": "Epson",
+      "sku": "AIO-MAYCHIEUEP",
+      "image": "/images/products/technology-equipment/may-chieu-epson-eb-l210w.jpg"
+    },
+    {
+      "id": "technology-equipment--may-chieu-optoma-vx688",
+      "name": "may-chieu-optoma-vx688",
+      "category": "technology-equipment",
+      "brand": "Optoma",
+      "sku": "AIO-MAYCHIEUOP",
+      "image": "/images/products/technology-equipment/may-chieu-optoma-vx688.jpg"
+    },
+    {
+      "id": "technology-equipment--may-tinh-dieu-khien-man-hinh-led-fpt-elead-t22-104i",
+      "name": "may-tinh-dieu-khien-man-hinh-led-fpt-elead-t22-104i",
+      "category": "technology-equipment",
+      "brand": "FPT",
+      "sku": "AIO-MAYTINHDIE",
+      "image": "/images/products/technology-equipment/may-tinh-dieu-khien-man-hinh-led-fpt-elead-t22-104i.png"
+    },
+    {
+      "id": "technology-equipment--mo-dun-hien-thi-led-du-mau-cua-ngoai-troi-p10-orient-320-160mm",
+      "name": "mo-dun-hien-thi-led-du-mau-cua-ngoai-troi-p10-orient-320-160mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNHIENT",
+      "image": "/images/products/technology-equipment/mo-dun-hien-thi-led-du-mau-cua-ngoai-troi-p10-orient-320-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-hien-thi-led-du-mau-trong-nha-p2-orient-320-160mm",
+      "name": "mo-dun-hien-thi-led-du-mau-trong-nha-p2-orient-320-160mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNHIENT",
+      "image": "/images/products/technology-equipment/mo-dun-hien-thi-led-du-mau-trong-nha-p2-orient-320-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-ngoai-troi-p3-orient-192-192mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p3-orient-192-192mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-ngoai-troi-p3-orient-192-192mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-ngoai-troi-p4-orient-256-128mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p4-orient-256-128mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-ngoai-troi-p4-orient-256-128mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-ngoai-troi-p4-orient-320-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p4-orient-320-160mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-ngoai-troi-p4-orient-320-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-ngoai-troi-p5-orient-160-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p5-orient-160-160mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-ngoai-troi-p5-orient-160-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-ngoai-troi-p5-orient-320-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p5-orient-320-160mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-ngoai-troi-p5-orient-320-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-ngoai-troi-p6-orient-192-192mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p6-orient-192-192mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-ngoai-troi-p6-orient-192-192mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-256-128mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-256-128mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-256-128mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-320-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-320-160mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-ngoai-troi-p8-orient-320-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-trong-nha-p2-256-128mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p2-256-128mm",
+      "category": "technology-equipment",
+      "brand": "AIO",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-trong-nha-p2-256-128mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-160-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-160-160mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-160-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-320-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-320-160mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-trong-nha-p2-5-orient-320-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-trong-nha-p3-orient-192-192mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p3-orient-192-192mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-trong-nha-p3-orient-192-192mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-128mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-128mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-128mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-256mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-256mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-trong-nha-p4-orient-256-256mm.jpg"
+    },
+    {
+      "id": "technology-equipment--mo-dun-man-hinh-led-du-mau-trong-nha-p5-orient-320-160mm",
+      "name": "mo-dun-man-hinh-led-du-mau-trong-nha-p5-orient-320-160mm",
+      "category": "technology-equipment",
+      "brand": "Orient",
+      "sku": "AIO-MODUNMANHI",
+      "image": "/images/products/technology-equipment/mo-dun-man-hinh-led-du-mau-trong-nha-p5-orient-320-160mm.jpg"
+    },
+    {
+      "id": "technology-equipment--p3-91-man-hinh-led-ngoai-troi-tu-cho-thue-bang-nhom-duc",
+      "name": "p3-91-man-hinh-led-ngoai-troi-tu-cho-thue-bang-nhom-duc",
+      "category": "technology-equipment",
+      "brand": "AIO",
+      "sku": "AIO-P391MANHIN",
+      "image": "/images/products/technology-equipment/p3-91-man-hinh-led-ngoai-troi-tu-cho-thue-bang-nhom-duc.jpg"
+    },
+    {
+      "id": "technology-equipment--thiet-bi-chuyen-mach-san-switch-dell-connectrix-ds6610b",
+      "name": "thiet-bi-chuyen-mach-san-switch-dell-connectrix-ds6610b",
+      "category": "technology-equipment",
+      "brand": "Dell",
+      "sku": "AIO-THIETBICHU",
+      "image": "/images/products/technology-equipment/thiet-bi-chuyen-mach-san-switch-dell-connectrix-ds6610b.jpg"
+    },
+    {
+      "id": "technology-equipment--thiet-bi-ghi-hinh-tren-may-tinh-qua-cong-usb-livetream-roland-uvc-01",
+      "name": "thiet-bi-ghi-hinh-tren-may-tinh-qua-cong-usb-livetream-roland-uvc-01",
+      "category": "technology-equipment",
+      "brand": "Roland",
+      "sku": "AIO-THIETBIGHI",
+      "image": "/images/products/technology-equipment/thiet-bi-ghi-hinh-tren-may-tinh-qua-cong-usb-livetream-roland-uvc-01.jpg"
+    },
+    {
+      "id": "technology-equipment--thiet-bi-hoi-nghi-jabra-bundle-meet-anywhere-4-1",
+      "name": "thiet-bi-hoi-nghi-jabra-bundle-meet-anywhere-4-1",
+      "category": "technology-equipment",
+      "brand": "Jabra",
+      "sku": "AIO-THIETBIHOI",
+      "image": "/images/products/technology-equipment/thiet-bi-hoi-nghi-jabra-bundle-meet-anywhere-4-1.jpg"
+    },
+    {
+      "id": "technology-equipment--thiet-bi-hoi-nghi-jabra-bundle-meet-anywhere-4-2",
+      "name": "thiet-bi-hoi-nghi-jabra-bundle-meet-anywhere-4-2",
+      "category": "technology-equipment",
+      "brand": "Jabra",
+      "sku": "AIO-THIETBIHOI",
+      "image": "/images/products/technology-equipment/thiet-bi-hoi-nghi-jabra-bundle-meet-anywhere-4-2.png"
+    },
+    {
+      "id": "technology-equipment--thiet-bi-hoi-nghi-jabra-bundle-meet-anywhere-4-3",
+      "name": "thiet-bi-hoi-nghi-jabra-bundle-meet-anywhere-4-3",
+      "category": "technology-equipment",
+      "brand": "Jabra",
+      "sku": "AIO-THIETBIHOI",
+      "image": "/images/products/technology-equipment/thiet-bi-hoi-nghi-jabra-bundle-meet-anywhere-4-3.png"
+    }
+  ]
 }

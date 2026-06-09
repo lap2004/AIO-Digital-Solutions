@@ -1,27 +1,17 @@
 /**
  * data-scanner.mjs
  * ------------------------------------------------------------------
- * Scans ./data/<Vietnamese category>/*.{jpg,png,webp} and builds a typed
+ * Scans ./public/images/products/[category]/*.{jpg,png,webp} and builds a typed
  * product-image manifest from the REAL filenames in that folder.
  *
  * Used by the inline Vite plugin (see vite.config.ts) so the catalog is
  * generated from real data automatically on `npm run dev` / `npm run build`.
- * No images are copied or renamed — they are served in place from /data-assets.
  * ------------------------------------------------------------------
  */
 import fs from 'node:fs';
 import path from 'node:path';
 
 const IMG_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp']);
-
-/** Default category slug per source folder. */
-export const FOLDER_CATEGORY = {
-  'Tấm LED': 'led-module',
-  'Thiết bị công nghệ': 'technology-equipment',
-  'Thiết bị giáo dục': 'education-equipment',
-  'Thiết bị bệnh viện': 'hospital-equipment',
-  'Thiết bị âm thanh': 'audio-equipment',
-};
 
 const KNOWN_BRANDS = [
   'Orient', 'Leyard', 'Kystar', 'Jabra', 'Roland', 'Epson', 'Optoma', 'Medi',
@@ -72,11 +62,11 @@ function detectModel(name) {
 const enc = (s) => encodeURIComponent(s);
 
 /**
- * @param {string} rootDir project root (contains ./data)
+ * @param {string} rootDir project root
  * @returns {{generatedAt:string,count:number,items:Array}}
  */
 export function scanData(rootDir) {
-  const dataDir = path.join(rootDir, 'data');
+  const dataDir = path.join(rootDir, 'public', 'images', 'products');
   const items = [];
   if (!fs.existsSync(dataDir)) {
     return { generatedAt: new Date().toISOString(), count: 0, items };
@@ -86,7 +76,7 @@ export function scanData(rootDir) {
   const folders = fs.readdirSync(dataDir, { withFileTypes: true }).filter((d) => d.isDirectory());
 
   for (const folder of folders) {
-    const folderCategory = FOLDER_CATEGORY[folder.name] ?? 'technology-equipment';
+    const folderCategory = folder.name;
     const srcDir = path.join(dataDir, folder.name);
     const files = fs
       .readdirSync(srcDir)
@@ -104,8 +94,7 @@ export function scanData(rootDir) {
       usedIds.add(id);
 
       const model = detectModel(base);
-      // Served in place by the dev middleware / copied to dist/data-assets on build.
-      const image = `/data-assets/${enc(folder.name)}/${enc(file)}`;
+      const image = `/images/products/${enc(folder.name)}/${enc(file)}`;
 
       items.push({
         id,
