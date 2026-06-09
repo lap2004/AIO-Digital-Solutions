@@ -1,11 +1,9 @@
 /**
  * data-scanner.mjs
  * ------------------------------------------------------------------
- * Scans ./public/images/products/[category]/*.{jpg,png,webp} and builds a typed
- * product-image manifest from the REAL filenames in that folder.
- *
- * Used by the inline Vite plugin (see vite.config.ts) so the catalog is
- * generated from real data automatically on `npm run dev` / `npm run build`.
+ * Scans ./data/[category]/*.{jpg,png,webp} and builds a typed
+ * product-image manifest. The output 'image' path is slugified to 
+ * point to /images/products/.. which is populated by build-images.mjs.
  * ------------------------------------------------------------------
  */
 import fs from 'node:fs';
@@ -19,6 +17,17 @@ const KNOWN_BRANDS = [
   'Starview', 'Spark', 'Haotai', 'Bigtoper', 'FPT', 'Magic Taiwan', 'HDmovie',
   'KingKong', 'Vietjack', 'Absen', 'Unilumin',
 ];
+
+const FOLDER_CATEGORY = {
+  'Tấm LED': 'led-module',
+  'Thiết bị công nghệ': 'technology-equipment',
+  'Thiết bị giáo dục': 'education-equipment',
+  'Thiết bị bệnh viện': 'hospital-equipment',
+  'Thiết bị âm thanh': 'audio-equipment',
+  'Tấm LED ngoài trời': 'outdoor-led-module',
+  'Tấm LED trong nhà': 'indoor-led-module',
+  'Tủ LED': 'led-cabinet',
+};
 
 function slugify(input) {
   return input
@@ -66,7 +75,7 @@ const enc = (s) => encodeURIComponent(s);
  * @returns {{generatedAt:string,count:number,items:Array}}
  */
 export function scanData(rootDir) {
-  const dataDir = path.join(rootDir, 'public', 'images', 'products');
+  const dataDir = path.join(rootDir, 'data');
   const items = [];
   if (!fs.existsSync(dataDir)) {
     return { generatedAt: new Date().toISOString(), count: 0, items };
@@ -76,7 +85,7 @@ export function scanData(rootDir) {
   const folders = fs.readdirSync(dataDir, { withFileTypes: true }).filter((d) => d.isDirectory());
 
   for (const folder of folders) {
-    const folderCategory = folder.name;
+    const rawCategory = FOLDER_CATEGORY[folder.name] || slugify(folder.name);
     const srcDir = path.join(dataDir, folder.name);
     const files = fs
       .readdirSync(srcDir)
@@ -86,7 +95,7 @@ export function scanData(rootDir) {
     for (const file of files) {
       const ext = path.extname(file);
       const base = path.basename(file, ext);
-      const category = refineCategory(folderCategory, base);
+      const category = refineCategory(rawCategory, base);
 
       let id = `${category}--${slugify(base)}`;
       let i = 1;
@@ -94,11 +103,14 @@ export function scanData(rootDir) {
       usedIds.add(id);
 
       const model = detectModel(base);
-      const image = `/images/products/${enc(folder.name)}/${enc(file)}`;
+      
+      // Slugified image path!
+      const sluggedName = slugify(base) + ext.toLowerCase();
+      const image = `/images/products/${category}/${enc(sluggedName)}`;
 
       items.push({
         id,
-        name: base.trim(),
+        name: base.trim(), // Keep original readable name!
         category,
         brand: detectBrand(base),
         sku: model

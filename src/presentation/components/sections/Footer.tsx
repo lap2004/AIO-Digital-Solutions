@@ -12,7 +12,7 @@ const GROUP_KEY: Record<string, string> = {
 };
 
 export function Footer() {
-  const { t } = useI18n();
+  const { t, pick } = useI18n();
   return (
     <footer className="relative mt-24 border-t border-white/10 bg-[#020617]">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-cyan/50 to-transparent" />
@@ -26,7 +26,7 @@ export function Footer() {
             <ul className="mt-6 space-y-3 text-sm text-muted">
               <li className="flex gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-accent" />
-                <span>{COMPANY.address}</span>
+                <span>{pick(COMPANY.address, COMPANY.addressEn)}</span>
               </li>
               <li className="flex gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-brand-accent" />
@@ -36,11 +36,11 @@ export function Footer() {
               </li>
               <li className="flex gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-brand-accent" />
-                <span>Hotline: {COMPANY.hotline}</span>
+                <span>{t('footer.hotline')}: {COMPANY.hotline}</span>
               </li>
               <li className="flex gap-3">
                 <Clock className="h-4 w-4 shrink-0 text-brand-accent" />
-                <span>{COMPANY.workingHours}</span>
+                <span>{pick(COMPANY.workingHours, COMPANY.workingHoursEn)}</span>
               </li>
             </ul>
           </div>
@@ -52,7 +52,7 @@ export function Footer() {
                 {group.links.map((link) => (
                   <li key={link.to}>
                     <Link to={link.to} className="text-sm text-muted transition hover:text-brand-cyan">
-                      {link.label}
+                      {pick(link.label, link.labelEn)}
                     </Link>
                   </li>
                 ))}
@@ -63,7 +63,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-muted md:flex-row">
           <p>
-            © {new Date().getFullYear()} {COMPANY.shortName}. MST: {COMPANY.taxCode}. {t('footer.rights')}
+            © {new Date().getFullYear()} {COMPANY.shortName}. {t('footer.taxCode')}: {COMPANY.taxCode}. {t('footer.rights')}
           </p>
           <p>
             {t('footer.represent')}: {COMPANY.director} ·{' '}

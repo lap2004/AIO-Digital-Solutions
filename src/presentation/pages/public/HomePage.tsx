@@ -66,7 +66,7 @@ export default function HomePage() {
               <span className="eyebrow">
                 <Sparkles className="h-3.5 w-3.5" /> {pick(COMPANY.slogan, 'Total digital technology solutions')}
               </span>
-              <h1 className="mt-6 text-balance text-4xl font-bold leading-[1.1] md:text-6xl">
+              <h1 className="mt-6 text-balance pb-1 text-4xl font-bold leading-[1.18] md:text-6xl">
                 {t('home.heroTitlePre')} <span className="text-gradient">{t('home.heroTitleHi')}</span>{' '}
                 {t('home.heroTitlePost')}
               </h1>

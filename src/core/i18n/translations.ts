@@ -74,6 +74,7 @@ export const dictionary = {
       workingHours: 'Giờ làm việc',
       rights: 'Bảo lưu mọi quyền.',
       represent: 'Người đại diện',
+      taxCode: 'MST',
     },
     products: {
       heroTitle: 'Danh mục sản phẩm',
@@ -180,6 +181,7 @@ export const dictionary = {
       workingHours: 'Working hours',
       rights: 'All rights reserved.',
       represent: 'Legal representative',
+      taxCode: 'Tax code',
     },
     products: {
       heroTitle: 'Product catalog',

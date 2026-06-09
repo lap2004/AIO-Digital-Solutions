@@ -19,8 +19,8 @@ export function PageHero({ eyebrow, title, description, breadcrumb, children }: 
       <Container className="relative">
         {breadcrumb && <Breadcrumb items={breadcrumb} />}
         {eyebrow && <span className="eyebrow mt-5">{eyebrow}</span>}
-        <h1 className="mt-4 max-w-3xl text-balance text-4xl font-bold leading-tight md:text-5xl">{title}</h1>
-        {description && <p className="mt-4 max-w-2xl text-lg text-muted">{description}</p>}
+        <h1 className="mt-5 max-w-3xl text-balance pb-1 text-4xl font-bold leading-[1.25] md:text-5xl">{title}</h1>
+        {description && <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">{description}</p>}
         {children}
       </Container>
     </section>

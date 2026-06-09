@@ -8,10 +8,13 @@ export const COMPANY = {
   director: 'Nguyễn Thị Doan',
   address:
     'Số nhà 05, Ngõ 198, Đường Lý Thường Kiệt, Tổ 7 - Kỳ Bá, Phường Trần Lãm, Tỉnh Hưng Yên, Việt Nam',
+  addressEn:
+    'No. 05, Lane 198, Ly Thuong Kiet Street, Group 7 - Ky Ba, Tran Lam Ward, Hung Yen Province, Vietnam',
   email: 'AIOgroup.led@gmail.com',
   hotline: '1900 0000',
   zalo: 'https://zalo.me/',
   workingHours: 'Thứ 2 - Thứ 7: 08:00 - 17:30',
+  workingHoursEn: 'Mon - Sat: 08:00 - 17:30',
   slogan: 'Giải pháp công nghệ số toàn diện',
   foundedYear: 2025,
 } as const;
@@ -149,29 +152,29 @@ export const FOOTER_LINKS = [
   {
     title: 'Giải pháp',
     links: [
-      { label: 'Màn hình LED trong nhà', to: '/giai-phap/indoor-led-display' },
-      { label: 'Màn hình LED ngoài trời', to: '/giai-phap/outdoor-led-display' },
-      { label: 'Smart City', to: '/giai-phap/smart-city' },
-      { label: 'Camera AI', to: '/giai-phap/ai-camera' },
-      { label: 'Nền tảng IoT', to: '/giai-phap/iot-platform' },
+      { label: 'Màn hình LED trong nhà', labelEn: 'Indoor LED Display', to: '/giai-phap/indoor-led-display' },
+      { label: 'Màn hình LED ngoài trời', labelEn: 'Outdoor LED Display', to: '/giai-phap/outdoor-led-display' },
+      { label: 'Smart City', labelEn: 'Smart City', to: '/giai-phap/smart-city' },
+      { label: 'Camera AI', labelEn: 'AI Camera', to: '/giai-phap/ai-camera' },
+      { label: 'Nền tảng IoT', labelEn: 'IoT Platform', to: '/giai-phap/iot-platform' },
     ],
   },
   {
     title: 'Sản phẩm',
     links: [
-      { label: 'LED Module', to: '/san-pham?category=led-module' },
-      { label: 'LED ngoài trời', to: '/san-pham?category=outdoor-led-module' },
-      { label: 'Thiết bị bệnh viện', to: '/san-pham?category=hospital-equipment' },
-      { label: 'Thiết bị giáo dục', to: '/san-pham?category=education-equipment' },
-      { label: 'Thiết bị công nghệ', to: '/san-pham?category=technology-equipment' },
+      { label: 'LED Module', labelEn: 'LED Module', to: '/san-pham?category=led-module' },
+      { label: 'LED ngoài trời', labelEn: 'Outdoor LED', to: '/san-pham?category=outdoor-led-module' },
+      { label: 'Thiết bị bệnh viện', labelEn: 'Hospital Equipment', to: '/san-pham?category=hospital-equipment' },
+      { label: 'Thiết bị giáo dục', labelEn: 'Education Equipment', to: '/san-pham?category=education-equipment' },
+      { label: 'Thiết bị công nghệ', labelEn: 'Technology Equipment', to: '/san-pham?category=technology-equipment' },
     ],
   },
   {
     title: 'Công ty',
     links: [
-      { label: 'Về chúng tôi', to: '/gioi-thieu' },
-      { label: 'Dự án tiêu biểu', to: '/du-an' },
-      { label: 'Liên hệ', to: '/lien-he' },
+      { label: 'Về chúng tôi', labelEn: 'About us', to: '/gioi-thieu' },
+      { label: 'Dự án tiêu biểu', labelEn: 'Featured Projects', to: '/du-an' },
+      { label: 'Liên hệ', labelEn: 'Contact', to: '/lien-he' },
     ],
   },
 ] as const;

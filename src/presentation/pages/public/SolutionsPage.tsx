@@ -4,7 +4,7 @@ import { services } from '@/app/services';
 import { Container } from '@/presentation/components/common/Container';
 import { LoadingBlock } from '@/presentation/components/common/Feedback';
 import { Seo } from '@/presentation/components/common/Seo';
-import { SolutionCard } from '@/presentation/components/business/SolutionCard';
+import { SolutionsCarousel } from '@/presentation/components/business/SolutionsCarousel';
 import { PageHero } from '@/presentation/components/sections/PageHero';
 import { ContactCTA } from '@/presentation/components/sections/ContactCTA';
 
@@ -22,15 +22,7 @@ export default function SolutionsPage() {
         breadcrumb={[{ label: t('nav./giai-phap') }]}
       />
       <Container className="pb-10">
-        {loading ? (
-          <LoadingBlock />
-        ) : (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {(data ?? []).map((s) => (
-              <SolutionCard key={s.id} solution={s} />
-            ))}
-          </div>
-        )}
+        {loading || !data ? <LoadingBlock /> : <SolutionsCarousel items={data} />}
       </Container>
       <ContactCTA />
     </>

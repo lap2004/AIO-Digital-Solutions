@@ -34,10 +34,12 @@ export function Navbar() {
         scrolled ? 'border-b border-white/10 bg-[#020617]/85 backdrop-blur-xl' : 'bg-transparent',
       )}
     >
-      <nav className="mx-auto flex h-20 max-w-[1320px] items-center justify-between px-6 py-3">
-        <Logo />
+      <nav className="mx-auto flex h-20 max-w-[1320px] items-center gap-4 px-6 py-3">
+        <div className="shrink-0">
+          <Logo />
+        </div>
 
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="hidden flex-1 items-center justify-center gap-1 lg:flex">
           {MAIN_NAV.map((item) => (
             <li key={item.to}>
               <NavLink
@@ -56,11 +58,11 @@ export function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <ThemeToggle />
           <LanguageSwitcher />
           <Link to="/bao-gia" className="relative">
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" className="min-w-[120px]">
               <FileText className="h-4 w-4" /> {t('common.getQuote')}
               {count > 0 && (
                 <span className="absolute -right-1.5 -top-1.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-brand-cyan px-1 text-[11px] font-bold text-background">
@@ -70,13 +72,13 @@ export function Navbar() {
             </Button>
           </Link>
           <Link to="/lien-he">
-            <Button size="sm">
+            <Button size="sm" className="min-w-[112px]">
               <Phone className="h-4 w-4" /> {t('common.contact')}
             </Button>
           </Link>
         </div>
 
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="ml-auto flex items-center gap-2 lg:hidden">
           <ThemeToggle />
           <LanguageSwitcher />
         <button
