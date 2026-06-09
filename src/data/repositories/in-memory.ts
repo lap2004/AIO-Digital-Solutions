@@ -11,8 +11,6 @@ import { PROJECTS } from '@/data/mock/projects.mock';
 import { NEWS } from '@/data/mock/news.mock';
 import { SOLUTIONS } from '@/data/mock/solutions.mock';
 import { BRANDS } from '@/data/mock/brands.mock';
-import { LEADS } from '@/data/mock/leads.mock';
-import { QUOTATIONS } from '@/data/mock/quotations.mock';
 import { JOBS } from '@/data/mock/jobs.mock';
 
 const delay = <T>(value: T, ms = 120): Promise<T> =>

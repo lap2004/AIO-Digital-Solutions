@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import { LogIn, ShieldCheck } from 'lucide-react';
 import { useAuthStore } from '@/presentation/state/auth.store';
-import { authService } from '@/infrastructure/auth/auth.service';
+
 import { Button } from '@/presentation/components/common/Button';
 import { FieldWrapper, Input } from '@/presentation/components/common/Field';
 import { AuroraBackground } from '@/presentation/components/common/Backgrounds';

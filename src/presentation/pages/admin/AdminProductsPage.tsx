@@ -9,7 +9,7 @@ import { slugify } from '@/core/utils/slug';
 import { useAsync } from '@/presentation/hooks/useAsync';
 import { services } from '@/app/services';
 import { Button } from '@/presentation/components/common/Button';
-import { Badge } from '@/presentation/components/common/Badge';
+
 import { Modal } from '@/presentation/components/common/Modal';
 import { SmartImage } from '@/presentation/components/common/SmartImage';
 import { FieldWrapper, Input, Select } from '@/presentation/components/common/Field';

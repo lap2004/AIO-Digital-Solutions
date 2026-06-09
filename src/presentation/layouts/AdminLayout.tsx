@@ -2,7 +2,7 @@ import { Suspense, useState } from 'react';
 import { NavLink, Outlet, useNavigate, Navigate } from 'react-router-dom';
 import { LoadingBlock } from '@/presentation/components/common/Feedback';
 import {
-  LayoutDashboard, Package, Building2, Newspaper, Users, FileText, LogOut, Menu, ExternalLink,
+  LayoutDashboard, Package, Building2, Users, FileText, LogOut, Menu, ExternalLink,
 } from 'lucide-react';
 import { USER_ROLE_LABEL } from '@/domain/entities';
 import { useAuthStore } from '@/presentation/state/auth.store';

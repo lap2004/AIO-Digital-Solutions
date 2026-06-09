@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect } from 'react';
 import { toast } from 'sonner';
-import { Phone, Mail, Building2, MoveRight, FileText, User, Tag, Trash2 } from 'lucide-react';
+import { Phone, Mail, Building2, MoveRight, FileText, Tag, Trash2 } from 'lucide-react';
 import type { Lead, LeadStatus } from '@/domain/entities';
 import { LEAD_STATUS_FLOW, LEAD_STATUS_LABEL } from '@/domain/entities';
 import { formatCompact } from '@/core/utils/format';

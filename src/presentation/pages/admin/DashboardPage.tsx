@@ -3,7 +3,7 @@ import {
   Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer,
   Tooltip, XAxis, YAxis,
 } from 'recharts';
-import { Package, Building2, Users, FileText, TrendingUp, Eye } from 'lucide-react';
+import { Package, Building2, FileText, TrendingUp, Eye } from 'lucide-react';
 import { LEAD_STATUS_LABEL } from '@/domain/entities';
 import { PRODUCT_CATEGORIES } from '@/core/constants/catalog';
 import { formatCompact, formatNumber } from '@/core/utils/format';
