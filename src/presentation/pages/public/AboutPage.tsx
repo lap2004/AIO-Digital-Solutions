@@ -82,7 +82,7 @@ export default function AboutPage() {
         <Container>
           <SectionHeader eyebrow={t('home.areasEyebrow')} title={t('home.areasTitle')} />
           <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {BUSINESS_AREAS.map((area, i) => (
+            {BUSINESS_AREAS.map((area) => (
               <Card key={area.slug} hover className="p-7">
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-accent/15 text-brand-accent">

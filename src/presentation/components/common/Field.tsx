@@ -65,9 +65,10 @@ export const Select = forwardRef<
 
   const options = Children.toArray(children).map(child => {
     if (isValidElement(child) && child.type === 'option') {
+      const props = child.props as any;
       return {
-        value: child.props.value,
-        label: child.props.children
+        value: props.value,
+        label: props.children
       };
     }
     return null;

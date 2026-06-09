@@ -54,10 +54,10 @@ export function productCategoryLabel(slug: string, lang: 'vi' | 'en'): string {
   return (lang === 'en' ? PRODUCT_CATEGORY_LABEL_EN : PRODUCT_CATEGORY_LABEL)[slug] ?? slug;
 }
 export function projectCategoryLabel(slug: string, lang: 'vi' | 'en'): string {
-  return (lang === 'en' ? PROJECT_CATEGORY_LABEL_EN : PROJECT_CATEGORY_LABEL)[slug] ?? slug;
+  return (lang === 'en' ? PROJECT_CATEGORY_LABEL_EN : (PROJECT_CATEGORY_LABEL as Record<string, string>))[slug] ?? slug;
 }
 export function newsCategoryLabel(slug: string, lang: 'vi' | 'en'): string {
-  return (lang === 'en' ? NEWS_CATEGORY_LABEL_EN : NEWS_CATEGORY_LABEL)[slug] ?? slug;
+  return (lang === 'en' ? NEWS_CATEGORY_LABEL_EN : (NEWS_CATEGORY_LABEL as Record<string, string>))[slug] ?? slug;
 }
 
 export const PROJECT_CATEGORY_LABEL: Record<ProjectCategory, string> = {
