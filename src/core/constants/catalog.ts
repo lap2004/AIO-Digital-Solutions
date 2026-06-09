@@ -19,6 +19,47 @@ export const PRODUCT_CATEGORY_LABEL: Record<string, string> = Object.fromEntries
   PRODUCT_CATEGORIES.map((c) => [c.slug, c.name]),
 );
 
+export const PRODUCT_CATEGORY_LABEL_EN: Record<string, string> = {
+  'led-module': 'LED Module',
+  'outdoor-led-module': 'Outdoor LED Module',
+  'indoor-led-module': 'Indoor LED Module',
+  'audio-equipment': 'Audio Equipment',
+  'hospital-equipment': 'Hospital Equipment',
+  'technology-equipment': 'Technology Equipment',
+  'education-equipment': 'Education Equipment',
+  'led-cabinet': 'LED Cabinet',
+};
+
+export const PROJECT_CATEGORY_LABEL_EN: Record<string, string> = {
+  government: 'Government',
+  education: 'Education',
+  hospital: 'Healthcare',
+  factory: 'Factory',
+  enterprise: 'Enterprise',
+  'shopping-mall': 'Shopping Mall',
+  stadium: 'Stadium',
+};
+
+export const NEWS_CATEGORY_LABEL_EN: Record<string, string> = {
+  'led-technology': 'LED Technology',
+  ai: 'Artificial Intelligence',
+  iot: 'IoT',
+  'digital-transformation': 'Digital Transformation',
+  'smart-city': 'Smart City',
+  projects: 'Projects',
+};
+
+/** Language-aware category label helpers. */
+export function productCategoryLabel(slug: string, lang: 'vi' | 'en'): string {
+  return (lang === 'en' ? PRODUCT_CATEGORY_LABEL_EN : PRODUCT_CATEGORY_LABEL)[slug] ?? slug;
+}
+export function projectCategoryLabel(slug: string, lang: 'vi' | 'en'): string {
+  return (lang === 'en' ? PROJECT_CATEGORY_LABEL_EN : PROJECT_CATEGORY_LABEL)[slug] ?? slug;
+}
+export function newsCategoryLabel(slug: string, lang: 'vi' | 'en'): string {
+  return (lang === 'en' ? NEWS_CATEGORY_LABEL_EN : NEWS_CATEGORY_LABEL)[slug] ?? slug;
+}
+
 export const PROJECT_CATEGORY_LABEL: Record<ProjectCategory, string> = {
   government: 'Cơ quan nhà nước',
   education: 'Giáo dục',

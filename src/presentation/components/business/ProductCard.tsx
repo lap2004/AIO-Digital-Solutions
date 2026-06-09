@@ -2,11 +2,13 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import type { Product } from '@/domain/entities';
-import { PRODUCT_CATEGORY_LABEL } from '@/core/constants/catalog';
+import { productCategoryLabel } from '@/core/constants/catalog';
+import { useI18n } from '@/core/i18n';
 import { SmartImage } from '@/presentation/components/common/SmartImage';
 import { Badge } from '@/presentation/components/common/Badge';
 
 export function ProductCard({ product }: { product: Product }) {
+  const { lang } = useI18n();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -25,7 +27,7 @@ export function ProductCard({ product }: { product: Product }) {
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute left-3 top-3">
-            <Badge tone="brand">{PRODUCT_CATEGORY_LABEL[product.category]}</Badge>
+            <Badge tone="brand">{productCategoryLabel(product.category, lang)}</Badge>
           </div>
           {product.featured && (
             <div className="absolute right-3 top-3">

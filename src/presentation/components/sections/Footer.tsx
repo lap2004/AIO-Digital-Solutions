@@ -1,10 +1,18 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone, Clock } from 'lucide-react';
 import { COMPANY, FOOTER_LINKS } from '@/core/constants/site';
+import { useI18n } from '@/core/i18n';
 import { Container } from '@/presentation/components/common/Container';
 import { Logo } from './Logo';
 
+const GROUP_KEY: Record<string, string> = {
+  'Giải pháp': 'footer.solutions',
+  'Sản phẩm': 'footer.products',
+  'Công ty': 'footer.company',
+};
+
 export function Footer() {
+  const { t } = useI18n();
   return (
     <footer className="relative mt-24 border-t border-white/10 bg-[#020617]">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-cyan/50 to-transparent" />
@@ -13,8 +21,7 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
-              {COMPANY.legalName}. Giải pháp công nghệ số toàn diện: màn hình LED, Smart City, Camera AI, IoT
-              và chuyển đổi số.
+              {COMPANY.legalName}. {t('footer.about')}
             </p>
             <ul className="mt-6 space-y-3 text-sm text-muted">
               <li className="flex gap-3">
@@ -40,7 +47,7 @@ export function Footer() {
 
           {FOOTER_LINKS.map((group) => (
             <div key={group.title}>
-              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">{group.title}</h4>
+              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">{t(GROUP_KEY[group.title] ?? group.title)}</h4>
               <ul className="space-y-2.5">
                 {group.links.map((link) => (
                   <li key={link.to}>
@@ -56,12 +63,12 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-muted md:flex-row">
           <p>
-            © {new Date().getFullYear()} {COMPANY.shortName}. MST: {COMPANY.taxCode}. Bảo lưu mọi quyền.
+            © {new Date().getFullYear()} {COMPANY.shortName}. MST: {COMPANY.taxCode}. {t('footer.rights')}
           </p>
           <p>
-            Người đại diện: {COMPANY.director} ·{' '}
+            {t('footer.represent')}: {COMPANY.director} ·{' '}
             <Link to="/admin/login" className="hover:text-brand-cyan">
-              Quản trị
+              {t('common.admin')}
             </Link>
           </p>
         </div>

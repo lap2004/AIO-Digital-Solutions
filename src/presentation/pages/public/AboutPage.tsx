@@ -1,9 +1,11 @@
-import { Target, Eye, Award, Users, Rocket, ShieldCheck } from 'lucide-react';
-import { COMPANY, COMPANY_STATS } from '@/core/constants/site';
+import { Target, Eye, Award, Users, Rocket, ShieldCheck, Check } from 'lucide-react';
+import { COMPANY, COMPANY_STATS, BUSINESS_AREAS } from '@/core/constants/site';
+import { useI18n } from '@/core/i18n';
 import { Container } from '@/presentation/components/common/Container';
 import { Card } from '@/presentation/components/common/Card';
 import { StatCard } from '@/presentation/components/common/StatCard';
 import { SectionHeader } from '@/presentation/components/common/SectionHeader';
+import { Icon } from '@/presentation/components/common/Icon';
 import { Seo } from '@/presentation/components/common/Seo';
 import { PageHero } from '@/presentation/components/sections/PageHero';
 import { ContactCTA } from '@/presentation/components/sections/ContactCTA';
@@ -16,14 +18,15 @@ const VALUES = [
 ];
 
 export default function AboutPage() {
+  const { t, pick } = useI18n();
   return (
     <>
       <Seo title="Về chúng tôi | AIO Digital Solutions" description={COMPANY.legalName} />
       <PageHero
-        eyebrow="Về chúng tôi"
-        title="Đối tác công nghệ đáng tin cậy của doanh nghiệp Việt"
-        description={`${COMPANY.legalName} — hơn một thập kỷ kiến tạo giải pháp công nghệ số toàn diện.`}
-        breadcrumb={[{ label: 'Về chúng tôi' }]}
+        eyebrow={t('nav./gioi-thieu')}
+        title={t('about.heroTitle')}
+        description={`${COMPANY.legalName}`}
+        breadcrumb={[{ label: t('nav./gioi-thieu') }]}
       />
 
       <section className="py-12">
@@ -33,9 +36,10 @@ export default function AboutPage() {
               <SectionHeader align="left" eyebrow="Câu chuyện" title="Hành trình của AIO" />
               <div className="mt-5 space-y-4 leading-relaxed text-muted">
                 <p>
-                  Được thành lập từ năm {COMPANY.foundedYear}, AIO Digital Solutions khởi đầu từ lĩnh vực sản
-                  xuất và thi công màn hình LED. Đến nay, chúng tôi đã mở rộng thành nhà cung cấp giải pháp công
-                  nghệ tổng thể: đô thị thông minh, Camera AI, IoT, bệnh viện và giáo dục thông minh.
+                  Được thành lập từ năm {COMPANY.foundedYear}, AIO Digital Solutions khởi đầu từ lĩnh vực thi
+                  công, lắp đặt màn hình LED. Đến nay, chúng tôi cung cấp hệ sinh thái dịch vụ khép kín quanh
+                  hệ thống màn hình hiển thị và tự động hóa: thi công lắp đặt, quản lý điều khiển từ xa, bảo trì
+                  – bảo hành và tự động hóa điện – mạng – camera – nhà máy.
                 </p>
                 <p>
                   Với đội ngũ kỹ sư giàu kinh nghiệm và mạng lưới đối tác là các thương hiệu hàng đầu thế giới,
@@ -69,6 +73,35 @@ export default function AboutPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {COMPANY_STATS.map((s) => (
               <StatCard key={s.label} value={s.value} suffix={s.suffix} label={s.label} />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-12">
+        <Container>
+          <SectionHeader eyebrow={t('home.areasEyebrow')} title={t('home.areasTitle')} />
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {BUSINESS_AREAS.map((area, i) => (
+              <Card key={area.slug} hover className="p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-accent/15 text-brand-accent">
+                    <Icon name={area.icon} className="text-2xl" />
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold text-brand-accent">0{i + 1}</span>
+                    <h3 className="text-lg font-bold leading-snug text-white">{pick(area.title, area.titleEn)}</h3>
+                  </div>
+                </div>
+                <p className="mt-3 text-sm leading-relaxed text-muted">{pick(area.tagline, area.taglineEn)}</p>
+                <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+                  {pick(area.features, area.featuresEn).map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-ink">
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-cyan" /> {f}
+                    </li>
+                  ))}
+                </ul>
+              </Card>
             ))}
           </div>
         </Container>

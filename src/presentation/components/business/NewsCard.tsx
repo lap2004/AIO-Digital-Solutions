@@ -2,12 +2,14 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Clock } from 'lucide-react';
 import type { NewsArticle } from '@/domain/entities';
-import { NEWS_CATEGORY_LABEL } from '@/core/constants/catalog';
+import { newsCategoryLabel } from '@/core/constants/catalog';
+import { useI18n } from '@/core/i18n';
 import { formatDate } from '@/core/utils/format';
 import { SmartImage } from '@/presentation/components/common/SmartImage';
 import { Badge } from '@/presentation/components/common/Badge';
 
 export function NewsCard({ article }: { article: NewsArticle }) {
+  const { lang } = useI18n();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -26,7 +28,7 @@ export function NewsCard({ article }: { article: NewsArticle }) {
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute left-3 top-3">
-            <Badge tone="purple">{NEWS_CATEGORY_LABEL[article.category]}</Badge>
+            <Badge tone="purple">{newsCategoryLabel(article.category, lang)}</Badge>
           </div>
         </div>
         <div className="flex flex-1 flex-col p-5">

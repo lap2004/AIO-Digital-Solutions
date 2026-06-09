@@ -59,7 +59,7 @@ export default function SolutionDetailPage() {
           <div className="mt-8 grid items-center gap-10 lg:grid-cols-2">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-gradient text-white shadow-glow">
-                <Icon name={solution.icon} className="h-8 w-8" />
+                <Icon name={solution.icon} className="text-[2rem]" />
               </div>
               <h1 className="text-balance text-4xl font-bold leading-tight md:text-5xl">{solution.name}</h1>
               <p className="mt-4 text-lg text-muted">{solution.tagline}</p>
@@ -109,7 +109,7 @@ export default function SolutionDetailPage() {
             {solution.features.map((f) => (
               <Card key={f.title} hover className="p-7">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-accent/15 text-brand-accent">
-                  <Icon name={f.icon} className="h-6 w-6" />
+                  <Icon name={f.icon} className="text-2xl" />
                 </div>
                 <h3 className="text-lg font-bold text-white">{f.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{f.description}</p>

@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { toast } from 'sonner';
 import { Mail, MapPin, Phone, Clock, MessageCircle, Send } from 'lucide-react';
 import { COMPANY } from '@/core/constants/site';
+import { useI18n } from '@/core/i18n';
 import { services } from '@/app/services';
 import { Container } from '@/presentation/components/common/Container';
 import { Card } from '@/presentation/components/common/Card';
@@ -30,6 +31,7 @@ const CONTACTS = [
 ];
 
 export default function ContactPage() {
+  const { t } = useI18n();
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<FormValues>({
     resolver: zodResolver(schema),
   });
@@ -55,10 +57,10 @@ export default function ContactPage() {
     <>
       <Seo title="Liên hệ | AIO Digital Solutions" description="Liên hệ AIO để được tư vấn giải pháp công nghệ và báo giá miễn phí." />
       <PageHero
-        eyebrow="Liên hệ"
-        title="Kết nối với AIO"
-        description="Để lại thông tin, đội ngũ chuyên gia của chúng tôi sẽ liên hệ tư vấn trong vòng 24 giờ."
-        breadcrumb={[{ label: 'Liên hệ' }]}
+        eyebrow={t('nav./lien-he')}
+        title={t('contact.heroTitle')}
+        description={t('contact.heroDesc')}
+        breadcrumb={[{ label: t('nav./lien-he') }]}
       />
 
       <Container className="pb-20">
@@ -85,26 +87,24 @@ export default function ContactPage() {
 
             {/* Map placeholder (offline-safe) */}
             <Card className="relative overflow-hidden p-0">
-              <div className="relative flex h-56 items-center justify-center bg-gradient-to-br from-[#0a1a3a] to-[#04122e]">
-                <div className="absolute inset-0 tech-grid opacity-60" />
-                <div className="relative text-center">
-                  <MapPin className="mx-auto h-9 w-9 text-brand-cyan" />
-                  <p className="mt-2 px-6 text-sm text-ink">{COMPANY.address}</p>
-                  <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(COMPANY.address)}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-3 inline-block text-sm font-semibold text-brand-cyan hover:underline"
-                  >
-                    Mở Google Maps →
-                  </a>
-                </div>
+              <div className="relative flex min-h-[14rem] flex-col items-center justify-center gap-3 bg-gradient-to-br from-[#0a1a3a] to-[#04122e] px-6 py-10 text-center">
+                <div className="pointer-events-none absolute inset-0 tech-grid opacity-60" />
+                <MapPin className="relative h-9 w-9 text-brand-cyan" />
+                <p className="relative max-w-sm text-sm leading-relaxed text-ink">{COMPANY.address}</p>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(COMPANY.address)}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="relative inline-block text-sm font-semibold text-brand-cyan hover:underline"
+                >
+                  {t('contact.openMaps')}
+                </a>
               </div>
             </Card>
 
             <a href={COMPANY.zalo} target="_blank" rel="noreferrer">
               <Button variant="outline" className="w-full">
-                <MessageCircle className="h-4 w-4" /> Chat qua Zalo
+                <MessageCircle className="h-4 w-4" /> {t('contact.chatZalo')}
               </Button>
             </a>
           </div>

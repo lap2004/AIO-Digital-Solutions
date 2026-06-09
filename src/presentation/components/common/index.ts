@@ -12,3 +12,6 @@ export { Modal } from './Modal';
 export { FieldWrapper, Input, Textarea, Select } from './Field';
 export { Icon } from './Icon';
 export { Seo } from './Seo';
+export { LanguageSwitcher } from './LanguageSwitcher';
+export { FlagVN, FlagGB } from './Flags';
+export { ThemeToggle } from './ThemeToggle';

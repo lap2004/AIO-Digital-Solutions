@@ -7,6 +7,7 @@ import {
 import { USER_ROLE_LABEL } from '@/domain/entities';
 import { useAuthStore } from '@/presentation/state/auth.store';
 import { Logo } from '@/presentation/components/sections/Logo';
+import { ThemeToggle } from '@/presentation/components/common/ThemeToggle';
 import { cn } from '@/core/utils/cn';
 
 const NAV = [
@@ -79,6 +80,7 @@ export function AdminLayout() {
             <Menu className="h-5 w-5 text-white" />
           </button>
           <div className="ml-auto flex items-center gap-4">
+            <ThemeToggle />
             <div className="text-right">
               <p className="text-sm font-semibold text-white">{user.name}</p>
               <p className="text-xs text-brand-accent">{USER_ROLE_LABEL[user.role]}</p>

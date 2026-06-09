@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Search } from 'lucide-react';
-import { NEWS_CATEGORY_LABEL } from '@/core/constants/catalog';
+import { NEWS_CATEGORY_LABEL, newsCategoryLabel } from '@/core/constants/catalog';
 import type { NewsCategory } from '@/domain/entities';
+import { useI18n } from '@/core/i18n';
 import { useAsync } from '@/presentation/hooks/useAsync';
 import { useDebounce } from '@/presentation/hooks/useDebounce';
 import { services } from '@/app/services';
@@ -19,6 +20,7 @@ const PAGE_SIZE = 9;
 const CATEGORIES = Object.entries(NEWS_CATEGORY_LABEL) as [NewsCategory, string][];
 
 export default function NewsPage() {
+  const { t, lang } = useI18n();
   const [category, setCategory] = useState<NewsCategory | ''>('');
   const [search, setSearch] = useState('');
   const [page, setPage] = useState(1);
@@ -33,10 +35,10 @@ export default function NewsPage() {
     <>
       <Seo title="Tin tức | AIO Digital Solutions" description="Tin tức công nghệ LED, AI, IoT, chuyển đổi số và đô thị thông minh." />
       <PageHero
-        eyebrow="Tin tức"
-        title="Tin tức & Kiến thức công nghệ"
-        description="Cập nhật xu hướng công nghệ mới nhất và câu chuyện dự án từ AIO."
-        breadcrumb={[{ label: 'Tin tức' }]}
+        eyebrow={t('home.newsEyebrow')}
+        title={t('news.heroTitle')}
+        description={t('news.heroDesc')}
+        breadcrumb={[{ label: t('nav./tin-tuc') }]}
       />
 
       <Container className="pb-10">
@@ -46,21 +48,21 @@ export default function NewsPage() {
               onClick={() => { setCategory(''); setPage(1); }}
               className={cn('rounded-full border px-4 py-2 text-sm font-medium transition', !category ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50')}
             >
-              Tất cả
+              {t('products.all')}
             </button>
-            {CATEGORIES.map(([slug, label]) => (
+            {CATEGORIES.map(([slug]) => (
               <button
                 key={slug}
                 onClick={() => { setCategory(slug); setPage(1); }}
                 className={cn('rounded-full border px-4 py-2 text-sm font-medium transition', category === slug ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50')}
               >
-                {label}
+                {newsCategoryLabel(slug, lang)}
               </button>
             ))}
           </div>
           <div className="relative lg:w-72">
             <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" />
-            <Input placeholder="Tìm bài viết…" value={search} onChange={(e) => { setSearch(e.target.value); setPage(1); }} className="pl-11" />
+            <Input placeholder={t('common.search')} value={search} onChange={(e) => { setSearch(e.target.value); setPage(1); }} className="pl-11" />
           </div>
         </div>
 

@@ -2,12 +2,14 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapPin, Calendar } from 'lucide-react';
 import type { Project } from '@/domain/entities';
-import { PROJECT_CATEGORY_LABEL } from '@/core/constants/catalog';
+import { projectCategoryLabel } from '@/core/constants/catalog';
+import { useI18n } from '@/core/i18n';
 import { formatDate } from '@/core/utils/format';
 import { SmartImage } from '@/presentation/components/common/SmartImage';
 import { Badge } from '@/presentation/components/common/Badge';
 
 export function ProjectCard({ project }: { project: Project }) {
+  const { lang } = useI18n();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -27,10 +29,10 @@ export function ProjectCard({ project }: { project: Project }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/40 to-transparent" />
           <div className="absolute left-4 top-4">
-            <Badge tone="info">{PROJECT_CATEGORY_LABEL[project.category]}</Badge>
+            <Badge tone="info">{projectCategoryLabel(project.category, lang)}</Badge>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 p-5">
+        <div className="text-on-media absolute inset-x-0 bottom-0 p-5">
           <h3 className="clip-text-2 font-bold leading-snug text-white transition group-hover:text-brand-cyan">
             {project.name}
           </h3>

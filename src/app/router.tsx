@@ -12,10 +12,6 @@ const ProductsPage = lazy(() => import('@/presentation/pages/public/ProductsPage
 const ProductDetailPage = lazy(() => import('@/presentation/pages/public/ProductDetailPage'));
 const ProjectsPage = lazy(() => import('@/presentation/pages/public/ProjectsPage'));
 const ProjectDetailPage = lazy(() => import('@/presentation/pages/public/ProjectDetailPage'));
-const NewsPage = lazy(() => import('@/presentation/pages/public/NewsPage'));
-const NewsDetailPage = lazy(() => import('@/presentation/pages/public/NewsDetailPage'));
-const RecruitmentPage = lazy(() => import('@/presentation/pages/public/RecruitmentPage'));
-const JobDetailPage = lazy(() => import('@/presentation/pages/public/JobDetailPage'));
 const ContactPage = lazy(() => import('@/presentation/pages/public/ContactPage'));
 const QuotePage = lazy(() => import('@/presentation/pages/public/QuotePage'));
 const NotFoundPage = lazy(() => import('@/presentation/pages/public/NotFoundPage'));
@@ -41,10 +37,6 @@ export const router = createBrowserRouter([
       { path: '/san-pham/:slug', element: <ProductDetailPage /> },
       { path: '/du-an', element: <ProjectsPage /> },
       { path: '/du-an/:slug', element: <ProjectDetailPage /> },
-      { path: '/tin-tuc', element: <NewsPage /> },
-      { path: '/tin-tuc/:slug', element: <NewsDetailPage /> },
-      { path: '/tuyen-dung', element: <RecruitmentPage /> },
-      { path: '/tuyen-dung/:slug', element: <JobDetailPage /> },
       { path: '/lien-he', element: <ContactPage /> },
       { path: '/bao-gia', element: <QuotePage /> },
       { path: '*', element: <NotFoundPage /> },

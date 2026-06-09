@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Search } from 'lucide-react';
-import { PRODUCT_CATEGORIES } from '@/core/constants/catalog';
+import { PRODUCT_CATEGORIES, productCategoryLabel } from '@/core/constants/catalog';
+import { useI18n } from '@/core/i18n';
 import { useAsync } from '@/presentation/hooks/useAsync';
 import { useDebounce } from '@/presentation/hooks/useDebounce';
 import { services } from '@/app/services';
@@ -18,6 +19,7 @@ import { cn } from '@/core/utils/cn';
 const PAGE_SIZE = 12;
 
 export default function ProductsPage() {
+  const { t, lang } = useI18n();
   const [searchParams, setSearchParams] = useSearchParams();
   const category = searchParams.get('category') ?? '';
   const [search, setSearch] = useState('');
@@ -41,10 +43,10 @@ export default function ProductsPage() {
     <>
       <Seo title="Sản phẩm | AIO Digital Solutions" description="Danh mục sản phẩm LED, thiết bị bệnh viện, giáo dục và công nghệ chính hãng." />
       <PageHero
-        eyebrow="Sản phẩm"
-        title={activeCat ? activeCat.name : 'Danh mục sản phẩm'}
-        description={activeCat?.description ?? 'Hơn 250 sản phẩm chính hãng thuộc 8 nhóm ngành công nghệ.'}
-        breadcrumb={[{ label: 'Sản phẩm' }]}
+        eyebrow={t('home.productsEyebrow')}
+        title={activeCat ? productCategoryLabel(activeCat.slug, lang) : t('products.heroTitle')}
+        description={activeCat ? activeCat.description : t('products.heroDesc')}
+        breadcrumb={[{ label: t('nav./san-pham') }]}
       />
 
       <Container className="pb-10">
@@ -57,7 +59,7 @@ export default function ProductsPage() {
               !category ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50',
             )}
           >
-            Tất cả
+            {t('products.all')}
           </button>
           {PRODUCT_CATEGORIES.map((c) => (
             <button
@@ -68,7 +70,7 @@ export default function ProductsPage() {
                 category === c.slug ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50',
               )}
             >
-              {c.name}
+              {productCategoryLabel(c.slug, lang)}
             </button>
           ))}
         </div>
@@ -78,7 +80,7 @@ export default function ProductsPage() {
           <div className="relative flex-1">
             <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" />
             <Input
-              placeholder="Tìm kiếm sản phẩm, SKU, thương hiệu…"
+              placeholder={t('common.search')}
               value={search}
               onChange={(e) => {
                 setSearch(e.target.value);
@@ -88,9 +90,9 @@ export default function ProductsPage() {
             />
           </div>
           <Select value={sort} onChange={(e) => setSort(e.target.value)} className="sm:w-56">
-            <option value="newest">Mới nhất</option>
-            <option value="price-asc">Giá tăng dần</option>
-            <option value="price-desc">Giá giảm dần</option>
+            <option value="newest">{t('products.sortNewest')}</option>
+            <option value="price-asc">{t('products.sortPriceAsc')}</option>
+            <option value="price-desc">{t('products.sortPriceDesc')}</option>
           </Select>
         </div>
 
@@ -98,7 +100,7 @@ export default function ProductsPage() {
           <LoadingBlock />
         ) : data && data.items.length > 0 ? (
           <>
-            <p className="mb-6 text-sm text-muted">Tìm thấy {data.total} sản phẩm</p>
+            <p className="mb-6 text-sm text-muted">{t('products.found')} {data.total} {t('products.productsUnit')}</p>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {data.items.map((p) => (
                 <ProductCard key={p.id} product={p} />
@@ -107,7 +109,7 @@ export default function ProductsPage() {
             <Pagination page={data.page} pageSize={data.pageSize} total={data.total} onChange={setPage} />
           </>
         ) : (
-          <EmptyState title="Không tìm thấy sản phẩm" description="Thử thay đổi từ khóa hoặc bộ lọc danh mục." />
+          <EmptyState title={t('products.empty')} />
         )}
       </Container>
 

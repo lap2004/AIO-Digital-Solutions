@@ -26,6 +26,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Apply saved theme/lang before paint to avoid a flash (default: dark / vi).
+      try {
+        var t = JSON.parse(localStorage.getItem('aio.theme') || '"dark"');
+        document.documentElement.classList.remove('dark', 'light');
+        document.documentElement.classList.add(t === 'light' ? 'light' : 'dark');
+        document.documentElement.style.colorScheme = t === 'light' ? 'light' : 'dark';
+        var l = JSON.parse(localStorage.getItem('aio.lang') || '"vi"');
+        document.documentElement.lang = l === 'en' ? 'en' : 'vi';
+      } catch (e) {}
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

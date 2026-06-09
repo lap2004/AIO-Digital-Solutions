@@ -1,10 +1,11 @@
-import type { ComponentType } from 'react';
-import * as Lucide from 'lucide-react';
-import { Box, type LucideProps } from 'lucide-react';
+import { cn } from '@/core/utils/cn';
 
-/** Render a lucide icon by its string name (used for data-driven icons). */
-export function Icon({ name, ...props }: { name: string } & LucideProps) {
-  const Resolved =
-    ((Lucide as unknown as Record<string, ComponentType<LucideProps>>)[name]) ?? Box;
-  return <Resolved {...props} />;
+/**
+ * Renders a Bootstrap Icon by name (without the `bi-` prefix).
+ * e.g. <Icon name="display" className="text-3xl" />
+ * Size is controlled via font-size (Tailwind text-* classes), since
+ * Bootstrap Icons are an icon font.
+ */
+export function Icon({ name, className }: { name: string; className?: string }) {
+  return <i className={cn('bi', `bi-${name}`, 'inline-flex leading-none', className)} aria-hidden="true" />;
 }

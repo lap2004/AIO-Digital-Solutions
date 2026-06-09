@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Sparkles } from 'lucide-react';
 import { COMPANY, COMPANY_STATS } from '@/core/constants/site';
+import { useI18n } from '@/core/i18n';
 import { useAsync } from '@/presentation/hooks/useAsync';
 import { services } from '@/app/services';
 import { Container } from '@/presentation/components/common/Container';
@@ -13,28 +14,35 @@ import { Seo } from '@/presentation/components/common/Seo';
 import { SolutionCard } from '@/presentation/components/business/SolutionCard';
 import { ProductCard } from '@/presentation/components/business/ProductCard';
 import { ProjectCard } from '@/presentation/components/business/ProjectCard';
-import { NewsCard } from '@/presentation/components/business/NewsCard';
 import { BrandCard } from '@/presentation/components/business/BrandCard';
 import { ContactCTA } from '@/presentation/components/sections/ContactCTA';
+import { BusinessAreas } from '@/presentation/components/sections/BusinessAreas';
 
-const HIGHLIGHTS = [
-  'Sản xuất & thi công màn hình LED trọn gói',
-  'Giải pháp Smart City, AI Camera, IoT',
-  'Đội ngũ kỹ sư giàu kinh nghiệm, bảo hành dài hạn',
+const HIGHLIGHTS_VI = [
+  'Thi công, lắp đặt màn hình LED · LCD ghép · standee quảng cáo',
+  'Quản lý, điều khiển & truyền tải nội dung từ xa, WiFi Marketing',
+  'Bảo trì – bảo hành – sửa chữa thiết bị màn hình',
+  'Tự động hóa hệ thống điện, mạng, camera, nhà máy',
+];
+const HIGHLIGHTS_EN = [
+  'Installation of LED screens · LCD video walls · standee displays',
+  'Remote content management, control & broadcast, WiFi Marketing',
+  'Maintenance – warranty – repair of display devices',
+  'Automation of power, network, camera and factory systems',
 ];
 
 export default function HomePage() {
+  const { t, pick } = useI18n();
   const { data: solutions } = useAsync(() => services.solutions.list(), []);
   const { data: products } = useAsync(() => services.products.featured(8), []);
   const { data: projects } = useAsync(() => services.projects.featured(6), []);
-  const { data: news } = useAsync(() => services.news.featured(3), []);
   const { data: brands } = useAsync(() => services.brands.list(), []);
 
   return (
     <>
       <Seo
-        title="AIO Digital Solutions — Giải pháp công nghệ số toàn diện"
-        description="Sản xuất, thi công, cho thuê màn hình LED; giải pháp Smart City, Camera AI, IoT và chuyển đổi số cho doanh nghiệp."
+        title="AIO Digital Solutions — Giải pháp màn hình hiển thị & tự động hóa"
+        description="Thi công lắp đặt màn hình LED, LCD ghép, standee quảng cáo; quản lý điều khiển hiển thị từ xa; bảo trì – bảo hành thiết bị; tự động hóa điện – mạng – camera – nhà máy."
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'Organization',
@@ -56,17 +64,15 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
             >
               <span className="eyebrow">
-                <Sparkles className="h-3.5 w-3.5" /> {COMPANY.slogan}
+                <Sparkles className="h-3.5 w-3.5" /> {pick(COMPANY.slogan, 'Total digital technology solutions')}
               </span>
               <h1 className="mt-6 text-balance text-4xl font-bold leading-[1.1] md:text-6xl">
-                Kiến tạo <span className="text-gradient">không gian số</span> cho doanh nghiệp hiện đại
+                {t('home.heroTitlePre')} <span className="text-gradient">{t('home.heroTitleHi')}</span>{' '}
+                {t('home.heroTitlePost')}
               </h1>
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-                AIO cung cấp giải pháp công nghệ trọn gói: màn hình LED, đô thị thông minh, Camera AI, IoT và
-                chuyển đổi số — từ tư vấn, thiết kế đến thi công và vận hành.
-              </p>
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">{t('home.heroDesc')}</p>
               <ul className="mt-8 space-y-3">
-                {HIGHLIGHTS.map((h) => (
+                {pick(HIGHLIGHTS_VI, HIGHLIGHTS_EN).map((h) => (
                   <li key={h} className="flex items-center gap-3 text-sm text-ink">
                     <CheckCircle2 className="h-5 w-5 shrink-0 text-brand-cyan" /> {h}
                   </li>
@@ -75,12 +81,12 @@ export default function HomePage() {
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <Link to="/giai-phap">
                   <Button size="lg">
-                    Khám phá giải pháp <ArrowRight className="h-5 w-5" />
+                    {t('home.exploreSolutions')} <ArrowRight className="h-5 w-5" />
                   </Button>
                 </Link>
                 <Link to="/du-an">
                   <Button size="lg" variant="outline">
-                    Xem dự án tiêu biểu
+                    {t('home.viewProjects')}
                   </Button>
                 </Link>
               </div>
@@ -103,7 +109,7 @@ export default function HomePage() {
                         {s.value}
                         {s.suffix}
                       </span>
-                      <span className="mt-1 text-xs text-muted">{s.label}</span>
+                      <span className="mt-1 text-xs text-muted">{pick(s.label, s.labelEn)}</span>
                     </div>
                   ))}
                 </div>
@@ -114,13 +120,16 @@ export default function HomePage() {
         </Container>
       </section>
 
+      {/* 4 mảng kinh doanh cốt lõi */}
+      <BusinessAreas />
+
       {/* Solutions */}
       <section className="py-20">
         <Container>
           <SectionHeader
-            eyebrow="Giải pháp"
-            title="Hệ sinh thái giải pháp công nghệ toàn diện"
-            description="Từ màn hình LED đến đô thị thông minh — AIO đồng hành cùng doanh nghiệp trên hành trình chuyển đổi số."
+            eyebrow={t('home.solutionsEyebrow')}
+            title={t('home.solutionsTitle')}
+            description={t('home.solutionsDesc')}
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {(solutions ?? []).slice(0, 6).map((s) => (
@@ -130,7 +139,7 @@ export default function HomePage() {
           <div className="mt-10 text-center">
             <Link to="/giai-phap">
               <Button variant="outline">
-                Tất cả giải pháp <ArrowRight className="h-4 w-4" />
+                {t('home.allSolutions')} <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
           </div>
@@ -142,7 +151,7 @@ export default function HomePage() {
         <Container>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {COMPANY_STATS.map((s) => (
-              <StatCard key={s.label} value={s.value} suffix={s.suffix} label={s.label} />
+              <StatCard key={s.label} value={s.value} suffix={s.suffix} label={pick(s.label, s.labelEn)} />
             ))}
           </div>
         </Container>
@@ -152,9 +161,9 @@ export default function HomePage() {
       <section className="py-20">
         <Container>
           <SectionHeader
-            eyebrow="Sản phẩm"
-            title="Sản phẩm nổi bật"
-            description="Thiết bị chính hãng từ các thương hiệu hàng đầu, phân phối và bảo hành bởi AIO."
+            eyebrow={t('home.productsEyebrow')}
+            title={t('home.productsTitle')}
+            description={t('home.productsDesc')}
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {(products ?? []).slice(0, 8).map((p) => (
@@ -164,7 +173,7 @@ export default function HomePage() {
           <div className="mt-10 text-center">
             <Link to="/san-pham">
               <Button variant="outline">
-                Xem tất cả sản phẩm <ArrowRight className="h-4 w-4" />
+                {t('home.allProducts')} <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
           </div>
@@ -175,9 +184,9 @@ export default function HomePage() {
       <section className="py-20">
         <Container>
           <SectionHeader
-            eyebrow="Dự án"
-            title="Dự án tiêu biểu"
-            description="Hàng trăm dự án đã triển khai trên khắp 63 tỉnh thành Việt Nam."
+            eyebrow={t('home.projectsEyebrow')}
+            title={t('home.projectsTitle')}
+            description={t('home.projectsDesc')}
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {(projects ?? []).slice(0, 6).map((p) => (
@@ -190,22 +199,10 @@ export default function HomePage() {
       {/* Brands */}
       <section className="py-12">
         <Container>
-          <SectionHeader eyebrow="Đối tác" title="Thương hiệu chúng tôi phân phối" />
+          <SectionHeader eyebrow={t('home.brandsEyebrow')} title={t('home.brandsTitle')} />
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
             {(brands ?? []).slice(0, 12).map((b) => (
               <BrandCard key={b.id} brand={b} />
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* News */}
-      <section className="py-20">
-        <Container>
-          <SectionHeader eyebrow="Tin tức" title="Tin tức & Kiến thức công nghệ" />
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {(news ?? []).slice(0, 3).map((a) => (
-              <NewsCard key={a.id} article={a} />
             ))}
           </div>
         </Container>

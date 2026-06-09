@@ -4,14 +4,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, FileText, Phone } from 'lucide-react';
 import { MAIN_NAV, COMPANY } from '@/core/constants/site';
 import { cn } from '@/core/utils/cn';
+import { useI18n } from '@/core/i18n';
 import { Logo } from './Logo';
 import { Button } from '@/presentation/components/common/Button';
+import { LanguageSwitcher } from '@/presentation/components/common/LanguageSwitcher';
+import { ThemeToggle } from '@/presentation/components/common/ThemeToggle';
 import { useQuoteStore } from '@/presentation/state/quote.store';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const { t } = useI18n();
   const count = useQuoteStore((s) => s.items.reduce((n, i) => n + i.quantity, 0));
 
   useEffect(() => {
@@ -46,16 +50,18 @@ export function Navbar() {
                   )
                 }
               >
-                {item.label}
+                {t(`nav.${item.to}`)}
               </NavLink>
             </li>
           ))}
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
+          <ThemeToggle />
+          <LanguageSwitcher />
           <Link to="/bao-gia" className="relative">
             <Button variant="outline" size="sm">
-              <FileText className="h-4 w-4" /> Báo giá
+              <FileText className="h-4 w-4" /> {t('common.getQuote')}
               {count > 0 && (
                 <span className="absolute -right-1.5 -top-1.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-brand-cyan px-1 text-[11px] font-bold text-background">
                   {count}
@@ -65,18 +71,22 @@ export function Navbar() {
           </Link>
           <Link to="/lien-he">
             <Button size="sm">
-              <Phone className="h-4 w-4" /> Liên hệ
+              <Phone className="h-4 w-4" /> {t('common.contact')}
             </Button>
           </Link>
         </div>
 
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
+          <LanguageSwitcher />
         <button
-          className="flex h-10 w-10 items-center justify-center rounded-lg text-white lg:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-lg text-white"
           onClick={() => setOpen((v) => !v)}
           aria-label="Menu"
         >
           {open ? <X /> : <Menu />}
         </button>
+        </div>
       </nav>
 
       <AnimatePresence>
@@ -100,14 +110,14 @@ export function Navbar() {
                       )
                     }
                   >
-                    {item.label}
+                    {t(`nav.${item.to}`)}
                   </NavLink>
                 </li>
               ))}
               <li className="flex gap-3 pt-2">
                 <Link to="/bao-gia" className="flex-1">
                   <Button variant="outline" size="sm" className="w-full">
-                    Báo giá {count > 0 && `(${count})`}
+                    {t('common.getQuote')} {count > 0 && `(${count})`}
                   </Button>
                 </Link>
                 <Link to="/lien-he" className="flex-1">

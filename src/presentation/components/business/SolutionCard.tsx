@@ -18,7 +18,7 @@ export function SolutionCard({ solution }: { solution: Solution }) {
       >
         <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-brand-blue/10 blur-2xl transition-all duration-500 group-hover:bg-brand-cyan/20" />
         <div className="relative mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-gradient text-white shadow-glow">
-          <Icon name={solution.icon} className="h-7 w-7" />
+          <Icon name={solution.icon} className="text-[1.75rem]" />
         </div>
         <h3 className="text-xl font-bold text-white transition group-hover:text-brand-cyan">{solution.name}</h3>
         <p className="clip-text-3 mt-3 flex-1 text-sm leading-relaxed text-muted">{solution.tagline}</p>
