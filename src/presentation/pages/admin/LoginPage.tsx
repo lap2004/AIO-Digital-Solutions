@@ -18,7 +18,7 @@ export default function LoginPage() {
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const ok = await login(email, password);
+    const ok = await login(email.trim(), password.trim());
     if (ok) {
       toast.success('Đăng nhập thành công');
       navigate('/admin');
