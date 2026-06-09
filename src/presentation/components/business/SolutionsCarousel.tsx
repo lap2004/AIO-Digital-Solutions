@@ -111,16 +111,16 @@ export function SolutionsCarousel({ items }: { items: Solution[] }) {
       <button
         onClick={() => go(activeDot - 1)}
         aria-label="Trước"
-        className="absolute -left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#0b1326]/80 text-ink backdrop-blur transition hover:border-brand-accent/50 hover:text-brand-cyan"
+        className="absolute -left-2 top-1/2 z-10 flex h-10 w-10 md:h-12 md:w-12 md:-left-6 xl:-left-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#0b1326]/95 text-white backdrop-blur shadow-xl transition hover:scale-110 hover:border-brand-accent/50 hover:text-brand-cyan hover:shadow-brand-accent/20"
       >
-        <ChevronLeft className="h-5 w-5" />
+        <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
       </button>
       <button
         onClick={() => go(activeDot + 1)}
         aria-label="Sau"
-        className="absolute -right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#0b1326]/80 text-ink backdrop-blur transition hover:border-brand-accent/50 hover:text-brand-cyan"
+        className="absolute -right-2 top-1/2 z-10 flex h-10 w-10 md:h-12 md:w-12 md:-right-6 xl:-right-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#0b1326]/95 text-white backdrop-blur shadow-xl transition hover:scale-110 hover:border-brand-accent/50 hover:text-brand-cyan hover:shadow-brand-accent/20"
       >
-        <ChevronRight className="h-5 w-5" />
+        <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
       </button>
 
       {/* Dots */}

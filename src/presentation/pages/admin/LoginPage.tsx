@@ -13,8 +13,8 @@ import { Seo } from '@/presentation/components/common/Seo';
 export default function LoginPage() {
   const navigate = useNavigate();
   const { login, loading, error } = useAuthStore();
-  const [email, setEmail] = useState('admin@aio.vn');
-  const [password, setPassword] = useState('admin123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -54,22 +54,7 @@ export default function LoginPage() {
             </Button>
           </form>
 
-          <div className="mt-6 rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-muted">
-            <p className="font-semibold text-ink">Tài khoản demo:</p>
-            <ul className="mt-2 space-y-1">
-              {authService.demoAccounts().map((a) => (
-                <li key={a.email}>
-                  <button
-                    type="button"
-                    onClick={() => { setEmail(a.email); setPassword(a.password); }}
-                    className="hover:text-brand-cyan"
-                  >
-                    {a.email} / {a.password} ({a.role})
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+
         </div>
       </div>
     </div>

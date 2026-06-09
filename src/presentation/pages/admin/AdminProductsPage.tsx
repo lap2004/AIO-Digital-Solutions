@@ -98,14 +98,7 @@ export default function AdminProductsPage() {
       { header: 'Danh mục', accessorKey: 'category', cell: ({ getValue }) => PRODUCT_CATEGORY_LABEL[getValue() as string] },
       { header: 'Thương hiệu', accessorKey: 'brand' },
       { header: 'Giá', accessorKey: 'price', cell: ({ getValue }) => (getValue() ? formatCurrency(getValue() as number) : '—') },
-      {
-        header: 'Trạng thái',
-        accessorKey: 'status',
-        cell: ({ getValue }) => {
-          const s = getValue() as Product['status'];
-          return <Badge tone={s === 'active' ? 'success' : s === 'draft' ? 'warning' : 'default'}>{s}</Badge>;
-        },
-      },
+
       {
         header: 'Thao tác',
         id: 'actions',
@@ -159,23 +152,39 @@ export default function AdminProductsPage() {
               </Select>
             </FieldWrapper>
             <FieldWrapper label="Giá (₫)">
-              <Input type="number" value={form.price} onChange={(e) => setForm({ ...form, price: Number(e.target.value) })} />
+              <div className="relative">
+                <Input
+                  type="text"
+                  value={form.price ? form.price.toLocaleString('vi-VN') : ''}
+                  onChange={(e) => {
+                    const val = e.target.value.replace(/\D/g, '');
+                    setForm({ ...form, price: Number(val) });
+                  }}
+                  className="pr-12 text-right font-medium tracking-wider"
+                  placeholder="0"
+                />
+                <span className="absolute inset-y-0 right-4 flex items-center text-sm font-medium text-muted">
+                  VNĐ
+                </span>
+              </div>
             </FieldWrapper>
           </div>
           <FieldWrapper label="Đường dẫn ảnh (/data-assets/… hoặc /images/…)">
             <Input value={form.image} onChange={(e) => setForm({ ...form, image: e.target.value })} placeholder="/data-assets/…" />
           </FieldWrapper>
-          <div className="grid grid-cols-2 gap-4">
-            <FieldWrapper label="Trạng thái">
-              <Select value={form.status} onChange={(e) => setForm({ ...form, status: e.target.value as Product['status'] })}>
-                <option value="active">active</option>
-                <option value="draft">draft</option>
-                <option value="archived">archived</option>
-              </Select>
-            </FieldWrapper>
-            <label className="flex items-end gap-2 pb-3">
-              <input type="checkbox" checked={form.featured} onChange={(e) => setForm({ ...form, featured: e.target.checked })} className="h-4 w-4 accent-brand-cyan" />
-              <span className="text-sm text-ink">Sản phẩm nổi bật</span>
+          <div className="flex items-center justify-between rounded-xl border border-white/5 bg-white/[0.02] p-4 transition-colors hover:bg-white/[0.04]">
+            <div>
+              <p className="text-sm font-medium text-white">Sản phẩm nổi bật</p>
+              <p className="text-xs text-muted">Hiển thị ưu tiên trên trang chủ và đầu danh sách sản phẩm</p>
+            </div>
+            <label className="relative inline-flex cursor-pointer items-center">
+              <input
+                type="checkbox"
+                checked={form.featured}
+                onChange={(e) => setForm({ ...form, featured: e.target.checked })}
+                className="peer sr-only"
+              />
+              <div className="peer h-6 w-11 rounded-full bg-slate-700 transition-all after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all after:content-[''] peer-checked:bg-brand-cyan peer-checked:after:translate-x-full peer-focus:outline-none"></div>
             </label>
           </div>
           <div className="flex justify-end gap-3 pt-2">

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import type { ColumnDef } from '@tanstack/react-table';
 import { toast } from 'sonner';
 import { Eye } from 'lucide-react';
@@ -22,6 +22,11 @@ const TONE: Record<QuotationStatus, 'default' | 'info' | 'success' | 'danger'> =
 export default function AdminQuotationsPage() {
   const { data, loading, reload } = useAsync(() => services.quotations.list(), []);
   const [view, setView] = useState<Quotation | null>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => reload(), 2000);
+    return () => clearInterval(interval);
+  }, [reload]);
 
   const changeStatus = async (q: Quotation, status: QuotationStatus) => {
     await services.quotations.update(q.id, { status });

@@ -34,8 +34,14 @@ export const getSolutionBySlug = (repo: SolutionRepository) => (slug: string) =>
 
 export const submitLead =
   (repo: LeadRepository) =>
-  (input: Omit<Lead, 'id' | 'createdAt' | 'updatedAt'>) =>
-    repo.create(input);
+  async (input: Omit<Lead, 'id' | 'createdAt' | 'updatedAt'>) => {
+    const existing = await repo.list();
+    const duplicate = existing.find((l) => l.email === input.email || l.phone === input.phone);
+    if (duplicate) {
+      throw new Error('Email hoặc số điện thoại này đã được đăng ký. Chúng tôi sẽ sớm liên hệ lại với bạn!');
+    }
+    return repo.create(input);
+  };
 
 export const moveLeadStage =
   (repo: LeadRepository) =>
@@ -43,6 +49,10 @@ export const moveLeadStage =
     repo.update(id, { status });
 
 /** Aggregate dashboard metrics from multiple repositories. */
+export interface RevenueData {
+  month: string;
+  value: number;
+}
 export interface DashboardStats {
   totalProducts: number;
   totalProjects: number;
@@ -51,6 +61,8 @@ export interface DashboardStats {
   wonLeads: number;
   pipelineValue: number;
   totalQuotations: number;
+  totalVisitors: number;
+  revenueData: RevenueData[];
 }
 
 export const getDashboardStats =
@@ -79,6 +91,27 @@ export const getDashboardStats =
         .filter((l) => l.status !== 'lost')
         .reduce((s, l) => s + l.estimatedValue, 0),
       totalQuotations: quotations.length,
+      totalVisitors: (() => {
+        try {
+          const sessions = JSON.parse(localStorage.getItem('aio.active_sessions') || '{}');
+          const now = Date.now();
+          return Object.values(sessions).filter((time: any) => now - time < 5000).length || 1;
+        } catch {
+          return 1;
+        }
+      })(),
+      revenueData: (() => {
+        const map = new Map<string, number>();
+        for (let i = 1; i <= 12; i++) map.set(`T${i}`, 0);
+        leads.forEach((l) => {
+          if (l.status === 'won') {
+            const date = new Date(l.updatedAt);
+            const m = `T${date.getMonth() + 1}`;
+            map.set(m, (map.get(m) || 0) + l.estimatedValue / 1_000_000_000);
+          }
+        });
+        return Array.from(map.entries()).map(([month, val]) => ({ month, value: Number(val.toFixed(2)) }));
+      })(),
     };
   };
 

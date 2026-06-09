@@ -15,7 +15,7 @@ export const env: AppEnv = {
   apiBaseUrl: (raw.VITE_API_BASE_URL as string) || '',
   siteUrl: (raw.VITE_SITE_URL as string) || 'https://aiogroup.vn',
   siteName: (raw.VITE_SITE_NAME as string) || 'AIO Digital Solutions',
-  hotline: (raw.VITE_CONTACT_HOTLINE as string) || '1900 0000',
+  hotline: (raw.VITE_CONTACT_HOTLINE as string) || '038 4204555',
   zalo: (raw.VITE_CONTACT_ZALO as string) || '',
   useRemoteApi: Boolean(raw.VITE_API_BASE_URL),
 };

@@ -21,7 +21,7 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
-              {COMPANY.legalName}. {t('footer.about')}
+              {COMPANY.legalName}
             </p>
             <ul className="mt-6 space-y-3 text-sm text-muted">
               <li className="flex gap-3">

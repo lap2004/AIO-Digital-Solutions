@@ -37,20 +37,24 @@ export default function ContactPage() {
   });
 
   const onSubmit = async (values: FormValues) => {
-    await services.leads.submit({
-      name: values.name,
-      company: values.company ?? '',
-      email: values.email,
-      phone: values.phone,
-      status: 'new',
-      source: 'website',
-      interest: values.interest,
-      estimatedValue: 0,
-      assignedTo: '',
-      note: values.message,
-    });
-    toast.success('Đã gửi liên hệ! Đội ngũ AIO sẽ phản hồi trong 24 giờ.');
-    reset();
+    try {
+      await services.leads.submit({
+        name: values.name,
+        company: values.company ?? '',
+        email: values.email,
+        phone: values.phone,
+        status: 'new',
+        source: 'website',
+        interest: values.interest,
+        estimatedValue: 0,
+        assignedTo: '',
+        note: values.message,
+      });
+      toast.success('Đã gửi liên hệ! Đội ngũ AIO sẽ phản hồi trong 24 giờ.');
+      reset();
+    } catch (e) {
+      toast.error(e instanceof Error ? e.message : 'Đã có lỗi xảy ra');
+    }
   };
 
   return (

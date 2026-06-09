@@ -2,7 +2,7 @@ import type { Lead, LeadSource, LeadStatus } from '@/domain/entities';
 import { seededRandom, pick } from '@/core/utils/slug';
 import { ENTERPRISE_CLIENTS, FIRST_NAMES, LAST_NAMES, SALES_TEAM } from './seed';
 
-const STATUSES: LeadStatus[] = ['new', 'contacted', 'quotation-sent', 'negotiation', 'won', 'lost'];
+const STATUSES: LeadStatus[] = ['new', 'contacted', 'negotiation', 'won', 'lost'];
 const SOURCES: LeadSource[] = ['website', 'referral', 'campaign', 'hotline', 'zalo', 'event'];
 const INTERESTS = [
   'Màn hình LED trong nhà P2',

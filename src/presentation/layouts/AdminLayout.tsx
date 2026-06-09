@@ -14,7 +14,6 @@ const NAV = [
   { to: '/admin', label: 'Tổng quan', icon: LayoutDashboard, end: true },
   { to: '/admin/san-pham', label: 'Sản phẩm', icon: Package },
   { to: '/admin/du-an', label: 'Dự án', icon: Building2 },
-  { to: '/admin/tin-tuc', label: 'Tin tức', icon: Newspaper },
   { to: '/admin/crm', label: 'CRM - Khách hàng', icon: Users },
   { to: '/admin/bao-gia', label: 'Báo giá', icon: FileText },
 ];

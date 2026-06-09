@@ -176,21 +176,35 @@ class InMemoryJobRepository implements JobRepository {
 
 /* ------------------------------ Leads ------------------------------- */
 class InMemoryLeadRepository implements LeadRepository {
-  private data: Lead[] = [...LEADS];
+  private get data(): Lead[] {
+    try {
+      const stored = localStorage.getItem('aio.leads');
+      return stored ? JSON.parse(stored) : [];
+    } catch {
+      return [];
+    }
+  }
+  private set data(leads: Lead[]) {
+    localStorage.setItem('aio.leads', JSON.stringify(leads));
+  }
   async list(): Promise<Lead[]> {
     return delay([...this.data]);
   }
   async create(input: Omit<Lead, 'id' | 'createdAt' | 'updatedAt'>) {
     const now = new Date().toISOString();
     const lead: Lead = { ...input, id: `lead-${uid()}`, createdAt: now, updatedAt: now };
-    this.data.unshift(lead);
+    const current = this.data;
+    current.unshift(lead);
+    this.data = current;
     return delay(lead);
   }
   async update(id: string, patch: Partial<Lead>) {
-    const idx = this.data.findIndex((l) => l.id === id);
+    const current = this.data;
+    const idx = current.findIndex((l) => l.id === id);
     if (idx < 0) throw new Error('Không tìm thấy lead');
-    this.data[idx] = { ...this.data[idx], ...patch, updatedAt: new Date().toISOString() };
-    return delay(this.data[idx]);
+    current[idx] = { ...current[idx], ...patch, updatedAt: new Date().toISOString() };
+    this.data = current;
+    return delay(current[idx]);
   }
   async remove(id: string) {
     this.data = this.data.filter((l) => l.id !== id);
@@ -200,7 +214,17 @@ class InMemoryLeadRepository implements LeadRepository {
 
 /* --------------------------- Quotations ----------------------------- */
 class InMemoryQuotationRepository implements QuotationRepository {
-  private data: Quotation[] = [...QUOTATIONS];
+  private get data(): Quotation[] {
+    try {
+      const stored = localStorage.getItem('aio.quotations');
+      return stored ? JSON.parse(stored) : [];
+    } catch {
+      return [];
+    }
+  }
+  private set data(quotations: Quotation[]) {
+    localStorage.setItem('aio.quotations', JSON.stringify(quotations));
+  }
   async list(): Promise<Quotation[]> {
     return delay([...this.data]);
   }
@@ -211,14 +235,18 @@ class InMemoryQuotationRepository implements QuotationRepository {
       code: `BG-2026-${Math.floor(1000 + Math.random() * 9000)}`,
       createdAt: new Date().toISOString(),
     };
-    this.data.unshift(quotation);
+    const current = this.data;
+    current.unshift(quotation);
+    this.data = current;
     return delay(quotation);
   }
   async update(id: string, patch: Partial<Quotation>) {
-    const idx = this.data.findIndex((q) => q.id === id);
+    const current = this.data;
+    const idx = current.findIndex((q) => q.id === id);
     if (idx < 0) throw new Error('Không tìm thấy báo giá');
-    this.data[idx] = { ...this.data[idx], ...patch };
-    return delay(this.data[idx]);
+    current[idx] = { ...current[idx], ...patch };
+    this.data = current;
+    return delay(current[idx]);
   }
   async remove(id: string) {
     this.data = this.data.filter((q) => q.id !== id);

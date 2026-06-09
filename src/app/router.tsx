@@ -21,7 +21,6 @@ const LoginPage = lazy(() => import('@/presentation/pages/admin/LoginPage'));
 const DashboardPage = lazy(() => import('@/presentation/pages/admin/DashboardPage'));
 const AdminProductsPage = lazy(() => import('@/presentation/pages/admin/AdminProductsPage'));
 const AdminProjectsPage = lazy(() => import('@/presentation/pages/admin/AdminProjectsPage'));
-const AdminNewsPage = lazy(() => import('@/presentation/pages/admin/AdminNewsPage'));
 const AdminCrmPage = lazy(() => import('@/presentation/pages/admin/AdminCrmPage'));
 const AdminQuotationsPage = lazy(() => import('@/presentation/pages/admin/AdminQuotationsPage'));
 
@@ -50,7 +49,6 @@ export const router = createBrowserRouter([
       { index: true, element: <DashboardPage /> },
       { path: 'san-pham', element: <AdminProductsPage /> },
       { path: 'du-an', element: <AdminProjectsPage /> },
-      { path: 'tin-tuc', element: <AdminNewsPage /> },
       { path: 'crm', element: <AdminCrmPage /> },
       { path: 'bao-gia', element: <AdminQuotationsPage /> },
     ],

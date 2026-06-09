@@ -11,8 +11,8 @@ export const COMPANY = {
   addressEn:
     'No. 05, Lane 198, Ly Thuong Kiet Street, Group 7 - Ky Ba, Tran Lam Ward, Hung Yen Province, Vietnam',
   email: 'AIOgroup.led@gmail.com',
-  hotline: '1900 0000',
-  zalo: 'https://zalo.me/',
+  hotline: '038 4204555',
+  zalo: 'https://zalo.me/0384204555',
   workingHours: 'Thứ 2 - Thứ 7: 08:00 - 17:30',
   workingHoursEn: 'Mon - Sat: 08:00 - 17:30',
   slogan: 'Giải pháp công nghệ số toàn diện',

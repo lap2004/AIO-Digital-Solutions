@@ -1,9 +1,9 @@
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
 import {
   Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer,
   Tooltip, XAxis, YAxis,
 } from 'recharts';
-import { Package, Building2, Users, FileText, TrendingUp, Newspaper } from 'lucide-react';
+import { Package, Building2, Users, FileText, TrendingUp, Eye } from 'lucide-react';
 import { LEAD_STATUS_LABEL } from '@/domain/entities';
 import { PRODUCT_CATEGORIES } from '@/core/constants/catalog';
 import { formatCompact, formatNumber } from '@/core/utils/format';
@@ -16,17 +16,16 @@ import { Seo } from '@/presentation/components/common/Seo';
 
 const COLORS = ['#00E5FF', '#0066FF', '#38BDF8', '#7C3AED', '#22C55E', '#F59E0B', '#EF4444', '#14B8A6'];
 
-const REVENUE = [
-  { month: 'T1', value: 1.2 }, { month: 'T2', value: 1.8 }, { month: 'T3', value: 2.4 },
-  { month: 'T4', value: 2.1 }, { month: 'T5', value: 3.2 }, { month: 'T6', value: 3.8 },
-  { month: 'T7', value: 3.1 }, { month: 'T8', value: 4.2 }, { month: 'T9', value: 4.9 },
-  { month: 'T10', value: 4.4 }, { month: 'T11', value: 5.6 }, { month: 'T12', value: 6.3 },
-];
 
 export default function DashboardPage() {
-  const { data: stats } = useAsync(() => services.dashboard(), []);
+  const { data: stats, reload } = useAsync(() => services.dashboard(), []);
   const { data: leads } = useAsync(() => services.leads.list(), []);
   const { data: products } = useAsync(() => services.products.list({ pageSize: 500 }), []);
+
+  useEffect(() => {
+    const interval = setInterval(() => reload(), 2000);
+    return () => clearInterval(interval);
+  }, [reload]);
 
   const leadsByStatus = useMemo(() => {
     const map = new Map<string, number>();
@@ -43,10 +42,9 @@ export default function DashboardPage() {
   if (!stats) return <LoadingBlock />;
 
   const tiles = [
+    { label: 'Lượt truy cập hiện tại', value: stats.totalVisitors, icon: Eye, tone: 'text-blue-400' },
     { label: 'Sản phẩm', value: stats.totalProducts, icon: Package, tone: 'text-brand-cyan' },
     { label: 'Dự án', value: stats.totalProjects, icon: Building2, tone: 'text-brand-accent' },
-    { label: 'Bài viết', value: stats.totalNews, icon: Newspaper, tone: 'text-violet-400' },
-    { label: 'Khách hàng (Leads)', value: stats.totalLeads, icon: Users, tone: 'text-emerald-400' },
     { label: 'Báo giá', value: stats.totalQuotations, icon: FileText, tone: 'text-amber-400' },
     { label: 'Deal thành công', value: stats.wonLeads, icon: TrendingUp, tone: 'text-emerald-400' },
   ];
@@ -57,7 +55,7 @@ export default function DashboardPage() {
       <AdminPageHeader title="Tổng quan" description="Bảng điều khiển hệ thống AIO Digital Solutions" />
 
       {/* Tiles */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {tiles.map((t) => (
           <Card key={t.label} className="p-5">
             <t.icon className={`h-7 w-7 ${t.tone}`} />
@@ -81,7 +79,7 @@ export default function DashboardPage() {
         <Card className="p-6">
           <h3 className="mb-4 font-bold text-white">Doanh thu theo tháng (tỷ ₫)</h3>
           <ResponsiveContainer width="100%" height={280}>
-            <AreaChart data={REVENUE}>
+            <AreaChart data={stats.revenueData}>
               <defs>
                 <linearGradient id="rev" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0%" stopColor="#00E5FF" stopOpacity={0.5} />
@@ -128,7 +126,7 @@ export default function DashboardPage() {
           </ResponsiveContainer>
         </Card>
       </div>
-      <p className="mt-4 text-right text-xs text-muted">Doanh thu mô phỏng · {formatCompact(stats.pipelineValue)} pipeline</p>
+      <p className="mt-4 text-right text-xs text-muted">Dữ liệu thực tế · {formatCompact(stats.pipelineValue)} pipeline</p>
     </>
   );
 }

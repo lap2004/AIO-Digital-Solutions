@@ -2,7 +2,6 @@
 export type LeadStatus =
   | 'new'
   | 'contacted'
-  | 'quotation-sent'
   | 'negotiation'
   | 'won'
   | 'lost';
@@ -28,7 +27,6 @@ export interface Lead {
 export const LEAD_STATUS_FLOW: LeadStatus[] = [
   'new',
   'contacted',
-  'quotation-sent',
   'negotiation',
   'won',
   'lost',
@@ -36,8 +34,7 @@ export const LEAD_STATUS_FLOW: LeadStatus[] = [
 
 export const LEAD_STATUS_LABEL: Record<LeadStatus, string> = {
   new: 'Mới',
-  contacted: 'Đã liên hệ',
-  'quotation-sent': 'Đã gửi báo giá',
+  contacted: 'Đã liên hệ & Báo giá',
   negotiation: 'Đàm phán',
   won: 'Thành công',
   lost: 'Thất bại',
