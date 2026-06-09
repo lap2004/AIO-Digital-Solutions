@@ -66,8 +66,15 @@ export function SolutionsCarousel({ items }: { items: Solution[] }) {
   }, [animate]);
 
   const go = (next: number) => {
+    if (next === index) return;
     setAnimate(true);
-    setIndex(((next % items.length) + items.length) % items.length);
+    if (next === items.length) {
+      setIndex(items.length);
+    } else if (next < 0) {
+      setIndex(items.length - 1);
+    } else {
+      setIndex(next);
+    }
   };
 
   const trackRef = useRef<HTMLDivElement>(null);

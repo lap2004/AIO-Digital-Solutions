@@ -63,7 +63,7 @@ export default function ContactPage() {
         breadcrumb={[{ label: t('nav./lien-he') }]}
       />
 
-      <Container className="pb-20">
+      <Container className="pt-8 pb-20 lg:pt-12">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr]">
           {/* Info */}
           <div className="space-y-6">
@@ -102,7 +102,7 @@ export default function ContactPage() {
               </div>
             </Card>
 
-            <a href={COMPANY.zalo} target="_blank" rel="noreferrer">
+            <a href={COMPANY.zalo} target="_blank" rel="noreferrer" className="block mt-4">
               <Button variant="outline" className="w-full">
                 <MessageCircle className="h-4 w-4" /> {t('contact.chatZalo')}
               </Button>

@@ -49,14 +49,16 @@ export default function ProductsPage() {
         breadcrumb={[{ label: t('nav./san-pham') }]}
       />
 
-      <Container className="pb-10">
+      <Container className="pt-6 pb-10 lg:pt-8 lg:pb-16">
         {/* Category chips */}
-        <div className="mb-8 flex flex-wrap gap-2">
+        <div className="mb-8 flex flex-wrap items-center gap-3">
           <button
             onClick={() => setCategory('')}
             className={cn(
-              'rounded-full border px-4 py-2 text-sm font-medium transition',
-              !category ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50',
+              'whitespace-nowrap rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300',
+              !category
+                ? 'border-transparent bg-brand-gradient text-white shadow-glow'
+                : 'border-white/10 bg-white/5 text-ink hover:border-brand-accent/50 hover:bg-white/10 hover:text-white',
             )}
           >
             {t('products.all')}
@@ -66,8 +68,10 @@ export default function ProductsPage() {
               key={c.slug}
               onClick={() => setCategory(c.slug)}
               className={cn(
-                'rounded-full border px-4 py-2 text-sm font-medium transition',
-                category === c.slug ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50',
+                'whitespace-nowrap rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300',
+                category === c.slug
+                  ? 'border-transparent bg-brand-gradient text-white shadow-glow'
+                  : 'border-white/10 bg-white/5 text-ink hover:border-brand-accent/50 hover:bg-white/10 hover:text-white',
               )}
             >
               {productCategoryLabel(c.slug, lang)}

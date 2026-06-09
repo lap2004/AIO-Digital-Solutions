@@ -84,14 +84,11 @@ export default function AboutPage() {
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             {BUSINESS_AREAS.map((area, i) => (
               <Card key={area.slug} hover className="p-7">
-                <div className="flex items-start gap-4">
+                <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-accent/15 text-brand-accent">
                     <Icon name={area.icon} className="text-2xl" />
                   </div>
-                  <div>
-                    <span className="text-xs font-bold text-brand-accent">0{i + 1}</span>
-                    <h3 className="text-lg font-bold leading-snug text-white">{pick(area.title, area.titleEn)}</h3>
-                  </div>
+                  <h3 className="text-xl font-bold leading-tight text-white">{pick(area.title, area.titleEn)}</h3>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted">{pick(area.tagline, area.taglineEn)}</p>
                 <ul className="mt-4 grid gap-2 sm:grid-cols-2">

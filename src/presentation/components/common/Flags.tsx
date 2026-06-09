@@ -6,7 +6,7 @@ export function FlagVN({ className }: { className?: string }) {
       <rect width="30" height="20" fill="#DA251D" />
       <path
         fill="#FF0"
-        d="M15 4l1.76 5.42h5.7l-4.61 3.35 1.76 5.41L15 14.83l-4.61 3.35 1.76-5.41-4.61-3.35h5.7z"
+        d="M15,4 L16.35,8.15 L20.71,8.15 L17.18,10.71 L18.53,14.85 L15,12.29 L11.47,14.85 L12.82,10.71 L9.29,8.15 L13.65,8.15 Z"
       />
     </svg>
   );

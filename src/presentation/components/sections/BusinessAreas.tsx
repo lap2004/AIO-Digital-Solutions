@@ -32,16 +32,13 @@ export function BusinessAreas() {
                 className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-[#0b1326]/60 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-accent/40 hover:shadow-glow"
               >
                 <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-brand-blue/10 blur-3xl transition-all duration-500 group-hover:bg-brand-cyan/20" />
-                <div className="relative flex items-start gap-5">
+                <div className="relative flex items-center gap-5">
                   <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-brand-gradient text-white shadow-glow">
                     <Icon name={area.icon} className="text-[2rem]" />
                   </div>
-                  <div>
-                    <span className="text-xs font-bold text-brand-accent">0{i + 1}</span>
-                    <h3 className="text-xl font-bold leading-snug text-white transition group-hover:text-brand-cyan">
-                      {pick(area.title, area.titleEn)}
-                    </h3>
-                  </div>
+                  <h3 className="text-2xl font-bold leading-tight text-white transition group-hover:text-brand-cyan">
+                    {pick(area.title, area.titleEn)}
+                  </h3>
                 </div>
                 <p className="relative mt-4 text-sm leading-relaxed text-muted">{pick(area.tagline, area.taglineEn)}</p>
                 <ul className="relative mt-5 grid flex-1 grid-cols-1 gap-2.5 sm:grid-cols-2">

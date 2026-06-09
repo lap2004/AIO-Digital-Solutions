@@ -62,7 +62,7 @@ export function Navbar() {
           <ThemeToggle />
           <LanguageSwitcher />
           <Link to="/bao-gia" className="relative">
-            <Button variant="outline" size="sm" className="min-w-[120px]">
+            <Button variant="outline" size="sm" className="w-[140px]">
               <FileText className="h-4 w-4" /> {t('common.getQuote')}
               {count > 0 && (
                 <span className="absolute -right-1.5 -top-1.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-brand-cyan px-1 text-[11px] font-bold text-background">
@@ -72,7 +72,7 @@ export function Navbar() {
             </Button>
           </Link>
           <Link to="/lien-he">
-            <Button size="sm" className="min-w-[112px]">
+            <Button size="sm" className="w-[120px]">
               <Phone className="h-4 w-4" /> {t('common.contact')}
             </Button>
           </Link>

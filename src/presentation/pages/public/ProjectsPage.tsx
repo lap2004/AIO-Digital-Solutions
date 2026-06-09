@@ -36,11 +36,16 @@ export default function ProjectsPage() {
         breadcrumb={[{ label: t('nav./du-an') }]}
       />
 
-      <Container className="pb-10">
-        <div className="mb-8 flex flex-wrap gap-2">
+      <Container className="pt-6 pb-10 lg:pt-8 lg:pb-16">
+        <div className="mb-8 flex flex-wrap items-center gap-3">
           <button
             onClick={() => { setCategory(''); setPage(1); }}
-            className={cn('rounded-full border px-4 py-2 text-sm font-medium transition', !category ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50')}
+            className={cn(
+              'whitespace-nowrap rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300',
+              !category
+                ? 'border-transparent bg-brand-gradient text-white shadow-glow'
+                : 'border-white/10 bg-white/5 text-ink hover:border-brand-accent/50 hover:bg-white/10 hover:text-white',
+            )}
           >
             {t('products.all')}
           </button>
@@ -48,7 +53,12 @@ export default function ProjectsPage() {
             <button
               key={slug}
               onClick={() => { setCategory(slug); setPage(1); }}
-              className={cn('rounded-full border px-4 py-2 text-sm font-medium transition', category === slug ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50')}
+              className={cn(
+                'whitespace-nowrap rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300',
+                category === slug
+                  ? 'border-transparent bg-brand-gradient text-white shadow-glow'
+                  : 'border-white/10 bg-white/5 text-ink hover:border-brand-accent/50 hover:bg-white/10 hover:text-white',
+              )}
             >
               {projectCategoryLabel(slug, lang)}
             </button>

@@ -1,4 +1,17 @@
-import { forwardRef, type InputHTMLAttributes, type TextareaHTMLAttributes, type SelectHTMLAttributes, type ReactNode } from 'react';
+import { 
+  forwardRef, 
+  useState, 
+  useRef, 
+  useEffect, 
+  Children, 
+  isValidElement,
+  type InputHTMLAttributes, 
+  type TextareaHTMLAttributes, 
+  type SelectHTMLAttributes, 
+  type ReactNode 
+} from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 import { cn } from '@/core/utils/cn';
 
 const base =
@@ -46,9 +59,89 @@ Textarea.displayName = 'Textarea';
 export const Select = forwardRef<
   HTMLSelectElement,
   SelectHTMLAttributes<HTMLSelectElement> & { error?: string }
->(({ className, error, children, ...props }, ref) => (
-  <select ref={ref} className={cn(base, 'appearance-none', error && 'border-red-500/60', className)} {...props}>
-    {children}
-  </select>
-));
+>(({ className, error, children, value, onChange, ...props }, ref) => {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const options = Children.toArray(children).map(child => {
+    if (isValidElement(child) && child.type === 'option') {
+      return {
+        value: child.props.value,
+        label: child.props.children
+      };
+    }
+    return null;
+  }).filter(Boolean);
+
+  const selectedOption = options.find(o => o?.value === value) || options[0];
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  return (
+    <div className={cn("relative", className)} ref={containerRef}>
+      <select ref={ref} value={value} onChange={onChange} className="hidden" {...props}>
+        {children}
+      </select>
+
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className={cn(
+          base,
+          "flex items-center justify-between text-left",
+          error && 'border-red-500/60'
+        )}
+      >
+        <span className="truncate">{selectedOption?.label}</span>
+        <ChevronDown className={cn("h-4 w-4 shrink-0 text-muted transition-transform duration-200", open && "rotate-180")} />
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -10, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -10, scale: 0.95 }}
+            transition={{ duration: 0.15 }}
+            className="absolute left-0 z-50 mt-2 w-full min-w-max overflow-hidden rounded-xl border border-white/10 bg-[#0f172a] shadow-2xl backdrop-blur-md"
+          >
+            <div className="max-h-60 overflow-y-auto p-1 hide-scrollbar">
+              {options.map(option => (
+                <button
+                  key={option?.value}
+                  type="button"
+                  onClick={() => {
+                    if (onChange) {
+                      const event = {
+                        target: { value: option?.value, name: props.name }
+                      } as any;
+                      onChange(event);
+                    }
+                    setOpen(false);
+                  }}
+                  className={cn(
+                    "flex w-full items-center rounded-lg px-3 py-2.5 text-left text-sm transition-colors duration-150",
+                    value === option?.value
+                      ? "bg-brand-accent/20 text-brand-cyan font-medium"
+                      : "text-white hover:bg-white/10"
+                  )}
+                >
+                  {option?.label}
+                </button>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+});
 Select.displayName = 'Select';
