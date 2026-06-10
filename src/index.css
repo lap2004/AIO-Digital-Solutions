@@ -10,6 +10,7 @@
   /* Dark theme (default) */
   :root,
   html.dark {
+    color-scheme: dark;
     --surface: 15 23 42; /* #0F172A */
     --ink: 226 232 240; /* slate-200 */
     --muted: 148 163 184; /* slate-400 */
@@ -29,6 +30,7 @@
 
   /* Light theme */
   html.light {
+    color-scheme: light;
     --surface: 255 255 255;
     --ink: 30 41 59; /* slate-800 body text */
     --muted: 71 85 105; /* slate-600 */

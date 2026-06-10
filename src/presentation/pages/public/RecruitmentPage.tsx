@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Briefcase, Wallet, ArrowRight } from 'lucide-react';
 import { JOB_TYPE_LABEL } from '@/domain/entities';
+import { useI18n } from '@/core/i18n';
 import { useAsync } from '@/presentation/hooks/useAsync';
 import { services } from '@/app/services';
 import { Container } from '@/presentation/components/common/Container';
@@ -13,16 +14,17 @@ import { PageHero } from '@/presentation/components/sections/PageHero';
 import { ContactCTA } from '@/presentation/components/sections/ContactCTA';
 
 export default function RecruitmentPage() {
+  const { pick } = useI18n();
   const { data, loading } = useAsync(() => services.jobs.list({ pageSize: 50 }), []);
 
   return (
     <>
-      <Seo title="Tuyển dụng | AIO Digital Solutions" description="Cơ hội nghề nghiệp tại AIO — gia nhập đội ngũ công nghệ năng động." />
+      <Seo title={`${pick('Tuyển dụng', 'Recruitment')} | AIO Digital Solutions`} description={pick('Cơ hội nghề nghiệp tại AIO — gia nhập đội ngũ công nghệ năng động.', 'Career opportunities at AIO — join a dynamic technology team.')} />
       <PageHero
-        eyebrow="Tuyển dụng"
-        title="Gia nhập đội ngũ AIO"
-        description="Cùng nhau kiến tạo những giải pháp công nghệ tạo nên khác biệt."
-        breadcrumb={[{ label: 'Tuyển dụng' }]}
+        eyebrow={pick('Tuyển dụng', 'Recruitment')}
+        title={pick('Gia nhập đội ngũ AIO', 'Join the AIO Team')}
+        description={pick('Cùng nhau kiến tạo những giải pháp công nghệ tạo nên khác biệt.', 'Together, let us build technology solutions that make a difference.')}
+        breadcrumb={[{ label: pick('Tuyển dụng', 'Recruitment') }]}
       />
 
       <Container className="pb-10">
@@ -45,13 +47,13 @@ export default function RecruitmentPage() {
                   </div>
                 </div>
                 <Link to={`/tuyen-dung/${job.slug}`}>
-                  <Button variant="outline">Xem & Ứng tuyển <ArrowRight className="h-4 w-4" /></Button>
+                  <Button variant="outline">{pick('Xem & Ứng tuyển', 'View & Apply')} <ArrowRight className="h-4 w-4" /></Button>
                 </Link>
               </Card>
             ))}
           </div>
         ) : (
-          <EmptyState title="Hiện chưa có vị trí tuyển dụng" />
+          <EmptyState title={pick('Hiện chưa có vị trí tuyển dụng', 'No open positions at the moment')} />
         )}
       </Container>
 

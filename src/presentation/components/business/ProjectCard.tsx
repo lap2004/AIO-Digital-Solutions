@@ -9,7 +9,7 @@ import { SmartImage } from '@/presentation/components/common/SmartImage';
 import { Badge } from '@/presentation/components/common/Badge';
 
 export function ProjectCard({ project }: { project: Project }) {
-  const { lang } = useI18n();
+  const { lang, pick } = useI18n();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <div className="relative aspect-[16/11] overflow-hidden bg-[#020617]">
           <SmartImage
             src={project.cover}
-            alt={project.name}
+            alt={pick(project.name, project.nameEn) ?? ''}
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/40 to-transparent" />
@@ -34,11 +34,11 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
         <div className="text-on-media absolute inset-x-0 bottom-0 p-5">
           <h3 className="clip-text-2 font-bold leading-snug text-white transition group-hover:text-brand-cyan">
-            {project.name}
+            {pick(project.name, project.nameEn)}
           </h3>
           <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted">
             <span className="flex items-center gap-1">
-              <MapPin className="h-3.5 w-3.5" /> {project.location}
+              <MapPin className="h-3.5 w-3.5" /> {pick(project.location, project.locationEn)}
             </span>
             <span className="flex items-center gap-1">
               <Calendar className="h-3.5 w-3.5" /> {formatDate(project.completedAt)}

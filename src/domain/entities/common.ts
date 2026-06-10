@@ -15,11 +15,14 @@ export interface MediaAsset {
 
 export interface SpecItem {
   label: string;
+  labelEn?: string;
   value: string;
+  valueEn?: string;
 }
 
 export interface DocumentRef {
   label: string;
+  labelEn?: string;
   url: string;
   sizeKb?: number;
 }

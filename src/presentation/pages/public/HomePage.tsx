@@ -19,13 +19,13 @@ import { ContactCTA } from '@/presentation/components/sections/ContactCTA';
 import { BusinessAreas } from '@/presentation/components/sections/BusinessAreas';
 
 const HIGHLIGHTS_VI = [
-  'Thi công, lắp đặt màn hình LED · LCD ghép · standee quảng cáo',
+  'Thi công, lắp đặt màn hình LED · LCD ghép · Standee quảng cáo',
   'Quản lý, điều khiển & truyền tải nội dung từ xa, WiFi Marketing',
   'Bảo trì – bảo hành – sửa chữa thiết bị màn hình',
   'Tự động hóa hệ thống điện, mạng, camera, nhà máy',
 ];
 const HIGHLIGHTS_EN = [
-  'Installation of LED screens · LCD video walls · standee displays',
+  'Installation of LED screens · LCD video walls · Standee displays',
   'Remote content management, control & broadcast, WiFi Marketing',
   'Maintenance – warranty – repair of display devices',
   'Automation of power, network, camera and factory systems',
@@ -93,27 +93,37 @@ export default function HomePage() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, delay: 0.15 }}
               className="relative"
             >
-              <div className="relative aspect-square rounded-3xl border border-white/10 bg-gradient-to-br from-[#0a1a3a]/80 to-[#04122e]/80 p-8 backdrop-blur-xl">
-                <div className="grid h-full grid-cols-2 gap-4">
+              <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-line bg-surface p-6 backdrop-blur-2xl shadow-card lg:p-8">
+                {/* Background grid & glows */}
+                <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(56,189,248,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(56,189,248,0.07)_1px,transparent_1px)] bg-[size:24px_24px] opacity-40" />
+                <div className="absolute -left-20 -top-20 h-48 w-48 rounded-full bg-brand-cyan/10 blur-[80px] dark:bg-brand-cyan/20" />
+                <div className="absolute -bottom-20 -right-20 h-48 w-48 rounded-full bg-brand-accent/10 blur-[80px] dark:bg-brand-accent/20" />
+                
+                <div className="relative z-10 grid h-full grid-cols-2 gap-4 lg:gap-6">
                   {COMPANY_STATS.map((s) => (
                     <div
                       key={s.label}
-                      className="flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-4 text-center"
+                      className="group flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-line bg-surface p-4 text-center transition-all duration-500 hover:-translate-y-1 hover:border-brand-cyan/30 hover:bg-brand-cyan/5 hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.15)]"
                     >
-                      <span className="text-3xl font-bold text-gradient">
-                        {s.value}
-                        {s.suffix}
+                      <span className="relative text-4xl font-black lg:text-5xl">
+                        <span className="bg-gradient-to-br from-ink to-brand-cyan bg-clip-text text-transparent transition-all duration-500 group-hover:drop-shadow-[0_0_15px_rgba(6,182,212,0.5)] dark:from-white">
+                          {s.value}
+                          {s.suffix}
+                        </span>
                       </span>
-                      <span className="mt-1 text-xs text-muted">{pick(s.label, s.labelEn)}</span>
+                      <span className="mt-3 text-xs font-medium text-muted transition-colors duration-300 group-hover:text-ink lg:text-sm">
+                        {pick(s.label, s.labelEn)}
+                      </span>
+                      {/* Hover scan line */}
+                      <span className="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 bg-brand-cyan transition-transform duration-500 group-hover:scale-x-100" />
                     </div>
                   ))}
                 </div>
-                <div className="absolute -bottom-5 -right-5 h-24 w-24 rounded-2xl bg-brand-gradient opacity-30 blur-2xl" />
               </div>
             </motion.div>
           </div>
@@ -197,15 +207,22 @@ export default function HomePage() {
       </section>
 
       {/* Brands */}
-      <section className="py-12">
+      <section className="py-12 overflow-hidden">
         <Container>
           <SectionHeader eyebrow={t('home.brandsEyebrow')} title={t('home.brandsTitle')} />
-          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-            {(brands ?? []).slice(0, 12).map((b) => (
-              <BrandCard key={b.id} brand={b} />
+        </Container>
+        <div 
+          className="relative mt-10 flex w-full overflow-hidden"
+          style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
+        >
+          <div className="flex w-max animate-marquee gap-4 hover:[animation-play-state:paused] px-4">
+            {[...(brands ?? []), ...(brands ?? [])].map((b, i) => (
+              <div key={`${b.id}-${i}`} className="w-[180px] shrink-0 sm:w-[220px]">
+                <BrandCard brand={b} />
+              </div>
             ))}
           </div>
-        </Container>
+        </div>
       </section>
 
       <ContactCTA />

@@ -15,7 +15,7 @@ import { ChevronDown } from 'lucide-react';
 import { cn } from '@/core/utils/cn';
 
 const base =
-  'w-full rounded-xl border border-white/10 bg-[#0b1326]/60 px-4 py-3 text-sm text-white placeholder:text-muted/60 transition focus:border-brand-accent/60 focus:outline-none focus:ring-2 focus:ring-brand-accent/20';
+  'w-full rounded-xl border border-slate-200 bg-white/50 px-4 py-3 text-sm text-ink placeholder:text-muted/60 transition focus:border-brand-cyan/60 focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 dark:border-white/10 dark:bg-[#0b1326]/60 dark:text-white dark:focus:border-brand-accent/60 dark:focus:ring-brand-accent/20';
 
 export function FieldWrapper({
   label,
@@ -112,7 +112,7 @@ export const Select = forwardRef<
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
             transition={{ duration: 0.15 }}
-            className="absolute left-0 z-50 mt-2 w-full min-w-max overflow-hidden rounded-xl border border-white/10 bg-[#0f172a] shadow-2xl backdrop-blur-md"
+            className="absolute left-0 z-50 mt-2 w-full min-w-max overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xl backdrop-blur-md dark:border-white/10 dark:bg-[#0f172a] dark:shadow-2xl"
           >
             <div className="max-h-60 overflow-y-auto p-1 hide-scrollbar">
               {options.map(option => (
@@ -131,8 +131,8 @@ export const Select = forwardRef<
                   className={cn(
                     "flex w-full items-center rounded-lg px-3 py-2.5 text-left text-sm transition-colors duration-150",
                     value === option?.value
-                      ? "bg-brand-accent/20 text-brand-cyan font-medium"
-                      : "text-white hover:bg-white/10"
+                      ? "bg-brand-cyan/10 font-medium text-brand-cyan dark:bg-brand-accent/20"
+                      : "text-ink hover:bg-slate-100 dark:text-white dark:hover:bg-white/10"
                   )}
                 >
                   {option?.label}

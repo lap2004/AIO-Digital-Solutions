@@ -2,6 +2,7 @@
 
 export const COMPANY = {
   legalName: 'CÔNG TY CỔ PHẦN GIẢI PHÁP CÔNG NGHỆ SỐ AIO',
+  legalNameEn: 'AIO DIGITAL TECHNOLOGY SOLUTIONS JOINT STOCK COMPANY',
   shortName: 'AIO Digital Solutions',
   brand: 'AIO',
   taxCode: '1001326140',
@@ -16,21 +17,23 @@ export const COMPANY = {
   workingHours: 'Thứ 2 - Thứ 7: 08:00 - 17:30',
   workingHoursEn: 'Mon - Sat: 08:00 - 17:30',
   slogan: 'Giải pháp công nghệ số toàn diện',
+  sloganEn: 'Comprehensive digital technology solutions',
   foundedYear: 2025,
 } as const;
 
 export interface NavItem {
   label: string;
+  labelEn?: string;
   to: string;
 }
 
 export const MAIN_NAV: NavItem[] = [
-  { label: 'Trang chủ', to: '/' },
-  { label: 'Về chúng tôi', to: '/gioi-thieu' },
-  { label: 'Giải pháp', to: '/giai-phap' },
-  { label: 'Sản phẩm', to: '/san-pham' },
-  { label: 'Dự án', to: '/du-an' },
-  { label: 'Liên hệ', to: '/lien-he' },
+  { label: 'Trang chủ', labelEn: 'Home', to: '/' },
+  { label: 'Về chúng tôi', labelEn: 'About us', to: '/gioi-thieu' },
+  { label: 'Giải pháp', labelEn: 'Solutions', to: '/giai-phap' },
+  { label: 'Sản phẩm', labelEn: 'Products', to: '/san-pham' },
+  { label: 'Dự án', labelEn: 'Projects', to: '/du-an' },
+  { label: 'Liên hệ', labelEn: 'Contact', to: '/lien-he' },
 ];
 
 export interface BusinessArea {
@@ -151,6 +154,7 @@ export const COMPANY_STATS = [
 export const FOOTER_LINKS = [
   {
     title: 'Giải pháp',
+    titleEn: 'Solutions',
     links: [
       { label: 'Màn hình LED trong nhà', labelEn: 'Indoor LED Display', to: '/giai-phap/indoor-led-display' },
       { label: 'Màn hình LED ngoài trời', labelEn: 'Outdoor LED Display', to: '/giai-phap/outdoor-led-display' },
@@ -161,6 +165,7 @@ export const FOOTER_LINKS = [
   },
   {
     title: 'Sản phẩm',
+    titleEn: 'Products',
     links: [
       { label: 'LED Module', labelEn: 'LED Module', to: '/san-pham?category=led-module' },
       { label: 'LED ngoài trời', labelEn: 'Outdoor LED', to: '/san-pham?category=outdoor-led-module' },
@@ -171,6 +176,7 @@ export const FOOTER_LINKS = [
   },
   {
     title: 'Công ty',
+    titleEn: 'Company',
     links: [
       { label: 'Về chúng tôi', labelEn: 'About us', to: '/gioi-thieu' },
       { label: 'Dự án tiêu biểu', labelEn: 'Featured Projects', to: '/du-an' },

@@ -15,7 +15,9 @@ export type SolutionSlug =
 
 export interface SolutionFeature {
   title: string;
+  titleEn?: string;
   description: string;
+  descriptionEn?: string;
   icon: string;
 }
 
@@ -23,12 +25,16 @@ export interface Solution {
   id: string;
   slug: SolutionSlug;
   name: string;
+  nameEn?: string;
   tagline: string;
+  taglineEn?: string;
   heroImage: string;
   introduction: string;
+  introductionEn?: string;
   benefits: string[];
+  benefitsEn?: string[];
   features: SolutionFeature[];
-  architecture: { title: string; steps: string[] };
+  architecture: { title: string; titleEn?: string; steps: string[]; stepsEn?: string[] };
   techStack: string[];
   relatedProductCategories: ProductCategorySlug[];
   relatedProjectIds: string[];

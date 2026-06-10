@@ -20,7 +20,7 @@ const PAGE_SIZE = 9;
 const CATEGORIES = Object.entries(NEWS_CATEGORY_LABEL) as [NewsCategory, string][];
 
 export default function NewsPage() {
-  const { t, lang } = useI18n();
+  const { t, lang, pick } = useI18n();
   const [category, setCategory] = useState<NewsCategory | ''>('');
   const [search, setSearch] = useState('');
   const [page, setPage] = useState(1);
@@ -78,7 +78,7 @@ export default function NewsPage() {
             <Pagination page={data.page} pageSize={data.pageSize} total={data.total} onChange={setPage} />
           </>
         ) : (
-          <EmptyState title="Không tìm thấy bài viết" />
+          <EmptyState title={pick('Không tìm thấy bài viết', 'Article not found')} />
         )}
       </Container>
 

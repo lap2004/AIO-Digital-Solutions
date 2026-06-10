@@ -1,4 +1,5 @@
-import { useForm } from 'react-hook-form';
+import { useState, useRef, useEffect } from 'react';
+import { useForm, useWatch } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { toast } from 'sonner';
@@ -12,6 +13,8 @@ import { Button } from '@/presentation/components/common/Button';
 import { FieldWrapper, Input, Textarea } from '@/presentation/components/common/Field';
 import { Seo } from '@/presentation/components/common/Seo';
 import { PageHero } from '@/presentation/components/sections/PageHero';
+import { useAsync } from '@/presentation/hooks/useAsync';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const schema = z.object({
   name: z.string().min(2, 'Vui lòng nhập họ tên'),
@@ -23,18 +26,38 @@ const schema = z.object({
 });
 type FormValues = z.infer<typeof schema>;
 
-const CONTACTS = [
-  { icon: MapPin, label: 'Địa chỉ', value: COMPANY.address },
-  { icon: Mail, label: 'Email', value: COMPANY.email, href: `mailto:${COMPANY.email}` },
-  { icon: Phone, label: 'Hotline', value: COMPANY.hotline, href: `tel:${COMPANY.hotline.replace(/\s/g, '')}` },
-  { icon: Clock, label: 'Giờ làm việc', value: COMPANY.workingHours },
-];
-
 export default function ContactPage() {
-  const { t } = useI18n();
-  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<FormValues>({
+  const { t, pick } = useI18n();
+
+  const { data: products } = useAsync(() => services.products.list({ pageSize: 500 }), []);
+  const { register, handleSubmit, reset, control, setValue, formState: { errors, isSubmitting } } = useForm<FormValues>({
     resolver: zodResolver(schema),
   });
+
+  const CONTACTS = [
+    { icon: MapPin, label: pick('Địa chỉ', 'Address'), value: COMPANY.address },
+    { icon: Mail, label: 'Email', value: COMPANY.email, href: `mailto:${COMPANY.email}` },
+    { icon: Phone, label: 'Hotline', value: COMPANY.hotline, href: `tel:${COMPANY.hotline.replace(/\s/g, '')}` },
+    { icon: Clock, label: pick('Giờ làm việc', 'Working Hours'), value: COMPANY.workingHours },
+  ];
+
+  const interestValue = useWatch({ control, name: 'interest' }) || '';
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const suggestionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (suggestionRef.current && !suggestionRef.current.contains(e.target as Node)) {
+        setShowSuggestions(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const filteredProducts = products?.items.filter(p => 
+    p.name.toLowerCase().includes(interestValue.toLowerCase())
+  ) || [];
 
   const onSubmit = async (values: FormValues) => {
     try {
@@ -115,34 +138,67 @@ export default function ContactPage() {
 
           {/* Form */}
           <Card className="p-7 lg:p-9">
-            <h2 className="text-2xl font-bold">Gửi yêu cầu tư vấn</h2>
-            <p className="mt-2 text-sm text-muted">Các trường có dấu * là bắt buộc.</p>
+            <h2 className="text-2xl font-bold">{pick('Gửi yêu cầu tư vấn', 'Send consultation request')}</h2>
+            <p className="mt-2 text-sm text-muted">{pick('Các trường có dấu * là bắt buộc.', 'Fields marked with * are required.')}</p>
             <form onSubmit={handleSubmit(onSubmit)} className="mt-6 grid gap-5 sm:grid-cols-2">
-              <FieldWrapper label="Họ và tên" required error={errors.name?.message}>
+              <FieldWrapper label={pick('Họ và tên', 'Full Name')} required error={errors.name?.message}>
                 <Input {...register('name')} error={errors.name?.message} placeholder="Nguyễn Văn A" />
               </FieldWrapper>
-              <FieldWrapper label="Công ty" error={errors.company?.message}>
-                <Input {...register('company')} placeholder="Tên công ty" />
+              <FieldWrapper label={pick('Công ty', 'Company')} error={errors.company?.message}>
+                <Input {...register('company')} placeholder={pick('Tên công ty', 'Company Name')} />
               </FieldWrapper>
               <FieldWrapper label="Email" required error={errors.email?.message}>
                 <Input type="email" {...register('email')} error={errors.email?.message} placeholder="email@example.com" />
               </FieldWrapper>
-              <FieldWrapper label="Số điện thoại" required error={errors.phone?.message}>
+              <FieldWrapper label={pick('Số điện thoại', 'Phone Number')} required error={errors.phone?.message}>
                 <Input {...register('phone')} error={errors.phone?.message} placeholder="09xx xxx xxx" />
               </FieldWrapper>
-              <div className="sm:col-span-2">
-                <FieldWrapper label="Nhu cầu quan tâm" required error={errors.interest?.message}>
-                  <Input {...register('interest')} error={errors.interest?.message} placeholder="VD: Màn hình LED ngoài trời, Camera AI…" />
+              <div className="sm:col-span-2 relative" ref={suggestionRef}>
+                <FieldWrapper label={pick('Nhu cầu quan tâm', 'Interest')} required error={errors.interest?.message}>
+                  <Input 
+                    {...register('interest')} 
+                    error={errors.interest?.message} 
+                    placeholder={pick('VD: Màn hình LED ngoài trời, Camera AI…', 'e.g. Outdoor LED Screen, AI Camera...')}
+                    onFocus={() => setShowSuggestions(true)}
+                    autoComplete="off"
+                  />
+                  <AnimatePresence>
+                    {showSuggestions && filteredProducts.length > 0 && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.15 }}
+                        className="absolute left-0 right-0 z-50 mt-1 w-full overflow-hidden rounded-xl border border-line bg-surface shadow-card backdrop-blur-md"
+                      >
+                        <div className="max-h-60 overflow-y-auto p-1 hide-scrollbar">
+                          {filteredProducts.map(p => (
+                            <button
+                              key={p.id}
+                              type="button"
+                              onClick={() => {
+                                setValue('interest', p.name, { shouldValidate: true });
+                                setShowSuggestions(false);
+                              }}
+                              className="flex w-full items-center rounded-lg px-3 py-2.5 text-left text-sm text-ink transition-colors duration-150 hover:bg-black/5 dark:hover:bg-white/10"
+                            >
+                              {p.name}
+                            </button>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </FieldWrapper>
               </div>
               <div className="sm:col-span-2">
-                <FieldWrapper label="Nội dung" required error={errors.message?.message}>
-                  <Textarea {...register('message')} error={errors.message?.message} rows={5} placeholder="Mô tả chi tiết nhu cầu của bạn…" />
+                <FieldWrapper label={pick('Nội dung', 'Message')} required error={errors.message?.message}>
+                  <Textarea {...register('message')} error={errors.message?.message} rows={5} placeholder={pick('Mô tả chi tiết nhu cầu của bạn…', 'Describe your requirements in detail...')} />
                 </FieldWrapper>
               </div>
               <div className="sm:col-span-2">
                 <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? 'Đang gửi…' : <>Gửi yêu cầu <Send className="h-4 w-4" /></>}
+                  {isSubmitting ? pick('Đang gửi…', 'Sending...') : <>{pick('Gửi yêu cầu', 'Send Request')} <Send className="h-4 w-4" /></>}
                 </Button>
               </div>
             </form>

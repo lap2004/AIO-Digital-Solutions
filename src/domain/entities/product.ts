@@ -23,6 +23,7 @@ export interface Product {
   id: string;
   slug: string;
   name: string;
+  nameEn?: string;
   sku: string;
   category: ProductCategorySlug;
   brand: string;
@@ -30,7 +31,9 @@ export interface Product {
   warranty: string;
   price?: number;
   shortDescription: string;
+  shortDescriptionEn?: string;
   description: string;
+  descriptionEn?: string;
   image: string;
   gallery: MediaAsset[];
   videoUrl?: string;

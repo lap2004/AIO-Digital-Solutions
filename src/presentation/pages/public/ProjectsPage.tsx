@@ -17,7 +17,7 @@ const PAGE_SIZE = 9;
 const CATEGORIES = Object.entries(PROJECT_CATEGORY_LABEL) as [ProjectCategory, string][];
 
 export default function ProjectsPage() {
-  const { t, lang } = useI18n();
+  const { t, lang, pick } = useI18n();
   const [category, setCategory] = useState<ProjectCategory | ''>('');
   const [page, setPage] = useState(1);
 
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
             <Pagination page={data.page} pageSize={data.pageSize} total={data.total} onChange={setPage} />
           </>
         ) : (
-          <EmptyState title="Chưa có dự án" />
+          <EmptyState title={pick('Chưa có dự án', 'No projects yet')} />
         )}
       </Container>
 

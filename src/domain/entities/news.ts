@@ -18,8 +18,11 @@ export interface NewsArticle {
   id: string;
   slug: string;
   title: string;
+  titleEn?: string;
   excerpt: string;
+  excerptEn?: string;
   content: string;
+  contentEn?: string;
   cover: string;
   category: NewsCategory;
   tags: string[];

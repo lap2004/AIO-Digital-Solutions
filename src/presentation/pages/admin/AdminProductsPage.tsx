@@ -27,10 +27,11 @@ interface FormState {
   image: string;
   status: Product['status'];
   featured: boolean;
+  warranty: string;
 }
 
 const emptyForm: FormState = {
-  name: '', sku: '', category: 'led-module', brand: 'AIO', price: 0, image: '', status: 'active', featured: false,
+  name: '', sku: '', category: 'led-module', brand: 'AIO', price: 0, image: '', status: 'active', featured: false, warranty: '24 tháng',
 };
 
 export default function AdminProductsPage() {
@@ -42,7 +43,7 @@ export default function AdminProductsPage() {
   const openCreate = () => { setEditing(null); setForm(emptyForm); setOpen(true); };
   const openEdit = (p: Product) => {
     setEditing(p);
-    setForm({ name: p.name, sku: p.sku, category: p.category, brand: p.brand, price: p.price ?? 0, image: p.image, status: p.status, featured: p.featured });
+    setForm({ name: p.name, sku: p.sku, category: p.category, brand: p.brand, price: p.price ?? 0, image: p.image, status: p.status, featured: p.featured, warranty: p.warranty ?? '' });
     setOpen(true);
   };
 
@@ -55,7 +56,7 @@ export default function AdminProductsPage() {
       } else {
         await services.products.repo.create({
           slug: slugify(form.name), name: form.name, sku: form.sku || `AIO-${Date.now()}`,
-          category: form.category, brand: form.brand, country: 'Việt Nam', warranty: '24 tháng',
+          category: form.category, brand: form.brand, country: 'Việt Nam', warranty: form.warranty,
           price: form.price, shortDescription: form.name, description: form.name, image: form.image,
           gallery: form.image ? [{ url: form.image, alt: form.name }] : [], specifications: [], documents: [],
           applications: [], tags: [form.brand], status: form.status, featured: form.featured,
@@ -169,9 +170,14 @@ export default function AdminProductsPage() {
               </div>
             </FieldWrapper>
           </div>
-          <FieldWrapper label="Đường dẫn ảnh (/data-assets/… hoặc /images/…)">
-            <Input value={form.image} onChange={(e) => setForm({ ...form, image: e.target.value })} placeholder="/data-assets/…" />
-          </FieldWrapper>
+          <div className="grid grid-cols-2 gap-4">
+            <FieldWrapper label="Bảo hành">
+              <Input value={form.warranty} onChange={(e) => setForm({ ...form, warranty: e.target.value })} placeholder="VD: 24 tháng, Trọn đời..." />
+            </FieldWrapper>
+            <FieldWrapper label="Đường dẫn ảnh">
+              <Input value={form.image} onChange={(e) => setForm({ ...form, image: e.target.value })} placeholder="/data-assets/…" />
+            </FieldWrapper>
+          </div>
           <div className="flex items-center justify-between rounded-xl border border-white/5 bg-white/[0.02] p-4 transition-colors hover:bg-white/[0.04]">
             <div>
               <p className="text-sm font-medium text-white">Sản phẩm nổi bật</p>

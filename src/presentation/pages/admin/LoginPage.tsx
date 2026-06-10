@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
-import { LogIn, ShieldCheck } from 'lucide-react';
+import { LogIn, ShieldCheck, Eye, EyeOff } from 'lucide-react';
 import { useAuthStore } from '@/presentation/state/auth.store';
 
 import { Button } from '@/presentation/components/common/Button';
@@ -15,6 +15,7 @@ export default function LoginPage() {
   const { login, loading, error } = useAuthStore();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,7 +48,23 @@ export default function LoginPage() {
               <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="admin@aio.vn" />
             </FieldWrapper>
             <FieldWrapper label="Mật khẩu" error={error ?? undefined}>
-              <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••" />
+              <div className="relative">
+                <Input 
+                  type={showPassword ? 'text' : 'password'} 
+                  value={password} 
+                  onChange={(e) => setPassword(e.target.value)} 
+                  placeholder="••••••••" 
+                  className="pr-10"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg text-muted transition-colors hover:bg-slate-100 hover:text-ink dark:hover:bg-white/10 dark:hover:text-white"
+                  aria-label={showPassword ? 'Ẩn mật khẩu' : 'Hiện mật khẩu'}
+                >
+                  {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                </button>
+              </div>
             </FieldWrapper>
             <Button type="submit" size="lg" className="w-full" disabled={loading}>
               {loading ? 'Đang đăng nhập…' : <><LogIn className="h-5 w-5" /> Đăng nhập</>}

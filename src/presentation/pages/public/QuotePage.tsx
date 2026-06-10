@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { toast } from 'sonner';
 import { Trash2, Minus, Plus, FileText, ShoppingCart } from 'lucide-react';
 import { useQuoteStore } from '@/presentation/state/quote.store';
+import { useI18n } from '@/core/i18n';
 import { services } from '@/app/services';
 import { Container } from '@/presentation/components/common/Container';
 import { Card } from '@/presentation/components/common/Card';
@@ -25,6 +26,7 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 export default function QuotePage() {
+  const { pick } = useI18n();
   const { items, setQuantity, remove, clear } = useQuoteStore();
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<FormValues>({
     resolver: zodResolver(schema),
@@ -49,21 +51,21 @@ export default function QuotePage() {
 
   return (
     <>
-      <Seo title="Yêu cầu báo giá | AIO Digital Solutions" description="Gửi danh sách sản phẩm để nhận báo giá chi tiết từ AIO." />
+      <Seo title={`${pick('Yêu cầu báo giá', 'Quote Request')} | AIO Digital Solutions`} description={pick('Gửi danh sách sản phẩm để nhận báo giá chi tiết từ AIO.', 'Send a list of products to receive a detailed quote from AIO.')} />
       <PageHero
-        eyebrow="Báo giá"
-        title="Yêu cầu báo giá"
-        description="Thêm sản phẩm vào danh sách và gửi thông tin để nhận báo giá theo dự án."
-        breadcrumb={[{ label: 'Báo giá' }]}
+        eyebrow={pick('Báo giá', 'Quote')}
+        title={pick('Yêu cầu báo giá', 'Request a Quote')}
+        description={pick('Thêm sản phẩm vào danh sách và gửi thông tin để nhận báo giá theo dự án.', 'Add products to the list and submit information to receive a project-based quote.')}
+        breadcrumb={[{ label: pick('Báo giá', 'Quote') }]}
       />
 
       <Container className="pb-20">
         {items.length === 0 ? (
           <EmptyState
             icon={<ShoppingCart className="h-10 w-10 opacity-50" />}
-            title="Danh sách báo giá trống"
-            description="Duyệt sản phẩm và bấm “Thêm vào báo giá” để bắt đầu."
-            action={<Link to="/san-pham"><Button className="mt-4">Xem sản phẩm</Button></Link>}
+            title={pick('Danh sách báo giá trống', 'Empty Quote List')}
+            description={pick('Duyệt sản phẩm và bấm “Thêm vào báo giá” để bắt đầu.', 'Browse products and click "Add to Quote" to get started.')}
+            action={<Link to="/san-pham"><Button className="mt-4">{pick('Xem sản phẩm', 'View Products')}</Button></Link>}
           />
         ) : (
           <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr]">
@@ -87,36 +89,36 @@ export default function QuotePage() {
                         </button>
                       </div>
                       <button onClick={() => remove(i.productId)} className="flex items-center gap-1 text-sm text-muted transition hover:text-red-400">
-                        <Trash2 className="h-4 w-4" /> Xóa
+                        <Trash2 className="h-4 w-4" /> {pick('Xóa', 'Remove')}
                       </button>
                     </div>
                   </div>
                 </Card>
               ))}
-              <button onClick={clear} className="text-sm text-muted hover:text-red-400">Xóa tất cả</button>
+              <button onClick={clear} className="text-sm text-muted hover:text-red-400">{pick('Xóa tất cả', 'Clear all')}</button>
             </div>
 
             {/* Form */}
             <Card className="h-fit p-7">
-              <h2 className="flex items-center gap-2 text-xl font-bold"><FileText className="h-5 w-5 text-brand-accent" /> Thông tin liên hệ</h2>
+              <h2 className="flex items-center gap-2 text-xl font-bold"><FileText className="h-5 w-5 text-brand-accent" /> {pick('Thông tin liên hệ', 'Contact Information')}</h2>
               <form onSubmit={handleSubmit(onSubmit)} className="mt-5 space-y-4">
-                <FieldWrapper label="Họ và tên" required error={errors.name?.message}>
+                <FieldWrapper label={pick('Họ và tên', 'Full Name')} required error={errors.name?.message}>
                   <Input {...register('name')} error={errors.name?.message} placeholder="Nguyễn Văn A" />
                 </FieldWrapper>
-                <FieldWrapper label="Công ty">
-                  <Input {...register('company')} placeholder="Tên công ty" />
+                <FieldWrapper label={pick('Công ty', 'Company')}>
+                  <Input {...register('company')} placeholder={pick('Tên công ty', 'Company Name')} />
                 </FieldWrapper>
                 <FieldWrapper label="Email" required error={errors.email?.message}>
                   <Input type="email" {...register('email')} error={errors.email?.message} placeholder="email@example.com" />
                 </FieldWrapper>
-                <FieldWrapper label="Số điện thoại" required error={errors.phone?.message}>
+                <FieldWrapper label={pick('Số điện thoại', 'Phone Number')} required error={errors.phone?.message}>
                   <Input {...register('phone')} error={errors.phone?.message} placeholder="09xx xxx xxx" />
                 </FieldWrapper>
-                <FieldWrapper label="Ghi chú">
-                  <Textarea {...register('note')} placeholder="Yêu cầu thêm về dự án…" />
+                <FieldWrapper label={pick('Ghi chú', 'Note')}>
+                  <Textarea {...register('note')} placeholder={pick('Yêu cầu thêm về dự án…', 'Additional project requirements...')} />
                 </FieldWrapper>
                 <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? 'Đang gửi…' : `Gửi yêu cầu (${items.length} sản phẩm)`}
+                  {isSubmitting ? pick('Đang gửi…', 'Sending...') : `${pick('Gửi yêu cầu', 'Submit Request')} (${items.length} ${pick('sản phẩm', 'products')})`}
                 </Button>
               </form>
             </Card>

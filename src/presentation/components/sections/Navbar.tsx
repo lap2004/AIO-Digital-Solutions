@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, FileText, Phone } from 'lucide-react';
-import { MAIN_NAV, COMPANY } from '@/core/constants/site';
+import { MAIN_NAV } from '@/core/constants/site';
 import { cn } from '@/core/utils/cn';
 import { useI18n } from '@/core/i18n';
 import { Logo } from './Logo';
@@ -124,7 +124,7 @@ export function Navbar() {
                 </Link>
                 <Link to="/lien-he" className="flex-1">
                   <Button size="sm" className="w-full">
-                    {COMPANY.hotline}
+                    <Phone className="h-4 w-4" /> {t('common.contact')}
                   </Button>
                 </Link>
               </li>

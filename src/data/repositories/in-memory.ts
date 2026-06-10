@@ -32,10 +32,21 @@ function matchSearch(haystack: string, search?: string): boolean {
 
 /* ----------------------------- Products ----------------------------- */
 class InMemoryProductRepository implements ProductRepository {
-  private data: Product[] = [...PRODUCTS];
+  private get data(): Product[] {
+    try {
+      const stored = localStorage.getItem('aio.products');
+      return stored ? JSON.parse(stored) : [...PRODUCTS];
+    } catch {
+      return [...PRODUCTS];
+    }
+  }
+  private set data(products: Product[]) {
+    localStorage.setItem('aio.products', JSON.stringify(products));
+  }
 
   async list(params?: QueryParams): Promise<Paginated<Product>> {
-    let items = this.data.filter((p) => matchSearch(`${p.name} ${p.sku} ${p.brand}`, params?.search));
+    const current = this.data;
+    let items = current.filter((p) => matchSearch(`${p.name} ${p.sku} ${p.brand}`, params?.search));
     if (params?.category) items = items.filter((p) => p.category === params.category);
     if (params?.brand) items = items.filter((p) => p.brand === params.brand);
     if (params?.sort === 'price-asc') items = [...items].sort((a, b) => (a.price ?? 0) - (b.price ?? 0));
@@ -54,23 +65,28 @@ class InMemoryProductRepository implements ProductRepository {
     return delay(this.data.filter((p) => p.featured).slice(0, limit));
   }
   async related(id: string, limit = 4) {
-    const product = this.data.find((p) => p.id === id);
+    const current = this.data;
+    const product = current.find((p) => p.id === id);
     if (!product) return delay([]);
     const rel = product.relatedProductIds
-      .map((rid) => this.data.find((p) => p.id === rid))
+      .map((rid) => current.find((p) => p.id === rid))
       .filter((p): p is Product => Boolean(p));
     return delay(rel.slice(0, limit));
   }
   async create(input: Omit<Product, 'id'>) {
     const product = { ...input, id: `product-${uid()}` } as Product;
-    this.data.unshift(product);
+    const current = this.data;
+    current.unshift(product);
+    this.data = current;
     return delay(product);
   }
   async update(id: string, patch: Partial<Product>) {
-    const idx = this.data.findIndex((p) => p.id === id);
+    const current = this.data;
+    const idx = current.findIndex((p) => p.id === id);
     if (idx < 0) throw new Error('Không tìm thấy sản phẩm');
-    this.data[idx] = { ...this.data[idx], ...patch };
-    return delay(this.data[idx]);
+    current[idx] = { ...current[idx], ...patch };
+    this.data = current;
+    return delay(current[idx]);
   }
   async remove(id: string) {
     this.data = this.data.filter((p) => p.id !== id);
@@ -80,9 +96,21 @@ class InMemoryProductRepository implements ProductRepository {
 
 /* ----------------------------- Projects ----------------------------- */
 class InMemoryProjectRepository implements ProjectRepository {
-  private data: Project[] = [...PROJECTS];
+  private get data(): Project[] {
+    try {
+      const stored = localStorage.getItem('aio.projects');
+      return stored ? JSON.parse(stored) : [...PROJECTS];
+    } catch {
+      return [...PROJECTS];
+    }
+  }
+  private set data(projects: Project[]) {
+    localStorage.setItem('aio.projects', JSON.stringify(projects));
+  }
+
   async list(params?: QueryParams): Promise<Paginated<Project>> {
-    let items = this.data.filter((p) => matchSearch(`${p.name} ${p.client} ${p.location}`, params?.search));
+    const current = this.data;
+    let items = current.filter((p) => matchSearch(`${p.name} ${p.client} ${p.location}`, params?.search));
     if (params?.category) items = items.filter((p) => p.category === params.category);
     return delay(paginate(items, params));
   }
@@ -94,14 +122,18 @@ class InMemoryProjectRepository implements ProjectRepository {
   }
   async create(input: Omit<Project, 'id'>) {
     const project = { ...input, id: `project-${uid()}` } as Project;
-    this.data.unshift(project);
+    const current = this.data;
+    current.unshift(project);
+    this.data = current;
     return delay(project);
   }
   async update(id: string, patch: Partial<Project>) {
-    const idx = this.data.findIndex((p) => p.id === id);
+    const current = this.data;
+    const idx = current.findIndex((p) => p.id === id);
     if (idx < 0) throw new Error('Không tìm thấy dự án');
-    this.data[idx] = { ...this.data[idx], ...patch };
-    return delay(this.data[idx]);
+    current[idx] = { ...current[idx], ...patch };
+    this.data = current;
+    return delay(current[idx]);
   }
   async remove(id: string) {
     this.data = this.data.filter((p) => p.id !== id);
@@ -111,9 +143,21 @@ class InMemoryProjectRepository implements ProjectRepository {
 
 /* ------------------------------- News ------------------------------- */
 class InMemoryNewsRepository implements NewsRepository {
-  private data: NewsArticle[] = [...NEWS];
+  private get data(): NewsArticle[] {
+    try {
+      const stored = localStorage.getItem('aio.news');
+      return stored ? JSON.parse(stored) : [...NEWS];
+    } catch {
+      return [...NEWS];
+    }
+  }
+  private set data(news: NewsArticle[]) {
+    localStorage.setItem('aio.news', JSON.stringify(news));
+  }
+
   async list(params?: QueryParams): Promise<Paginated<NewsArticle>> {
-    let items = this.data.filter((a) => matchSearch(`${a.title} ${a.tags.join(' ')}`, params?.search));
+    const current = this.data;
+    let items = current.filter((a) => matchSearch(`${a.title} ${a.tags.join(' ')}`, params?.search));
     if (params?.category) items = items.filter((a) => a.category === params.category);
     if (params?.tag) items = items.filter((a) => a.tags.includes(String(params.tag)));
     items = [...items].sort((a, b) => +new Date(b.publishedAt) - +new Date(a.publishedAt));
@@ -127,14 +171,18 @@ class InMemoryNewsRepository implements NewsRepository {
   }
   async create(input: Omit<NewsArticle, 'id'>) {
     const article = { ...input, id: `news-${uid()}` } as NewsArticle;
-    this.data.unshift(article);
+    const current = this.data;
+    current.unshift(article);
+    this.data = current;
     return delay(article);
   }
   async update(id: string, patch: Partial<NewsArticle>) {
-    const idx = this.data.findIndex((a) => a.id === id);
+    const current = this.data;
+    const idx = current.findIndex((a) => a.id === id);
     if (idx < 0) throw new Error('Không tìm thấy bài viết');
-    this.data[idx] = { ...this.data[idx], ...patch };
-    return delay(this.data[idx]);
+    current[idx] = { ...current[idx], ...patch };
+    this.data = current;
+    return delay(current[idx]);
   }
   async remove(id: string) {
     this.data = this.data.filter((a) => a.id !== id);

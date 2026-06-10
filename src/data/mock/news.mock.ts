@@ -12,22 +12,30 @@ const productImages = PRODUCTS.filter((p) => p.image).map((p) => p.image);
 const paragraph = (rng: () => number) =>
   `${LOREM_VI} Công nghệ ${pick(TECH_TERMS, rng)} kết hợp ${pick(TECH_TERMS, rng)} đang mở ra hướng tiếp cận mới cho doanh nghiệp Việt Nam.`;
 
+const paragraphEn = (rng: () => number) =>
+  `With over a decade of experience, AIO provides turnkey technology solutions. The technology ${pick(TECH_TERMS, rng)} combined with ${pick(TECH_TERMS, rng)} is opening up new approaches for businesses.`;
+
 export const NEWS: NewsArticle[] = Array.from({ length: 54 }, (_, i) => {
   const rng = seededRandom(`news-${i}`);
   const template = NEWS_TITLE_TEMPLATES[i % NEWS_TITLE_TEMPLATES.length];
   const title = template.replace('{x}', pick(['P1.25', 'Common Cathode', 'ngoài trời', 'COB'], rng)) + ` (#${i + 1})`;
+  const titleEn = `[EN] ${title}`;
   const category = CATEGORIES[i % CATEGORIES.length];
   const author = pick(AUTHORS, rng);
   const day = 1 + Math.floor(rng() * 28);
   const month = 1 + Math.floor(rng() * 12);
   const content = Array.from({ length: 5 }, () => paragraph(rng)).join('\n\n');
+  const contentEn = Array.from({ length: 5 }, () => paragraphEn(rng)).join('\n\n');
 
   return {
     id: `news-${i}`,
     slug: `${slugify(template).slice(0, 50)}-${i}`,
     title,
+    titleEn,
     excerpt: `${paragraph(rng).slice(0, 160)}…`,
+    excerptEn: `${paragraphEn(rng).slice(0, 160)}…`,
     content,
+    contentEn,
     cover: productImages.length ? productImages[(i * 3) % productImages.length] : '',
     category,
     tags: [pick(TECH_TERMS, rng), pick(TECH_TERMS, rng)],

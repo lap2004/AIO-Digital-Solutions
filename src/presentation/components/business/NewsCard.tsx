@@ -9,7 +9,7 @@ import { SmartImage } from '@/presentation/components/common/SmartImage';
 import { Badge } from '@/presentation/components/common/Badge';
 
 export function NewsCard({ article }: { article: NewsArticle }) {
-  const { lang } = useI18n();
+  const { lang, pick, t } = useI18n();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ export function NewsCard({ article }: { article: NewsArticle }) {
         <div className="relative aspect-[16/9] overflow-hidden bg-[#020617]">
           <SmartImage
             src={article.cover}
-            alt={article.title}
+            alt={pick(article.title, article.titleEn) ?? ''}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute left-3 top-3">
@@ -33,13 +33,13 @@ export function NewsCard({ article }: { article: NewsArticle }) {
         </div>
         <div className="flex flex-1 flex-col p-5">
           <h3 className="clip-text-3 font-semibold leading-snug text-white transition group-hover:text-brand-cyan">
-            {article.title}
+            {pick(article.title, article.titleEn)}
           </h3>
-          <p className="clip-text-2 mt-2 flex-1 text-sm text-muted">{article.excerpt}</p>
+          <p className="clip-text-2 mt-2 flex-1 text-sm text-muted">{pick(article.excerpt, article.excerptEn)}</p>
           <div className="mt-4 flex items-center justify-between border-t border-white/5 pt-3 text-xs text-muted">
             <span>{formatDate(article.publishedAt)}</span>
             <span className="flex items-center gap-1">
-              <Clock className="h-3.5 w-3.5" /> {article.readingMinutes} phút đọc
+              <Clock className="h-3.5 w-3.5" /> {article.readingMinutes} {t('common.readingTime')}
             </span>
           </div>
         </div>

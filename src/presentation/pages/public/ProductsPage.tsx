@@ -19,7 +19,7 @@ import { cn } from '@/core/utils/cn';
 const PAGE_SIZE = 12;
 
 export default function ProductsPage() {
-  const { t, lang } = useI18n();
+  const { t, lang, pick } = useI18n();
   const [searchParams, setSearchParams] = useSearchParams();
   const category = searchParams.get('category') ?? '';
   const [search, setSearch] = useState('');
@@ -45,7 +45,7 @@ export default function ProductsPage() {
       <PageHero
         eyebrow={t('home.productsEyebrow')}
         title={activeCat ? productCategoryLabel(activeCat.slug, lang) : t('products.heroTitle')}
-        description={activeCat ? activeCat.description : t('products.heroDesc')}
+        description={activeCat ? pick(activeCat.description, (activeCat as any).descriptionEn) : t('products.heroDesc')}
         breadcrumb={[{ label: t('nav./san-pham') }]}
       />
 

@@ -2,7 +2,8 @@ import { useParams, Link } from 'react-router-dom';
 import { Clock, Calendar, User } from 'lucide-react';
 import { useAsync } from '@/presentation/hooks/useAsync';
 import { services } from '@/app/services';
-import { NEWS_CATEGORY_LABEL } from '@/core/constants/catalog';
+import { newsCategoryLabel } from '@/core/constants/catalog';
+import { useI18n } from '@/core/i18n';
 import { formatDate } from '@/core/utils/format';
 import { Container } from '@/presentation/components/common/Container';
 import { Button } from '@/presentation/components/common/Button';
@@ -17,6 +18,7 @@ import { ContactCTA } from '@/presentation/components/sections/ContactCTA';
 
 export default function NewsDetailPage() {
   const { slug } = useParams();
+  const { lang, pick, t } = useI18n();
   const { data: article, loading } = useAsync(() => services.news.getBySlug(slug ?? ''), [slug]);
   const { data: related } = useAsync(
     () =>
@@ -31,7 +33,7 @@ export default function NewsDetailPage() {
     return (
       <div className="pt-40">
         <Container>
-          <EmptyState title="Không tìm thấy bài viết" action={<Link to="/tin-tuc"><Button className="mt-4">Về danh sách</Button></Link>} />
+          <EmptyState title={pick('Không tìm thấy bài viết', 'Article not found') ?? ""} action={<Link to="/tin-tuc"><Button className="mt-4">{pick('Về danh sách', 'Back to list') ?? ""}</Button></Link>} />
         </Container>
       </div>
     );
@@ -39,8 +41,8 @@ export default function NewsDetailPage() {
   return (
     <>
       <Seo
-        title={article.seo.title}
-        description={article.seo.description}
+        title={`${pick(article.title, article.titleEn) ?? ''} | Tin tức AIO`}
+        description={pick(article.excerpt, article.excerptEn) ?? ''}
         image={article.cover}
         jsonLd={{
           '@context': 'https://schema.org',
@@ -53,33 +55,33 @@ export default function NewsDetailPage() {
 
       <article className="pt-28">
         <Container className="max-w-3xl">
-          <Breadcrumb items={[{ label: 'Tin tức', to: '/tin-tuc' }, { label: article.title }]} />
+          <Breadcrumb items={[{ label: pick('Tin tức', 'News') ?? "", to: '/tin-tuc' }, { label: pick(article.title, article.titleEn) ?? "" }]} />
           <div className="mt-6">
-            <Badge tone="purple">{NEWS_CATEGORY_LABEL[article.category]}</Badge>
+            <Badge tone="purple">{newsCategoryLabel(article.category, lang)}</Badge>
           </div>
-          <h1 className="mt-4 text-balance text-3xl font-bold leading-tight md:text-4xl">{article.title}</h1>
+          <h1 className="mt-8 text-3xl font-bold leading-tight md:text-5xl">{pick(article.title, article.titleEn) ?? ''}</h1>
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted">
             <span className="flex items-center gap-1.5"><User className="h-4 w-4" /> {article.author.name} · {article.author.role}</span>
             <span className="flex items-center gap-1.5"><Calendar className="h-4 w-4" /> {formatDate(article.publishedAt)}</span>
-            <span className="flex items-center gap-1.5"><Clock className="h-4 w-4" /> {article.readingMinutes} phút đọc</span>
+            <span className="flex items-center gap-1.5"><Clock className="h-4 w-4" /> {article.readingMinutes} {t('common.readingTime')}</span>
           </div>
         </Container>
 
         <Container className="mt-8 max-w-4xl">
           <div className="aspect-[16/8] overflow-hidden rounded-3xl border border-white/10 bg-[#020617]">
-            <SmartImage src={article.cover} alt={article.title} eager className="h-full w-full object-cover" />
+            <SmartImage src={article.cover} alt={pick(article.title, article.titleEn) ?? ""} eager className="h-full w-full object-cover" />
           </div>
         </Container>
 
         <Container className="mt-10 max-w-3xl">
           <div className="space-y-5 text-base leading-relaxed text-ink">
-            {article.content.split('\n\n').map((p, i) => (
+            {(pick(article.content, article.contentEn) ?? "").split('\n\n').map((p, i) => (
               <p key={i}>{p}</p>
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-2">
-            {article.tags.map((t) => (
-              <Badge key={t}>#{t}</Badge>
+            {article.tags?.map((tag) => (
+              <Badge key={tag}>#{tag}</Badge>
             ))}
           </div>
         </Container>
@@ -88,7 +90,7 @@ export default function NewsDetailPage() {
       {related && related.length > 0 && (
         <section className="py-20">
           <Container>
-            <SectionHeader align="left" eyebrow="Đọc thêm" title="Bài viết liên quan" />
+            <SectionHeader align="left" eyebrow={pick('Đọc thêm', 'Read more') ?? ""} title={pick('Bài viết liên quan', 'Related articles') ?? ""} />
             <div className="mt-10 grid gap-6 md:grid-cols-3">
               {related.map((a) => (
                 <NewsCard key={a.id} article={a} />
@@ -102,3 +104,4 @@ export default function NewsDetailPage() {
     </>
   );
 }
+
