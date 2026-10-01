@@ -43,8 +43,8 @@ export default function AboutPage() {
                 </p>
                 <p>
                   {pick(
-                    'Với đội ngũ kỹ sư giàu kinh nghiệm và mạng lưới đối tác là các thương hiệu hàng đầu thế giới, AIO tự hào đồng hành cùng hàng trăm doanh nghiệp, cơ quan và tổ chức trên khắp 63 tỉnh thành.',
-                    "With a team of experienced engineers and a partner network of the world's leading brands, AIO is proud to accompany hundreds of businesses, agencies, and organizations across 63 provinces and cities."
+                    'Với đội ngũ kỹ sư giàu kinh nghiệm và mạng lưới đối tác là các thương hiệu hàng đầu thế giới, AIO tự hào đồng hành cùng hơn 300 công trình tại 34 tỉnh thành.',
+                    "With a team of experienced engineers and leading global partners, AIO is proud to accompany over 300 projects across 34 provinces."
                   )}
                 </p>
               </div>
@@ -52,14 +52,14 @@ export default function AboutPage() {
             <div className="grid gap-6 sm:grid-cols-2">
               <Card className="p-7">
                 <Target className="h-9 w-9 text-brand-cyan" />
-                <h3 className="mt-4 text-lg font-bold text-white">{pick('Sứ mệnh', 'Mission')}</h3>
+                <h3 className="mt-4 text-lg font-bold text-ink">{pick('Sứ mệnh', 'Mission')}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
                   {pick('Mang công nghệ tiên tiến đến gần hơn với doanh nghiệp Việt, thúc đẩy chuyển đổi số bền vững.', 'Bringing advanced technology closer to Vietnamese businesses, promoting sustainable digital transformation.')}
                 </p>
               </Card>
               <Card className="p-7">
                 <Eye className="h-9 w-9 text-brand-cyan" />
-                <h3 className="mt-4 text-lg font-bold text-white">{pick('Tầm nhìn', 'Vision')}</h3>
+                <h3 className="mt-4 text-lg font-bold text-ink">{pick('Tầm nhìn', 'Vision')}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
                   {pick('Trở thành tập đoàn công nghệ hàng đầu Việt Nam trong lĩnh vực giải pháp hiển thị và đô thị thông minh.', 'Becoming a leading technology corporation in Vietnam in the field of display solutions and smart cities.')}
                 </p>
@@ -89,7 +89,7 @@ export default function AboutPage() {
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-accent/15 text-brand-accent">
                     <Icon name={area.icon} className="text-2xl" />
                   </div>
-                  <h3 className="text-xl font-bold leading-tight text-white">{pick(area.title, area.titleEn)}</h3>
+                  <h3 className="text-xl font-bold leading-tight text-ink">{pick(area.title, area.titleEn)}</h3>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted">{pick(area.tagline, area.taglineEn)}</p>
                 <ul className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -114,7 +114,7 @@ export default function AboutPage() {
                 <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-accent/15 text-brand-accent">
                   <v.icon className="h-7 w-7" />
                 </div>
-                <h3 className="mt-4 text-lg font-bold text-white">{pick(v.title, v.titleEn)}</h3>
+                <h3 className="mt-4 text-lg font-bold text-ink">{pick(v.title, v.titleEn)}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{pick(v.desc, v.descEn)}</p>
               </Card>
             ))}
@@ -127,11 +127,11 @@ export default function AboutPage() {
           <Card className="p-8">
             <SectionHeader align="left" eyebrow={pick('Thông tin doanh nghiệp', 'Enterprise Information')} title={pick('Hồ sơ pháp lý', 'Legal Profile')} />
             <dl className="mt-6 grid gap-x-10 gap-y-4 text-sm sm:grid-cols-2">
-              <div><dt className="text-muted">{pick('Tên công ty', 'Company Name')}</dt><dd className="font-semibold text-white">{COMPANY.legalName}</dd></div>
-              <div><dt className="text-muted">{pick('Mã số thuế', 'Tax Code')}</dt><dd className="font-semibold text-white">{COMPANY.taxCode}</dd></div>
-              <div><dt className="text-muted">{pick('Người đại diện', 'Representative')}</dt><dd className="font-semibold text-white">{COMPANY.director}</dd></div>
-              <div><dt className="text-muted">Email</dt><dd className="font-semibold text-white">{COMPANY.email}</dd></div>
-              <div className="sm:col-span-2"><dt className="text-muted">{pick('Địa chỉ', 'Address')}</dt><dd className="font-semibold text-white">{COMPANY.address}</dd></div>
+              <div><dt className="text-muted">{pick('Tên công ty', 'Company Name')}</dt><dd className="font-semibold text-ink">{COMPANY.legalName}</dd></div>
+              <div><dt className="text-muted">Hotline 24/7</dt><dd className="font-semibold text-brand-cyan">{COMPANY.hotline}</dd></div>
+              <div><dt className="text-muted">Email</dt><dd className="font-semibold text-ink">{COMPANY.email}</dd></div>
+              <div><dt className="text-muted">{pick('Thời gian hỗ trợ', 'Support Hours')}</dt><dd className="font-semibold text-ink">{pick(COMPANY.workingHours, COMPANY.workingHoursEn)}</dd></div>
+              <div className="sm:col-span-2"><dt className="text-muted">{pick('Địa chỉ', 'Address')}</dt><dd className="font-semibold text-ink">{COMPANY.address}</dd></div>
             </dl>
           </Card>
         </Container>

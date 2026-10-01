@@ -38,6 +38,7 @@ export const router = createBrowserRouter([
       { path: '/du-an/:slug', element: <ProjectDetailPage /> },
       { path: '/lien-he', element: <ContactPage /> },
       { path: '/bao-gia', element: <QuotePage /> },
+      { path: '/bang-tinh-bao-gia', element: <QuotePage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

@@ -103,9 +103,9 @@ export default function ContactPage() {
                   <div>
                     <p className="text-xs uppercase tracking-wider text-muted">{c.label}</p>
                     {c.href ? (
-                      <a href={c.href} className="font-semibold text-white hover:text-brand-cyan">{c.value}</a>
+                      <a href={c.href} className="font-semibold text-ink hover:text-brand-cyan transition">{c.value}</a>
                     ) : (
-                      <p className="font-semibold text-white">{c.value}</p>
+                      <p className="font-semibold text-ink">{c.value}</p>
                     )}
                   </div>
                 </Card>

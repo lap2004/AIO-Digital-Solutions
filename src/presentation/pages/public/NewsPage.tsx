@@ -46,7 +46,12 @@ export default function NewsPage() {
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => { setCategory(''); setPage(1); }}
-              className={cn('rounded-full border px-4 py-2 text-sm font-medium transition', !category ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50')}
+              className={cn(
+                'rounded-full border px-4 py-2 text-sm font-medium transition',
+                !category
+                  ? 'border-transparent bg-brand-gradient text-slate-950 font-bold shadow-md'
+                  : 'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:text-cyan-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-brand-accent/50 dark:hover:text-white',
+              )}
             >
               {t('products.all')}
             </button>
@@ -54,7 +59,12 @@ export default function NewsPage() {
               <button
                 key={slug}
                 onClick={() => { setCategory(slug); setPage(1); }}
-                className={cn('rounded-full border px-4 py-2 text-sm font-medium transition', category === slug ? 'border-transparent bg-brand-gradient text-white' : 'border-white/10 text-ink hover:border-brand-accent/50')}
+                className={cn(
+                  'rounded-full border px-4 py-2 text-sm font-medium transition',
+                  category === slug
+                    ? 'border-transparent bg-brand-gradient text-slate-950 font-bold shadow-md'
+                    : 'border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:text-cyan-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-brand-accent/50 dark:hover:text-white',
+                )}
               >
                 {newsCategoryLabel(slug, lang)}
               </button>

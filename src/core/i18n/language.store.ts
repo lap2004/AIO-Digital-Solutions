@@ -9,19 +9,18 @@ interface LanguageState {
   toggle: () => void;
 }
 
-export const useLanguageStore = create<LanguageState>((set, get) => ({
-  lang: storage.get<Lang>('lang', 'vi'),
-  setLang(lang) {
-    storage.set('lang', lang);
-    document.documentElement.lang = lang;
-    set({ lang });
+export const useLanguageStore = create<LanguageState>((set) => ({
+  lang: 'vi',
+  setLang() {
+    storage.set('lang', 'vi');
+    document.documentElement.lang = 'vi';
+    set({ lang: 'vi' });
   },
-  toggle() {
-    get().setLang(get().lang === 'vi' ? 'en' : 'vi');
-  },
+  toggle() {},
 }));
 
 // Apply the persisted language to <html lang> on first load.
 if (typeof document !== 'undefined') {
-  document.documentElement.lang = useLanguageStore.getState().lang;
+  document.documentElement.lang = 'vi';
 }
+

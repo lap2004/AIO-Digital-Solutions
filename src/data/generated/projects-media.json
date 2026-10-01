@@ -1,0 +1,2459 @@
+{
+  "generatedAt": "2026-10-01T10:15:16.098Z",
+  "totalVideos": 91,
+  "totalImages": 220,
+  "videos": [
+    {
+      "id": "video-1",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Hưng Yên (#1)",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-1.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-1.jpg"
+    },
+    {
+      "id": "video-2",
+      "title": "Lắp đặt Màn hình LED P2.5 Trung tâm Sự kiện & Tiệc cưới tại Hà Nội (#2)",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-2.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-2.jpg"
+    },
+    {
+      "id": "video-3",
+      "title": "Màn hình LED Ngoài trời P4 Tòa nhà Thương mại Hiện đại tại Hải Phòng (#3)",
+      "location": "Hải Phòng",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-3.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-3.jpg"
+    },
+    {
+      "id": "video-4",
+      "title": "Màn hình ghép LCD Video Wall 55\" Phòng Giám sát NOC tại Bắc Ninh (#4)",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-4.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-4.jpg"
+    },
+    {
+      "id": "video-5",
+      "title": "Màn hình LED P2.0 Phòng Họp Trực tuyến & Giao ban tại Quảng Ninh (#5)",
+      "location": "Quảng Ninh",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-5.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-5.jpg"
+    },
+    {
+      "id": "video-6",
+      "title": "Hệ thống Màn hình LED Andon Nhà xưởng Thông minh tại Hải Dương (#6)",
+      "location": "Hải Dương",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-6.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-6.jpg"
+    },
+    {
+      "id": "video-7",
+      "title": "Lắp đặt Màn hình LED P3.0 Sân khấu Đa năng tại Nam Định (#7)",
+      "location": "Nam Định",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-7.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-7.jpg"
+    },
+    {
+      "id": "video-8",
+      "title": "Thi công Màn hình LED Ngoài trời P5 Biển Quảng cáo tại Thái Bình (#8)",
+      "location": "Thái Bình",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-8.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-8.jpg"
+    },
+    {
+      "id": "video-9",
+      "title": "Màn hình Standee Cảm ứng Tra cứu Thông tin Sảnh Đón tại Bắc Giang (#9)",
+      "location": "Bắc Giang",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-9.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-9.jpg"
+    },
+    {
+      "id": "video-10",
+      "title": "Cân chỉnh Màu sắc & Kiểm thử Hệ thống Màn hình LED 4K tại Vĩnh Phúc (#10)",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-10.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-10.jpg"
+    },
+    {
+      "id": "video-11",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Ninh Bình (#11)",
+      "location": "Ninh Bình",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-11.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-11.jpg"
+    },
+    {
+      "id": "video-12",
+      "title": "Lắp đặt Màn hình LED P2.5 Trung tâm Sự kiện & Tiệc cưới tại Hà Nam (#12)",
+      "location": "Hà Nam",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-12.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-12.jpg"
+    },
+    {
+      "id": "video-13",
+      "title": "Màn hình LED Ngoài trời P4 Tòa nhà Thương mại Hiện đại tại Thanh Hóa (#13)",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-13.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-13.jpg"
+    },
+    {
+      "id": "video-14",
+      "title": "Màn hình ghép LCD Video Wall 55\" Phòng Giám sát NOC tại Đà Nẵng (#14)",
+      "location": "Đà Nẵng",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-14.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-14.jpg"
+    },
+    {
+      "id": "video-15",
+      "title": "Màn hình LED P2.0 Phòng Họp Trực tuyến & Giao ban tại Nghệ An (#15)",
+      "location": "Nghệ An",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-15.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-15.jpg"
+    },
+    {
+      "id": "video-16",
+      "title": "Hệ thống Màn hình LED Andon Nhà xưởng Thông minh tại Phú Thọ (#16)",
+      "location": "Phú Thọ",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-16.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-16.jpg"
+    },
+    {
+      "id": "video-17",
+      "title": "Lắp đặt Màn hình LED P3.0 Sân khấu Đa năng tại Lào Cai (#17)",
+      "location": "Lào Cai",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-17.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-17.jpg"
+    },
+    {
+      "id": "video-18",
+      "title": "Thi công Màn hình LED Ngoài trời P5 Biển Quảng cáo tại Thái Nguyên (#18)",
+      "location": "Thái Nguyên",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-18.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-18.jpg"
+    },
+    {
+      "id": "video-19",
+      "title": "Màn hình Standee Cảm ứng Tra cứu Thông tin Sảnh Đón tại Hưng Yên (#19)",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-19.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-19.jpg"
+    },
+    {
+      "id": "video-20",
+      "title": "Cân chỉnh Màu sắc & Kiểm thử Hệ thống Màn hình LED 4K tại Hà Nội (#20)",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-20.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-20.jpg"
+    },
+    {
+      "id": "video-21",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Hải Phòng (#21)",
+      "location": "Hải Phòng",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-21.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-21.jpg"
+    },
+    {
+      "id": "video-22",
+      "title": "Lắp đặt Màn hình LED P2.5 Trung tâm Sự kiện & Tiệc cưới tại Bắc Ninh (#22)",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-22.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-22.jpg"
+    },
+    {
+      "id": "video-23",
+      "title": "Màn hình LED Ngoài trời P4 Tòa nhà Thương mại Hiện đại tại Quảng Ninh (#23)",
+      "location": "Quảng Ninh",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-23.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-23.jpg"
+    },
+    {
+      "id": "video-24",
+      "title": "Màn hình ghép LCD Video Wall 55\" Phòng Giám sát NOC tại Hải Dương (#24)",
+      "location": "Hải Dương",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-24.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-24.jpg"
+    },
+    {
+      "id": "video-25",
+      "title": "Màn hình LED P2.0 Phòng Họp Trực tuyến & Giao ban tại Nam Định (#25)",
+      "location": "Nam Định",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-25.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-25.jpg"
+    },
+    {
+      "id": "video-26",
+      "title": "Hệ thống Màn hình LED Andon Nhà xưởng Thông minh tại Thái Bình (#26)",
+      "location": "Thái Bình",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-26.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-26.jpg"
+    },
+    {
+      "id": "video-27",
+      "title": "Lắp đặt Màn hình LED P3.0 Sân khấu Đa năng tại Bắc Giang (#27)",
+      "location": "Bắc Giang",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-27.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-27.jpg"
+    },
+    {
+      "id": "video-28",
+      "title": "Thi công Màn hình LED Ngoài trời P5 Biển Quảng cáo tại Vĩnh Phúc (#28)",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-28.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-28.jpg"
+    },
+    {
+      "id": "video-29",
+      "title": "Màn hình Standee Cảm ứng Tra cứu Thông tin Sảnh Đón tại Ninh Bình (#29)",
+      "location": "Ninh Bình",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-29.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-29.jpg"
+    },
+    {
+      "id": "video-30",
+      "title": "Cân chỉnh Màu sắc & Kiểm thử Hệ thống Màn hình LED 4K tại Hà Nam (#30)",
+      "location": "Hà Nam",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-30.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-30.jpg"
+    },
+    {
+      "id": "video-31",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Thanh Hóa (#31)",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-31.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-31.jpg"
+    },
+    {
+      "id": "video-32",
+      "title": "Lắp đặt Màn hình LED P2.5 Trung tâm Sự kiện & Tiệc cưới tại Đà Nẵng (#32)",
+      "location": "Đà Nẵng",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-32.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-32.jpg"
+    },
+    {
+      "id": "video-33",
+      "title": "Màn hình LED Ngoài trời P4 Tòa nhà Thương mại Hiện đại tại Nghệ An (#33)",
+      "location": "Nghệ An",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-33.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-33.jpg"
+    },
+    {
+      "id": "video-34",
+      "title": "Màn hình ghép LCD Video Wall 55\" Phòng Giám sát NOC tại Phú Thọ (#34)",
+      "location": "Phú Thọ",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-34.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-34.jpg"
+    },
+    {
+      "id": "video-35",
+      "title": "Màn hình LED P2.0 Phòng Họp Trực tuyến & Giao ban tại Lào Cai (#35)",
+      "location": "Lào Cai",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-35.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-35.jpg"
+    },
+    {
+      "id": "video-36",
+      "title": "Hệ thống Màn hình LED Andon Nhà xưởng Thông minh tại Thái Nguyên (#36)",
+      "location": "Thái Nguyên",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-36.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-36.jpg"
+    },
+    {
+      "id": "video-37",
+      "title": "Lắp đặt Màn hình LED P3.0 Sân khấu Đa năng tại Hưng Yên (#37)",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-37.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-37.jpg"
+    },
+    {
+      "id": "video-38",
+      "title": "Thi công Màn hình LED Ngoài trời P5 Biển Quảng cáo tại Hà Nội (#38)",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-38.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-38.jpg"
+    },
+    {
+      "id": "video-39",
+      "title": "Màn hình Standee Cảm ứng Tra cứu Thông tin Sảnh Đón tại Hải Phòng (#39)",
+      "location": "Hải Phòng",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-39.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-39.jpg"
+    },
+    {
+      "id": "video-40",
+      "title": "Cân chỉnh Màu sắc & Kiểm thử Hệ thống Màn hình LED 4K tại Bắc Ninh (#40)",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-40.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-40.jpg"
+    },
+    {
+      "id": "video-41",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Quảng Ninh (#41)",
+      "location": "Quảng Ninh",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-41.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-41.jpg"
+    },
+    {
+      "id": "video-42",
+      "title": "Lắp đặt Màn hình LED P2.5 Trung tâm Sự kiện & Tiệc cưới tại Hải Dương (#42)",
+      "location": "Hải Dương",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-42.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-42.jpg"
+    },
+    {
+      "id": "video-43",
+      "title": "Màn hình LED Ngoài trời P4 Tòa nhà Thương mại Hiện đại tại Nam Định (#43)",
+      "location": "Nam Định",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-43.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-43.jpg"
+    },
+    {
+      "id": "video-44",
+      "title": "Màn hình ghép LCD Video Wall 55\" Phòng Giám sát NOC tại Thái Bình (#44)",
+      "location": "Thái Bình",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-44.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-44.jpg"
+    },
+    {
+      "id": "video-45",
+      "title": "Màn hình LED P2.0 Phòng Họp Trực tuyến & Giao ban tại Bắc Giang (#45)",
+      "location": "Bắc Giang",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-45.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-45.jpg"
+    },
+    {
+      "id": "video-46",
+      "title": "Hệ thống Màn hình LED Andon Nhà xưởng Thông minh tại Vĩnh Phúc (#46)",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-46.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-46.jpg"
+    },
+    {
+      "id": "video-47",
+      "title": "Lắp đặt Màn hình LED P3.0 Sân khấu Đa năng tại Ninh Bình (#47)",
+      "location": "Ninh Bình",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-47.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-47.jpg"
+    },
+    {
+      "id": "video-48",
+      "title": "Thi công Màn hình LED Ngoài trời P5 Biển Quảng cáo tại Hà Nam (#48)",
+      "location": "Hà Nam",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-48.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-48.jpg"
+    },
+    {
+      "id": "video-49",
+      "title": "Màn hình Standee Cảm ứng Tra cứu Thông tin Sảnh Đón tại Thanh Hóa (#49)",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-49.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-49.jpg"
+    },
+    {
+      "id": "video-50",
+      "title": "Cân chỉnh Màu sắc & Kiểm thử Hệ thống Màn hình LED 4K tại Đà Nẵng (#50)",
+      "location": "Đà Nẵng",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-50.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-50.jpg"
+    },
+    {
+      "id": "video-51",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Nghệ An (#51)",
+      "location": "Nghệ An",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-51.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-51.jpg"
+    },
+    {
+      "id": "video-52",
+      "title": "Lắp đặt Màn hình LED P2.5 Trung tâm Sự kiện & Tiệc cưới tại Phú Thọ (#52)",
+      "location": "Phú Thọ",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-52.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-52.jpg"
+    },
+    {
+      "id": "video-53",
+      "title": "Màn hình LED Ngoài trời P4 Tòa nhà Thương mại Hiện đại tại Lào Cai (#53)",
+      "location": "Lào Cai",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-53.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-53.jpg"
+    },
+    {
+      "id": "video-54",
+      "title": "Màn hình ghép LCD Video Wall 55\" Phòng Giám sát NOC tại Thái Nguyên (#54)",
+      "location": "Thái Nguyên",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-54.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-54.jpg"
+    },
+    {
+      "id": "video-55",
+      "title": "Màn hình LED P2.0 Phòng Họp Trực tuyến & Giao ban tại Hưng Yên (#55)",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-55.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-55.jpg"
+    },
+    {
+      "id": "video-56",
+      "title": "Hệ thống Màn hình LED Andon Nhà xưởng Thông minh tại Hà Nội (#56)",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-56.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-56.jpg"
+    },
+    {
+      "id": "video-57",
+      "title": "Lắp đặt Màn hình LED P3.0 Sân khấu Đa năng tại Hải Phòng (#57)",
+      "location": "Hải Phòng",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-57.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-57.jpg"
+    },
+    {
+      "id": "video-58",
+      "title": "Thi công Màn hình LED Ngoài trời P5 Biển Quảng cáo tại Bắc Ninh (#58)",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-58.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-58.jpg"
+    },
+    {
+      "id": "video-59",
+      "title": "Màn hình Standee Cảm ứng Tra cứu Thông tin Sảnh Đón tại Quảng Ninh (#59)",
+      "location": "Quảng Ninh",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-59.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-59.jpg"
+    },
+    {
+      "id": "video-60",
+      "title": "Cân chỉnh Màu sắc & Kiểm thử Hệ thống Màn hình LED 4K tại Hải Dương (#60)",
+      "location": "Hải Dương",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-60.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-60.jpg"
+    },
+    {
+      "id": "video-61",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Nam Định (#61)",
+      "location": "Nam Định",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-61.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-61.jpg"
+    },
+    {
+      "id": "video-62",
+      "title": "Lắp đặt Màn hình LED P2.5 Trung tâm Sự kiện & Tiệc cưới tại Thái Bình (#62)",
+      "location": "Thái Bình",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-62.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-62.jpg"
+    },
+    {
+      "id": "video-63",
+      "title": "Màn hình LED Ngoài trời P4 Tòa nhà Thương mại Hiện đại tại Bắc Giang (#63)",
+      "location": "Bắc Giang",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-63.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-63.jpg"
+    },
+    {
+      "id": "video-64",
+      "title": "Màn hình ghép LCD Video Wall 55\" Phòng Giám sát NOC tại Vĩnh Phúc (#64)",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-64.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-64.jpg"
+    },
+    {
+      "id": "video-65",
+      "title": "Màn hình LED P2.0 Phòng Họp Trực tuyến & Giao ban tại Ninh Bình (#65)",
+      "location": "Ninh Bình",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-65.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-65.jpg"
+    },
+    {
+      "id": "video-66",
+      "title": "Hệ thống Màn hình LED Andon Nhà xưởng Thông minh tại Hà Nam (#66)",
+      "location": "Hà Nam",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-66.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-66.jpg"
+    },
+    {
+      "id": "video-67",
+      "title": "Lắp đặt Màn hình LED P3.0 Sân khấu Đa năng tại Thanh Hóa (#67)",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-67.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-67.jpg"
+    },
+    {
+      "id": "video-68",
+      "title": "Thi công Màn hình LED Ngoài trời P5 Biển Quảng cáo tại Đà Nẵng (#68)",
+      "location": "Đà Nẵng",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-68.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-68.jpg"
+    },
+    {
+      "id": "video-69",
+      "title": "Màn hình Standee Cảm ứng Tra cứu Thông tin Sảnh Đón tại Nghệ An (#69)",
+      "location": "Nghệ An",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-69.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-69.jpg"
+    },
+    {
+      "id": "video-70",
+      "title": "Cân chỉnh Màu sắc & Kiểm thử Hệ thống Màn hình LED 4K tại Phú Thọ (#70)",
+      "location": "Phú Thọ",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-70.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-70.jpg"
+    },
+    {
+      "id": "video-71",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Lào Cai (#71)",
+      "location": "Lào Cai",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-71.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-71.jpg"
+    },
+    {
+      "id": "video-72",
+      "title": "Lắp đặt Màn hình LED P2.5 Trung tâm Sự kiện & Tiệc cưới tại Thái Nguyên (#72)",
+      "location": "Thái Nguyên",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-72.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-72.jpg"
+    },
+    {
+      "id": "video-73",
+      "title": "Màn hình LED Ngoài trời P4 Tòa nhà Thương mại Hiện đại tại Hưng Yên (#73)",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-73.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-73.jpg"
+    },
+    {
+      "id": "video-74",
+      "title": "Màn hình ghép LCD Video Wall 55\" Phòng Giám sát NOC tại Hà Nội (#74)",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-74.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-74.jpg"
+    },
+    {
+      "id": "video-75",
+      "title": "Màn hình LED P2.0 Phòng Họp Trực tuyến & Giao ban tại Hải Phòng (#75)",
+      "location": "Hải Phòng",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-75.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-75.jpg"
+    },
+    {
+      "id": "video-76",
+      "title": "Hệ thống Màn hình LED Andon Nhà xưởng Thông minh tại Bắc Ninh (#76)",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-76.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-76.jpg"
+    },
+    {
+      "id": "video-77",
+      "title": "Lắp đặt Màn hình LED P3.0 Sân khấu Đa năng tại Quảng Ninh (#77)",
+      "location": "Quảng Ninh",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-77.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-77.jpg"
+    },
+    {
+      "id": "video-78",
+      "title": "Thi công Màn hình LED Ngoài trời P5 Biển Quảng cáo tại Hải Dương (#78)",
+      "location": "Hải Dương",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-78.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-78.jpg"
+    },
+    {
+      "id": "video-79",
+      "title": "Màn hình Standee Cảm ứng Tra cứu Thông tin Sảnh Đón tại Nam Định (#79)",
+      "location": "Nam Định",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-79.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-79.jpg"
+    },
+    {
+      "id": "video-80",
+      "title": "Cân chỉnh Màu sắc & Kiểm thử Hệ thống Màn hình LED 4K tại Thái Bình (#80)",
+      "location": "Thái Bình",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-80.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-80.jpg"
+    },
+    {
+      "id": "video-81",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Bắc Giang (#81)",
+      "location": "Bắc Giang",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-81.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-81.jpg"
+    },
+    {
+      "id": "video-82",
+      "title": "Lắp đặt Màn hình LED P2.5 Trung tâm Sự kiện & Tiệc cưới tại Vĩnh Phúc (#82)",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-82.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-82.jpg"
+    },
+    {
+      "id": "video-83",
+      "title": "Màn hình LED Ngoài trời P4 Tòa nhà Thương mại Hiện đại tại Ninh Bình (#83)",
+      "location": "Ninh Bình",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-83.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-83.jpg"
+    },
+    {
+      "id": "video-84",
+      "title": "Màn hình ghép LCD Video Wall 55\" Phòng Giám sát NOC tại Hà Nam (#84)",
+      "location": "Hà Nam",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-84.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-84.jpg"
+    },
+    {
+      "id": "video-85",
+      "title": "Màn hình LED P2.0 Phòng Họp Trực tuyến & Giao ban tại Thanh Hóa (#85)",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-85.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-85.jpg"
+    },
+    {
+      "id": "video-86",
+      "title": "Hệ thống Màn hình LED Andon Nhà xưởng Thông minh tại Đà Nẵng (#86)",
+      "location": "Đà Nẵng",
+      "category": "Màn hình LED Ngoài Trời",
+      "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-86.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-86.jpg"
+    },
+    {
+      "id": "video-87",
+      "title": "Lắp đặt Màn hình LED P3.0 Sân khấu Đa năng tại Nghệ An (#87)",
+      "location": "Nghệ An",
+      "category": "Màn hình Ghép LCD Video Wall",
+      "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-87.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-87.jpg"
+    },
+    {
+      "id": "video-88",
+      "title": "Thi công Màn hình LED Ngoài trời P5 Biển Quảng cáo tại Phú Thọ (#88)",
+      "location": "Phú Thọ",
+      "category": "Màn hình LED Hội Trường",
+      "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-88.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-88.jpg"
+    },
+    {
+      "id": "video-89",
+      "title": "Màn hình Standee Cảm ứng Tra cứu Thông tin Sảnh Đón tại Lào Cai (#89)",
+      "location": "Lào Cai",
+      "category": "Standee & Màn hình Cảm Ứng",
+      "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-89.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-89.jpg"
+    },
+    {
+      "id": "video-90",
+      "title": "Cân chỉnh Màu sắc & Kiểm thử Hệ thống Màn hình LED 4K tại Thái Nguyên (#90)",
+      "location": "Thái Nguyên",
+      "category": "Bảng Điện Tử & Andon Nhà Máy",
+      "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
+      "year": "2024",
+      "url": "/media/projects/videos/project-video-90.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-90.jpg"
+    },
+    {
+      "id": "video-91",
+      "title": "Thi công Màn hình LED Hội trường P1.86 Trung tâm Hội nghị tại Hưng Yên (#91)",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Trong Nhà",
+      "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
+      "year": "2025",
+      "url": "/media/projects/videos/project-video-91.mp4",
+      "thumbnail": "/media/projects/videos/thumbs/thumb-video-91.jpg"
+    }
+  ],
+  "images": [
+    {
+      "id": "img-1",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hưng Yên — Hạng mục #1",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-1.jpg"
+    },
+    {
+      "id": "img-2",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Hà Nội — Hạng mục #2",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-2.jpg"
+    },
+    {
+      "id": "img-3",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Hải Phòng — Hạng mục #3",
+      "location": "Hải Phòng",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-3.jpg"
+    },
+    {
+      "id": "img-4",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Bắc Ninh — Hạng mục #4",
+      "location": "Bắc Ninh",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-4.jpg"
+    },
+    {
+      "id": "img-5",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Quảng Ninh — Hạng mục #5",
+      "location": "Quảng Ninh",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-5.jpg"
+    },
+    {
+      "id": "img-6",
+      "title": "Lắp ráp module LED độ chính xác micron tại Hải Dương — Hạng mục #6",
+      "location": "Hải Dương",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-6.jpg"
+    },
+    {
+      "id": "img-7",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Nam Định — Hạng mục #7",
+      "location": "Nam Định",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-7.jpg"
+    },
+    {
+      "id": "img-8",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Thái Bình — Hạng mục #8",
+      "location": "Thái Bình",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-8.jpg"
+    },
+    {
+      "id": "img-9",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Bắc Giang — Hạng mục #9",
+      "location": "Bắc Giang",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-9.jpg"
+    },
+    {
+      "id": "img-10",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Vĩnh Phúc — Hạng mục #10",
+      "location": "Vĩnh Phúc",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-10.jpg"
+    },
+    {
+      "id": "img-11",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Ninh Bình — Hạng mục #11",
+      "location": "Ninh Bình",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-11.jpg"
+    },
+    {
+      "id": "img-12",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Hà Nam — Hạng mục #12",
+      "location": "Hà Nam",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-12.jpg"
+    },
+    {
+      "id": "img-13",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Thanh Hóa — Hạng mục #13",
+      "location": "Thanh Hóa",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-13.jpg"
+    },
+    {
+      "id": "img-14",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Hưng Yên — Hạng mục #14",
+      "location": "Hưng Yên",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-14.jpg"
+    },
+    {
+      "id": "img-15",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Hà Nội — Hạng mục #15",
+      "location": "Hà Nội",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-15.jpg"
+    },
+    {
+      "id": "img-16",
+      "title": "Lắp ráp module LED độ chính xác micron tại Hải Phòng — Hạng mục #16",
+      "location": "Hải Phòng",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-16.jpg"
+    },
+    {
+      "id": "img-17",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Bắc Ninh — Hạng mục #17",
+      "location": "Bắc Ninh",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-17.jpg"
+    },
+    {
+      "id": "img-18",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Quảng Ninh — Hạng mục #18",
+      "location": "Quảng Ninh",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-18.jpg"
+    },
+    {
+      "id": "img-19",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Hải Dương — Hạng mục #19",
+      "location": "Hải Dương",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-19.jpg"
+    },
+    {
+      "id": "img-20",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Nam Định — Hạng mục #20",
+      "location": "Nam Định",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-20.jpg"
+    },
+    {
+      "id": "img-21",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Thái Bình — Hạng mục #21",
+      "location": "Thái Bình",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-21.jpg"
+    },
+    {
+      "id": "img-22",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Bắc Giang — Hạng mục #22",
+      "location": "Bắc Giang",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-22.jpg"
+    },
+    {
+      "id": "img-23",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Vĩnh Phúc — Hạng mục #23",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-23.jpg"
+    },
+    {
+      "id": "img-24",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Ninh Bình — Hạng mục #24",
+      "location": "Ninh Bình",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-24.jpg"
+    },
+    {
+      "id": "img-25",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Hà Nam — Hạng mục #25",
+      "location": "Hà Nam",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-25.jpg"
+    },
+    {
+      "id": "img-26",
+      "title": "Lắp ráp module LED độ chính xác micron tại Thanh Hóa — Hạng mục #26",
+      "location": "Thanh Hóa",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-26.jpg"
+    },
+    {
+      "id": "img-27",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Hưng Yên — Hạng mục #27",
+      "location": "Hưng Yên",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-27.jpg"
+    },
+    {
+      "id": "img-28",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Hà Nội — Hạng mục #28",
+      "location": "Hà Nội",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-28.jpg"
+    },
+    {
+      "id": "img-29",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Hải Phòng — Hạng mục #29",
+      "location": "Hải Phòng",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-29.jpg"
+    },
+    {
+      "id": "img-30",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Bắc Ninh — Hạng mục #30",
+      "location": "Bắc Ninh",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-30.jpg"
+    },
+    {
+      "id": "img-31",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Quảng Ninh — Hạng mục #31",
+      "location": "Quảng Ninh",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-31.jpg"
+    },
+    {
+      "id": "img-32",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Hải Dương — Hạng mục #32",
+      "location": "Hải Dương",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-32.jpg"
+    },
+    {
+      "id": "img-33",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Nam Định — Hạng mục #33",
+      "location": "Nam Định",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-33.jpg"
+    },
+    {
+      "id": "img-34",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Thái Bình — Hạng mục #34",
+      "location": "Thái Bình",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-34.jpg"
+    },
+    {
+      "id": "img-35",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Bắc Giang — Hạng mục #35",
+      "location": "Bắc Giang",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-35.jpg"
+    },
+    {
+      "id": "img-36",
+      "title": "Lắp ráp module LED độ chính xác micron tại Vĩnh Phúc — Hạng mục #36",
+      "location": "Vĩnh Phúc",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-36.jpg"
+    },
+    {
+      "id": "img-37",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Ninh Bình — Hạng mục #37",
+      "location": "Ninh Bình",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-37.jpg"
+    },
+    {
+      "id": "img-38",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Hà Nam — Hạng mục #38",
+      "location": "Hà Nam",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-38.jpg"
+    },
+    {
+      "id": "img-39",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Thanh Hóa — Hạng mục #39",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-39.jpg"
+    },
+    {
+      "id": "img-40",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Hưng Yên — Hạng mục #40",
+      "location": "Hưng Yên",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-40.jpg"
+    },
+    {
+      "id": "img-41",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hà Nội — Hạng mục #41",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-41.jpg"
+    },
+    {
+      "id": "img-42",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Hải Phòng — Hạng mục #42",
+      "location": "Hải Phòng",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-42.jpg"
+    },
+    {
+      "id": "img-43",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Bắc Ninh — Hạng mục #43",
+      "location": "Bắc Ninh",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-43.jpg"
+    },
+    {
+      "id": "img-44",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Quảng Ninh — Hạng mục #44",
+      "location": "Quảng Ninh",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-44.jpg"
+    },
+    {
+      "id": "img-45",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Hải Dương — Hạng mục #45",
+      "location": "Hải Dương",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-45.jpg"
+    },
+    {
+      "id": "img-46",
+      "title": "Lắp ráp module LED độ chính xác micron tại Nam Định — Hạng mục #46",
+      "location": "Nam Định",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-46.jpg"
+    },
+    {
+      "id": "img-47",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Thái Bình — Hạng mục #47",
+      "location": "Thái Bình",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-47.jpg"
+    },
+    {
+      "id": "img-48",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Bắc Giang — Hạng mục #48",
+      "location": "Bắc Giang",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-48.jpg"
+    },
+    {
+      "id": "img-49",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Vĩnh Phúc — Hạng mục #49",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-49.jpg"
+    },
+    {
+      "id": "img-50",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Ninh Bình — Hạng mục #50",
+      "location": "Ninh Bình",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-50.jpg"
+    },
+    {
+      "id": "img-51",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hà Nam — Hạng mục #51",
+      "location": "Hà Nam",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-51.jpg"
+    },
+    {
+      "id": "img-52",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Thanh Hóa — Hạng mục #52",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-52.jpg"
+    },
+    {
+      "id": "img-53",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Hưng Yên — Hạng mục #53",
+      "location": "Hưng Yên",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-53.jpg"
+    },
+    {
+      "id": "img-54",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Hà Nội — Hạng mục #54",
+      "location": "Hà Nội",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-54.jpg"
+    },
+    {
+      "id": "img-55",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Hải Phòng — Hạng mục #55",
+      "location": "Hải Phòng",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-55.jpg"
+    },
+    {
+      "id": "img-56",
+      "title": "Lắp ráp module LED độ chính xác micron tại Bắc Ninh — Hạng mục #56",
+      "location": "Bắc Ninh",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-56.jpg"
+    },
+    {
+      "id": "img-57",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Quảng Ninh — Hạng mục #57",
+      "location": "Quảng Ninh",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-57.jpg"
+    },
+    {
+      "id": "img-58",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Hải Dương — Hạng mục #58",
+      "location": "Hải Dương",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-58.jpg"
+    },
+    {
+      "id": "img-59",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Nam Định — Hạng mục #59",
+      "location": "Nam Định",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-59.jpg"
+    },
+    {
+      "id": "img-60",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Thái Bình — Hạng mục #60",
+      "location": "Thái Bình",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-60.jpg"
+    },
+    {
+      "id": "img-61",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Bắc Giang — Hạng mục #61",
+      "location": "Bắc Giang",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-61.jpg"
+    },
+    {
+      "id": "img-62",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Vĩnh Phúc — Hạng mục #62",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-62.jpg"
+    },
+    {
+      "id": "img-63",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Ninh Bình — Hạng mục #63",
+      "location": "Ninh Bình",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-63.jpg"
+    },
+    {
+      "id": "img-64",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Hà Nam — Hạng mục #64",
+      "location": "Hà Nam",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-64.jpg"
+    },
+    {
+      "id": "img-65",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Thanh Hóa — Hạng mục #65",
+      "location": "Thanh Hóa",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-65.jpg"
+    },
+    {
+      "id": "img-66",
+      "title": "Lắp ráp module LED độ chính xác micron tại Hưng Yên — Hạng mục #66",
+      "location": "Hưng Yên",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-66.jpg"
+    },
+    {
+      "id": "img-67",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Hà Nội — Hạng mục #67",
+      "location": "Hà Nội",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-67.jpg"
+    },
+    {
+      "id": "img-68",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Hải Phòng — Hạng mục #68",
+      "location": "Hải Phòng",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-68.jpg"
+    },
+    {
+      "id": "img-69",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Bắc Ninh — Hạng mục #69",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-69.jpg"
+    },
+    {
+      "id": "img-70",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Quảng Ninh — Hạng mục #70",
+      "location": "Quảng Ninh",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-70.jpg"
+    },
+    {
+      "id": "img-71",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hải Dương — Hạng mục #71",
+      "location": "Hải Dương",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-71.jpg"
+    },
+    {
+      "id": "img-72",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Nam Định — Hạng mục #72",
+      "location": "Nam Định",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-72.jpg"
+    },
+    {
+      "id": "img-73",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Thái Bình — Hạng mục #73",
+      "location": "Thái Bình",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-73.jpg"
+    },
+    {
+      "id": "img-74",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Bắc Giang — Hạng mục #74",
+      "location": "Bắc Giang",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-74.jpg"
+    },
+    {
+      "id": "img-75",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Vĩnh Phúc — Hạng mục #75",
+      "location": "Vĩnh Phúc",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-75.jpg"
+    },
+    {
+      "id": "img-76",
+      "title": "Lắp ráp module LED độ chính xác micron tại Ninh Bình — Hạng mục #76",
+      "location": "Ninh Bình",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-76.jpg"
+    },
+    {
+      "id": "img-77",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Hà Nam — Hạng mục #77",
+      "location": "Hà Nam",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-77.jpg"
+    },
+    {
+      "id": "img-78",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Thanh Hóa — Hạng mục #78",
+      "location": "Thanh Hóa",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-78.jpg"
+    },
+    {
+      "id": "img-79",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Hưng Yên — Hạng mục #79",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-79.jpg"
+    },
+    {
+      "id": "img-80",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Hà Nội — Hạng mục #80",
+      "location": "Hà Nội",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-80.jpg"
+    },
+    {
+      "id": "img-81",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hải Phòng — Hạng mục #81",
+      "location": "Hải Phòng",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-81.jpg"
+    },
+    {
+      "id": "img-82",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Bắc Ninh — Hạng mục #82",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-82.jpg"
+    },
+    {
+      "id": "img-83",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Quảng Ninh — Hạng mục #83",
+      "location": "Quảng Ninh",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-83.jpg"
+    },
+    {
+      "id": "img-84",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Hải Dương — Hạng mục #84",
+      "location": "Hải Dương",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-84.jpg"
+    },
+    {
+      "id": "img-85",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Nam Định — Hạng mục #85",
+      "location": "Nam Định",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-85.jpg"
+    },
+    {
+      "id": "img-86",
+      "title": "Lắp ráp module LED độ chính xác micron tại Thái Bình — Hạng mục #86",
+      "location": "Thái Bình",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-86.jpg"
+    },
+    {
+      "id": "img-87",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Bắc Giang — Hạng mục #87",
+      "location": "Bắc Giang",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-87.jpg"
+    },
+    {
+      "id": "img-88",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Vĩnh Phúc — Hạng mục #88",
+      "location": "Vĩnh Phúc",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-88.jpg"
+    },
+    {
+      "id": "img-89",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Ninh Bình — Hạng mục #89",
+      "location": "Ninh Bình",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-89.jpg"
+    },
+    {
+      "id": "img-90",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Hà Nam — Hạng mục #90",
+      "location": "Hà Nam",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-90.jpg"
+    },
+    {
+      "id": "img-91",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Thanh Hóa — Hạng mục #91",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-91.jpg"
+    },
+    {
+      "id": "img-92",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Hưng Yên — Hạng mục #92",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-92.jpg"
+    },
+    {
+      "id": "img-93",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Hà Nội — Hạng mục #93",
+      "location": "Hà Nội",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-93.jpg"
+    },
+    {
+      "id": "img-94",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Hải Phòng — Hạng mục #94",
+      "location": "Hải Phòng",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-94.jpg"
+    },
+    {
+      "id": "img-95",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Bắc Ninh — Hạng mục #95",
+      "location": "Bắc Ninh",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-95.jpg"
+    },
+    {
+      "id": "img-96",
+      "title": "Lắp ráp module LED độ chính xác micron tại Quảng Ninh — Hạng mục #96",
+      "location": "Quảng Ninh",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-96.jpg"
+    },
+    {
+      "id": "img-97",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Hải Dương — Hạng mục #97",
+      "location": "Hải Dương",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-97.jpg"
+    },
+    {
+      "id": "img-98",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Nam Định — Hạng mục #98",
+      "location": "Nam Định",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-98.jpg"
+    },
+    {
+      "id": "img-99",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Thái Bình — Hạng mục #99",
+      "location": "Thái Bình",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-99.jpg"
+    },
+    {
+      "id": "img-100",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Bắc Giang — Hạng mục #100",
+      "location": "Bắc Giang",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-100.jpg"
+    },
+    {
+      "id": "img-101",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Vĩnh Phúc — Hạng mục #101",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-101.jpg"
+    },
+    {
+      "id": "img-102",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Ninh Bình — Hạng mục #102",
+      "location": "Ninh Bình",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-102.jpg"
+    },
+    {
+      "id": "img-103",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Hà Nam — Hạng mục #103",
+      "location": "Hà Nam",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-103.jpg"
+    },
+    {
+      "id": "img-104",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Thanh Hóa — Hạng mục #104",
+      "location": "Thanh Hóa",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-104.jpg"
+    },
+    {
+      "id": "img-105",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Hưng Yên — Hạng mục #105",
+      "location": "Hưng Yên",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-105.jpg"
+    },
+    {
+      "id": "img-106",
+      "title": "Lắp ráp module LED độ chính xác micron tại Hà Nội — Hạng mục #106",
+      "location": "Hà Nội",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-106.jpg"
+    },
+    {
+      "id": "img-107",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Hải Phòng — Hạng mục #107",
+      "location": "Hải Phòng",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-107.jpg"
+    },
+    {
+      "id": "img-108",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Bắc Ninh — Hạng mục #108",
+      "location": "Bắc Ninh",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-108.jpg"
+    },
+    {
+      "id": "img-109",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Quảng Ninh — Hạng mục #109",
+      "location": "Quảng Ninh",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-109.jpg"
+    },
+    {
+      "id": "img-110",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Hải Dương — Hạng mục #110",
+      "location": "Hải Dương",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-110.jpg"
+    },
+    {
+      "id": "img-111",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Nam Định — Hạng mục #111",
+      "location": "Nam Định",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-111.jpg"
+    },
+    {
+      "id": "img-112",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Thái Bình — Hạng mục #112",
+      "location": "Thái Bình",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-112.jpg"
+    },
+    {
+      "id": "img-113",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Bắc Giang — Hạng mục #113",
+      "location": "Bắc Giang",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-113.jpg"
+    },
+    {
+      "id": "img-114",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Vĩnh Phúc — Hạng mục #114",
+      "location": "Vĩnh Phúc",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-114.jpg"
+    },
+    {
+      "id": "img-115",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Ninh Bình — Hạng mục #115",
+      "location": "Ninh Bình",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-115.jpg"
+    },
+    {
+      "id": "img-116",
+      "title": "Lắp ráp module LED độ chính xác micron tại Hà Nam — Hạng mục #116",
+      "location": "Hà Nam",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-116.jpg"
+    },
+    {
+      "id": "img-117",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Thanh Hóa — Hạng mục #117",
+      "location": "Thanh Hóa",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-117.jpg"
+    },
+    {
+      "id": "img-118",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Hưng Yên — Hạng mục #118",
+      "location": "Hưng Yên",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-118.jpg"
+    },
+    {
+      "id": "img-119",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Hà Nội — Hạng mục #119",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-119.jpg"
+    },
+    {
+      "id": "img-120",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Hải Phòng — Hạng mục #120",
+      "location": "Hải Phòng",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-120.jpg"
+    },
+    {
+      "id": "img-121",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Bắc Ninh — Hạng mục #121",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-121.jpg"
+    },
+    {
+      "id": "img-122",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Quảng Ninh — Hạng mục #122",
+      "location": "Quảng Ninh",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-122.jpg"
+    },
+    {
+      "id": "img-123",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Hải Dương — Hạng mục #123",
+      "location": "Hải Dương",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-123.jpg"
+    },
+    {
+      "id": "img-124",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Nam Định — Hạng mục #124",
+      "location": "Nam Định",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-124.jpg"
+    },
+    {
+      "id": "img-125",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Thái Bình — Hạng mục #125",
+      "location": "Thái Bình",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-125.jpg"
+    },
+    {
+      "id": "img-126",
+      "title": "Lắp ráp module LED độ chính xác micron tại Bắc Giang — Hạng mục #126",
+      "location": "Bắc Giang",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-126.jpg"
+    },
+    {
+      "id": "img-127",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Vĩnh Phúc — Hạng mục #127",
+      "location": "Vĩnh Phúc",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-127.jpg"
+    },
+    {
+      "id": "img-128",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Ninh Bình — Hạng mục #128",
+      "location": "Ninh Bình",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-128.jpg"
+    },
+    {
+      "id": "img-129",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Hà Nam — Hạng mục #129",
+      "location": "Hà Nam",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-129.jpg"
+    },
+    {
+      "id": "img-130",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Thanh Hóa — Hạng mục #130",
+      "location": "Thanh Hóa",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-130.jpg"
+    },
+    {
+      "id": "img-131",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hưng Yên — Hạng mục #131",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-131.jpg"
+    },
+    {
+      "id": "img-132",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Hà Nội — Hạng mục #132",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-132.jpg"
+    },
+    {
+      "id": "img-133",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Hải Phòng — Hạng mục #133",
+      "location": "Hải Phòng",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-133.jpg"
+    },
+    {
+      "id": "img-134",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Bắc Ninh — Hạng mục #134",
+      "location": "Bắc Ninh",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-134.jpg"
+    },
+    {
+      "id": "img-135",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Quảng Ninh — Hạng mục #135",
+      "location": "Quảng Ninh",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-135.jpg"
+    },
+    {
+      "id": "img-136",
+      "title": "Lắp ráp module LED độ chính xác micron tại Hải Dương — Hạng mục #136",
+      "location": "Hải Dương",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-136.jpg"
+    },
+    {
+      "id": "img-137",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Nam Định — Hạng mục #137",
+      "location": "Nam Định",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-137.png"
+    },
+    {
+      "id": "img-138",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Thái Bình — Hạng mục #138",
+      "location": "Thái Bình",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-138.png"
+    },
+    {
+      "id": "img-139",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Bắc Giang — Hạng mục #139",
+      "location": "Bắc Giang",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-139.jpg"
+    },
+    {
+      "id": "img-140",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Vĩnh Phúc — Hạng mục #140",
+      "location": "Vĩnh Phúc",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-140.jpg"
+    },
+    {
+      "id": "img-141",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Ninh Bình — Hạng mục #141",
+      "location": "Ninh Bình",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-141.jpg"
+    },
+    {
+      "id": "img-142",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Hà Nam — Hạng mục #142",
+      "location": "Hà Nam",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-142.jpg"
+    },
+    {
+      "id": "img-143",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Thanh Hóa — Hạng mục #143",
+      "location": "Thanh Hóa",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-143.jpg"
+    },
+    {
+      "id": "img-144",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Hưng Yên — Hạng mục #144",
+      "location": "Hưng Yên",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-144.jpg"
+    },
+    {
+      "id": "img-145",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Hà Nội — Hạng mục #145",
+      "location": "Hà Nội",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-145.jpg"
+    },
+    {
+      "id": "img-146",
+      "title": "Lắp ráp module LED độ chính xác micron tại Hải Phòng — Hạng mục #146",
+      "location": "Hải Phòng",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-146.jpg"
+    },
+    {
+      "id": "img-147",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Bắc Ninh — Hạng mục #147",
+      "location": "Bắc Ninh",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-147.jpg"
+    },
+    {
+      "id": "img-148",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Quảng Ninh — Hạng mục #148",
+      "location": "Quảng Ninh",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-148.jpg"
+    },
+    {
+      "id": "img-149",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Hải Dương — Hạng mục #149",
+      "location": "Hải Dương",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-149.jpg"
+    },
+    {
+      "id": "img-150",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Nam Định — Hạng mục #150",
+      "location": "Nam Định",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-150.jpg"
+    },
+    {
+      "id": "img-151",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Thái Bình — Hạng mục #151",
+      "location": "Thái Bình",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-151.jpg"
+    },
+    {
+      "id": "img-152",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Bắc Giang — Hạng mục #152",
+      "location": "Bắc Giang",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-152.jpg"
+    },
+    {
+      "id": "img-153",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Vĩnh Phúc — Hạng mục #153",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-153.jpg"
+    },
+    {
+      "id": "img-154",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Ninh Bình — Hạng mục #154",
+      "location": "Ninh Bình",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-154.jpg"
+    },
+    {
+      "id": "img-155",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Hà Nam — Hạng mục #155",
+      "location": "Hà Nam",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-155.jpg"
+    },
+    {
+      "id": "img-156",
+      "title": "Lắp ráp module LED độ chính xác micron tại Thanh Hóa — Hạng mục #156",
+      "location": "Thanh Hóa",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-156.jpg"
+    },
+    {
+      "id": "img-157",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Hưng Yên — Hạng mục #157",
+      "location": "Hưng Yên",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-157.jpg"
+    },
+    {
+      "id": "img-158",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Hà Nội — Hạng mục #158",
+      "location": "Hà Nội",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-158.jpg"
+    },
+    {
+      "id": "img-159",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Hải Phòng — Hạng mục #159",
+      "location": "Hải Phòng",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-159.jpg"
+    },
+    {
+      "id": "img-160",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Bắc Ninh — Hạng mục #160",
+      "location": "Bắc Ninh",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-160.jpg"
+    },
+    {
+      "id": "img-161",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Quảng Ninh — Hạng mục #161",
+      "location": "Quảng Ninh",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-161.jpg"
+    },
+    {
+      "id": "img-162",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Hải Dương — Hạng mục #162",
+      "location": "Hải Dương",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-162.jpg"
+    },
+    {
+      "id": "img-163",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Nam Định — Hạng mục #163",
+      "location": "Nam Định",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-163.jpg"
+    },
+    {
+      "id": "img-164",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Thái Bình — Hạng mục #164",
+      "location": "Thái Bình",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-164.jpg"
+    },
+    {
+      "id": "img-165",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Bắc Giang — Hạng mục #165",
+      "location": "Bắc Giang",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-165.jpg"
+    },
+    {
+      "id": "img-166",
+      "title": "Lắp ráp module LED độ chính xác micron tại Vĩnh Phúc — Hạng mục #166",
+      "location": "Vĩnh Phúc",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-166.jpg"
+    },
+    {
+      "id": "img-167",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Ninh Bình — Hạng mục #167",
+      "location": "Ninh Bình",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-167.jpg"
+    },
+    {
+      "id": "img-168",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Hà Nam — Hạng mục #168",
+      "location": "Hà Nam",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-168.jpg"
+    },
+    {
+      "id": "img-169",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Thanh Hóa — Hạng mục #169",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-169.jpg"
+    },
+    {
+      "id": "img-170",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Hưng Yên — Hạng mục #170",
+      "location": "Hưng Yên",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-170.jpg"
+    },
+    {
+      "id": "img-171",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hà Nội — Hạng mục #171",
+      "location": "Hà Nội",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-171.jpg"
+    },
+    {
+      "id": "img-172",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Hải Phòng — Hạng mục #172",
+      "location": "Hải Phòng",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-172.jpg"
+    },
+    {
+      "id": "img-173",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Bắc Ninh — Hạng mục #173",
+      "location": "Bắc Ninh",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-173.jpg"
+    },
+    {
+      "id": "img-174",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Quảng Ninh — Hạng mục #174",
+      "location": "Quảng Ninh",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-174.jpg"
+    },
+    {
+      "id": "img-175",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Hải Dương — Hạng mục #175",
+      "location": "Hải Dương",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-175.jpg"
+    },
+    {
+      "id": "img-176",
+      "title": "Lắp ráp module LED độ chính xác micron tại Nam Định — Hạng mục #176",
+      "location": "Nam Định",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-176.jpg"
+    },
+    {
+      "id": "img-177",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Thái Bình — Hạng mục #177",
+      "location": "Thái Bình",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-177.jpg"
+    },
+    {
+      "id": "img-178",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Bắc Giang — Hạng mục #178",
+      "location": "Bắc Giang",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-178.jpg"
+    },
+    {
+      "id": "img-179",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Vĩnh Phúc — Hạng mục #179",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-179.jpg"
+    },
+    {
+      "id": "img-180",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Ninh Bình — Hạng mục #180",
+      "location": "Ninh Bình",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-180.jpg"
+    },
+    {
+      "id": "img-181",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hà Nam — Hạng mục #181",
+      "location": "Hà Nam",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-181.jpg"
+    },
+    {
+      "id": "img-182",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Thanh Hóa — Hạng mục #182",
+      "location": "Thanh Hóa",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-182.jpg"
+    },
+    {
+      "id": "img-183",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Hưng Yên — Hạng mục #183",
+      "location": "Hưng Yên",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-183.jpg"
+    },
+    {
+      "id": "img-184",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Hà Nội — Hạng mục #184",
+      "location": "Hà Nội",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-184.jpg"
+    },
+    {
+      "id": "img-185",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Hải Phòng — Hạng mục #185",
+      "location": "Hải Phòng",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-185.jpg"
+    },
+    {
+      "id": "img-186",
+      "title": "Lắp ráp module LED độ chính xác micron tại Bắc Ninh — Hạng mục #186",
+      "location": "Bắc Ninh",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-186.jpg"
+    },
+    {
+      "id": "img-187",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Quảng Ninh — Hạng mục #187",
+      "location": "Quảng Ninh",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-187.jpg"
+    },
+    {
+      "id": "img-188",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Hải Dương — Hạng mục #188",
+      "location": "Hải Dương",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-188.jpg"
+    },
+    {
+      "id": "img-189",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Nam Định — Hạng mục #189",
+      "location": "Nam Định",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-189.jpg"
+    },
+    {
+      "id": "img-190",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Thái Bình — Hạng mục #190",
+      "location": "Thái Bình",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-190.jpg"
+    },
+    {
+      "id": "img-191",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Bắc Giang — Hạng mục #191",
+      "location": "Bắc Giang",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-191.jpg"
+    },
+    {
+      "id": "img-192",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Vĩnh Phúc — Hạng mục #192",
+      "location": "Vĩnh Phúc",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-192.jpg"
+    },
+    {
+      "id": "img-193",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Ninh Bình — Hạng mục #193",
+      "location": "Ninh Bình",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-193.jpg"
+    },
+    {
+      "id": "img-194",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Hà Nam — Hạng mục #194",
+      "location": "Hà Nam",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-194.jpg"
+    },
+    {
+      "id": "img-195",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Thanh Hóa — Hạng mục #195",
+      "location": "Thanh Hóa",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-195.jpg"
+    },
+    {
+      "id": "img-196",
+      "title": "Lắp ráp module LED độ chính xác micron tại Hưng Yên — Hạng mục #196",
+      "location": "Hưng Yên",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-196.jpg"
+    },
+    {
+      "id": "img-197",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Hà Nội — Hạng mục #197",
+      "location": "Hà Nội",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-197.jpg"
+    },
+    {
+      "id": "img-198",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Hải Phòng — Hạng mục #198",
+      "location": "Hải Phòng",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-198.jpg"
+    },
+    {
+      "id": "img-199",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Bắc Ninh — Hạng mục #199",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-199.jpg"
+    },
+    {
+      "id": "img-200",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Quảng Ninh — Hạng mục #200",
+      "location": "Quảng Ninh",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-200.jpg"
+    },
+    {
+      "id": "img-201",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hải Dương — Hạng mục #201",
+      "location": "Hải Dương",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-201.jpg"
+    },
+    {
+      "id": "img-202",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Nam Định — Hạng mục #202",
+      "location": "Nam Định",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-202.jpg"
+    },
+    {
+      "id": "img-203",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Thái Bình — Hạng mục #203",
+      "location": "Thái Bình",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-203.jpg"
+    },
+    {
+      "id": "img-204",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Bắc Giang — Hạng mục #204",
+      "location": "Bắc Giang",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-204.jpg"
+    },
+    {
+      "id": "img-205",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Vĩnh Phúc — Hạng mục #205",
+      "location": "Vĩnh Phúc",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-205.jpg"
+    },
+    {
+      "id": "img-206",
+      "title": "Lắp ráp module LED độ chính xác micron tại Ninh Bình — Hạng mục #206",
+      "location": "Ninh Bình",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-206.jpg"
+    },
+    {
+      "id": "img-207",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Hà Nam — Hạng mục #207",
+      "location": "Hà Nam",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-207.jpg"
+    },
+    {
+      "id": "img-208",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Thanh Hóa — Hạng mục #208",
+      "location": "Thanh Hóa",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-208.jpg"
+    },
+    {
+      "id": "img-209",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Hưng Yên — Hạng mục #209",
+      "location": "Hưng Yên",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-209.jpg"
+    },
+    {
+      "id": "img-210",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Hà Nội — Hạng mục #210",
+      "location": "Hà Nội",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-210.jpg"
+    },
+    {
+      "id": "img-211",
+      "title": "Lắp đặt hoàn thiện màn hình LED tại Hải Phòng — Hạng mục #211",
+      "location": "Hải Phòng",
+      "category": "Màn hình LED Hội trường",
+      "url": "/media/projects/images/project-image-211.jpg"
+    },
+    {
+      "id": "img-212",
+      "title": "Thi công khung cabinet định hình chuẩn phẳng tại Bắc Ninh — Hạng mục #212",
+      "location": "Bắc Ninh",
+      "category": "Màn hình LED Ngoài trời",
+      "url": "/media/projects/images/project-image-212.jpg"
+    },
+    {
+      "id": "img-213",
+      "title": "Cân chỉnh màu sắc và tần số quét 3840Hz tại Quảng Ninh — Hạng mục #213",
+      "location": "Quảng Ninh",
+      "category": "Màn hình ghép LCD",
+      "url": "/media/projects/images/project-image-213.jpg"
+    },
+    {
+      "id": "img-214",
+      "title": "Bàn giao màn hình LED P2.5 siêu nét tại Hải Dương — Hạng mục #214",
+      "location": "Hải Dương",
+      "category": "Standee Điện tử & Cảm ứng",
+      "url": "/media/projects/images/project-image-214.jpg"
+    },
+    {
+      "id": "img-215",
+      "title": "Hệ thống màn hình giám sát NOC 24/7 tại Nam Định — Hạng mục #215",
+      "location": "Nam Định",
+      "category": "Thi công Khung Cabinet",
+      "url": "/media/projects/images/project-image-215.jpg"
+    },
+    {
+      "id": "img-216",
+      "title": "Lắp ráp module LED độ chính xác micron tại Thái Bình — Hạng mục #216",
+      "location": "Thái Bình",
+      "category": "Lắp ráp Module LED P1.86/P2.5",
+      "url": "/media/projects/images/project-image-216.jpg"
+    },
+    {
+      "id": "img-217",
+      "title": "Chạy thử nghiệm nghiệm thu 72h liên tục tại Bắc Giang — Hạng mục #217",
+      "location": "Bắc Giang",
+      "category": "Đấu nối Tủ Nguồn & Điều Khiển",
+      "url": "/media/projects/images/project-image-217.jpg"
+    },
+    {
+      "id": "img-218",
+      "title": "Đấu nối hệ thống nguồn Meanwell & NovaStar tại Vĩnh Phúc — Hạng mục #218",
+      "location": "Vĩnh Phúc",
+      "category": "Kiểm thử Nghiệm thu 72h",
+      "url": "/media/projects/images/project-image-218.jpg"
+    },
+    {
+      "id": "img-219",
+      "title": "Màn hình LED cong nghệ thuật sảnh đón tại Ninh Bình — Hạng mục #219",
+      "location": "Ninh Bình",
+      "category": "Màn hình LED Trong Suốt",
+      "url": "/media/projects/images/project-image-219.jpg"
+    },
+    {
+      "id": "img-220",
+      "title": "Triển khai Standee điện tử tra cứu thông tin tại Hà Nam — Hạng mục #220",
+      "location": "Hà Nam",
+      "category": "Bảng Điện tử Andon Nhà máy",
+      "url": "/media/projects/images/project-image-220.jpg"
+    }
+  ]
+}

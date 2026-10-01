@@ -15,7 +15,7 @@ import { ChevronDown } from 'lucide-react';
 import { cn } from '@/core/utils/cn';
 
 const base =
-  'w-full rounded-xl border border-slate-200 bg-white/50 px-4 py-3 text-sm text-ink placeholder:text-muted/60 transition focus:border-brand-cyan/60 focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 dark:border-white/10 dark:bg-[#0b1326]/60 dark:text-white dark:focus:border-brand-accent/60 dark:focus:ring-brand-accent/20';
+  'w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 transition focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 dark:border-white/10 dark:bg-[#0b1326]/60 dark:text-white dark:placeholder:text-slate-500 dark:focus:border-brand-accent/60 dark:focus:ring-brand-accent/20';
 
 export function FieldWrapper({
   label,

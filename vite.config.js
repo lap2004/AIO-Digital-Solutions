@@ -5,15 +5,22 @@ import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 // @ts-expect-error - plain ESM helper, no types needed
 import { scanData } from './scripts/data-scanner.mjs';
+// @ts-expect-error - plain ESM helper, no types needed
+import { prepareTakeoutMedia } from './scripts/prepare-takeout-media.mjs';
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(ROOT, 'public', 'images', 'products');
 const MANIFEST = path.join(ROOT, 'src', 'data', 'generated', 'image-manifest.json');
 /**
- * Generates the product manifest from ./public/images/products.
- * Images are automatically served by Vite from the public directory.
+ * Generates the product manifest and takeout project media.
  */
 function aioDataPlugin() {
     function writeManifest() {
+        try {
+            prepareTakeoutMedia(ROOT);
+        }
+        catch (e) {
+            console.warn('[aio-data] Note on takeout media:', e);
+        }
         const manifest = scanData(ROOT);
         fs.mkdirSync(path.dirname(MANIFEST), { recursive: true });
         fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2));

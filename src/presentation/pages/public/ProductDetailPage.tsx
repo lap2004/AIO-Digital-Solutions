@@ -75,13 +75,13 @@ export default function ProductDetailPage() {
           <div className="mt-8 grid gap-10 lg:grid-cols-2">
             {/* Gallery */}
             <div>
-              <div className="aspect-square overflow-hidden rounded-3xl border border-white/10 bg-[#020617]">
+              <div className="aspect-square overflow-hidden rounded-3xl border border-line bg-surface">
                 <SmartImage src={product.image} alt={pick(product.name, product.nameEn) ?? ""} eager className="h-full w-full object-cover" />
               </div>
               {product.gallery.length > 1 && (
                 <div className="mt-4 grid grid-cols-4 gap-3">
                   {product.gallery.map((g, i) => (
-                    <div key={i} className="aspect-square overflow-hidden rounded-xl border border-white/10 bg-[#020617]">
+                    <div key={i} className="aspect-square overflow-hidden rounded-xl border border-line bg-surface">
                       <SmartImage src={g.url} alt={g.alt} className="h-full w-full object-cover" />
                     </div>
                   ))}
@@ -96,18 +96,18 @@ export default function ProductDetailPage() {
                 <Badge>{product.brand}</Badge>
                 {product.featured && <Badge tone="warning">{pick('Nổi bật', 'Featured') ?? ""}</Badge>}
               </div>
-              <h1 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">{pick(product.name, product.nameEn) ?? ''}</h1>
+              <h1 className="mt-4 text-3xl font-bold leading-tight md:text-4xl text-ink">{pick(product.name, product.nameEn) ?? ''}</h1>
               <p className="mt-4 leading-relaxed text-muted">{pick(product.shortDescription, product.shortDescriptionEn) ?? ""}</p>
 
               <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
-                <div className="flex items-center gap-2 text-ink"><Tag className="h-4 w-4 text-brand-accent" /> SKU: {product.sku}</div>
-                <div className="flex items-center gap-2 text-ink"><Globe className="h-4 w-4 text-brand-accent" /> {pick('Xuất xứ:', 'Origin:') ?? ""} {product.country}</div>
-                <div className="flex items-center gap-2 text-ink"><ShieldCheck className="h-4 w-4 text-brand-accent" /> {pick('Bảo hành:', 'Warranty:') ?? ""} {product.warranty}</div>
-                <div className="flex items-center gap-2 text-ink"><FileText className="h-4 w-4 text-brand-accent" /> {product.brand}</div>
+                <div className="flex items-center gap-2 text-ink"><Tag className="h-4 w-4 text-brand-accent" /> SKU: <span className="font-semibold">{product.sku}</span></div>
+                <div className="flex items-center gap-2 text-ink"><Globe className="h-4 w-4 text-brand-accent" /> {pick('Xuất xứ:', 'Origin:') ?? ""} <span className="font-semibold">{product.country}</span></div>
+                <div className="flex items-center gap-2 text-ink"><ShieldCheck className="h-4 w-4 text-brand-accent" /> {pick('Bảo hành:', 'Warranty:') ?? ""} <span className="font-semibold">{product.warranty}</span></div>
+                <div className="flex items-center gap-2 text-ink"><FileText className="h-4 w-4 text-brand-accent" /> <span className="font-semibold">{product.brand}</span></div>
               </div>
 
               {product.price ? (
-                <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div className="mt-6 rounded-2xl border border-line bg-slate-50 dark:bg-white/5 p-5">
                   <span className="text-sm text-muted">{pick('Giá tham khảo', 'Reference Price') ?? ""}</span>
                   <div className="text-2xl font-bold text-gradient">{formatCurrency(product.price)}</div>
                   <span className="text-xs text-muted">{pick('(Liên hệ để nhận báo giá tốt nhất theo dự án)', '(Contact for best project quote)')}</span>
@@ -115,12 +115,12 @@ export default function ProductDetailPage() {
               ) : null}
 
               <div className="mt-6 flex flex-wrap items-center gap-4">
-                <div className="flex items-center rounded-xl border border-white/10">
-                  <button onClick={() => setQty((q) => Math.max(1, q - 1))} className="flex h-12 w-12 items-center justify-center text-ink hover:text-white" aria-label="Giảm">
+                <div className="flex items-center rounded-xl border border-line bg-surface shadow-sm">
+                  <button onClick={() => setQty((q) => Math.max(1, q - 1))} className="flex h-12 w-12 items-center justify-center text-ink hover:text-brand-cyan transition" aria-label="Giảm">
                     <Minus className="h-4 w-4" />
                   </button>
-                  <span className="w-12 text-center font-semibold text-white">{qty}</span>
-                  <button onClick={() => setQty((q) => q + 1)} className="flex h-12 w-12 items-center justify-center text-ink hover:text-white" aria-label="Tăng">
+                  <span className="w-12 text-center font-bold text-ink">{qty}</span>
+                  <button onClick={() => setQty((q) => q + 1)} className="flex h-12 w-12 items-center justify-center text-ink hover:text-brand-cyan transition" aria-label="Tăng">
                     <Plus className="h-4 w-4" />
                   </button>
                 </div>
@@ -137,12 +137,12 @@ export default function ProductDetailPage() {
           {/* Description */}
           <div className="mt-16 grid gap-10 lg:grid-cols-[2fr_1fr]">
             <div>
-              <h2 className="text-2xl font-bold">{pick('Mô tả sản phẩm', 'Product Description') ?? ""}</h2>
+              <h2 className="text-2xl font-bold text-ink">{pick('Mô tả sản phẩm', 'Product Description') ?? ""}</h2>
               <p className="mt-4 leading-relaxed text-muted">{pick(product.description, product.descriptionEn) ?? ""}</p>
 
               {product.applications.length > 0 && (
                 <>
-                  <h3 className="mt-8 text-xl font-bold">{pick('Ứng dụng', 'Applications') ?? ""}</h3>
+                  <h3 className="mt-8 text-xl font-bold text-ink">{pick('Ứng dụng', 'Applications') ?? ""}</h3>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {product.applications.map((a) => (
                       <Badge key={a} tone="info">{a}</Badge>
@@ -151,14 +151,14 @@ export default function ProductDetailPage() {
                 </>
               )}
 
-              <h3 className="mt-8 text-xl font-bold">{pick('Thông số kỹ thuật', 'Technical Specifications') ?? ""}</h3>
-              <div className="mt-4 overflow-hidden rounded-2xl border border-white/10">
+              <h3 className="mt-8 text-xl font-bold text-ink">{pick('Thông số kỹ thuật', 'Technical Specifications') ?? ""}</h3>
+              <div className="mt-4 overflow-hidden rounded-2xl border border-line bg-surface">
                 <table className="w-full text-sm">
                   <tbody>
                     {product.specifications.map((s, i) => (
-                      <tr key={s.label} className={i % 2 === 0 ? 'bg-white/[0.03]' : ''}>
-                        <td className="w-1/2 px-5 py-3 font-medium text-ink">{pick(s.label, s.labelEn) ?? ""}</td>
-                        <td className="px-5 py-3 text-white">{pick(s.value, s.valueEn) ?? ""}</td>
+                      <tr key={s.label} className={i % 2 === 0 ? 'bg-slate-50 dark:bg-white/[0.03]' : ''}>
+                        <td className="w-1/2 px-5 py-3 font-medium text-muted">{pick(s.label, s.labelEn) ?? ""}</td>
+                        <td className="px-5 py-3 text-ink font-semibold">{pick(s.value, s.valueEn) ?? ""}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -167,8 +167,8 @@ export default function ProductDetailPage() {
             </div>
 
             <aside>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <h3 className="font-bold text-white">{pick('Tài liệu kỹ thuật', 'Technical Documents') ?? ""}</h3>
+              <div className="rounded-2xl border border-line bg-slate-50 dark:bg-white/5 p-6">
+                <h3 className="font-bold text-ink">{pick('Tài liệu kỹ thuật', 'Technical Documents') ?? ""}</h3>
                 <ul className="mt-4 space-y-3">
                   {product.documents.length ? (
                     product.documents.map((d) => (

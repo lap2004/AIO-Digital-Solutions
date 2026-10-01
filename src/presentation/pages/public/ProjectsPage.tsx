@@ -11,6 +11,7 @@ import { services } from '@/app/services';
 import { ProjectCard } from '@/presentation/components/business/ProjectCard';
 import { PageHero } from '@/presentation/components/sections/PageHero';
 import { ContactCTA } from '@/presentation/components/sections/ContactCTA';
+import { FeaturedProjectsMedia } from '@/presentation/components/business/FeaturedProjectsMedia';
 import { cn } from '@/core/utils/cn';
 
 const PAGE_SIZE = 9;
@@ -28,23 +29,30 @@ export default function ProjectsPage() {
 
   return (
     <>
-      <Seo title="Dự án | AIO Digital Solutions" description="Các dự án màn hình LED, Smart City, bệnh viện và doanh nghiệp tiêu biểu do AIO triển khai." />
+      <Seo title="Dự án thực tế | AIO Digital Solutions" description="Tổng hợp video và hình ảnh các công trình màn hình LED, LCD ghép, Standee do AIO LED hoàn thành trên 34+ tỉnh thành." />
       <PageHero
-        eyebrow={t('home.projectsEyebrow')}
-        title={t('projects.heroTitle')}
-        description={t('projects.heroDesc')}
+        eyebrow="300+ CÔNG TRÌNH HOÀN THÀNH"
+        title="Dự Án Đã Triển Khai Thực Tế"
+        description="Trực quan video ghi hình hiện trường và album ảnh thực tế các công trình màn hình LED, LCD ghép, Standee do AIO LED trực tiếp hoàn thiện và bàn giao."
         breadcrumb={[{ label: t('nav./du-an') }]}
       />
 
-      <Container className="pt-6 pb-10 lg:pt-8 lg:pb-16">
+      {/* 6-Video & Photo Auto-Scroll Carousel */}
+      <FeaturedProjectsMedia showHeader={false} />
+
+      <Container className="pt-10 pb-10 lg:pt-14 lg:pb-16 border-t border-surface-800/60">
+        <div className="mb-6">
+          <h3 className="text-xl font-bold text-ink mb-2">Tra Cứu Danh Mục Công Trình</h3>
+          <p className="text-xs text-muted">Lọc theo loại hình màn hình và lĩnh vực ứng dụng</p>
+        </div>
         <div className="mb-8 flex flex-wrap items-center gap-3">
           <button
             onClick={() => { setCategory(''); setPage(1); }}
             className={cn(
               'whitespace-nowrap rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300',
               !category
-                ? 'border-transparent bg-brand-gradient text-white shadow-glow'
-                : 'border-white/10 bg-white/5 text-ink hover:border-brand-accent/50 hover:bg-white/10 hover:text-white',
+                ? 'border-transparent bg-brand-gradient text-slate-950 font-bold shadow-md'
+                : 'border border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:text-cyan-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-brand-accent/50 dark:hover:text-white',
             )}
           >
             {t('products.all')}
@@ -56,8 +64,8 @@ export default function ProjectsPage() {
               className={cn(
                 'whitespace-nowrap rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300',
                 category === slug
-                  ? 'border-transparent bg-brand-gradient text-white shadow-glow'
-                  : 'border-white/10 bg-white/5 text-ink hover:border-brand-accent/50 hover:bg-white/10 hover:text-white',
+                  ? 'border-transparent bg-brand-gradient text-slate-950 font-bold shadow-md'
+                  : 'border border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:text-cyan-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-brand-accent/50 dark:hover:text-white',
               )}
             >
               {projectCategoryLabel(slug, lang)}

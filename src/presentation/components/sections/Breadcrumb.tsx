@@ -16,11 +16,11 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
         <span key={item.label} className="flex items-center gap-1.5">
           <ChevronRight className="h-3.5 w-3.5 opacity-50" />
           {item.to ? (
-            <Link to={item.to} className="transition hover:text-brand-cyan">
+            <Link to={item.to} className="transition hover:text-cyan-600 dark:hover:text-brand-cyan">
               {item.label}
             </Link>
           ) : (
-            <span className="text-white">{item.label}</span>
+            <span className="font-semibold text-slate-900 dark:text-white">{item.label}</span>
           )}
         </span>
       ))}

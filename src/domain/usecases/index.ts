@@ -35,11 +35,6 @@ export const getSolutionBySlug = (repo: SolutionRepository) => (slug: string) =>
 export const submitLead =
   (repo: LeadRepository) =>
   async (input: Omit<Lead, 'id' | 'createdAt' | 'updatedAt'>) => {
-    const existing = await repo.list();
-    const duplicate = existing.find((l) => l.email === input.email || l.phone === input.phone);
-    if (duplicate) {
-      throw new Error('Email hoặc số điện thoại này đã được đăng ký. Chúng tôi sẽ sớm liên hệ lại với bạn!');
-    }
     return repo.create(input);
   };
 

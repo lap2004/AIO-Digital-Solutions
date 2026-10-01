@@ -73,7 +73,7 @@ export default function SolutionDetailPage() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="aspect-[4/3] overflow-hidden rounded-3xl border border-white/10 bg-[#020617]"
+              className="aspect-[4/3] overflow-hidden rounded-3xl border border-line bg-surface"
             >
               <SmartImage src={solution.heroImage} alt={pick(solution.name, solution.nameEn) ?? ""} eager className="h-full w-full object-cover" />
             </motion.div>
@@ -90,7 +90,7 @@ export default function SolutionDetailPage() {
               <p className="mt-5 leading-relaxed text-muted">{pick(solution.introduction, solution.introductionEn) ?? ""}</p>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-white">{pick('Lợi ích nổi bật', 'Key Benefits') ?? ""}</h3>
+              <h3 className="text-lg font-bold text-ink">{pick('Lợi ích nổi bật', 'Key Benefits') ?? ""}</h3>
               <ul className="mt-5 space-y-3">
                 {(pick(solution?.benefits, solution?.benefitsEn) ?? []).map((b: string) => (
                   <li key={b} className="flex items-start gap-3 text-sm text-ink">
@@ -113,7 +113,7 @@ export default function SolutionDetailPage() {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-accent/15 text-brand-accent">
                   <Icon name={f.icon} className="text-2xl" />
                 </div>
-                <h3 className="text-lg font-bold text-white">{pick(f.title, f.titleEn) ?? ""}</h3>
+                <h3 className="text-lg font-bold text-ink">{pick(f.title, f.titleEn) ?? ""}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{pick(f.description, f.descriptionEn) ?? ""}</p>
               </Card>
             ))}
@@ -130,7 +130,7 @@ export default function SolutionDetailPage() {
               <div key={step} className="flex flex-1 items-center gap-4">
                 <Card className="flex-1 p-5 text-center">
                   <span className="text-xs font-bold text-brand-accent">{pick(`Bước ${i + 1}`, `Step ${i + 1}`) ?? ""}</span>
-                  <p className="mt-1 text-sm font-semibold text-white">{step}</p>
+                  <p className="mt-1 text-sm font-semibold text-ink">{step}</p>
                 </Card>
                 {i < solution.architecture.steps.length - 1 && (
                   <ArrowRight className="hidden h-5 w-5 shrink-0 text-brand-accent lg:block" />
@@ -140,7 +140,7 @@ export default function SolutionDetailPage() {
           </div>
 
           <div className="mt-12">
-            <h3 className="flex items-center gap-2 text-lg font-bold text-white">
+            <h3 className="flex items-center gap-2 text-lg font-bold text-ink">
               <Cpu className="h-5 w-5 text-brand-accent" /> {pick('Công nghệ sử dụng', 'Tech Stack') ?? ""}
             </h3>
             <div className="mt-4 flex flex-wrap gap-2">

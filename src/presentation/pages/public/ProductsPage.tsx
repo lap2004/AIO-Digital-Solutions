@@ -57,8 +57,8 @@ export default function ProductsPage() {
             className={cn(
               'whitespace-nowrap rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300',
               !category
-                ? 'border-transparent bg-brand-gradient text-white shadow-glow'
-                : 'border-white/10 bg-white/5 text-ink hover:border-brand-accent/50 hover:bg-white/10 hover:text-white',
+                ? 'border-transparent bg-brand-gradient text-slate-950 font-bold shadow-md'
+                : 'border border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:text-cyan-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-brand-accent/50 dark:hover:text-white',
             )}
           >
             {t('products.all')}
@@ -70,8 +70,8 @@ export default function ProductsPage() {
               className={cn(
                 'whitespace-nowrap rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300',
                 category === c.slug
-                  ? 'border-transparent bg-brand-gradient text-white shadow-glow'
-                  : 'border-white/10 bg-white/5 text-ink hover:border-brand-accent/50 hover:bg-white/10 hover:text-white',
+                  ? 'border-transparent bg-brand-gradient text-slate-950 font-bold shadow-md'
+                  : 'border border-slate-200 bg-white text-slate-700 hover:border-cyan-500 hover:text-cyan-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-brand-accent/50 dark:hover:text-white',
               )}
             >
               {productCategoryLabel(c.slug, lang)}

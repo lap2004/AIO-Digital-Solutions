@@ -111,14 +111,14 @@ export function SolutionsCarousel({ items }: { items: Solution[] }) {
       <button
         onClick={() => go(activeDot - 1)}
         aria-label="Trước"
-        className="absolute -left-2 top-1/2 z-10 flex h-10 w-10 md:h-12 md:w-12 md:-left-6 xl:-left-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#0b1326]/95 text-white backdrop-blur shadow-xl transition hover:scale-110 hover:border-brand-accent/50 hover:text-brand-cyan hover:shadow-brand-accent/20"
+        className="absolute -left-2 top-1/2 z-10 flex h-10 w-10 md:h-12 md:w-12 md:-left-6 xl:-left-14 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-xl transition hover:scale-110 hover:border-cyan-500 hover:text-cyan-600 hover:shadow-cyan-500/20 dark:border-white/10 dark:bg-[#0b1326]/95 dark:text-white dark:hover:border-brand-accent/50 dark:hover:text-brand-cyan dark:hover:shadow-brand-accent/20"
       >
         <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
       </button>
       <button
         onClick={() => go(activeDot + 1)}
         aria-label="Sau"
-        className="absolute -right-2 top-1/2 z-10 flex h-10 w-10 md:h-12 md:w-12 md:-right-6 xl:-right-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-[#0b1326]/95 text-white backdrop-blur shadow-xl transition hover:scale-110 hover:border-brand-accent/50 hover:text-brand-cyan hover:shadow-brand-accent/20"
+        className="absolute -right-2 top-1/2 z-10 flex h-10 w-10 md:h-12 md:w-12 md:-right-6 xl:-right-14 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-xl transition hover:scale-110 hover:border-cyan-500 hover:text-cyan-600 hover:shadow-cyan-500/20 dark:border-white/10 dark:bg-[#0b1326]/95 dark:text-white dark:hover:border-brand-accent/50 dark:hover:text-brand-cyan dark:hover:shadow-brand-accent/20"
       >
         <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
       </button>
@@ -132,7 +132,7 @@ export function SolutionsCarousel({ items }: { items: Solution[] }) {
             aria-label={`Giải pháp ${i + 1}`}
             className={cn(
               'h-2 rounded-full transition-all',
-              i === activeDot ? 'w-7 bg-brand-gradient' : 'w-2 bg-white/20 hover:bg-white/40',
+              i === activeDot ? 'w-7 bg-brand-gradient' : 'w-2 bg-slate-300 hover:bg-slate-400 dark:bg-white/20 dark:hover:bg-white/40',
             )}
           />
         ))}

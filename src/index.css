@@ -32,18 +32,18 @@
   html.light {
     color-scheme: light;
     --surface: 255 255 255;
-    --ink: 30 41 59; /* slate-800 body text */
+    --ink: 15 23 42; /* slate-900 body text */
     --muted: 71 85 105; /* slate-600 */
-    --line: 203 213 225; /* slate-300 */
+    --line: 226 232 240; /* slate-200 */
     --primary: 0 102 255;
     --primary-foreground: 255 255 255;
 
-    --page: #eef2f8;
+    --page: #f8fafc;
     --card: #ffffff;
     --heading: #0f172a; /* slate-900 */
-    --page-grad-1: rgba(0, 102, 255, 0.08);
-    --page-grad-2: rgba(0, 229, 255, 0.06);
-    --sb-track: #e2e8f0;
+    --page-grad-1: rgba(0, 102, 255, 0.05);
+    --page-grad-2: rgba(0, 229, 255, 0.04);
+    --sb-track: #f1f5f9;
     --sb-thumb: #cbd5e1;
     --sb-thumb-hover: #94a3b8;
   }
@@ -139,7 +139,7 @@
 
   /* Section eyebrow chip */
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-brand-accent/30 bg-brand-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-accent;
+    @apply inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600 dark:text-brand-accent;
   }
 
   /* Card surface */
@@ -177,51 +177,38 @@
 }
 
 /* ============================================================
-   LIGHT THEME overrides
-   The UI was authored with hard-coded dark colors; these rules
-   retarget that finite set when <html> has the .light class.
-   Dark theme (default / .dark) is unaffected.
+   LIGHT THEME Component Overrides
    ============================================================ */
 
-/* Surfaces — deep page chrome (#020617) */
-html.light .bg-\[\#020617\] { background-color: #f8fafc !important; }
-html.light .bg-\[\#020617\]\/85 { background-color: rgba(248, 250, 252, 0.85) !important; }
-html.light .bg-\[\#020617\]\/95 { background-color: rgba(248, 250, 252, 0.96) !important; }
+/* Surface cards in light mode */
+html.light .card-surface,
+html.light .bg-\[\#0b1326\],
+html.light .bg-\[\#0b1326\]\/60,
+html.light .bg-\[\#0b1326\]\/70,
+html.light .bg-\[\#0b1326\]\/80 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06) !important;
+}
 
-/* Surfaces — cards / panels (#0b1326) */
-html.light .bg-\[\#0b1326\] { background-color: #ffffff !important; }
-html.light .bg-\[\#0b1326\]\/60 { background-color: rgba(255, 255, 255, 0.8) !important; }
-html.light .bg-\[\#0b1326\]\/70 { background-color: rgba(255, 255, 255, 0.85) !important; }
-html.light .bg-\[\#0b1326\]\/80 { background-color: rgba(255, 255, 255, 0.9) !important; }
+html.light .glass {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-color: #e2e8f0;
+}
+html.light .glass-strong {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-color: #e2e8f0;
+}
 
-/* Translucent white overlays → subtle dark-on-light */
-html.light .bg-white\/5 { background-color: rgba(15, 23, 42, 0.04) !important; }
-html.light .bg-white\/10 { background-color: rgba(15, 23, 42, 0.06) !important; }
-html.light .bg-white\/15 { background-color: rgba(15, 23, 42, 0.1) !important; }
-html.light .bg-white\/\[0\.02\] { background-color: rgba(15, 23, 42, 0.03) !important; }
-html.light .bg-white\/\[0\.03\] { background-color: rgba(15, 23, 42, 0.035) !important; }
-html.light .bg-white\/\[0\.04\] { background-color: rgba(15, 23, 42, 0.05) !important; }
+/* Translucent backgrounds on light theme */
+html.light .bg-white\/5 { background-color: rgba(15, 23, 42, 0.04); }
+html.light .bg-white\/10 { background-color: rgba(15, 23, 42, 0.07); }
+html.light .border-white\/5 { border-color: rgba(15, 23, 42, 0.08); }
+html.light .border-white\/10 { border-color: rgba(15, 23, 42, 0.12); }
+html.light .border-white\/15 { border-color: rgba(15, 23, 42, 0.16); }
+html.light .border-white\/20 { border-color: rgba(15, 23, 42, 0.2); }
 
-/* Borders */
-html.light .border-white\/5 { border-color: rgba(15, 23, 42, 0.08) !important; }
-html.light .border-white\/10 { border-color: rgba(15, 23, 42, 0.12) !important; }
-html.light .border-white\/15 { border-color: rgba(15, 23, 42, 0.16) !important; }
-html.light .border-white\/20 { border-color: rgba(15, 23, 42, 0.2) !important; }
-
-/* Component helper classes (built via @apply, overridden explicitly) */
-html.light .glass { background-color: rgba(15, 23, 42, 0.04); border-color: rgba(15, 23, 42, 0.1); }
-html.light .glass-strong { background-color: rgba(255, 255, 255, 0.92); border-color: rgba(15, 23, 42, 0.1); }
-html.light .card-surface { background-color: rgba(255, 255, 255, 0.9); border-color: rgba(15, 23, 42, 0.1); }
-
-/* Text — flip white text to dark; keep white on brand gradients & over media */
-html.light .text-white { color: #0f172a !important; }
-html.light .hover\:text-white:hover { color: #0f172a !important; }
-html.light .bg-brand-gradient.text-white,
-html.light .bg-brand-gradient .text-white,
-html.light .text-on-media,
-html.light .text-on-media * { color: #ffffff !important; }
-
-/* Gradient panels (#0a1a3a → #04122e) → soft light blue */
+/* Gradient panels in light mode */
 html.light .from-\[\#0a1a3a\],
 html.light .from-\[\#0a1a3a\]\/80 {
   --tw-gradient-from: #eef4ff var(--tw-gradient-from-position) !important;
@@ -233,13 +220,17 @@ html.light .to-\[\#04122e\]\/80 {
   --tw-gradient-to: #dbe8ff var(--tw-gradient-to-position) !important;
 }
 
-/* SmartImage placeholder gradient (#0b1326 → #020617) */
+/* Placeholder gradient */
 html.light .from-\[\#0b1326\] {
   --tw-gradient-from: #f1f5f9 var(--tw-gradient-from-position) !important;
   --tw-gradient-to: rgb(241 245 249 / 0) var(--tw-gradient-to-position) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
-html.light .to-\[\#020617\] { --tw-gradient-to: #e2e8f0 var(--tw-gradient-to-position) !important; }
+html.light .to-\[\#020617\] {
+  --tw-gradient-to: #e2e8f0 var(--tw-gradient-to-position) !important;
+}
 
-/* Recharts gridlines a touch darker on light */
-html.light .recharts-cartesian-grid line { stroke: #e2e8f0 !important; }
+/* Recharts gridlines */
+html.light .recharts-cartesian-grid line {
+  stroke: #e2e8f0 !important;
+}

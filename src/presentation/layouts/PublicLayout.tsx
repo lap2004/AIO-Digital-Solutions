@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { Navbar } from '@/presentation/components/sections/Navbar';
 import { Footer } from '@/presentation/components/sections/Footer';
 import { ScrollToTop } from '@/presentation/components/sections/ScrollToTop';
+import { FloatingContactWidget } from '@/presentation/components/common/FloatingContactWidget';
 import { LoadingBlock } from '@/presentation/components/common/Feedback';
 
 export function PublicLayout() {
@@ -15,7 +16,9 @@ export function PublicLayout() {
           <Outlet />
         </Suspense>
       </main>
+      <FloatingContactWidget />
       <Footer />
     </div>
   );
 }
+
