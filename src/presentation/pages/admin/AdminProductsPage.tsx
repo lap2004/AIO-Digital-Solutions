@@ -86,19 +86,19 @@ export default function AdminProductsPage() {
         accessorKey: 'name',
         cell: ({ row }) => (
           <div className="flex items-center gap-3">
-            <div className="h-11 w-11 shrink-0 overflow-hidden rounded-lg bg-[#020617]">
+            <div className="h-11 w-11 shrink-0 overflow-hidden rounded-lg border border-slate-200 bg-slate-100 dark:border-white/10 dark:bg-[#020617]">
               <SmartImage src={row.original.image} alt={row.original.name} className="h-full w-full object-cover" />
             </div>
             <div className="min-w-0">
-              <p className="truncate font-medium text-white">{row.original.name}</p>
-              <p className="text-xs text-muted">{row.original.sku}</p>
+              <p className="truncate font-medium text-slate-900 dark:text-white">{row.original.name}</p>
+              <p className="text-xs text-slate-500 dark:text-muted">{row.original.sku}</p>
             </div>
           </div>
         ),
       },
-      { header: 'Danh mục', accessorKey: 'category', cell: ({ getValue }) => PRODUCT_CATEGORY_LABEL[getValue() as string] },
+      { header: 'Danh mục', accessorKey: 'category', cell: ({ getValue }) => <span className="rounded-lg bg-slate-100 px-2 py-0.5 text-xs text-slate-800 dark:bg-white/5 dark:text-slate-300">{PRODUCT_CATEGORY_LABEL[getValue() as string]}</span> },
       { header: 'Thương hiệu', accessorKey: 'brand' },
-      { header: 'Giá', accessorKey: 'price', cell: ({ getValue }) => (getValue() ? formatCurrency(getValue() as number) : '—') },
+      { header: 'Giá', accessorKey: 'price', cell: ({ getValue }) => (getValue() ? <span className="font-semibold text-slate-900 dark:text-white">{formatCurrency(getValue() as number)}</span> : '—') },
 
       {
         header: 'Thao tác',
@@ -106,10 +106,10 @@ export default function AdminProductsPage() {
         enableSorting: false,
         cell: ({ row }) => (
           <div className="flex gap-2">
-            <button onClick={() => openEdit(row.original)} className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 text-ink hover:border-brand-accent/50 hover:text-brand-cyan" aria-label="Sửa">
+            <button onClick={() => openEdit(row.original)} className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-cyan-500 hover:text-cyan-600 dark:border-white/10 dark:bg-transparent dark:text-ink dark:hover:border-brand-accent/50 dark:hover:text-brand-cyan" aria-label="Sửa">
               <Pencil className="h-4 w-4" />
             </button>
-            <button onClick={() => remove(row.original)} className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 text-ink hover:border-red-500/50 hover:text-red-400" aria-label="Xóa">
+            <button onClick={() => remove(row.original)} className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-rose-500 hover:text-rose-600 dark:border-white/10 dark:bg-transparent dark:text-ink dark:hover:border-red-500/50 dark:hover:text-red-400" aria-label="Xóa">
               <Trash2 className="h-4 w-4" />
             </button>
           </div>
@@ -125,23 +125,23 @@ export default function AdminProductsPage() {
       <Seo title="Quản lý sản phẩm | AIO" />
       <AdminPageHeader
         title="Quản lý sản phẩm"
-        description="Thêm, sửa, xóa và tìm kiếm sản phẩm"
-        action={<Button onClick={openCreate}><Plus className="h-4 w-4" /> Thêm sản phẩm</Button>}
+        description="Thêm, sửa, xóa và tìm kiếm trong danh mục 290+ sản phẩm linh kiện LED chính hãng"
+        action={<Button onClick={openCreate} className="bg-brand-cyan text-slate-950 font-bold shadow-glow"><Plus className="h-4 w-4" /> Thêm sản phẩm</Button>}
       />
 
-      {loading && !data ? <LoadingBlock /> : <DataTable data={data?.items ?? []} columns={columns} searchPlaceholder="Tìm sản phẩm, SKU…" />}
+      {loading && !data ? <LoadingBlock /> : <DataTable data={data?.items ?? []} columns={columns} searchPlaceholder="Tìm sản phẩm, SKU, thương hiệu…" />}
 
-      <Modal open={open} onClose={() => setOpen(false)} title={editing ? 'Sửa sản phẩm' : 'Thêm sản phẩm'}>
+      <Modal open={open} onClose={() => setOpen(false)} title={editing ? 'Sửa thông tin sản phẩm' : 'Thêm sản phẩm mới'}>
         <div className="space-y-4">
           <FieldWrapper label="Tên sản phẩm" required>
-            <Input value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
+            <Input value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="VD: Module LED P2.5 trong nhà..." />
           </FieldWrapper>
           <div className="grid grid-cols-2 gap-4">
-            <FieldWrapper label="SKU">
-              <Input value={form.sku} onChange={(e) => setForm({ ...form, sku: e.target.value })} />
+            <FieldWrapper label="Mã SKU">
+              <Input value={form.sku} onChange={(e) => setForm({ ...form, sku: e.target.value })} placeholder="VD: AIO-P25-IN" />
             </FieldWrapper>
             <FieldWrapper label="Thương hiệu">
-              <Input value={form.brand} onChange={(e) => setForm({ ...form, brand: e.target.value })} />
+              <Input value={form.brand} onChange={(e) => setForm({ ...form, brand: e.target.value })} placeholder="VD: NovaStar, Meanwell..." />
             </FieldWrapper>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -152,7 +152,7 @@ export default function AdminProductsPage() {
                 ))}
               </Select>
             </FieldWrapper>
-            <FieldWrapper label="Giá (₫)">
+            <FieldWrapper label="Giá niêm yết (₫)">
               <div className="relative">
                 <Input
                   type="text"
@@ -164,7 +164,7 @@ export default function AdminProductsPage() {
                   className="pr-12 text-right font-medium tracking-wider"
                   placeholder="0"
                 />
-                <span className="absolute inset-y-0 right-4 flex items-center text-sm font-medium text-muted">
+                <span className="absolute inset-y-0 right-4 flex items-center text-sm font-medium text-slate-400 dark:text-muted">
                   VNĐ
                 </span>
               </div>
@@ -172,16 +172,16 @@ export default function AdminProductsPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <FieldWrapper label="Bảo hành">
-              <Input value={form.warranty} onChange={(e) => setForm({ ...form, warranty: e.target.value })} placeholder="VD: 24 tháng, Trọn đời..." />
+              <Input value={form.warranty} onChange={(e) => setForm({ ...form, warranty: e.target.value })} placeholder="VD: 24 tháng, 36 tháng..." />
             </FieldWrapper>
             <FieldWrapper label="Đường dẫn ảnh">
-              <Input value={form.image} onChange={(e) => setForm({ ...form, image: e.target.value })} placeholder="/data-assets/…" />
+              <Input value={form.image} onChange={(e) => setForm({ ...form, image: e.target.value })} placeholder="/images/products/…" />
             </FieldWrapper>
           </div>
-          <div className="flex items-center justify-between rounded-xl border border-white/5 bg-white/[0.02] p-4 transition-colors hover:bg-white/[0.04]">
+          <div className="flex items-center justify-between rounded-xl border border-slate-200 bg-slate-50 p-4 dark:border-white/5 dark:bg-white/[0.02]">
             <div>
-              <p className="text-sm font-medium text-white">Sản phẩm nổi bật</p>
-              <p className="text-xs text-muted">Hiển thị ưu tiên trên trang chủ và đầu danh sách sản phẩm</p>
+              <p className="text-sm font-medium text-slate-900 dark:text-white">Sản phẩm nổi bật</p>
+              <p className="text-xs text-slate-500 dark:text-muted">Hiển thị ưu tiên trên trang chủ và đầu danh sách sản phẩm</p>
             </div>
             <label className="relative inline-flex cursor-pointer items-center">
               <input
@@ -190,12 +190,12 @@ export default function AdminProductsPage() {
                 onChange={(e) => setForm({ ...form, featured: e.target.checked })}
                 className="peer sr-only"
               />
-              <div className="peer h-6 w-11 rounded-full bg-slate-700 transition-all after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all after:content-[''] peer-checked:bg-brand-cyan peer-checked:after:translate-x-full peer-focus:outline-none"></div>
+              <div className="peer h-6 w-11 rounded-full bg-slate-300 transition-all after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all after:content-[''] peer-checked:bg-brand-cyan peer-checked:after:translate-x-full peer-focus:outline-none dark:bg-slate-700"></div>
             </label>
           </div>
           <div className="flex justify-end gap-3 pt-2">
             <Button variant="ghost" onClick={() => setOpen(false)}>Hủy</Button>
-            <Button onClick={save}>{editing ? 'Lưu thay đổi' : 'Thêm mới'}</Button>
+            <Button onClick={save} className="bg-brand-cyan text-slate-950 font-bold shadow-glow">{editing ? 'Lưu thay đổi' : 'Thêm mới'}</Button>
           </div>
         </div>
       </Modal>

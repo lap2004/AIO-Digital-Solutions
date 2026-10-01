@@ -153,7 +153,7 @@ export default function AdminProjectsPage() {
               {/* Cover thumbnail with play overlay */}
               <div
                 onClick={() => setPreviewMedia(p)}
-                className="group relative h-14 w-20 shrink-0 cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-[#020617] shadow-sm transition hover:scale-105 hover:border-brand-cyan/60"
+                className="group relative h-14 w-20 shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 bg-slate-900 shadow-sm transition hover:scale-105 hover:border-cyan-500 dark:border-white/10 dark:bg-[#020617] dark:hover:border-brand-cyan/60"
                 title="Bấm để xem trước video / ảnh"
               >
                 <SmartImage
@@ -163,7 +163,7 @@ export default function AdminProjectsPage() {
                 />
                 {hasVideo ? (
                   <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[1px] transition group-hover:bg-black/20">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-cyan/90 text-slate-950 shadow-glow">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-cyan text-slate-950 shadow-glow">
                       <Play className="h-3 w-3 fill-current ml-0.5" />
                     </span>
                   </div>
@@ -179,20 +179,20 @@ export default function AdminProjectsPage() {
                 <div className="flex items-center gap-2">
                   <p
                     onClick={() => setPreviewMedia(p)}
-                    className="cursor-pointer truncate font-medium text-white transition hover:text-brand-cyan"
+                    className="cursor-pointer truncate font-medium text-slate-900 transition hover:text-cyan-600 dark:text-white dark:hover:text-brand-cyan"
                     title={p.name}
                   >
                     {p.name}
                   </p>
                   {p.featured && (
-                    <span className="flex h-4 items-center gap-0.5 rounded bg-amber-400/20 px-1 text-[9px] font-bold text-amber-300">
+                    <span className="flex h-4 items-center gap-0.5 rounded bg-amber-100 px-1 text-[9px] font-bold text-amber-800 dark:bg-amber-400/20 dark:text-amber-300">
                       <Sparkles className="h-2.5 w-2.5" /> Nổi bật
                     </span>
                   )}
                 </div>
-                <div className="mt-1 flex items-center gap-2 text-xs text-muted">
-                  <span className="flex items-center gap-1 text-slate-300">
-                    <MapPin className="h-3 w-3 text-brand-cyan" /> {p.location}
+                <div className="mt-1 flex items-center gap-2 text-xs text-slate-500 dark:text-muted">
+                  <span className="flex items-center gap-1 text-slate-700 dark:text-slate-300">
+                    <MapPin className="h-3 w-3 text-cyan-600 dark:text-brand-cyan" /> {p.location}
                   </span>
                   <span>•</span>
                   <span className="truncate max-w-[200px]">{p.scale || 'Hệ thống chuẩn AIO'}</span>
@@ -208,11 +208,11 @@ export default function AdminProjectsPage() {
         cell: ({ row }) => {
           const hasVideo = Boolean(row.original.videoUrl);
           return hasVideo ? (
-            <span className="inline-flex items-center gap-1 rounded-lg border border-cyan-500/30 bg-cyan-500/15 px-2.5 py-1 text-xs font-semibold text-brand-cyan shadow-sm">
+            <span className="inline-flex items-center gap-1 rounded-lg border border-cyan-500/30 bg-cyan-500/15 px-2.5 py-1 text-xs font-semibold text-cyan-800 dark:text-brand-cyan shadow-sm">
               <Video className="h-3.5 w-3.5" /> Video 4K
             </span>
           ) : (
-            <span className="inline-flex items-center gap-1 rounded-lg border border-purple-500/30 bg-purple-500/15 px-2.5 py-1 text-xs font-semibold text-purple-300 shadow-sm">
+            <span className="inline-flex items-center gap-1 rounded-lg border border-purple-500/30 bg-purple-500/15 px-2.5 py-1 text-xs font-semibold text-purple-800 dark:text-purple-300 shadow-sm">
               <ImageIcon className="h-3.5 w-3.5" /> Ảnh chụp HD
             </span>
           );
@@ -222,7 +222,7 @@ export default function AdminProjectsPage() {
         header: 'Lĩnh vực',
         accessorKey: 'category',
         cell: ({ getValue }) => (
-          <span className="rounded-lg bg-white/5 px-2.5 py-1 text-xs font-medium text-slate-300">
+          <span className="rounded-lg bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-800 dark:bg-white/5 dark:text-slate-300">
             {PROJECT_CATEGORY_LABEL[getValue() as ProjectCategory] || 'Doanh nghiệp'}
           </span>
         ),
@@ -231,7 +231,7 @@ export default function AdminProjectsPage() {
         header: 'Hoàn thành',
         accessorKey: 'completedAt',
         cell: ({ getValue }) => (
-          <span className="text-xs text-muted font-mono">{formatDate(getValue() as string)}</span>
+          <span className="text-xs text-slate-500 dark:text-muted font-mono">{formatDate(getValue() as string)}</span>
         ),
       },
       {
@@ -245,7 +245,7 @@ export default function AdminProjectsPage() {
               {/* Preview Button */}
               <button
                 onClick={() => setPreviewMedia(p)}
-                className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 text-ink transition hover:border-brand-cyan hover:text-brand-cyan"
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-cyan-500 hover:text-cyan-600 dark:border-white/10 dark:bg-transparent dark:text-ink dark:hover:border-brand-cyan dark:hover:text-brand-cyan"
                 title="Xem trước video / ảnh"
               >
                 <Eye className="h-4 w-4" />
@@ -256,7 +256,7 @@ export default function AdminProjectsPage() {
                 href={`/du-an/${p.slug}`}
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 text-ink transition hover:border-white/30 hover:text-white"
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-slate-400 hover:text-slate-900 dark:border-white/10 dark:bg-transparent dark:text-ink dark:hover:border-white/30 dark:hover:text-white"
                 title="Mở trên website"
               >
                 <ExternalLink className="h-3.5 w-3.5" />
@@ -265,7 +265,7 @@ export default function AdminProjectsPage() {
               {/* Edit */}
               <button
                 onClick={() => openEdit(p)}
-                className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 text-ink transition hover:border-brand-accent/50 hover:text-brand-cyan"
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-cyan-500 hover:text-cyan-600 dark:border-white/10 dark:bg-transparent dark:text-ink dark:hover:border-brand-accent/50 dark:hover:text-brand-cyan"
                 title="Sửa thông tin"
               >
                 <Pencil className="h-4 w-4" />
@@ -274,7 +274,7 @@ export default function AdminProjectsPage() {
               {/* Delete */}
               <button
                 onClick={() => remove(p)}
-                className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 text-ink transition hover:border-red-500/50 hover:text-red-400"
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm transition hover:border-rose-500 hover:text-rose-600 dark:border-white/10 dark:bg-transparent dark:text-ink dark:hover:border-red-500/50 dark:hover:text-red-400"
                 title="Xóa dự án"
               >
                 <Trash2 className="h-4 w-4" />
@@ -305,62 +305,62 @@ export default function AdminProjectsPage() {
 
       {/* Top Stat Tiles */}
       <div className="mt-4 grid gap-3.5 sm:grid-cols-2 lg:grid-cols-4">
-        <div className="rounded-2xl border border-white/10 bg-[#0b1326] p-4 shadow-card">
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-[#0b1326] dark:shadow-card">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-medium text-muted">Tổng số công trình</span>
-            <Building className="h-5 w-5 text-brand-cyan" />
+            <span className="text-xs font-medium text-slate-500 dark:text-muted">Tổng số công trình</span>
+            <Building className="h-5 w-5 text-cyan-600 dark:text-brand-cyan" />
           </div>
-          <p className="mt-2 text-2xl font-bold text-white">{stats.total}</p>
-          <p className="mt-1 text-[11px] text-muted">Đã kiểm thử và nghiệm thu</p>
+          <p className="mt-2 text-2xl font-bold text-slate-900 dark:text-white">{stats.total}</p>
+          <p className="mt-1 text-[11px] text-slate-500 dark:text-muted">Đã kiểm thử và nghiệm thu</p>
         </div>
 
         <div
           onClick={() => setActiveMediaFilter('video')}
           className={cn(
-            'cursor-pointer rounded-2xl border p-4 shadow-card transition-all',
+            'cursor-pointer rounded-2xl border p-4 shadow-sm transition-all dark:shadow-card',
             activeMediaFilter === 'video'
-              ? 'border-cyan-400 bg-cyan-500/10 shadow-[0_0_20px_rgba(6,182,212,0.2)]'
-              : 'border-white/10 bg-[#0b1326] hover:border-cyan-500/50',
+              ? 'border-cyan-500 bg-cyan-50/80 shadow-[0_0_15px_rgba(6,182,212,0.3)] dark:border-cyan-400 dark:bg-cyan-500/10'
+              : 'border-slate-200 bg-white hover:border-cyan-400 dark:border-white/10 dark:bg-[#0b1326] dark:hover:border-cyan-500/50',
           )}
         >
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-brand-cyan flex items-center gap-1.5">
+            <span className="text-xs font-semibold text-cyan-700 dark:text-brand-cyan flex items-center gap-1.5">
               <Video className="h-4 w-4" /> Video công trình HD/4K
             </span>
             <span className="flex h-2 w-2 rounded-full bg-brand-cyan animate-pulse" />
           </div>
-          <p className="mt-2 text-2xl font-bold text-white">{stats.videoCount}</p>
-          <p className="mt-1 text-[11px] text-cyan-300/80">91 Video phát trực tiếp mượt mà</p>
+          <p className="mt-2 text-2xl font-bold text-slate-900 dark:text-white">{stats.videoCount}</p>
+          <p className="mt-1 text-[11px] text-cyan-800/80 dark:text-cyan-300/80">91 Video phát trực tiếp mượt mà</p>
         </div>
 
         <div
           onClick={() => setActiveMediaFilter('image')}
           className={cn(
-            'cursor-pointer rounded-2xl border p-4 shadow-card transition-all',
+            'cursor-pointer rounded-2xl border p-4 shadow-sm transition-all dark:shadow-card',
             activeMediaFilter === 'image'
-              ? 'border-purple-400 bg-purple-500/10 shadow-[0_0_20px_rgba(168,85,247,0.2)]'
-              : 'border-white/10 bg-[#0b1326] hover:border-purple-500/50',
+              ? 'border-purple-500 bg-purple-50/80 shadow-[0_0_15px_rgba(168,85,247,0.3)] dark:border-purple-400 dark:bg-purple-500/10'
+              : 'border-slate-200 bg-white hover:border-purple-400 dark:border-white/10 dark:bg-[#0b1326] dark:hover:border-purple-500/50',
           )}
         >
           <div className="flex items-center justify-between">
-            <span className="text-xs font-medium text-purple-400 flex items-center gap-1.5">
+            <span className="text-xs font-medium text-purple-700 dark:text-purple-400 flex items-center gap-1.5">
               <ImageIcon className="h-4 w-4" /> Hình ảnh thi công thực tế
             </span>
-            <ImageIcon className="h-4 w-4 text-purple-400" />
+            <ImageIcon className="h-4 w-4 text-purple-600 dark:text-purple-400" />
           </div>
-          <p className="mt-2 text-2xl font-bold text-white">{stats.imageCount}</p>
-          <p className="mt-1 text-[11px] text-muted">131 Hình ảnh hoàn thiện</p>
+          <p className="mt-2 text-2xl font-bold text-slate-900 dark:text-white">{stats.imageCount}</p>
+          <p className="mt-1 text-[11px] text-slate-500 dark:text-muted">131 Hình ảnh hoàn thiện</p>
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-[#0b1326] p-4 shadow-card">
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-[#0b1326] dark:shadow-card">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-medium text-emerald-400 flex items-center gap-1.5">
+            <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
               <MapPin className="h-4 w-4" /> Tỉnh thành phủ sóng
             </span>
-            <MapPin className="h-4 w-4 text-emerald-400" />
+            <MapPin className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
           </div>
-          <p className="mt-2 text-2xl font-bold text-emerald-400">{stats.uniqueLocations} tỉnh thành</p>
-          <p className="mt-1 text-[11px] text-muted">Miền Bắc & Toàn Quốc</p>
+          <p className="mt-2 text-2xl font-bold text-emerald-600 dark:text-emerald-400">{stats.uniqueLocations} tỉnh thành</p>
+          <p className="mt-1 text-[11px] text-slate-500 dark:text-muted">Miền Bắc & Toàn Quốc</p>
         </div>
       </div>
 
@@ -369,10 +369,10 @@ export default function AdminProjectsPage() {
         <button
           onClick={() => setActiveMediaFilter('all')}
           className={cn(
-            'rounded-xl px-3.5 py-1.5 text-xs font-semibold transition',
+            'rounded-xl px-3.5 py-1.5 text-xs font-semibold shadow-sm transition',
             activeMediaFilter === 'all'
               ? 'bg-brand-cyan text-slate-950 font-bold'
-              : 'bg-[#0b1326] text-muted hover:bg-white/5 hover:text-white',
+              : 'border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 dark:border-white/10 dark:bg-[#0b1326] dark:text-muted dark:hover:bg-white/5 dark:hover:text-white',
           )}
         >
           Tất cả dự án ({stats.total})
@@ -380,10 +380,10 @@ export default function AdminProjectsPage() {
         <button
           onClick={() => setActiveMediaFilter('video')}
           className={cn(
-            'flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-semibold transition',
+            'flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-semibold shadow-sm transition',
             activeMediaFilter === 'video'
               ? 'bg-cyan-500 text-slate-950 font-bold'
-              : 'bg-[#0b1326] text-cyan-300 hover:bg-cyan-500/10',
+              : 'border border-slate-200 bg-white text-cyan-700 hover:bg-cyan-50 dark:border-white/10 dark:bg-[#0b1326] dark:text-cyan-300 dark:hover:bg-cyan-500/10',
           )}
         >
           <Video className="h-3.5 w-3.5" /> Có Video 4K ({stats.videoCount})
@@ -391,10 +391,10 @@ export default function AdminProjectsPage() {
         <button
           onClick={() => setActiveMediaFilter('image')}
           className={cn(
-            'flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-semibold transition',
+            'flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-semibold shadow-sm transition',
             activeMediaFilter === 'image'
-              ? 'bg-purple-500 text-white font-bold'
-              : 'bg-[#0b1326] text-purple-300 hover:bg-purple-500/10',
+              ? 'bg-purple-600 text-white font-bold'
+              : 'border border-slate-200 bg-white text-purple-700 hover:bg-purple-50 dark:border-white/10 dark:bg-[#0b1326] dark:text-purple-300 dark:hover:bg-purple-500/10',
           )}
         >
           <ImageIcon className="h-3.5 w-3.5" /> Ảnh thực tế ({stats.imageCount})
@@ -424,7 +424,7 @@ export default function AdminProjectsPage() {
         {previewMedia && (
           <div className="space-y-4">
             {/* Player or Large Image */}
-            <div className="overflow-hidden rounded-2xl border border-white/10 bg-black aspect-video flex items-center justify-center">
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-black aspect-video flex items-center justify-center dark:border-white/10">
               {previewMedia.videoUrl ? (
                 <video
                   src={previewMedia.videoUrl}
@@ -443,31 +443,31 @@ export default function AdminProjectsPage() {
             </div>
 
             {/* Details & Specs */}
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs">
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-xs dark:border-white/10 dark:bg-white/[0.02]">
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <span className="text-muted">Địa điểm:</span>
-                  <p className="font-semibold text-white">{previewMedia.location}</p>
+                  <span className="text-slate-500 dark:text-muted">Địa điểm:</span>
+                  <p className="font-semibold text-slate-900 dark:text-white">{previewMedia.location}</p>
                 </div>
                 <div>
-                  <span className="text-muted">Lĩnh vực:</span>
-                  <p className="font-semibold text-white">
+                  <span className="text-slate-500 dark:text-muted">Lĩnh vực:</span>
+                  <p className="font-semibold text-slate-900 dark:text-white">
                     {PROJECT_CATEGORY_LABEL[previewMedia.category] || 'Doanh nghiệp'}
                   </p>
                 </div>
                 <div>
-                  <span className="text-muted">Thông số / Quy mô:</span>
-                  <p className="font-semibold text-brand-cyan">{previewMedia.scale || 'Chuẩn AIO LED'}</p>
+                  <span className="text-slate-500 dark:text-muted">Thông số / Quy mô:</span>
+                  <p className="font-semibold text-cyan-600 dark:text-brand-cyan">{previewMedia.scale || 'Chuẩn AIO LED'}</p>
                 </div>
                 <div>
-                  <span className="text-muted">Thời gian hoàn thành:</span>
-                  <p className="font-semibold text-white">{formatDate(previewMedia.completedAt)}</p>
+                  <span className="text-slate-500 dark:text-muted">Thời gian hoàn thành:</span>
+                  <p className="font-semibold text-slate-900 dark:text-white">{formatDate(previewMedia.completedAt)}</p>
                 </div>
               </div>
-              <p className="mt-3 text-muted leading-relaxed">{previewMedia.description}</p>
+              <p className="mt-3 text-slate-600 dark:text-muted leading-relaxed">{previewMedia.description}</p>
             </div>
 
-            <div className="flex items-center justify-between border-t border-white/10 pt-3">
+            <div className="flex items-center justify-between border-t border-slate-200 pt-3 dark:border-white/10">
               <a
                 href={`/du-an/${previewMedia.slug}`}
                 target="_blank"
@@ -479,7 +479,7 @@ export default function AdminProjectsPage() {
               <button
                 type="button"
                 onClick={() => setPreviewMedia(null)}
-                className="rounded-xl bg-white/10 px-4 py-2 text-xs font-semibold text-white hover:bg-white/20"
+                className="rounded-xl bg-slate-200 px-4 py-2 text-xs font-semibold text-slate-800 hover:bg-slate-300 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
               >
                 Đóng
               </button>
@@ -578,10 +578,10 @@ export default function AdminProjectsPage() {
           </div>
 
           {/* Featured toggle */}
-          <div className="flex items-center justify-between rounded-xl border border-white/5 bg-white/[0.02] p-4">
+          <div className="flex items-center justify-between rounded-xl border border-slate-200 bg-slate-50 p-4 dark:border-white/5 dark:bg-white/[0.02]">
             <div>
-              <p className="text-sm font-medium text-white">Dự án tiêu biểu nổi bật</p>
-              <p className="text-xs text-muted">Ưu tiên hiển thị trên trang chủ và đầu danh sách dự án</p>
+              <p className="text-sm font-medium text-slate-900 dark:text-white">Dự án tiêu biểu nổi bật</p>
+              <p className="text-xs text-slate-500 dark:text-muted">Ưu tiên hiển thị trên trang chủ và đầu danh sách dự án</p>
             </div>
             <label className="relative inline-flex cursor-pointer items-center">
               <input
@@ -590,7 +590,7 @@ export default function AdminProjectsPage() {
                 onChange={(e) => setForm({ ...form, featured: e.target.checked })}
                 className="peer sr-only"
               />
-              <div className="peer h-6 w-11 rounded-full bg-slate-700 transition-all after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all after:content-[''] peer-checked:bg-brand-cyan peer-checked:after:translate-x-full peer-focus:outline-none"></div>
+              <div className="peer h-6 w-11 rounded-full bg-slate-300 transition-all after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all after:content-[''] peer-checked:bg-brand-cyan peer-checked:after:translate-x-full peer-focus:outline-none dark:bg-slate-700"></div>
             </label>
           </div>
 

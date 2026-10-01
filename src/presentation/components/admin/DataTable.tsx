@@ -43,14 +43,14 @@ export function DataTable<T>({ data, columns, searchPlaceholder = 'Tìm kiếm�
         <Input value={globalFilter} onChange={(e) => setGlobalFilter(e.target.value)} placeholder={searchPlaceholder} className="pl-11" />
       </div>
 
-      <div className="overflow-hidden rounded-2xl border border-white/10">
+      <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-white/10 dark:bg-[#0b1326]">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
-            <thead className="bg-white/[0.04]">
+            <thead className="bg-slate-50 border-b border-slate-200 dark:border-white/10 dark:bg-white/[0.04]">
               {table.getHeaderGroups().map((hg) => (
                 <tr key={hg.id}>
                   {hg.headers.map((header) => (
-                    <th key={header.id} className="whitespace-nowrap px-4 py-3 text-left font-semibold text-ink">
+                    <th key={header.id} className="whitespace-nowrap px-4 py-3 text-left font-semibold text-slate-800 dark:text-ink">
                       {header.isPlaceholder ? null : (
                         <button
                           className="flex items-center gap-1.5"
@@ -69,9 +69,9 @@ export function DataTable<T>({ data, columns, searchPlaceholder = 'Tìm kiếm�
             <tbody>
               {table.getRowModel().rows.length ? (
                 table.getRowModel().rows.map((row) => (
-                  <tr key={row.id} className="border-t border-white/5 transition hover:bg-white/[0.03]">
+                  <tr key={row.id} className="border-t border-slate-100 transition hover:bg-slate-50/80 dark:border-white/5 dark:hover:bg-white/[0.03]">
                     {row.getVisibleCells().map((cell) => (
-                      <td key={cell.id} className="px-4 py-3 align-middle text-ink">
+                      <td key={cell.id} className="px-4 py-3 align-middle text-slate-800 dark:text-ink">
                         {flexRender(cell.column.columnDef.cell, cell.getContext())}
                       </td>
                     ))}
@@ -79,7 +79,7 @@ export function DataTable<T>({ data, columns, searchPlaceholder = 'Tìm kiếm�
                 ))
               ) : (
                 <tr>
-                  <td colSpan={columns.length} className="px-4 py-10 text-center text-muted">
+                  <td colSpan={columns.length} className="px-4 py-10 text-center text-slate-500 dark:text-muted">
                     Không có dữ liệu
                   </td>
                 </tr>
@@ -89,7 +89,7 @@ export function DataTable<T>({ data, columns, searchPlaceholder = 'Tìm kiếm�
         </div>
       </div>
 
-      <div className="flex items-center justify-between text-sm text-muted">
+      <div className="flex items-center justify-between text-sm text-slate-600 dark:text-muted">
         <span>
           Trang {table.getState().pagination.pageIndex + 1} / {table.getPageCount() || 1} ·{' '}
           {table.getFilteredRowModel().rows.length} bản ghi
@@ -98,7 +98,7 @@ export function DataTable<T>({ data, columns, searchPlaceholder = 'Tìm kiếm�
           <button
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 transition hover:border-brand-accent/50 disabled:opacity-40"
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:bg-slate-50 dark:border-white/10 dark:bg-transparent dark:text-white dark:hover:border-brand-accent/50 disabled:opacity-40"
             aria-label="Trang trước"
           >
             <ChevronLeft className="h-4 w-4" />
@@ -106,7 +106,7 @@ export function DataTable<T>({ data, columns, searchPlaceholder = 'Tìm kiếm�
           <button
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 transition hover:border-brand-accent/50 disabled:opacity-40"
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:bg-slate-50 dark:border-white/10 dark:bg-transparent dark:text-white dark:hover:border-brand-accent/50 disabled:opacity-40"
             aria-label="Trang sau"
           >
             <ChevronRight className="h-4 w-4" />

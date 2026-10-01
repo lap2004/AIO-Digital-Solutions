@@ -76,11 +76,11 @@ export default function DashboardPage() {
   if (!stats) return <LoadingBlock />;
 
   const tiles = [
-    { label: 'Lượt xem website', value: stats.totalVisitors, icon: Eye, tone: 'text-blue-400' },
-    { label: 'Yêu cầu chờ gọi tư vấn', value: totalPending, icon: AlertCircle, tone: 'text-amber-400', isHighlight: totalPending > 0 },
-    { label: 'Hợp đồng đã chốt', value: totalApproved, icon: CheckCircle2, tone: 'text-emerald-400' },
-    { label: 'Sản phẩm LED', value: stats.totalProducts, icon: Package, tone: 'text-brand-cyan' },
-    { label: 'Dự án thực tế', value: stats.totalProjects, icon: Building2, tone: 'text-brand-accent' },
+    { label: 'Lượt xem website', value: stats.totalVisitors, icon: Eye, tone: 'text-blue-600 dark:text-blue-400' },
+    { label: 'Yêu cầu chờ gọi tư vấn', value: totalPending, icon: AlertCircle, tone: 'text-amber-600 dark:text-amber-400', isHighlight: totalPending > 0 },
+    { label: 'Hợp đồng đã chốt', value: totalApproved, icon: CheckCircle2, tone: 'text-emerald-600 dark:text-emerald-400' },
+    { label: 'Sản phẩm LED', value: stats.totalProducts, icon: Package, tone: 'text-cyan-600 dark:text-brand-cyan' },
+    { label: 'Dự án thực tế', value: stats.totalProjects, icon: Building2, tone: 'text-purple-600 dark:text-brand-accent' },
   ];
 
   const cleanPhone = (phone: string) => phone.replace(/[^\d+]/g, '');
@@ -93,23 +93,23 @@ export default function DashboardPage() {
       {/* Top Stat Tiles */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {tiles.map((t) => (
-          <Card key={t.label} className={cn('p-5', t.isHighlight && 'border-amber-500/40 bg-amber-500/[0.04]')}>
+          <Card key={t.label} className={cn('p-5', t.isHighlight && 'border-amber-400/80 bg-amber-50/70 dark:border-amber-500/40 dark:bg-amber-500/[0.04]')}>
             <div className="flex items-center justify-between">
               <t.icon className={`h-6 w-6 ${t.tone}`} />
-              {t.isHighlight && <span className="h-2 w-2 rounded-full bg-amber-400 animate-pulse shadow-[0_0_8px_#F59E0B]" />}
+              {t.isHighlight && <span className="h-2 w-2 rounded-full bg-amber-500 animate-pulse shadow-[0_0_8px_#F59E0B]" />}
             </div>
-            <div className="mt-3 text-2xl font-bold text-white">{formatNumber(t.value)}</div>
-            <div className="text-xs text-muted">{t.label}</div>
+            <div className="mt-3 text-2xl font-bold text-slate-900 dark:text-white">{formatNumber(t.value)}</div>
+            <div className="text-xs text-slate-500 dark:text-muted">{t.label}</div>
           </Card>
         ))}
       </div>
 
       {/* Urgent Action Needed Box */}
-      <div className="mt-6 rounded-2xl border border-amber-500/30 bg-[#0b1326] p-5 shadow-card">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-white/10 pb-4">
+      <div className="mt-6 rounded-2xl border border-amber-300 bg-white p-5 shadow-sm dark:border-amber-500/30 dark:bg-[#0b1326] dark:shadow-card">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-200 pb-4 dark:border-white/10">
           <div className="flex items-center gap-2.5">
-            <span className="flex h-3 w-3 rounded-full bg-amber-400 animate-ping" />
-            <h3 className="font-bold text-white">Yêu cầu Báo giá & Tư vấn mới nhất (Cần gọi ngay)</h3>
+            <span className="flex h-3 w-3 rounded-full bg-amber-500 animate-ping" />
+            <h3 className="font-bold text-slate-900 dark:text-white">Yêu cầu Báo giá & Tư vấn mới nhất (Cần gọi ngay)</h3>
           </div>
           <Link
             to="/admin/bao-gia"
@@ -120,33 +120,33 @@ export default function DashboardPage() {
         </div>
 
         {pendingQuotes.length === 0 ? (
-          <div className="py-6 text-center text-xs text-emerald-400 flex items-center justify-center gap-2">
+          <div className="py-6 text-center text-xs text-emerald-600 dark:text-emerald-400 flex items-center justify-center gap-2">
             <CheckCircle2 className="h-4 w-4" /> Đã xử lý toàn bộ các yêu cầu tư vấn! Không có yêu cầu nào đang chờ.
           </div>
         ) : (
-          <div className="mt-3 divide-y divide-white/5">
+          <div className="mt-3 divide-y divide-slate-100 dark:divide-white/5">
             {pendingQuotes.map((q) => {
               const rawPhone = cleanPhone(q.phone);
               return (
                 <div key={q.id} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 py-3">
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="font-semibold text-white">{q.customerName}</span>
-                      <span className="rounded-md bg-white/5 px-2 py-0.5 font-mono text-[10px] text-brand-cyan">
+                      <span className="font-semibold text-slate-900 dark:text-white">{q.customerName}</span>
+                      <span className="rounded-md bg-slate-100 px-2 py-0.5 font-mono text-[10px] text-cyan-700 dark:bg-white/5 dark:text-brand-cyan">
                         {q.code}
                       </span>
                     </div>
-                    <p className="mt-0.5 text-xs text-muted line-clamp-1">
+                    <p className="mt-0.5 text-xs text-slate-600 dark:text-muted line-clamp-1">
                       {q.interest || q.note || 'Yêu cầu tư vấn kỹ thuật'}
                     </p>
-                    <p className="text-[10px] text-muted">{formatDate(q.createdAt)}</p>
+                    <p className="text-[10px] text-slate-400 dark:text-muted">{formatDate(q.createdAt)}</p>
                   </div>
 
                   <div className="flex items-center gap-2 shrink-0">
-                    <span className="font-mono text-xs font-bold text-emerald-400 mr-2">{q.phone}</span>
+                    <span className="font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400 mr-2">{q.phone}</span>
                     <a
                       href={`tel:${rawPhone}`}
-                      className="inline-flex items-center gap-1 rounded-lg border border-emerald-500/40 bg-emerald-500/20 px-3 py-1.5 text-xs font-semibold text-emerald-300 shadow-sm transition hover:bg-emerald-500 hover:text-slate-950"
+                      className="inline-flex items-center gap-1 rounded-lg border border-emerald-500/40 bg-emerald-500/15 px-3 py-1.5 text-xs font-semibold text-emerald-700 dark:text-emerald-300 shadow-sm transition hover:bg-emerald-500 hover:text-white"
                     >
                       <Phone className="h-3.5 w-3.5" /> Gọi ngay
                     </a>
@@ -154,7 +154,7 @@ export default function DashboardPage() {
                       href={`https://zalo.me/${rawPhone}`}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1 rounded-lg border border-blue-500/40 bg-blue-500/20 px-3 py-1.5 text-xs font-semibold text-blue-300 shadow-sm transition hover:bg-blue-600 hover:text-white"
+                      className="inline-flex items-center gap-1 rounded-lg border border-blue-500/40 bg-blue-500/15 px-3 py-1.5 text-xs font-semibold text-blue-700 dark:text-blue-300 shadow-sm transition hover:bg-blue-600 hover:text-white"
                     >
                       <MessageCircle className="h-3.5 w-3.5" /> Zalo
                     </a>
@@ -169,7 +169,7 @@ export default function DashboardPage() {
       {/* Charts Grid */}
       <div className="mt-6 grid gap-6 lg:grid-cols-2">
         <Card className="p-6">
-          <h3 className="mb-4 font-bold text-white">Doanh thu dự toán theo tháng (tỷ ₫)</h3>
+          <h3 className="mb-4 font-bold text-slate-900 dark:text-white">Doanh thu dự toán theo tháng (tỷ ₫)</h3>
           <ResponsiveContainer width="100%" height={260}>
             <AreaChart data={stats.revenueData}>
               <defs>
@@ -178,23 +178,23 @@ export default function DashboardPage() {
                   <stop offset="100%" stopColor="#00E5FF" stopOpacity={0} />
                 </linearGradient>
               </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
+              <CartesianGrid strokeDasharray="3 3" stroke="#cbd5e1" opacity={0.5} />
               <XAxis dataKey="month" stroke="#64748b" fontSize={12} />
               <YAxis stroke="#64748b" fontSize={12} />
-              <Tooltip contentStyle={{ background: '#0b1326', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12 }} />
+              <Tooltip contentStyle={{ background: '#0b1326', color: '#fff', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12 }} />
               <Area type="monotone" dataKey="value" stroke="#00E5FF" strokeWidth={2} fill="url(#rev)" />
             </AreaChart>
           </ResponsiveContainer>
         </Card>
 
         <Card className="p-6">
-          <h3 className="mb-4 font-bold text-white">Tiến độ xử lý Yêu cầu Báo giá</h3>
+          <h3 className="mb-4 font-bold text-slate-900 dark:text-white">Tiến độ xử lý Yêu cầu Báo giá</h3>
           <ResponsiveContainer width="100%" height={260}>
             <BarChart data={quotesByStatus}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
+              <CartesianGrid strokeDasharray="3 3" stroke="#cbd5e1" opacity={0.5} />
               <XAxis dataKey="name" stroke="#64748b" fontSize={11} />
               <YAxis stroke="#64748b" fontSize={12} allowDecimals={false} />
-              <Tooltip contentStyle={{ background: '#0b1326', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12 }} cursor={{ fill: 'rgba(255,255,255,0.04)' }} />
+              <Tooltip contentStyle={{ background: '#0b1326', color: '#fff', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12 }} cursor={{ fill: 'rgba(0,0,0,0.04)' }} />
               <Bar dataKey="value" radius={[6, 6, 0, 0]}>
                 {quotesByStatus.map((_, i) => (
                   <Cell key={i} fill={COLORS[i % COLORS.length]} />
@@ -205,7 +205,7 @@ export default function DashboardPage() {
         </Card>
 
         <Card className="p-6 lg:col-span-2">
-          <h3 className="mb-4 font-bold text-white">Phân bổ sản phẩm LED theo danh mục</h3>
+          <h3 className="mb-4 font-bold text-slate-900 dark:text-white">Phân bổ sản phẩm LED theo danh mục</h3>
           <ResponsiveContainer width="100%" height={280}>
             <PieChart>
               <Pie data={productsByCategory} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={100} label={(e: { name?: string; value?: number }) => `${e.name}: ${e.value}`} labelLine={false} fontSize={11}>
@@ -213,7 +213,7 @@ export default function DashboardPage() {
                   <Cell key={i} fill={COLORS[i % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip contentStyle={{ background: '#0b1326', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12 }} />
+              <Tooltip contentStyle={{ background: '#0b1326', color: '#fff', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12 }} />
             </PieChart>
           </ResponsiveContainer>
         </Card>

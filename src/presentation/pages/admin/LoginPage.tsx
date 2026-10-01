@@ -9,6 +9,7 @@ import { FieldWrapper, Input } from '@/presentation/components/common/Field';
 import { AuroraBackground } from '@/presentation/components/common/Backgrounds';
 import { Logo } from '@/presentation/components/sections/Logo';
 import { Seo } from '@/presentation/components/common/Seo';
+import { ThemeToggle } from '@/presentation/components/common/ThemeToggle';
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -27,20 +28,26 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center overflow-hidden p-6">
+    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-50 p-6 transition-colors duration-200 dark:bg-[#020617]">
       <Seo title="Đăng nhập quản trị | AIO" />
       <AuroraBackground />
-      <div className="relative w-full max-w-md">
+      
+      {/* Top right theme toggle */}
+      <div className="absolute top-5 right-5 z-20">
+        <ThemeToggle />
+      </div>
+
+      <div className="relative z-10 w-full max-w-md">
         <div className="mb-8 flex justify-center">
           <Logo />
         </div>
-        <div className="glass-strong rounded-3xl p-8">
+        <div className="rounded-3xl border border-slate-200/80 bg-white/95 p-8 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:bg-[#0b1326]/90 dark:shadow-card">
           <div className="mb-6 text-center">
             <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-gradient text-white shadow-glow">
               <ShieldCheck className="h-6 w-6" />
             </div>
-            <h1 className="text-xl font-bold text-white">Cổng quản trị</h1>
-            <p className="mt-1 text-sm text-muted">Đăng nhập để quản lý hệ thống AIO</p>
+            <h1 className="text-xl font-bold text-slate-900 dark:text-white">Cổng quản trị</h1>
+            <p className="mt-1 text-sm text-slate-500 dark:text-muted">Đăng nhập để quản lý hệ thống AIO</p>
           </div>
 
           <form onSubmit={onSubmit} className="space-y-4">
@@ -59,19 +66,17 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg text-muted transition-colors hover:bg-slate-100 hover:text-ink dark:hover:bg-white/10 dark:hover:text-white"
+                  className="absolute right-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-900 dark:text-muted dark:hover:bg-white/10 dark:hover:text-white"
                   aria-label={showPassword ? 'Ẩn mật khẩu' : 'Hiện mật khẩu'}
                 >
                   {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                 </button>
               </div>
             </FieldWrapper>
-            <Button type="submit" size="lg" className="w-full" disabled={loading}>
+            <Button type="submit" size="lg" className="w-full bg-brand-cyan text-slate-950 font-bold shadow-glow hover:bg-brand-cyan/90" disabled={loading}>
               {loading ? 'Đang đăng nhập…' : <><LogIn className="h-5 w-5" /> Đăng nhập</>}
             </Button>
           </form>
-
-
         </div>
       </div>
     </div>
