@@ -15,4 +15,6 @@ dist-ssr
 takeout*/
 *.tsbuildinfo
 public/media/projects/videos/*.mp4
+!public/media/projects/videos/web/*.mp4
+
 

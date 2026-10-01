@@ -165,7 +165,7 @@ export function prepareTakeoutMedia(root) {
         category: cat,
         specs: spec,
         year: index % 2 === 0 ? '2025' : '2024',
-        url: `/media/projects/videos/${destName}`,
+        url: `/media/projects/videos/web/${destName}`,
         thumbnail: fs.existsSync(thumbDest) ? `/media/projects/videos/thumbs/${thumbName}` : undefined,
       });
     }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T12:08:26.389Z",
+  "generatedAt": "2026-10-01T12:45:09.890Z",
   "totalVideos": 91,
   "totalImages": 220,
   "videos": [
@@ -10,7 +10,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-1.mp4",
+      "url": "/media/projects/videos/web/project-video-1.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-1.jpg"
     },
     {
@@ -20,7 +20,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-2.mp4",
+      "url": "/media/projects/videos/web/project-video-2.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-2.jpg"
     },
     {
@@ -30,7 +30,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-3.mp4",
+      "url": "/media/projects/videos/web/project-video-3.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-3.jpg"
     },
     {
@@ -40,7 +40,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-4.mp4",
+      "url": "/media/projects/videos/web/project-video-4.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-4.jpg"
     },
     {
@@ -50,7 +50,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-5.mp4",
+      "url": "/media/projects/videos/web/project-video-5.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-5.jpg"
     },
     {
@@ -60,7 +60,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-6.mp4",
+      "url": "/media/projects/videos/web/project-video-6.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-6.jpg"
     },
     {
@@ -70,7 +70,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-7.mp4",
+      "url": "/media/projects/videos/web/project-video-7.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-7.jpg"
     },
     {
@@ -80,7 +80,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-8.mp4",
+      "url": "/media/projects/videos/web/project-video-8.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-8.jpg"
     },
     {
@@ -90,7 +90,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-9.mp4",
+      "url": "/media/projects/videos/web/project-video-9.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-9.jpg"
     },
     {
@@ -100,7 +100,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-10.mp4",
+      "url": "/media/projects/videos/web/project-video-10.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-10.jpg"
     },
     {
@@ -110,7 +110,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-11.mp4",
+      "url": "/media/projects/videos/web/project-video-11.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-11.jpg"
     },
     {
@@ -120,7 +120,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-12.mp4",
+      "url": "/media/projects/videos/web/project-video-12.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-12.jpg"
     },
     {
@@ -130,7 +130,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-13.mp4",
+      "url": "/media/projects/videos/web/project-video-13.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-13.jpg"
     },
     {
@@ -140,7 +140,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-14.mp4",
+      "url": "/media/projects/videos/web/project-video-14.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-14.jpg"
     },
     {
@@ -150,7 +150,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-15.mp4",
+      "url": "/media/projects/videos/web/project-video-15.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-15.jpg"
     },
     {
@@ -160,7 +160,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-16.mp4",
+      "url": "/media/projects/videos/web/project-video-16.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-16.jpg"
     },
     {
@@ -170,7 +170,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-17.mp4",
+      "url": "/media/projects/videos/web/project-video-17.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-17.jpg"
     },
     {
@@ -180,7 +180,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-18.mp4",
+      "url": "/media/projects/videos/web/project-video-18.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-18.jpg"
     },
     {
@@ -190,7 +190,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-19.mp4",
+      "url": "/media/projects/videos/web/project-video-19.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-19.jpg"
     },
     {
@@ -200,7 +200,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-20.mp4",
+      "url": "/media/projects/videos/web/project-video-20.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-20.jpg"
     },
     {
@@ -210,7 +210,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-21.mp4",
+      "url": "/media/projects/videos/web/project-video-21.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-21.jpg"
     },
     {
@@ -220,7 +220,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-22.mp4",
+      "url": "/media/projects/videos/web/project-video-22.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-22.jpg"
     },
     {
@@ -230,7 +230,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-23.mp4",
+      "url": "/media/projects/videos/web/project-video-23.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-23.jpg"
     },
     {
@@ -240,7 +240,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-24.mp4",
+      "url": "/media/projects/videos/web/project-video-24.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-24.jpg"
     },
     {
@@ -250,7 +250,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-25.mp4",
+      "url": "/media/projects/videos/web/project-video-25.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-25.jpg"
     },
     {
@@ -260,7 +260,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-26.mp4",
+      "url": "/media/projects/videos/web/project-video-26.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-26.jpg"
     },
     {
@@ -270,7 +270,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-27.mp4",
+      "url": "/media/projects/videos/web/project-video-27.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-27.jpg"
     },
     {
@@ -280,7 +280,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-28.mp4",
+      "url": "/media/projects/videos/web/project-video-28.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-28.jpg"
     },
     {
@@ -290,7 +290,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-29.mp4",
+      "url": "/media/projects/videos/web/project-video-29.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-29.jpg"
     },
     {
@@ -300,7 +300,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-30.mp4",
+      "url": "/media/projects/videos/web/project-video-30.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-30.jpg"
     },
     {
@@ -310,7 +310,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-31.mp4",
+      "url": "/media/projects/videos/web/project-video-31.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-31.jpg"
     },
     {
@@ -320,7 +320,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-32.mp4",
+      "url": "/media/projects/videos/web/project-video-32.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-32.jpg"
     },
     {
@@ -330,7 +330,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-33.mp4",
+      "url": "/media/projects/videos/web/project-video-33.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-33.jpg"
     },
     {
@@ -340,7 +340,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-34.mp4",
+      "url": "/media/projects/videos/web/project-video-34.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-34.jpg"
     },
     {
@@ -350,7 +350,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-35.mp4",
+      "url": "/media/projects/videos/web/project-video-35.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-35.jpg"
     },
     {
@@ -360,7 +360,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-36.mp4",
+      "url": "/media/projects/videos/web/project-video-36.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-36.jpg"
     },
     {
@@ -370,7 +370,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-37.mp4",
+      "url": "/media/projects/videos/web/project-video-37.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-37.jpg"
     },
     {
@@ -380,7 +380,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-38.mp4",
+      "url": "/media/projects/videos/web/project-video-38.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-38.jpg"
     },
     {
@@ -390,7 +390,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-39.mp4",
+      "url": "/media/projects/videos/web/project-video-39.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-39.jpg"
     },
     {
@@ -400,7 +400,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-40.mp4",
+      "url": "/media/projects/videos/web/project-video-40.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-40.jpg"
     },
     {
@@ -410,7 +410,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-41.mp4",
+      "url": "/media/projects/videos/web/project-video-41.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-41.jpg"
     },
     {
@@ -420,7 +420,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-42.mp4",
+      "url": "/media/projects/videos/web/project-video-42.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-42.jpg"
     },
     {
@@ -430,7 +430,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-43.mp4",
+      "url": "/media/projects/videos/web/project-video-43.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-43.jpg"
     },
     {
@@ -440,7 +440,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-44.mp4",
+      "url": "/media/projects/videos/web/project-video-44.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-44.jpg"
     },
     {
@@ -450,7 +450,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-45.mp4",
+      "url": "/media/projects/videos/web/project-video-45.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-45.jpg"
     },
     {
@@ -460,7 +460,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-46.mp4",
+      "url": "/media/projects/videos/web/project-video-46.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-46.jpg"
     },
     {
@@ -470,7 +470,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-47.mp4",
+      "url": "/media/projects/videos/web/project-video-47.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-47.jpg"
     },
     {
@@ -480,7 +480,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-48.mp4",
+      "url": "/media/projects/videos/web/project-video-48.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-48.jpg"
     },
     {
@@ -490,7 +490,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-49.mp4",
+      "url": "/media/projects/videos/web/project-video-49.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-49.jpg"
     },
     {
@@ -500,7 +500,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-50.mp4",
+      "url": "/media/projects/videos/web/project-video-50.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-50.jpg"
     },
     {
@@ -510,7 +510,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-51.mp4",
+      "url": "/media/projects/videos/web/project-video-51.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-51.jpg"
     },
     {
@@ -520,7 +520,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-52.mp4",
+      "url": "/media/projects/videos/web/project-video-52.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-52.jpg"
     },
     {
@@ -530,7 +530,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-53.mp4",
+      "url": "/media/projects/videos/web/project-video-53.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-53.jpg"
     },
     {
@@ -540,7 +540,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-54.mp4",
+      "url": "/media/projects/videos/web/project-video-54.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-54.jpg"
     },
     {
@@ -550,7 +550,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-55.mp4",
+      "url": "/media/projects/videos/web/project-video-55.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-55.jpg"
     },
     {
@@ -560,7 +560,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-56.mp4",
+      "url": "/media/projects/videos/web/project-video-56.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-56.jpg"
     },
     {
@@ -570,7 +570,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-57.mp4",
+      "url": "/media/projects/videos/web/project-video-57.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-57.jpg"
     },
     {
@@ -580,7 +580,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-58.mp4",
+      "url": "/media/projects/videos/web/project-video-58.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-58.jpg"
     },
     {
@@ -590,7 +590,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-59.mp4",
+      "url": "/media/projects/videos/web/project-video-59.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-59.jpg"
     },
     {
@@ -600,7 +600,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-60.mp4",
+      "url": "/media/projects/videos/web/project-video-60.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-60.jpg"
     },
     {
@@ -610,7 +610,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-61.mp4",
+      "url": "/media/projects/videos/web/project-video-61.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-61.jpg"
     },
     {
@@ -620,7 +620,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-62.mp4",
+      "url": "/media/projects/videos/web/project-video-62.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-62.jpg"
     },
     {
@@ -630,7 +630,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-63.mp4",
+      "url": "/media/projects/videos/web/project-video-63.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-63.jpg"
     },
     {
@@ -640,7 +640,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-64.mp4",
+      "url": "/media/projects/videos/web/project-video-64.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-64.jpg"
     },
     {
@@ -650,7 +650,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-65.mp4",
+      "url": "/media/projects/videos/web/project-video-65.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-65.jpg"
     },
     {
@@ -660,7 +660,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-66.mp4",
+      "url": "/media/projects/videos/web/project-video-66.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-66.jpg"
     },
     {
@@ -670,7 +670,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-67.mp4",
+      "url": "/media/projects/videos/web/project-video-67.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-67.jpg"
     },
     {
@@ -680,7 +680,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-68.mp4",
+      "url": "/media/projects/videos/web/project-video-68.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-68.jpg"
     },
     {
@@ -690,7 +690,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-69.mp4",
+      "url": "/media/projects/videos/web/project-video-69.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-69.jpg"
     },
     {
@@ -700,7 +700,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-70.mp4",
+      "url": "/media/projects/videos/web/project-video-70.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-70.jpg"
     },
     {
@@ -710,7 +710,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-71.mp4",
+      "url": "/media/projects/videos/web/project-video-71.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-71.jpg"
     },
     {
@@ -720,7 +720,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-72.mp4",
+      "url": "/media/projects/videos/web/project-video-72.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-72.jpg"
     },
     {
@@ -730,7 +730,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-73.mp4",
+      "url": "/media/projects/videos/web/project-video-73.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-73.jpg"
     },
     {
@@ -740,7 +740,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-74.mp4",
+      "url": "/media/projects/videos/web/project-video-74.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-74.jpg"
     },
     {
@@ -750,7 +750,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-75.mp4",
+      "url": "/media/projects/videos/web/project-video-75.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-75.jpg"
     },
     {
@@ -760,7 +760,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-76.mp4",
+      "url": "/media/projects/videos/web/project-video-76.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-76.jpg"
     },
     {
@@ -770,7 +770,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-77.mp4",
+      "url": "/media/projects/videos/web/project-video-77.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-77.jpg"
     },
     {
@@ -780,7 +780,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-78.mp4",
+      "url": "/media/projects/videos/web/project-video-78.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-78.jpg"
     },
     {
@@ -790,7 +790,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-79.mp4",
+      "url": "/media/projects/videos/web/project-video-79.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-79.jpg"
     },
     {
@@ -800,7 +800,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-80.mp4",
+      "url": "/media/projects/videos/web/project-video-80.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-80.jpg"
     },
     {
@@ -810,7 +810,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-81.mp4",
+      "url": "/media/projects/videos/web/project-video-81.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-81.jpg"
     },
     {
@@ -820,7 +820,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-82.mp4",
+      "url": "/media/projects/videos/web/project-video-82.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-82.jpg"
     },
     {
@@ -830,7 +830,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-83.mp4",
+      "url": "/media/projects/videos/web/project-video-83.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-83.jpg"
     },
     {
@@ -840,7 +840,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "LCD 55\" Viền 0.88mm · 3x3 Matrix · Độ phân giải 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-84.mp4",
+      "url": "/media/projects/videos/web/project-video-84.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-84.jpg"
     },
     {
@@ -850,7 +850,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P2.0 Fine Pitch · 18m² · Nguồn Meanwell Chính Hãng",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-85.mp4",
+      "url": "/media/projects/videos/web/project-video-85.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-85.jpg"
     },
     {
@@ -860,7 +860,7 @@
       "category": "Màn hình LED Ngoài Trời",
       "specs": "LED Andon Công Nghiệp · Giám sát dây chuyền 24/7",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-86.mp4",
+      "url": "/media/projects/videos/web/project-video-86.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-86.jpg"
     },
     {
@@ -870,7 +870,7 @@
       "category": "Màn hình Ghép LCD Video Wall",
       "specs": "P3.0 Trong Nhà · Tần số quét 3840Hz · Góc nhìn 160°",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-87.mp4",
+      "url": "/media/projects/videos/web/project-video-87.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-87.jpg"
     },
     {
@@ -880,7 +880,7 @@
       "category": "Màn hình LED Hội Trường",
       "specs": "P5 Ngoài Trời · Cabin nhôm đúc định hình phẳng",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-88.mp4",
+      "url": "/media/projects/videos/web/project-video-88.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-88.jpg"
     },
     {
@@ -890,7 +890,7 @@
       "category": "Standee & Màn hình Cảm Ứng",
       "specs": "P1.86 Ultra Fine · Tần số 3840Hz · NovaStar Processor",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-89.mp4",
+      "url": "/media/projects/videos/web/project-video-89.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-89.jpg"
     },
     {
@@ -900,7 +900,7 @@
       "category": "Bảng Điện Tử & Andon Nhà Máy",
       "specs": "P2.5 Trong Nhà · Độ sáng 1000 nits · Tỷ lệ 16:9 4K",
       "year": "2024",
-      "url": "/media/projects/videos/project-video-90.mp4",
+      "url": "/media/projects/videos/web/project-video-90.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-90.jpg"
     },
     {
@@ -910,7 +910,7 @@
       "category": "Màn hình LED Trong Nhà",
       "specs": "P4 Ngoài Trời · Tiêu chuẩn IP66 Chống Nước · 6500 nits",
       "year": "2025",
-      "url": "/media/projects/videos/project-video-91.mp4",
+      "url": "/media/projects/videos/web/project-video-91.mp4",
       "thumbnail": "/media/projects/videos/thumbs/thumb-video-91.jpg"
     }
   ],

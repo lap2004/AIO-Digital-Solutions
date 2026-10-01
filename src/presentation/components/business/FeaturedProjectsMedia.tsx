@@ -18,6 +18,7 @@ import {
   Grid,
   ChevronDown,
   Layers,
+  ExternalLink,
 } from 'lucide-react';
 import {
   FEATURED_PROJECT_VIDEOS,
@@ -269,7 +270,19 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
             </div>
 
             {/* Video Action Controls */}
-            <div className="flex items-center gap-2 self-end sm:self-auto">
+            <div className="flex flex-wrap items-center gap-2 self-end sm:self-auto">
+              <a
+                href="https://drive.google.com/drive/folders/14BBUyGdi5Zdaka1me6G_nfKSu7suctxL?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-100 text-slate-800 hover:text-slate-950 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800/90 dark:text-slate-200 dark:hover:bg-slate-700 dark:hover:text-white text-xs font-semibold transition-all shadow-sm"
+                title="Mở Google Drive chứa 91 Video & 220 Ảnh gốc 4K"
+              >
+                <ExternalLink className="w-3.5 h-3.5 text-cyan-600 dark:text-brand-cyan" />
+                <span className="hidden sm:inline">Kho Google Drive (4K)</span>
+                <span className="sm:hidden">Drive</span>
+              </a>
+
               <button
                 onClick={() => setIsVideoGridView(!isVideoGridView)}
                 className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border text-xs font-semibold transition-all ${
@@ -623,7 +636,19 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
             </div>
 
             {/* View Mode & Carousel Controls */}
-            <div className="flex items-center gap-2 self-end sm:self-auto">
+            <div className="flex flex-wrap items-center gap-2 self-end sm:self-auto">
+              <a
+                href="https://drive.google.com/drive/folders/14BBUyGdi5Zdaka1me6G_nfKSu7suctxL?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border border-slate-300 bg-slate-100 text-slate-800 hover:text-slate-950 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800/90 dark:text-slate-200 dark:hover:bg-slate-700 dark:hover:text-white text-xs font-semibold transition-all shadow-sm"
+                title="Mở Google Drive chứa 91 Video & 220 Ảnh gốc 4K"
+              >
+                <ExternalLink className="w-3.5 h-3.5 text-cyan-600 dark:text-brand-cyan" />
+                <span className="hidden sm:inline">Kho Google Drive (4K)</span>
+                <span className="sm:hidden">Drive</span>
+              </a>
+
               <button
                 onClick={() => setIsGridView(!isGridView)}
                 className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border text-xs font-semibold transition-all ${
