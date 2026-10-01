@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, MapPin, Phone, Clock, ShieldCheck, Globe, MessageSquare } from 'lucide-react';
+import { Mail, MapPin, Phone, Clock, ShieldCheck, MessageSquare } from 'lucide-react';
 import { COMPANY, FOOTER_LINKS } from '@/core/constants/site';
 import { useI18n } from '@/core/i18n';
 import { Container } from '@/presentation/components/common/Container';
