@@ -250,15 +250,15 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
           onMouseLeave={() => setIsVideoAutoPaused(false)}
         >
           {/* Header row for Video Section */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 sm:pb-6 border-b border-slate-200 dark:border-surface-800/80">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 sm:pb-6 border-b border-slate-200 dark:border-white/10">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 dark:text-primary-400 shrink-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 dark:text-brand-cyan shrink-0">
                 <Film className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div>
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100">Video Công Trình Thực Tế</span>
-                  <span className="px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-mono bg-cyan-100 text-cyan-800 border border-cyan-300 font-bold dark:bg-primary-500/20 dark:text-primary-300 dark:border-primary-500/30">
+                  <span className="px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-mono bg-cyan-100 text-cyan-800 border border-cyan-300 font-bold dark:bg-cyan-500/20 dark:text-brand-cyan dark:border-cyan-500/30">
                     {FEATURED_PROJECT_VIDEOS.length} Video
                   </span>
                 </div>
@@ -274,8 +274,8 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                 onClick={() => setIsVideoGridView(!isVideoGridView)}
                 className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border text-xs font-semibold transition-all ${
                   isVideoGridView
-                    ? 'bg-primary-500 text-white border-primary-400 shadow-glow'
-                    : 'border-slate-200 bg-slate-100 text-slate-700 hover:text-slate-950 dark:border-surface-700 dark:bg-surface-800/80 dark:hover:bg-surface-700 dark:text-slate-300'
+                    ? 'bg-cyan-600 text-white border-cyan-600 shadow-md font-bold dark:bg-brand-cyan dark:text-slate-950 dark:border-brand-cyan'
+                    : 'border-slate-300 bg-slate-100 text-slate-800 hover:text-slate-950 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800/90 dark:text-slate-200 dark:hover:bg-slate-700 dark:hover:text-white'
                 }`}
               >
                 <Grid className="w-3.5 h-3.5" />
@@ -285,20 +285,20 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
 
               {!isVideoGridView && (
                 <div className="flex items-center gap-1.5">
-                  <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-slate-100 text-xs font-mono text-slate-700 dark:border-surface-700/50 dark:bg-surface-800/60 dark:text-slate-300">
+                  <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-300 bg-slate-100 text-xs font-mono font-bold text-slate-800 dark:border-slate-700 dark:bg-slate-800/90 dark:text-slate-200">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
                     <span>{totalVideos > 0 ? (activeVideoIndex % totalVideos) + 1 : 0}/{totalVideos}</span>
                   </div>
                   <button
                     onClick={prevVideo}
-                    className="p-1.5 sm:p-2 rounded-lg border border-slate-200 bg-slate-100 text-slate-700 hover:bg-slate-200 dark:border-surface-700 dark:bg-surface-800 dark:hover:bg-surface-700 dark:text-slate-300 dark:hover:text-white transition-colors"
+                    className="p-1.5 sm:p-2 rounded-lg border border-slate-300 bg-slate-100 text-slate-800 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800/90 dark:hover:bg-slate-700 dark:text-slate-200 dark:hover:text-white transition-colors"
                     title="Video trước"
                   >
                     <ChevronLeft className="w-4 h-4" />
                   </button>
                   <button
                     onClick={nextVideo}
-                    className="p-1.5 sm:p-2 rounded-lg border border-slate-200 bg-slate-100 text-slate-700 hover:bg-slate-200 dark:border-surface-700 dark:bg-surface-800 dark:hover:bg-surface-700 dark:text-slate-300 dark:hover:text-white transition-colors"
+                    className="p-1.5 sm:p-2 rounded-lg border border-slate-300 bg-slate-100 text-slate-800 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800/90 dark:hover:bg-slate-700 dark:text-slate-200 dark:hover:text-white transition-colors"
                     title="Video kế tiếp"
                   >
                     <ChevronRight className="w-4 h-4" />
@@ -320,8 +320,8 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                 }}
                 className={`whitespace-nowrap px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-xl text-xs font-medium border transition-all ${
                   activeVideoCategory === cat
-                    ? 'bg-primary-500 text-white border-primary-500 shadow-sm font-semibold'
-                    : 'border-slate-200 bg-slate-100/80 text-slate-700 hover:text-slate-950 hover:bg-slate-200 dark:border-surface-700/40 dark:bg-surface-800/50 dark:text-slate-400 dark:hover:text-white dark:hover:bg-surface-800'
+                    ? 'bg-cyan-600 text-white border-cyan-600 shadow-md font-bold dark:bg-brand-cyan dark:text-slate-950 dark:border-brand-cyan dark:shadow-[0_0_15px_rgba(0,229,255,0.4)]'
+                    : 'border-slate-300 bg-slate-100 text-slate-700 hover:text-slate-950 hover:bg-slate-200 font-semibold dark:border-slate-700/80 dark:bg-slate-800/70 dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-700'
                 }`}
               >
                 {cat === 'all' ? `Tất cả (${FEATURED_PROJECT_VIDEOS.length})` : cat}
@@ -333,13 +333,13 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
           {!isVideoGridView && currentVideo && (
             <div>
               {/* 5-second Progress Bar */}
-              <div className="w-full bg-surface-800/80 h-1.5 rounded-full overflow-hidden mb-4 sm:mb-6">
+              <div className="w-full bg-slate-200 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden mb-4 sm:mb-6">
                 <motion.div
                   key={activeVideoIndex}
                   initial={{ width: '0%' }}
                   animate={{ width: isVideoAutoPaused ? '100%' : '100%' }}
                   transition={{ duration: 5, ease: 'linear' }}
-                  className="h-full bg-gradient-to-r from-primary-500 to-accent-500"
+                  className="h-full bg-gradient-to-r from-cyan-500 to-blue-600"
                 />
               </div>
 
@@ -347,7 +347,7 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                 {/* Active Player (8 cols) */}
                 <div className="lg:col-span-8">
                   <div
-                    className="relative aspect-video w-full rounded-xl sm:rounded-2xl overflow-hidden bg-black border border-surface-700/60 shadow-2xl group cursor-pointer"
+                    className="relative aspect-video w-full rounded-xl sm:rounded-2xl overflow-hidden bg-black border border-slate-700 dark:border-white/10 shadow-2xl group cursor-pointer"
                     onClick={handleToggleVideoPlay}
                   >
                     <video
@@ -377,8 +377,8 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                     {/* Center Large Play Button on Hover or when Paused */}
                     {!isVideoPlaying && (
                       <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[2px] transition-all">
-                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary-500 text-white flex items-center justify-center shadow-2xl transform hover:scale-110 transition-transform">
-                          <Play className="w-6 h-6 sm:w-8 sm:h-8 ml-0.5 sm:ml-1" />
+                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-cyan-500 text-slate-950 flex items-center justify-center shadow-2xl transform hover:scale-110 transition-transform">
+                          <Play className="w-6 h-6 sm:w-8 sm:h-8 ml-0.5 sm:ml-1 fill-current" />
                         </div>
                       </div>
                     )}
@@ -387,10 +387,10 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                     <div className="absolute top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4 flex items-center justify-between pointer-events-none">
                       <div className="flex items-center gap-1.5 sm:gap-2 pointer-events-auto">
                         <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-black/75 backdrop-blur-md border border-white/20 text-white flex items-center gap-1 sm:gap-1.5">
-                          <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-primary-400" />
+                          <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-cyan-400" />
                           {currentVideo.location}
                         </span>
-                        <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-primary-600/85 backdrop-blur-md text-white">
+                        <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-cyan-600/90 backdrop-blur-md text-white">
                           {currentVideo.category}
                         </span>
                       </div>
@@ -408,7 +408,7 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                         <h3 className="text-sm sm:text-lg md:text-xl font-bold text-white leading-snug drop-shadow-md">
                           {currentVideo.title}
                         </h3>
-                        <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs md:text-sm text-primary-300 font-mono">
+                        <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs md:text-sm text-cyan-300 font-mono">
                           <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
                           <span className="truncate">{currentVideo.specs}</span>
                         </div>
@@ -417,7 +417,7 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                       <div className="flex items-center gap-1.5 sm:gap-2 self-end sm:self-auto">
                         <button
                           onClick={handleToggleVideoPlay}
-                          className="p-2 sm:p-2.5 rounded-full bg-primary-500/90 hover:bg-primary-500 text-white shadow-lg transition-transform hover:scale-105"
+                          className="p-2 sm:p-2.5 rounded-full bg-cyan-600 hover:bg-cyan-500 text-white dark:bg-brand-cyan dark:text-slate-950 shadow-lg transition-transform hover:scale-105"
                           title={isVideoPlaying ? 'Tạm dừng' : 'Phát tiếp'}
                         >
                           {isVideoPlaying ? <Pause className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> : <Play className="w-3.5 h-3.5 sm:w-4 sm:h-4" />}
@@ -445,9 +445,9 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                 <div className="lg:col-span-4 rounded-2xl border border-slate-200 bg-slate-50/80 p-3 sm:p-4 dark:border-white/10 dark:bg-slate-950/80 flex flex-col gap-2.5 w-full">
                   <div className="flex items-center justify-between pb-2 border-b border-slate-200 dark:border-white/10">
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-slate-200 flex items-center gap-1.5">
-                      <Layers className="w-3.5 h-3.5 text-cyan-600 dark:text-primary-400" /> Danh sách ({totalVideos} video)
+                      <Layers className="w-3.5 h-3.5 text-cyan-600 dark:text-brand-cyan" /> Danh sách ({totalVideos} video)
                     </span>
-                    <span className="text-[11px] text-slate-500 dark:text-primary-400 font-bold font-mono">Tự cuộn 5s</span>
+                    <span className="text-[11px] text-cyan-700 dark:text-brand-cyan font-bold font-mono">Tự cuộn 5s</span>
                   </div>
 
                   <div className="space-y-2 max-h-[300px] sm:max-h-[360px] lg:max-h-[390px] overflow-y-auto pr-1 custom-scrollbar">
@@ -604,15 +604,15 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
         {/* ========================================================================= */}
         <div className="rounded-3xl border border-slate-200 bg-white p-4 sm:p-6 lg:p-8 shadow-xl backdrop-blur-xl relative space-y-5 sm:space-y-6 dark:border-white/10 dark:bg-[#071124]/90 dark:shadow-2xl">
           {/* Header row for Images Section */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 sm:pb-6 border-b border-slate-200 dark:border-surface-800/80">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 sm:pb-6 border-b border-slate-200 dark:border-white/10">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 dark:text-accent-400 shrink-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 dark:text-brand-cyan shrink-0">
                 <Camera className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div>
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100">Hình Ảnh Công Trình Thực Tế</span>
-                  <span className="px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-mono bg-cyan-100 text-cyan-800 border border-cyan-300 font-bold dark:bg-accent-500/20 dark:text-accent-300 dark:border-accent-500/30">
+                  <span className="px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-mono bg-cyan-100 text-cyan-800 border border-cyan-300 font-bold dark:bg-cyan-500/20 dark:text-brand-cyan dark:border-cyan-500/30">
                     {FEATURED_PROJECT_IMAGES.length} Ảnh Đã Tải Lên
                   </span>
                 </div>
@@ -628,8 +628,8 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                 onClick={() => setIsGridView(!isGridView)}
                 className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border text-xs font-semibold transition-all ${
                   isGridView
-                    ? 'bg-cyan-600 text-white border-cyan-500 shadow-sm font-bold'
-                    : 'border-slate-200 bg-slate-100 text-slate-700 hover:text-slate-950 dark:border-surface-700 dark:bg-surface-800/80 dark:hover:bg-surface-700 dark:text-slate-300'
+                    ? 'bg-cyan-600 text-white border-cyan-600 shadow-md font-bold dark:bg-brand-cyan dark:text-slate-950 dark:border-brand-cyan'
+                    : 'border-slate-300 bg-slate-100 text-slate-800 hover:text-slate-950 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800/90 dark:text-slate-200 dark:hover:bg-slate-700 dark:hover:text-white'
                 }`}
               >
                 <Grid className="w-3.5 h-3.5" />
@@ -639,19 +639,19 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
 
               {!isGridView && (
                 <div className="flex items-center gap-1.5">
-                  <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-slate-100 text-xs font-mono text-slate-700 dark:border-surface-700/50 dark:bg-surface-800/60 dark:text-slate-300">
+                  <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-300 bg-slate-100 text-xs font-mono font-bold text-slate-800 dark:border-slate-700 dark:bg-slate-800/90 dark:text-slate-200">
                     <span>{totalImages > 0 ? (activeImageIndex % totalImages) + 1 : 0}/{totalImages}</span>
                   </div>
                   <button
                     onClick={prevImage}
-                    className="p-1.5 sm:p-2 rounded-lg border border-slate-200 bg-slate-100 text-slate-700 hover:bg-slate-200 dark:border-surface-700 dark:bg-surface-800 dark:hover:bg-surface-700 dark:text-slate-300 dark:hover:text-white transition-colors"
+                    className="p-1.5 sm:p-2 rounded-lg border border-slate-300 bg-slate-100 text-slate-800 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800/90 dark:hover:bg-slate-700 dark:text-slate-200 dark:hover:text-white transition-colors"
                     title="Ảnh trước"
                   >
                     <ChevronLeft className="w-4 h-4" />
                   </button>
                   <button
                     onClick={nextImage}
-                    className="p-1.5 sm:p-2 rounded-lg border border-slate-200 bg-slate-100 text-slate-700 hover:bg-slate-200 dark:border-surface-700 dark:bg-surface-800 dark:hover:bg-surface-700 dark:text-slate-300 dark:hover:text-white transition-colors"
+                    className="p-1.5 sm:p-2 rounded-lg border border-slate-300 bg-slate-100 text-slate-800 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800/90 dark:hover:bg-slate-700 dark:text-slate-200 dark:hover:text-white transition-colors"
                     title="Ảnh kế tiếp"
                   >
                     <ChevronRight className="w-4 h-4" />
@@ -673,8 +673,8 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
                 }}
                 className={`whitespace-nowrap px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-xl text-xs font-medium border transition-all ${
                   activeImageCategory === cat
-                    ? 'bg-cyan-600 text-white border-cyan-600 shadow-sm font-semibold'
-                    : 'border-slate-200 bg-slate-100/80 text-slate-700 hover:text-slate-950 hover:bg-slate-200 dark:border-surface-700/40 dark:bg-surface-800/50 dark:text-slate-400 dark:hover:text-white dark:hover:bg-surface-800'
+                    ? 'bg-cyan-600 text-white border-cyan-600 shadow-md font-bold dark:bg-brand-cyan dark:text-slate-950 dark:border-brand-cyan dark:shadow-[0_0_15px_rgba(0,229,255,0.4)]'
+                    : 'border-slate-300 bg-slate-100 text-slate-700 hover:text-slate-950 hover:bg-slate-200 font-semibold dark:border-slate-700/80 dark:bg-slate-800/70 dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-700'
                 }`}
               >
                 {cat === 'all' ? `Tất cả (${FEATURED_PROJECT_IMAGES.length})` : cat}
@@ -689,7 +689,7 @@ export const FeaturedProjectsMedia: React.FC<FeaturedProjectsMediaProps> = ({
               onMouseEnter={() => setIsImageAutoPaused(true)}
               onMouseLeave={() => setIsImageAutoPaused(false)}
             >
-              <div className="w-full bg-slate-200 dark:bg-surface-800/80 h-1.5 rounded-full overflow-hidden">
+              <div className="w-full bg-slate-200 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
                 <motion.div
                   key={activeImageIndex}
                   initial={{ width: '0%' }}

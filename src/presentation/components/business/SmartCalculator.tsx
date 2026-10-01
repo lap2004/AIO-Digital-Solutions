@@ -492,58 +492,58 @@ export function SmartCalculator() {
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-md text-slate-900 dark:border-cyan-500/40 dark:bg-[#07132b] dark:text-white dark:shadow-[0_0_40px_rgba(0,102,255,0.18)]">
             {/* Top Stat Ribbon */}
             <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
-              <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-center dark:border-transparent dark:bg-white/[0.06]">
-                <span className="text-[10px] text-slate-500 dark:text-slate-300 font-medium">Diện tích</span>
-                <p className="text-xl font-black text-cyan-600 dark:text-brand-cyan">{calculations.area} m²</p>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-center dark:border-slate-800 dark:bg-slate-900/90">
+                <span className="text-[10px] text-slate-600 dark:text-slate-400 font-semibold">Diện tích</span>
+                <p className="text-xl font-black text-cyan-700 dark:text-brand-cyan">{calculations.area} m²</p>
               </div>
-              <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-center dark:border-transparent dark:bg-white/[0.06]">
-                <span className="text-[10px] text-slate-500 dark:text-slate-300 font-medium">Độ phân giải</span>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-center dark:border-slate-800 dark:bg-slate-900/90">
+                <span className="text-[10px] text-slate-600 dark:text-slate-400 font-semibold">Độ phân giải</span>
                 <p className="text-sm font-black text-slate-900 dark:text-white mt-1">
                   {calculations.pixelWidth} × {calculations.pixelHeight}
                 </p>
-                <span className="text-[9px] text-cyan-600 dark:text-brand-cyan font-bold">{calculations.standard}</span>
+                <span className="text-[9px] text-cyan-700 dark:text-brand-cyan font-bold">{calculations.standard}</span>
               </div>
-              <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-center dark:border-transparent dark:bg-white/[0.06]">
-                <span className="text-[10px] text-slate-500 dark:text-slate-300 font-medium">Khoảng cách</span>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-center dark:border-slate-800 dark:bg-slate-900/90">
+                <span className="text-[10px] text-slate-600 dark:text-slate-400 font-semibold">Khoảng cách</span>
                 <p className="text-xl font-black text-emerald-600 dark:text-emerald-400">{activeLED.viewingDistance}</p>
               </div>
-              <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-center dark:border-transparent dark:bg-white/[0.06]">
-                <span className="text-[10px] text-slate-500 dark:text-slate-300 font-medium">Điện năng</span>
-                <p className="text-xl font-black text-amber-500 dark:text-amber-400">~{calculations.powerAvgKw} kW</p>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-center dark:border-slate-800 dark:bg-slate-900/90">
+                <span className="text-[10px] text-slate-600 dark:text-slate-400 font-semibold">Điện năng</span>
+                <p className="text-xl font-black text-amber-600 dark:text-amber-400">~{calculations.powerAvgKw} kW</p>
               </div>
             </div>
 
             {/* Hardware Breakdown List */}
-            <div className="mt-4 space-y-1.5 rounded-xl border border-slate-200 bg-slate-50/80 p-3.5 text-xs dark:border-transparent dark:bg-black/50">
-              <div className="flex justify-between text-slate-600 dark:text-slate-300">
+            <div className="mt-4 space-y-2 rounded-xl border border-slate-200 bg-slate-50/90 p-3.5 text-xs dark:border-slate-800 dark:bg-slate-900/90">
+              <div className="flex justify-between text-slate-700 dark:text-slate-300">
                 <span>Số lượng Module LED:</span>
                 <strong className="text-slate-900 dark:text-white font-bold">{calculations.totalModules} tấm</strong>
               </div>
-              <div className="flex justify-between text-slate-600 dark:text-slate-300">
+              <div className="flex justify-between text-slate-700 dark:text-slate-300">
                 <span>Cabinet nhôm đúc & Nguồn Meanwell:</span>
                 <strong className="text-slate-900 dark:text-white font-bold">
                   {calculations.totalCabinets} Cabinet · {calculations.meanwellPowerUnits} Bộ nguồn
                 </strong>
               </div>
-              <div className="flex justify-between text-slate-600 dark:text-slate-300">
+              <div className="flex justify-between text-slate-700 dark:text-slate-300">
                 <span>Bộ điều khiển NovaStar:</span>
                 <strong className="text-cyan-700 dark:text-brand-cyan font-bold">{activeLED.recommendedController}</strong>
               </div>
-              <div className="flex justify-between text-slate-600 dark:text-slate-300">
+              <div className="flex justify-between text-slate-700 dark:text-slate-300">
                 <span>Bảo hành chính hãng:</span>
                 <strong className="text-emerald-700 dark:text-emerald-400 font-bold">24 - 36 Tháng (Cứu hộ 2h - 4h)</strong>
               </div>
             </div>
 
             {/* Price Banner */}
-            <div className="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 rounded-xl bg-cyan-50/90 border border-cyan-500/30 p-3.5 dark:border-brand-cyan/40 dark:bg-gradient-to-r dark:from-cyan-500/20 dark:to-blue-600/20">
+            <div className="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-2xl bg-cyan-50/95 border-2 border-cyan-500/50 p-4 shadow-sm dark:border-brand-cyan/60 dark:bg-[#040e24] dark:shadow-[0_0_30px_rgba(0,229,255,0.15)]">
               <div>
-                <span className="text-[11px] text-slate-600 dark:text-slate-200">Dự toán trọn gói tham khảo:</span>
-                <p className="text-2xl font-black text-cyan-600 dark:text-brand-cyan">
-                  ~ {formatNumber(calculations.totalEstimate)} <span className="text-xs text-slate-700 dark:text-white">VNĐ</span>
+                <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">Dự toán trọn gói tham khảo:</span>
+                <p className="text-2xl sm:text-3xl font-black text-cyan-700 dark:text-brand-cyan mt-0.5">
+                  ~ {formatNumber(calculations.totalEstimate)} <span className="text-xs font-bold text-slate-700 dark:text-white">VNĐ</span>
                 </p>
               </div>
-              <span className="text-[10px] text-slate-500 dark:text-slate-300 sm:text-right">Đã gồm Cabinet, nguồn, khung & công lắp</span>
+              <span className="text-xs text-slate-600 dark:text-slate-300 font-medium sm:text-right">Đã gồm Cabinet, nguồn, khung & công lắp</span>
             </div>
           </div>
 
