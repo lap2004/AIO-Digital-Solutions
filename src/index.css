@@ -7,28 +7,8 @@
    Enterprise · Futuristic · Premium · Technology-focused
    ============================================================ */
 @layer base {
-  /* Dark theme (default) */
+  /* Light theme (default) */
   :root,
-  html.dark {
-    color-scheme: dark;
-    --surface: 15 23 42; /* #0F172A */
-    --ink: 226 232 240; /* slate-200 */
-    --muted: 148 163 184; /* slate-400 */
-    --line: 30 41 59; /* slate-800 */
-    --primary: 0 229 255; /* brand cyan */
-    --primary-foreground: 2 6 23;
-
-    --page: #020617; /* page background */
-    --card: #0b1326; /* card / panel background */
-    --heading: #ffffff; /* h1-h4 + strong text */
-    --page-grad-1: rgba(0, 102, 255, 0.16);
-    --page-grad-2: rgba(0, 229, 255, 0.1);
-    --sb-track: #020617;
-    --sb-thumb: #1e293b;
-    --sb-thumb-hover: #334155;
-  }
-
-  /* Light theme */
   html.light {
     color-scheme: light;
     --surface: 255 255 255;
@@ -46,6 +26,26 @@
     --sb-track: #f1f5f9;
     --sb-thumb: #cbd5e1;
     --sb-thumb-hover: #94a3b8;
+  }
+
+  /* Dark theme */
+  html.dark {
+    color-scheme: dark;
+    --surface: 15 23 42; /* #0F172A */
+    --ink: 226 232 240; /* slate-200 */
+    --muted: 148 163 184; /* slate-400 */
+    --line: 30 41 59; /* slate-800 */
+    --primary: 0 229 255; /* brand cyan */
+    --primary-foreground: 2 6 23;
+
+    --page: #020617; /* page background */
+    --card: #0b1326; /* card / panel background */
+    --heading: #ffffff; /* h1-h4 + strong text */
+    --page-grad-1: rgba(0, 102, 255, 0.16);
+    --page-grad-2: rgba(0, 229, 255, 0.1);
+    --sb-track: #020617;
+    --sb-thumb: #1e293b;
+    --sb-thumb-hover: #334155;
   }
 
   * {

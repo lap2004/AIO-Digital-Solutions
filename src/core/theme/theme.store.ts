@@ -17,7 +17,7 @@ function apply(theme: Theme) {
 }
 
 export const useThemeStore = create<ThemeState>((set, get) => ({
-  theme: storage.get<Theme>('theme', 'dark'),
+  theme: storage.get<Theme>('theme', 'light'),
   setTheme(theme) {
     storage.set('theme', theme);
     apply(theme);
@@ -28,7 +28,8 @@ export const useThemeStore = create<ThemeState>((set, get) => ({
   },
 }));
 
-// Apply persisted theme on first load (default dark).
+// Apply persisted theme on first load (default light).
 if (typeof document !== 'undefined') {
   apply(useThemeStore.getState().theme);
 }
+
