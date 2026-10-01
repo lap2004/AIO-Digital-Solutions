@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { PublicLayout } from '@/presentation/layouts/PublicLayout';
 import { AdminLayout } from '@/presentation/layouts/AdminLayout';
 
@@ -21,7 +21,6 @@ const LoginPage = lazy(() => import('@/presentation/pages/admin/LoginPage'));
 const DashboardPage = lazy(() => import('@/presentation/pages/admin/DashboardPage'));
 const AdminProductsPage = lazy(() => import('@/presentation/pages/admin/AdminProductsPage'));
 const AdminProjectsPage = lazy(() => import('@/presentation/pages/admin/AdminProjectsPage'));
-const AdminCrmPage = lazy(() => import('@/presentation/pages/admin/AdminCrmPage'));
 const AdminQuotationsPage = lazy(() => import('@/presentation/pages/admin/AdminQuotationsPage'));
 
 export const router = createBrowserRouter([
@@ -48,10 +47,10 @@ export const router = createBrowserRouter([
     element: <AdminLayout />,
     children: [
       { index: true, element: <DashboardPage /> },
+      { path: 'bao-gia', element: <AdminQuotationsPage /> },
       { path: 'san-pham', element: <AdminProductsPage /> },
       { path: 'du-an', element: <AdminProjectsPage /> },
-      { path: 'crm', element: <AdminCrmPage /> },
-      { path: 'bao-gia', element: <AdminQuotationsPage /> },
+      { path: 'crm', element: <Navigate to="/admin/bao-gia" replace /> },
     ],
   },
 ]);

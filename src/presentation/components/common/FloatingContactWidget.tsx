@@ -21,38 +21,58 @@ export function FloatingContactWidget() {
 
     setIsSubmitting(true);
     try {
-      await services.leads.submit({
-        name: name.trim(),
-        phone: phone.trim(),
+      await services.quotations.create({
+        customerName: name.trim(),
         company: 'Khách vãng lai',
         email: `khachhang_${phone.replace(/\D/g, '') || Date.now()}@aioled.vn`,
-        source: 'website',
-        interest: 'Tư vấn khảo sát 3D & Báo giá LED 24/7',
-        estimatedValue: 0,
-        assignedTo: 'Phòng Kỹ Thuật AIO',
-        status: 'new',
-        note: `Đăng ký nhận tư vấn nhanh qua Widget liên hệ nổi - KH: ${name.trim()} (${phone.trim()})`,
+        phone: phone.trim(),
+        requestType: 'consultation',
+        interest: 'Tư vấn kỹ thuật 24/7 & Khảo sát 3D miễn phí',
+        items: [
+          {
+            productId: 'tu-van-247',
+            productName: 'Yêu cầu khảo sát 3D & Tư vấn màn hình LED tận nơi',
+            quantity: 1,
+            unitPrice: 0,
+          },
+        ],
+        status: 'sent',
+        total: 0,
+        note: `Khách đăng ký qua Popup Tư Vấn Nhanh 24/7 trên website. Cần chuyên viên gọi lại tư vấn và hỗ trợ kỹ thuật.`,
+        validUntil: new Date(Date.now() + 30 * 86400000).toISOString(),
       });
     } catch {
       // Fallback safe save to localStorage
       try {
-        const stored = localStorage.getItem('aio.leads') || '[]';
+        const stored = localStorage.getItem('aio.quotations') || '[]';
         const parsed = JSON.parse(stored);
         parsed.unshift({
-          id: `lead-${Date.now()}`,
-          name: name.trim(),
+          id: `quote-${Date.now()}`,
+          code: `BG-2026-${Math.floor(1000 + Math.random() * 9000)}`,
+          customerName: name.trim(),
           phone: phone.trim(),
           company: 'Khách vãng lai',
           email: `khachhang_${phone.replace(/\D/g, '') || Date.now()}@aioled.vn`,
-          source: 'website',
-          interest: 'Tư vấn khảo sát 3D & Báo giá LED 24/7',
-          status: 'new',
+          requestType: 'consultation',
+          interest: 'Tư vấn kỹ thuật 24/7 & Khảo sát 3D miễn phí',
+          items: [
+            {
+              productId: 'tu-van-247',
+              productName: 'Yêu cầu khảo sát 3D & Tư vấn màn hình LED tận nơi',
+              quantity: 1,
+              unitPrice: 0,
+            },
+          ],
+          status: 'sent',
+          total: 0,
+          note: `Khách đăng ký qua Popup Tư Vấn Nhanh 24/7 trên website. Cần chuyên viên gọi lại tư vấn và hỗ trợ kỹ thuật.`,
           createdAt: new Date().toISOString(),
-          updatedAt: new Date().toISOString(),
+          validUntil: new Date(Date.now() + 30 * 86400000).toISOString(),
         });
-        localStorage.setItem('aio.leads', JSON.stringify(parsed));
+        localStorage.setItem('aio.quotations', JSON.stringify(parsed));
+        window.dispatchEvent(new Event('aio-quotations-changed'));
       } catch (err) {
-        console.warn('Local lead fallback:', err);
+        console.warn('Local quote fallback:', err);
       }
     } finally {
       setIsSubmitting(false);

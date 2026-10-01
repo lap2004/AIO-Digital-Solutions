@@ -61,17 +61,25 @@ export default function ContactPage() {
 
   const onSubmit = async (values: FormValues) => {
     try {
-      await services.leads.submit({
-        name: values.name,
-        company: values.company ?? '',
-        email: values.email,
-        phone: values.phone,
-        status: 'new',
-        source: 'website',
-        interest: values.interest,
-        estimatedValue: 0,
-        assignedTo: '',
-        note: values.message,
+      await services.quotations.create({
+        customerName: values.name.trim(),
+        company: values.company?.trim() || 'Doanh nghiệp / Cá nhân',
+        email: values.email.trim(),
+        phone: values.phone.trim(),
+        requestType: 'contact',
+        interest: values.interest.trim(),
+        items: [
+          {
+            productId: 'contact-req',
+            productName: values.interest.trim(),
+            quantity: 1,
+            unitPrice: 0,
+          },
+        ],
+        status: 'sent',
+        total: 0,
+        note: `Nhu cầu: ${values.interest.trim()} | Lời nhắn: ${values.message.trim()}`,
+        validUntil: new Date(Date.now() + 30 * 86400000).toISOString(),
       });
       toast.success('Đã gửi liên hệ! Đội ngũ AIO sẽ phản hồi trong 24 giờ.');
       reset();

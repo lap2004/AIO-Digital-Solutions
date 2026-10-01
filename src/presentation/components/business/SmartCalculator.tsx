@@ -310,10 +310,12 @@ export function SmartCalculator() {
     setIsSubmitting(true);
     try {
       await services.quotations.create({
-        customerName,
+        customerName: customerName.trim(),
         company: '',
-        email: 'khachhang@aioled.vn',
-        phone: customerPhone,
+        email: `khachhang_${customerPhone.replace(/\D/g, '') || Date.now()}@aioled.vn`,
+        phone: customerPhone.trim(),
+        requestType: 'calculator',
+        interest: `${activeLED.name} (${width}m × ${height}m = ${calculations.area}m²)`,
         items: [
           {
             productId: activeLED.id,
@@ -324,7 +326,7 @@ export function SmartCalculator() {
         ],
         status: 'sent',
         total: calculations.totalEstimate,
-        note: `[Bảng tính tự động]: Kích thước ${width}m x ${height}m (${calculations.area}m2). Độ phân giải: ${calculations.pixelWidth}x${calculations.pixelHeight}px. Ghi chú: ${customerNote}`,
+        note: `[Bảng tính LED tự động]: Kích thước ${width}m x ${height}m (${calculations.area}m²). Độ phân giải: ${calculations.pixelWidth}x${calculations.pixelHeight}px (${calculations.standard}). Tổng Cabinets: ${calculations.totalCabinets}. Công suất TB: ${calculations.powerAvgKw} kW.${customerNote.trim() ? ` Ghi chú thêm: ${customerNote.trim()}` : ''}`,
         validUntil: new Date(Date.now() + 30 * 86400000).toISOString(),
       });
 

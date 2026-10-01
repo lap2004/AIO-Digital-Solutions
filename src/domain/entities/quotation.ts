@@ -1,4 +1,4 @@
-export type QuotationStatus = 'draft' | 'sent' | 'approved' | 'rejected';
+export type QuotationStatus = 'sent' | 'contacted' | 'approved' | 'rejected' | 'draft';
 
 export interface QuotationItem {
   productId: string;
@@ -7,6 +7,8 @@ export interface QuotationItem {
   unitPrice: number;
 }
 
+export type QuotationRequestType = 'consultation' | 'calculator' | 'quote' | 'contact';
+
 export interface Quotation {
   id: string;
   code: string;
@@ -14,6 +16,8 @@ export interface Quotation {
   company: string;
   email: string;
   phone: string;
+  requestType?: QuotationRequestType;
+  interest?: string;
   items: QuotationItem[];
   status: QuotationStatus;
   total: number;
@@ -23,8 +27,17 @@ export interface Quotation {
 }
 
 export const QUOTATION_STATUS_LABEL: Record<QuotationStatus, string> = {
-  draft: 'Nháp',
-  sent: 'Đã gửi',
-  approved: 'Đã duyệt',
-  rejected: 'Từ chối',
+  sent: 'Chờ liên hệ',
+  contacted: 'Đang tư vấn / Đã gọi',
+  approved: 'Đã chốt hợp đồng',
+  rejected: 'Hủy / Không liên lạc được',
+  draft: 'Bản nháp',
 };
+
+export const QUOTATION_TYPE_LABEL: Record<QuotationRequestType, string> = {
+  consultation: 'Tư vấn nhanh 24/7',
+  calculator: 'Bảng tính LED tự động',
+  quote: 'Báo giá sản phẩm',
+  contact: 'Liên hệ website',
+};
+

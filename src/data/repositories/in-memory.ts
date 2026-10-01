@@ -12,6 +12,7 @@ import { NEWS } from '@/data/mock/news.mock';
 import { SOLUTIONS } from '@/data/mock/solutions.mock';
 import { BRANDS } from '@/data/mock/brands.mock';
 import { JOBS } from '@/data/mock/jobs.mock';
+import { QUOTATIONS } from '@/data/mock/quotations.mock';
 
 const delay = <T>(value: T, ms = 120): Promise<T> =>
   new Promise((resolve) => setTimeout(() => resolve(value), ms));
@@ -263,13 +264,18 @@ class InMemoryQuotationRepository implements QuotationRepository {
   private get data(): Quotation[] {
     try {
       const stored = localStorage.getItem('aio.quotations');
-      return stored ? JSON.parse(stored) : [];
+      return stored ? JSON.parse(stored) : [...QUOTATIONS];
     } catch {
-      return [];
+      return [...QUOTATIONS];
     }
   }
   private set data(quotations: Quotation[]) {
-    localStorage.setItem('aio.quotations', JSON.stringify(quotations));
+    try {
+      localStorage.setItem('aio.quotations', JSON.stringify(quotations));
+      window.dispatchEvent(new Event('aio-quotations-changed'));
+    } catch {
+      // ignore
+    }
   }
   async list(): Promise<Quotation[]> {
     return delay([...this.data]);

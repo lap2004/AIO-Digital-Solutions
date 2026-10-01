@@ -37,14 +37,16 @@ export default function QuotePage() {
 
   const onSubmit = async (values: FormValues) => {
     await services.quotations.create({
-      customerName: values.name,
-      company: values.company ?? '',
-      email: values.email,
-      phone: values.phone,
+      customerName: values.name.trim(),
+      company: values.company?.trim() || '',
+      email: values.email.trim(),
+      phone: values.phone.trim(),
+      requestType: 'quote',
+      interest: `Báo giá giỏ hàng (${items.length} sản phẩm: ${items.map(i => i.name).slice(0, 2).join(', ')}${items.length > 2 ? '...' : ''})`,
       items: items.map((i) => ({ productId: i.productId, productName: i.name, quantity: i.quantity, unitPrice: 0 })),
       status: 'sent',
       total: 0,
-      note: values.note ?? '',
+      note: values.note?.trim() || 'Khách gửi yêu cầu báo giá chi tiết cho danh sách sản phẩm đã chọn.',
       validUntil: new Date(Date.now() + 30 * 86400000).toISOString(),
     });
     toast.success('Đã gửi yêu cầu báo giá! AIO sẽ phản hồi trong 24 giờ.');
