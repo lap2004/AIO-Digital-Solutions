@@ -62,12 +62,17 @@ Khác với các website truyền thống phải thuê máy chủ (hosting) hàn
 
 ---
 
-## 5. THÔNG TIN CỔNG QUẢN TRỊ ADMIN & HƯỚNG DẪN SỬ DỤNG
+## 5. THÔNG TIN CỔNG QUẢN TRỊ ADMIN & PHÂN QUYỀN
 
-### 🔑 Thông tin đăng nhập quản trị:
 - **Đường dẫn truy cập**: `https://aioled.vn/admin`
-- **Email đăng nhập**: `admin@aio.vn`
-- **Mật khẩu**: `admin123` *(Có thể đổi sau khi bàn giao)*
+
+### 🔑 Danh sách Tài khoản & Phân quyền hệ thống:
+
+| Phân quyền | Email đăng nhập | Mật khẩu | Chức năng chính |
+| :--- | :--- | :--- | :--- |
+| **👑 Super Admin** | `admin@aio.vn` | `admin123` | Toàn quyền quản trị cao nhất hệ thống, xem toàn bộ báo giá, sản phẩm, dự án và cấu hình. |
+| **✍️ Quản trị viên (Editor)** | `editor@aio.vn` | `editor123` | Quản lý sản phẩm, danh mục, cập nhật bảng giá, nội dung bài viết & dự án. |
+| **💼 Nhân viên Sales** | `sales@aio.vn` | `sales123` | Tiếp nhận yêu cầu báo giá của khách từ website, bấm gọi ngay & nhắn Zalo tư vấn. |
 
 ### 📱 Các chức năng chính trong trang Admin:
 1. **Trang Tổng quan (Dashboard)**:
